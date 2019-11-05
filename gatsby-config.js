@@ -6,13 +6,12 @@
 const plugins = [
   "gatsby-plugin-react-helmet",
   "gatsby-plugin-styled-components",
-];
-
+]
 
 module.exports = {
   plugins: plugins,
   siteMetadata: {
-    title: "Training",
+    title: "TrainingHub.io",
     author: "Dev",
   },
-};
+}

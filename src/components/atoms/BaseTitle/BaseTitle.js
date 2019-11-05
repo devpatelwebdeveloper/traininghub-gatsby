@@ -1,49 +1,66 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import React from "react"
+import PropTypes from "prop-types"
+import styled from "styled-components"
+import Styles from "../../../styles/Styles"
+import { Colors } from "../../../styles/Variables"
 
 const CenteredTitle = styled.div`
   text-align: center;
-`;
+  color: ${Colors.DefaultFont};
+  h1 {
+    font-size: 24px;
+    line-height: 28px;
+    ${Styles.ScreenSizes.huge`
+    color: ${Colors.DefaultFont};
+     `}
+  
+    ${Styles.ScreenSizes.large`
+     color: ${Colors.BrandBlue};
+      `}
+      ${Styles.ScreenSizes.medium`
+     color: ${Colors.DefaultFont};
+      `}
+  }
+`
 
 const UnderLined = styled.hr`
   border-bottom: 5px solid rgb(242, 195, 0);
   width: 50px;
   display: block;
   line-height: 16px;
-`;
+`
 
-let headingBody = null;
+let headingBody = null
 export default class BaseTitle extends React.PureComponent {
   render() {
     switch (this.props.size) {
-      case 'H1':
-        headingBody = <h1>{this.props.title}</h1>;
-        break;
-      case 'H2':
-        headingBody = <h2>{this.props.title}</h2>;
-        break;
-      case 'H3':
-        headingBody = <h3>{this.props.title}</h3>;
-        break;
-      case 'H4':
-        headingBody = <h4>{this.props.title}</h4>;
-        break;
-      case 'H5':
-        headingBody = <h5>{this.props.title}</h5>;
-        break;
-      case 'H6':
-        headingBody = <h6>{this.props.title}</h6>;
-        break;
+      case "H1":
+        headingBody = <h1>{this.props.title}</h1>
+        break
+      case "H2":
+        headingBody = <h2>{this.props.title}</h2>
+        break
+      case "H3":
+        headingBody = <h3>{this.props.title}</h3>
+        break
+      case "H4":
+        headingBody = <h4>{this.props.title}</h4>
+        break
+      case "H5":
+        headingBody = <h5>{this.props.title}</h5>
+        break
+      case "H6":
+        headingBody = <h6>{this.props.title}</h6>
+        break
       default:
-        headingBody = null;
+        headingBody = null
     }
     // check if centered?
     headingBody = this.props.center ? (
       <CenteredTitle>{headingBody}</CenteredTitle>
     ) : (
       headingBody
-    );
+    )
     // Check if underlined?
     headingBody = this.props.underline ? (
       <>
@@ -52,9 +69,9 @@ export default class BaseTitle extends React.PureComponent {
       </>
     ) : (
       headingBody
-    );
+    )
 
-    return <>{headingBody}</>;
+    return <>{headingBody}</>
   }
 }
 
@@ -63,4 +80,4 @@ BaseTitle.propTypes = {
   size: PropTypes.string.isRequired,
   center: PropTypes.bool,
   underline: PropTypes.bool,
-};
+}

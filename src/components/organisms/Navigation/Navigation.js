@@ -1,17 +1,17 @@
 /* eslint-disable func-names */
-import React from 'react';
-// import $ from 'jquery';
-import Navbar from 'react-bootstrap/Navbar';
-import styled from 'styled-components';
-import Nav from 'react-bootstrap/Nav';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import { Link } from 'gatsby';
+import React from "react"
+import Navbar from "react-bootstrap/Navbar"
+import styled from "styled-components"
+import media from "../../../styles/ScreenSizes"
+import Nav from "react-bootstrap/Nav"
+import NavDropdown from "react-bootstrap/NavDropdown"
+import { Link } from "gatsby"
 
 const StyledNavbar = styled(Navbar)`
   height: 50px;
-  background-color: transparent;
+  background-color: #ffffff;
   border: none;
-  color: white;
+  color: #ffffff;
   z-index: 100;
   transition: background-color 1s ease 0s;
   box-shadow: 0 1px 0 rgba(12, 13, 14, 0.1), 0 1px 6px rgba(59, 64, 69, 0.1);
@@ -19,18 +19,25 @@ const StyledNavbar = styled(Navbar)`
     background-color: #00aeef;
     transition: background-color 1s ease 0s;
   }
-`;
+  ${media.medium`
+  backgrond-color:#ffffff;
+   `}
+  ${media.small`
+  backgrond-color:#ffffff;
+   `}
+`
 
 function scroll() {
   // Transition effect for navbar
-  // $(window).scroll(function () {
+  // window.onscroll = function() {
   //   // checks if window is scrolled more than 500px, adds/removes solid class
-  //   if ($(this).scrollTop() > 450) {
-  //     $('#top-nav').addClass('solid');
+  //   if (window.scrollTop() > 450) {
+  //     document.getElementById("the-box")
+  //     document.getElementById("top-nav").classList.add("solid")
   //   } else {
-  //     $('#top-nav').removeClass('solid');
+  //     document.getElementById("top-nav").classList.remove("solid")
   //   }
-  // });
+  // }
 }
 
 export default function Navigation() {
@@ -69,7 +76,7 @@ export default function Navigation() {
               Recruitment
             </Link>
             <Link to=" " className="nav-link">
-              {' '}
+              {" "}
               Blogs
             </Link>
             <Link to=" " className="nav-link">
@@ -82,5 +89,5 @@ export default function Navigation() {
         </Navbar.Collapse>
       </StyledNavbar>
     </>
-  );
+  )
 }

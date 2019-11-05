@@ -1,7 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import BaseTile from '../../atoms/BaseTile/BaseTile';
+import React from "react"
+import PropTypes from "prop-types"
+import styled from "styled-components"
+import Col from "react-bootstrap/Col"
+import BaseTile from "../../atoms/BaseTile/BaseTile"
 
 const CardType = styled.div`
   border-radius: 8px;
@@ -21,7 +22,7 @@ const CardType = styled.div`
   p {
     padding: 8px;
   }
-`;
+`
 
 const ImgC = styled.div`
   position: relative;
@@ -43,24 +44,26 @@ const ImgC = styled.div`
     -o-transition: all 0.3s;
     transition: all 0.3s;
   }
-`;
+`
 const ClearLine = styled.div`
   width: 100%;
   height: 20px;
-`;
+`
 
 export default class EnhancedTiles extends React.PureComponent {
   render() {
     return (
-      <CardType>
-        <ImgC>
-          <BaseTile image={this.props.image} alt={this.props.alt} />
-        </ImgC>
-        <ClearLine />
-        <h4>{this.props.title}</h4>
-        <p>{this.props.text}</p>
-      </CardType>
-    );
+      <Col lg={4} md={6} sm={12}>
+        <CardType>
+          <ImgC>
+            <BaseTile image={this.props.image} alt={this.props.alt} />
+          </ImgC>
+          <ClearLine />
+          <h4>{this.props.title}</h4>
+          <p>{this.props.text}</p>
+        </CardType>
+      </Col>
+    )
   }
 }
 
@@ -69,4 +72,4 @@ EnhancedTiles.propTypes = {
   alt: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
-};
+}

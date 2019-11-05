@@ -1,13 +1,13 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Link } from 'gatsby';
-import Col from 'react-bootstrap/Col';
-import styled from 'styled-components';
-import BaseTitle from '../../atoms/BaseTitle/BaseTitle';
+import React from "react"
+import PropTypes from "prop-types"
+import { Link } from "gatsby"
+import Col from "react-bootstrap/Col"
+import styled from "styled-components"
+import BaseTitle from "../../atoms/BaseTitle/BaseTitle"
 
 const StyledCol = styled(Col)`
   margin: 25px auto;
-`;
+`
 
 const Card = styled.div`
   width: 100%;
@@ -25,7 +25,7 @@ const Card = styled.div`
   &:hover {
     box-shadow: 2px 4px 8px 0px rgba(46, 61, 73, 0.2);
   }
-`;
+`
 
 const StyledImg = styled.img`
   width: auto;
@@ -35,7 +35,7 @@ const StyledImg = styled.img`
   margin-right: 20px;
   border-bottom-left-radius: 6px;
   border-top-left-radius: 6px;
-`;
+`
 
 const CardContent = styled.div`
   width: 100%;
@@ -58,13 +58,13 @@ const CardContent = styled.div`
     font-size: 1.5rem;
     line-height: 24px;
   }
-`;
+`
 
 export default class BaseTile extends React.PureComponent {
   render() {
     if (this.props.href) {
       return (
-        <StyledCol md={4}>
+        <StyledCol lg={4} md={6} sm={12}>
           <Link to={this.props.href}>
             <Card>
               <StyledImg
@@ -81,10 +81,10 @@ export default class BaseTile extends React.PureComponent {
             </Card>
           </Link>
         </StyledCol>
-      );
+      )
     }
     return (
-      <StyledCol md={4}>
+      <StyledCol lg={4} md={6} sm={12}>
         <Card>
           <StyledImg
             alt={this.props.alt}
@@ -99,7 +99,7 @@ export default class BaseTile extends React.PureComponent {
           </CardContent>
         </Card>
       </StyledCol>
-    );
+    )
   }
 }
 
@@ -109,4 +109,4 @@ BaseTile.propTypes = {
   image: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
   href: PropTypes.string,
-};
+}

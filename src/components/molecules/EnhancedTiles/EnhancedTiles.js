@@ -73,3 +73,10 @@ EnhancedTiles.propTypes = {
   title: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
 }
+
+EnhancedTiles.defaultProps = {
+  image: "https://unsplash.it/1500?random",
+  alt: "",
+  title: "tiles",
+  text: "text",
+}

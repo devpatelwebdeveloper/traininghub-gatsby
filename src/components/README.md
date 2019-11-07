@@ -1,27 +1,29 @@
 # TrainingHub
 
-## Gatsby
+## Components MVP List
 
-- [ ] Button
-- [ ] Paragraph
-- [ ] Image
+### This does not include styling
+
+- [x] Button
+- [x] Paragraph
+- [x] Image
 - [ ] Slider
-- [ ] EnhancedTiles
-- [ ] CourseTiles
-- [ ] CourseBlock
+- [x] EnhancedTiles
+- [x] CourseTiles
+- [x] CourseBlock
 - [ ] Navigation
-- [ ] Footer
+- [x] Footer
 - [ ] Back To Top
-- [ ] TopBanner Static
+- [x] TopBanner Static
 - [ ] TopBanner Slider
 - [ ] TopBanner Video
-- [ ] TopBanner Course
+- [x] TopBanner Course
 - [ ] Accordion
-- [ ] Student Journey
+- [x] Student Journey
 - [ ] Testimonials
 - [ ] Blogs
 - [ ] Blog Single
-- [ ] Blog Tags
+- [ ] [ ] Blog Tags
 - [ ] Accordion
 - [ ] Contact Form
 - [ ] Apply Now Form

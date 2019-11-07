@@ -1,7 +1,7 @@
-import React from "react"
-import PropTypes from "prop-types"
-import styled from "styled-components"
-import BaseTitle from "../../atoms/BaseTitle/BaseTitle"
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import BaseTitle from "../../atoms/BaseTitle/BaseTitle";
 
 const StyledContainer = styled.section`
   background-size: cover;
@@ -11,7 +11,7 @@ const StyledContainer = styled.section`
   display: flex;
 
   overflow: hidden;
-`
+`;
 
 const CenterContent = styled.div`
   width: 400px;
@@ -37,26 +37,32 @@ const CenterContent = styled.div`
     font-size: 1.5em;
     font-weight: normal;
   }
-`
+`;
 
-export default class TopBanner extends React.PureComponent {
+export default class TopBanner extends React.Component {
+  static propTypes = {
+    Title: PropTypes.any.isRequired,
+    Subtitle: PropTypes.any.isRequired,
+    Background: PropTypes.string.isRequired,
+  };
+  static defaultProps = {
+    Title: "Toptitle",
+    Subtitle: "Subtitle",
+    Background: "Background",
+  };
   render() {
+    const { Title, Subtitle, Background } = this.props;
+
     const sectionStyle = {
-      backgroundImage: `url(${this.props.background})`,
-    }
+      backgroundImage: `url(${Background})`,
+    };
     return (
       <StyledContainer style={sectionStyle}>
         <CenterContent>
-          <BaseTitle title={this.props.title} size="H1" center />
-          <BaseTitle title={this.props.subtitle} size="H3" center />
+          <BaseTitle title={Title} size="H1" center />
+          <BaseTitle title={Subtitle} size="H3" center />
         </CenterContent>
       </StyledContainer>
-    )
+    );
   }
-}
-
-TopBanner.propTypes = {
-  title: PropTypes.any.isRequired,
-  subtitle: PropTypes.any.isRequired,
-  background: PropTypes.string.isRequired,
 }

@@ -30,7 +30,7 @@ const StyledButton = styled(BaseLink)`
   justify-content: center;
 `;
 
-export default class CoursesBlock extends React.Component {
+export default class SingleCourseBlock extends React.Component {
   static propTypes = {
     CourseImg: PropTypes.string.isRequired,
     CourseTitle: PropTypes.string.isRequired,

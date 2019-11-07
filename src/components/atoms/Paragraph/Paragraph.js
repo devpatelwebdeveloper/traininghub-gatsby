@@ -20,9 +20,34 @@ const StyledParagraph = styled.p`
    `}
 `;
 
-export default function Paragraph(props) {
-  return <StyledParagraph>{props.children}</StyledParagraph>;
+const StyledParagraphCenter = styled(StyledParagraph)`
+  text-align: center;
+`;
+
+export default class Paragraph extends React.Component {
+  static propTypes = {
+    children: PropTypes.oneOfType([
+      PropTypes.arrayOf(PropTypes.node),
+      PropTypes.node,
+    ]).isRequired,
+    centered: PropTypes.bool.isRequired,
+  };
+  static defaultProps = {
+    children: "",
+    centered: false,
+  };
+  render() {
+    const { children, centered } = this.props;
+    if (centered) {
+      return <StyledParagraphCenter>{children}</StyledParagraphCenter>;
+    }
+    return <StyledParagraph>{children}</StyledParagraph>;
+  }
 }
+
+// export default function Paragraph(props) {
+//   return <StyledParagraph>{props.children}</StyledParagraph>;
+// }
 
 Paragraph.propTypes = {
   children: PropTypes.string.isRequired,

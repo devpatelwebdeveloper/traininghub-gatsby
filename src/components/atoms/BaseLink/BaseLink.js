@@ -5,14 +5,17 @@ import PropTypes from "prop-types";
 
 export default class BaseLink extends React.Component {
   static propTypes = {
-    children: PropTypes.any.isRequired,
+    children: PropTypes.oneOfType([
+      PropTypes.arrayOf(PropTypes.node),
+      PropTypes.node,
+    ]).isRequired,
     external: PropTypes.bool,
     href: PropTypes.string.isRequired,
     composedClassName: PropTypes.string,
   };
 
   static defaultProps = {
-    children: "button",
+    children: "",
     external: false,
     href: "#",
     composedClassName: "",

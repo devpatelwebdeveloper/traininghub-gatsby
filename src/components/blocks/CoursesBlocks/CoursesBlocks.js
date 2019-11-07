@@ -1,10 +1,11 @@
 import React from "react";
+import Section from "../../organisms/Section/Section";
 import Container from "react-bootstrap/Container";
 import SingleCourseBlock from "../../molecules/SingleCourseBlock/SingleCourseBlock";
 
 export default function TilesBlock() {
   return (
-    <Container>
+    <Section>
       <SingleCourseBlock
         CourseImg="https://unsplash.it/1500?random"
         CourseTitle="Course Name"
@@ -15,6 +16,6 @@ export default function TilesBlock() {
         EnrolNowButtonLink="https://www.google.com"
       />
       <SingleCourseBlock />
-    </Container>
+    </Section>
   );
 }

@@ -1,10 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import media from '../../../styles/ScreenSizes';
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import media from "../../../styles/ScreenSizes";
 
 const StyledParagraph = styled.p`
-  color: #f4f4f4;
+  color: #000000;
   font-size: 16px;
   font-weight: normal;
   line-height: 20px;

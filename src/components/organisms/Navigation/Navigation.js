@@ -1,11 +1,11 @@
 /* eslint-disable func-names */
-import React from "react"
-import Navbar from "react-bootstrap/Navbar"
-import styled from "styled-components"
-import media from "../../../styles/ScreenSizes"
-import Nav from "react-bootstrap/Nav"
-import NavDropdown from "react-bootstrap/NavDropdown"
-import { Link } from "gatsby"
+import React from "react";
+import Navbar from "react-bootstrap/Navbar";
+import styled from "styled-components";
+import media from "../../../styles/ScreenSizes";
+import Nav from "react-bootstrap/Nav";
+import NavDropdown from "react-bootstrap/NavDropdown";
+import { Link } from "gatsby";
 
 const StyledNavbar = styled(Navbar)`
   height: 50px;
@@ -25,7 +25,7 @@ const StyledNavbar = styled(Navbar)`
   ${media.small`
   backgrond-color:#ffffff;
    `}
-`
+`;
 
 function scroll() {
   // Transition effect for navbar
@@ -69,7 +69,7 @@ export default function Navigation() {
                 Separated link
               </NavDropdown.Item>
             </NavDropdown>
-            <Link to=" " className="nav-link">
+            <Link to="/coursesingle" className="nav-link">
               Ielts / Celpip
             </Link>
             <Link to=" " className="nav-link">
@@ -89,5 +89,5 @@ export default function Navigation() {
         </Navbar.Collapse>
       </StyledNavbar>
     </>
-  )
+  );
 }

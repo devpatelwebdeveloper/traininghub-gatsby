@@ -18,6 +18,9 @@ const StyledSection = styled.section`
   background-repeat: no-repeat;
   background-size: 400px;
   background-position: 105% 150%, 95% 60%, center bottom;
+  p {
+    color: #ffffff;
+  }
   ${Styles.ScreenSizes.medium`
     background-image:none;
      `}

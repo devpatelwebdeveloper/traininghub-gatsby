@@ -62,7 +62,7 @@ export default class SingleCourseBlock extends React.Component {
     return (
       <StyledRow>
         <CourseImage>
-          <BaseTile image={CourseImg} alt="title" />
+          <BaseTile Image={CourseImg} Alt="title" />
         </CourseImage>
         <Col md={7}>
           <h2>{CourseTitle}</h2>

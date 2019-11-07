@@ -1,71 +1,89 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import BaseTile from '../../atoms/BaseTile/BaseTile';
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import BaseTile from "../../atoms/BaseTile/BaseTile";
+import BaseLink from "../../atoms/BaseLink/BaseLink";
 
-const CardType = styled.div`
-  border-radius: 8px;
-  background-color: #fff;
-  border: 1px solid #d8d8d8;
-  border-bottom-width: 2px;
-  width: 100%;
-  min-width: 300px;
-  min-height: 400px;
-  margin-bottom: 3%;
-  overflow: hidden;
-  text-align: center;
-  a:hover {
-    color: #00aeef;
+const StyledRow = styled(Row)`
+  margin: 5px auto;
+  background: #fff;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid #e7e7e7;
+  .col {
+    padding: 0;
   }
-  h4,
-  p {
-    padding: 8px;
-  }
+`;
+const CourseImage = styled(Col)`
+  padding-left: 0px;
+  padding-right: 0px;
 `;
 
-const ImgC = styled.div`
-  position: relative;
-  height: 200px;
-  width: 100%;
-  overflow: hidden;
-  width: 100%;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-  &:hover {
-    width: 120%;
-    margin: 0 0 0 -10%;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-  }
+const StyledButton = styled(BaseLink)`
+  background-color: transparent !important;
+  border: 1px solid #1358db;
+  color: #1358db;
+  transition: border-color 0.15s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.15s cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  justify-content: center;
 `;
-const ClearLine = styled.div`
-  width: 100%;
-  height: 20px;
-`;
-export default class CoursesBlock extends React.PureComponent {
+
+export default class CoursesBlock extends React.Component {
+  static propTypes = {
+    CourseImg: PropTypes.string.isRequired,
+    CourseTitle: PropTypes.string.isRequired,
+    CourseDescription: PropTypes.string.isRequired,
+    CourseTech: PropTypes.string.isRequired,
+    CourseStartDate: PropTypes.string.isRequired,
+    ExploreCourseButtonLink: PropTypes.string.isRequired,
+    EnrolNowButtonLink: PropTypes.string.isRequired,
+  };
+  static defaultProps = {
+    CourseImg: "https://unsplash.it/1500?random",
+    CourseTitle: "Course Coming Soon",
+    CourseDescription: "We are working on developing the best IT Course",
+    CourseTech: "TrainingHub",
+    CourseStartDate: "Coming Soon",
+    ExploreCourseButtonLink: "#",
+    EnrolNowButtonLink: "#",
+  };
   render() {
+    const {
+      CourseImg,
+      CourseTitle,
+      CourseDescription,
+      CourseTech,
+      CourseStartDate,
+      ExploreCourseButtonLink,
+      EnrolNowButtonLink,
+    } = this.props;
     return (
-      <CardType>
-        <ImgC>
-          <BaseTile image={this.props.image} alt={this.props.alt} />
-        </ImgC>
-        <ClearLine />
-        <h4>{this.props.title}</h4>
-        <p>{this.props.text}</p>
-      </CardType>
+      <StyledRow>
+        <CourseImage>
+          <BaseTile image={CourseImg} alt="title" />
+        </CourseImage>
+        <Col md={7}>
+          <h2>{CourseTitle}</h2>
+          <div>
+            <span>{CourseTech}</span> <span>{CourseStartDate}</span>
+          </div>
+          <p>{CourseDescription}</p>
+        </Col>
+        <Col>
+          <StyledButton
+            children="Explore Course"
+            href={ExploreCourseButtonLink}
+            composedClassName="btn btn-primary btn-block btn-lg"
+          />
+          <StyledButton
+            children="test"
+            href={EnrolNowButtonLink}
+            composedClassName="btn btn-primary btn-block btn-lg"
+          />
+        </Col>
+      </StyledRow>
     );
   }
 }
-
-CoursesBlock.propTypes = {
-  image: PropTypes.string.isRequired,
-  alt: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
-};

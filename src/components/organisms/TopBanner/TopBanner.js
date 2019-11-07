@@ -39,7 +39,7 @@ const CenterContent = styled.div`
   }
 `;
 
-export default class TopBanner extends React.Component {
+export default class TopBanner extends React.PureComponent {
   static propTypes = {
     Title: PropTypes.any.isRequired,
     Subtitle: PropTypes.any.isRequired,

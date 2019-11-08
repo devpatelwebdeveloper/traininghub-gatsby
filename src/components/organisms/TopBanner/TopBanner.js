@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
+import Styles from "../../../styles/Styles";
 import BaseTitle from "../../atoms/BaseTitle/BaseTitle";
 
 const StyledContainer = styled.section`
@@ -14,7 +15,7 @@ const StyledContainer = styled.section`
 `;
 
 const CenterContent = styled.div`
-  width: 400px;
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,20 +23,14 @@ const CenterContent = styled.div`
 
   & h1,
   h3 {
-    color: white;
-    line-height: 1;
+    color: ${Styles.Colors.BaseWhite};
   }
 
   & h1 {
     text-transform: uppercase;
-    font-size: 3em;
-    margin-bottom: 0;
-    text-align: center;
   }
   & h3 {
     margin-bottom: 40px;
-    font-size: 1.5em;
-    font-weight: normal;
   }
 `;
 

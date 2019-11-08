@@ -13,13 +13,15 @@ import SchoolBoard from "../../../contents/icons/SchoolBoard.svg";
 const StyledSection = styled.section`
   min-height: 50vh;
   background-color: #101d42;
-  color: #ffffff;
+  color: ${Styles.Colors.BaseWhite};
   background-image: url(${SchoolBoard});
   background-repeat: no-repeat;
   background-size: 400px;
   background-position: 105% 150%, 95% 60%, center bottom;
+  h1,
+  h4,
   p {
-    color: #ffffff;
+    color: ${Styles.Colors.BaseWhite};
   }
   ${Styles.ScreenSizes.medium`
     background-image:none;
@@ -45,7 +47,7 @@ export default class TopBannerCourse extends React.PureComponent {
     background: PropTypes.string.isRequired,
   };
   static defaultProps = {
-    CourseTitle: "Proograms and Courses",
+    CourseTitle: "Programs and Courses",
     Subtitle: "Your Next IT Career is here",
     Text: `TrainingHub offers a wide variety of programs and courses built on adaptive curriculum and led by leading industry experts.`,
     CourseImage: "",
@@ -63,12 +65,12 @@ export default class TopBannerCourse extends React.PureComponent {
       <StyledSection>
         <Container>
           <Row>
-            <LeftCol md={5}>
+            <LeftCol md={6}>
               <BaseTitle title={CourseTitle} size="H1" />
               {SubHeading}
               <Paragraph>{Text}</Paragraph>
             </LeftCol>
-            <Col md={7}>{courseImg}</Col>
+            <Col md={6}>{courseImg}</Col>
           </Row>
         </Container>
       </StyledSection>

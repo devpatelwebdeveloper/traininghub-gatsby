@@ -10,6 +10,11 @@ const H1 = styled.h1`
   font-weight: ${Styles.FontWeight.Bold};
   line-height: ${Styles.HeadingHeight.H1};
   font-family: ${Styles.FontFamily.Heading};
+  ${Styles.ScreenSizes.medium`
+  font-size: ${Styles.HeadingSizeMobile.H1};
+  font-weight: ${Styles.FontWeight.Bold};
+  line-height: ${Styles.HeadingHeightMobile.H1};
+   `};
 `;
 const H2 = styled.h2`
   color: ${Styles.Colors.DefaultFont};
@@ -17,6 +22,11 @@ const H2 = styled.h2`
   font-weight: ${Styles.FontWeight.Bold};
   line-height: ${Styles.HeadingHeight.H2};
   font-family: ${Styles.FontFamily.Heading};
+  ${Styles.ScreenSizes.medium`
+  font-size: ${Styles.HeadingSizeMobile.H2};
+  font-weight: ${Styles.FontWeight.Bold};
+  line-height: ${Styles.HeadingHeightMobile.H2};
+   `};
 `;
 const H3 = styled.h3`
   color: ${Styles.Colors.DefaultFont};
@@ -24,6 +34,11 @@ const H3 = styled.h3`
   font-weight: ${Styles.FontWeight.Bold};
   line-height: ${Styles.HeadingHeight.H3};
   font-family: ${Styles.FontFamily.Heading};
+  ${Styles.ScreenSizes.medium`
+  font-size: ${Styles.HeadingSizeMobile.H3};
+  font-weight: ${Styles.FontWeight.Bold};
+  line-height: ${Styles.HeadingHeightMobile.H3};
+   `};
 `;
 const H4 = styled.h4`
   color: ${Styles.Colors.DefaultFont};
@@ -31,6 +46,11 @@ const H4 = styled.h4`
   font-weight: ${Styles.FontWeight.Bold};
   line-height: ${Styles.HeadingHeight.H4};
   font-family: ${Styles.FontFamily.Heading};
+  ${Styles.ScreenSizes.medium`
+  font-size: ${Styles.HeadingSizeMobile.H4};
+  font-weight: ${Styles.FontWeight.Bold};
+  line-height: ${Styles.HeadingHeightMobile.H4};
+   `};
 `;
 const H5 = styled.h5`
   color: ${Styles.Colors.DefaultFont};
@@ -38,6 +58,11 @@ const H5 = styled.h5`
   font-weight: ${Styles.FontWeight.Bold};
   line-height: ${Styles.HeadingHeight.H5};
   font-family: ${Styles.FontFamily.Heading};
+  ${Styles.ScreenSizes.medium`
+  font-size: ${Styles.HeadingSizeMobile.H5};
+  font-weight: ${Styles.FontWeight.Bold};
+  line-height: ${Styles.HeadingHeightMobile.H5};
+   `};
 `;
 const H6 = styled.h6`
   color: ${Styles.Colors.DefaultFont};
@@ -46,29 +71,19 @@ const H6 = styled.h6`
   line-height: ${Styles.HeadingHeight.H6};
   font-family: ${Styles.FontFamily.Heading};
   text-transform: "uppercase";
+  ${Styles.ScreenSizes.medium`
+  font-size: ${Styles.HeadingSizeMobile.H6};
+  font-weight: ${Styles.FontWeight.Bold};
+  line-height: ${Styles.HeadingHeightMobile.H6};
+   `};
 `;
 
 const CenteredTitle = styled.div`
   text-align: center;
-  color: ${Colors.DefaultFont};
-  h1 {
-    font-size: 24px;
-    line-height: 28px;
-    ${Styles.ScreenSizes.huge`
-    color: ${Colors.DefaultFont};
-     `}
-  
-    ${Styles.ScreenSizes.large`
-     color: ${Colors.BrandBlue};
-      `}
-      ${Styles.ScreenSizes.medium`
-     color: ${Colors.DefaultFont};
-      `}
-  }
 `;
 
 const UnderLined = styled.hr`
-  border-bottom: 5px solid rgb(242, 195, 0);
+  border-bottom: 5px solid ${Styles.Colors.BrandYellow};
   width: 50px;
   display: block;
   line-height: 16px;

@@ -12,7 +12,7 @@ const Colors = {
   BrandPurple: "#6970b4",
   BrandRed: "#e41647",
   BrandYellow: "#ffde30",
-  BrandGreen: "0d7f50",
+  BrandGreen: "#0d7f50",
   BrandGrey: "#545555",
   BaseIcon: "#a8aab7",
   BaseBlueGrey: "#c5d0de",
@@ -60,6 +60,23 @@ const HeadingHeight = {
   H5: "24px",
   H6: "20px",
 };
+const HeadingSizeMobile = {
+  H1: "32px",
+  H2: "28px",
+  H3: "24px",
+  H4: "20px",
+  H5: "16px",
+  H6: "16px",
+};
+
+const HeadingHeightMobile = {
+  H1: "40px",
+  H2: "40px",
+  H3: "32px",
+  H4: "28px",
+  H5: "24px",
+  H6: "24px",
+};
 
 const FontFamily = {
   Paragraph: "'Merriweather', serif",
@@ -75,4 +92,6 @@ export {
   HeadingSize,
   HeadingHeight,
   FontFamily,
+  HeadingHeightMobile,
+  HeadingSizeMobile,
 };

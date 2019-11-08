@@ -1,12 +1,12 @@
-import React from 'react';
-
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
+import Styles from "../../../styles/Styles";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 const ClientContainer = styled.section`
-  background: #f4f4f4;
+  background: ${Styles.Colors.BaseElement};
   padding: 25px;
   margin-bottom: 25px;
   display: flex;
@@ -24,7 +24,7 @@ export default function Logo() {
     <ClientContainer>
       <Container>
         <Row>
-          {clientList.map(client => (
+          {clientList.map((client) => (
             <Col md={2} sm={6}>
               <ClientLogo src={client.image} alt={client.alt} />
             </Col>
@@ -38,31 +38,31 @@ export default function Logo() {
 const clientList = [
   {
     image:
-      'https://brainstation.io/Content/images/v3/companies/faded/facebook.svg',
-    alt: 'Client1',
+      "https://brainstation.io/Content/images/v3/companies/faded/facebook.svg",
+    alt: "Client1",
   },
   {
     image:
-      'https://brainstation.io/Content/images/v3/companies/faded/microsoft.svg',
-    alt: 'Client2',
+      "https://brainstation.io/Content/images/v3/companies/faded/microsoft.svg",
+    alt: "Client2",
   },
   {
-    image: 'https://brainstation.io/Content/images/v3/companies/faded/ibm.svg',
-    alt: 'Client3',
-  },
-  {
-    image:
-      'https://brainstation.io/Content/images/v3/companies/faded/facebook.svg',
-    alt: 'Client4',
+    image: "https://brainstation.io/Content/images/v3/companies/faded/ibm.svg",
+    alt: "Client3",
   },
   {
     image:
-      'https://brainstation.io/Content/images/v3/companies/faded/facebook.svg',
-    alt: 'Client5',
+      "https://brainstation.io/Content/images/v3/companies/faded/facebook.svg",
+    alt: "Client4",
   },
   {
     image:
-      'https://brainstation.io/Content/images/v3/companies/faded/facebook.svg',
-    alt: 'Client6',
+      "https://brainstation.io/Content/images/v3/companies/faded/facebook.svg",
+    alt: "Client5",
+  },
+  {
+    image:
+      "https://brainstation.io/Content/images/v3/companies/faded/facebook.svg",
+    alt: "Client6",
   },
 ];

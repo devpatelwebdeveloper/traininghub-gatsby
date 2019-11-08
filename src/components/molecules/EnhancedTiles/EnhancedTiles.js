@@ -1,14 +1,18 @@
-import React from "react"
-import PropTypes from "prop-types"
-import styled from "styled-components"
-import Col from "react-bootstrap/Col"
-import BaseTile from "../../atoms/BaseTile/BaseTile"
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import Styles from "../../../styles/Styles";
+import Col from "react-bootstrap/Col";
+import BaseTile from "../../atoms/BaseTile/BaseTile";
+import BaseTitle from "../../atoms/BaseTitle/BaseTitle";
+import Paragraph from "../../atoms/Paragraph/Paragraph";
 
 const CardType = styled.div`
   border-radius: 8px;
-  background-color: #fff;
-  border: 1px solid #d8d8d8;
+  background-color: ${Styles.Colors.BaseLightBlue};
+  border: 1px solid ${Styles.Colors.BaseLightBlue};
   border-bottom-width: 2px;
+
   width: 100%;
   min-width: 300px;
   min-height: 400px;
@@ -21,8 +25,9 @@ const CardType = styled.div`
   h4,
   p {
     padding: 8px;
+    color: ;
   }
-`
+`;
 
 const ImgC = styled.div`
   position: relative;
@@ -44,39 +49,38 @@ const ImgC = styled.div`
     -o-transition: all 0.3s;
     transition: all 0.3s;
   }
-`
+`;
 const ClearLine = styled.div`
   width: 100%;
   height: 20px;
-`
+`;
 
 export default class EnhancedTiles extends React.PureComponent {
+  static propTypes = {
+    image: PropTypes.string.isRequired,
+    alt: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired,
+  };
+  static defaultProps = {
+    image: "https://unsplash.it/1500?random",
+    alt: "",
+    title: "tiles",
+    text: "text",
+  };
   render() {
+    const { image, alt, title, text } = this.props;
     return (
       <Col lg={4} md={6} sm={12}>
         <CardType>
           <ImgC>
-            <BaseTile image={this.props.image} alt={this.props.alt} />
+            <BaseTile image={image} alt={alt} />
           </ImgC>
           <ClearLine />
-          <h4>{this.props.title}</h4>
-          <p>{this.props.text}</p>
+          <BaseTitle title={title} size="H5" />
+          <Paragraph>{text}</Paragraph>
         </CardType>
       </Col>
-    )
+    );
   }
-}
-
-EnhancedTiles.propTypes = {
-  image: PropTypes.string.isRequired,
-  alt: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
-}
-
-EnhancedTiles.defaultProps = {
-  image: "https://unsplash.it/1500?random",
-  alt: "",
-  title: "tiles",
-  text: "text",
 }

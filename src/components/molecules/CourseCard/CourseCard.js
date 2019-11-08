@@ -58,20 +58,31 @@ const CardContent = styled.div`
 `;
 
 export default class BaseTile extends React.PureComponent {
+  static propTypes = {
+    title: PropTypes.string.isRequired,
+    subtitle: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    alt: PropTypes.string.isRequired,
+    href: PropTypes.string,
+  };
+  static defaultProps = {
+    title: "Title",
+    subtitle: "Subtitle",
+    image: "https://unsplash.it/1500?random",
+    alt: "Alt",
+    href: "",
+  };
   render() {
-    if (this.props.href) {
+    const { title, subtitle, image, alt, href } = this.props;
+    if (href) {
       return (
         <StyledCol lg={4} md={6} sm={12}>
-          <Link to={this.props.href}>
+          <Link to={href}>
             <Card>
-              <StyledImg
-                alt={this.props.alt}
-                title={this.props.alt}
-                src={this.props.image}
-              />
+              <StyledImg alt={alt} title={alt} src={image} />
               <CardContent>
-                <BaseTitle title={this.props.title} size="H6" />
-                <BaseTitle title={this.props.subtitle} size="H5" />
+                <BaseTitle title={title} size="H6" />
+                <BaseTitle title={subtitle} size="H5" />
               </CardContent>
             </Card>
           </Link>
@@ -81,25 +92,13 @@ export default class BaseTile extends React.PureComponent {
     return (
       <StyledCol lg={4} md={6} sm={12}>
         <Card>
-          <StyledImg
-            alt={this.props.alt}
-            title={this.props.alt}
-            src={this.props.image}
-          />
+          <StyledImg alt={alt} title={alt} src={image} />
           <CardContent>
-            <BaseTitle title={this.props.title} size="H6" />
-            <BaseTitle title={this.props.subtitle} size="H5" />
+            <BaseTitle title={title} size="H6" />
+            <BaseTitle title={subtitle} size="H5" />
           </CardContent>
         </Card>
       </StyledCol>
     );
   }
 }
-
-BaseTile.propTypes = {
-  title: PropTypes.string.isRequired,
-  subtitle: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
-  alt: PropTypes.string.isRequired,
-  href: PropTypes.string,
-};

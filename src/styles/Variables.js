@@ -12,7 +12,7 @@ const Colors = {
   BrandPurple: "#6970b4",
   BrandRed: "#e41647",
   BrandYellow: "#ffde30",
-  BrandGreen: "0d7f50",
+  BrandGreen: "#0d7f50",
   BrandGrey: "#545555",
   BaseIcon: "#a8aab7",
   BaseBlueGrey: "#c5d0de",
@@ -44,25 +44,43 @@ const FontWeight = {
 };
 
 const HeadingSize = {
-  H1: "72px",
-  H2: "56px",
-  H3: "36px",
+  H1: "56px",
+  H2: "36px",
+  H3: "28px",
+  H4: "24px",
+  H5: "20px",
+  H6: "16px",
+};
+
+const HeadingHeight = {
+  H1: "64px",
+  H2: "48px",
+  H3: "32px",
   H4: "28px",
   H5: "24px",
   H6: "20px",
 };
+const HeadingSizeMobile = {
+  H1: "32px",
+  H2: "28px",
+  H3: "24px",
+  H4: "20px",
+  H5: "16px",
+  H6: "16px",
+};
 
-const HeadingHeight = {
-  H1: "88px",
-  H2: "64px",
-  H3: "48px",
-  H4: "32px",
-  H5: "28px",
+const HeadingHeightMobile = {
+  H1: "40px",
+  H2: "40px",
+  H3: "32px",
+  H4: "28px",
+  H5: "24px",
   H6: "24px",
 };
 
 const FontFamily = {
   Paragraph: "'Merriweather', serif",
+  Heading: "'Montserrat', sans-serif",
 };
 
 export {
@@ -74,4 +92,6 @@ export {
   HeadingSize,
   HeadingHeight,
   FontFamily,
+  HeadingHeightMobile,
+  HeadingSizeMobile,
 };

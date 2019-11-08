@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import media from "../../../styles/ScreenSizes";
 import Styles from "../../../styles/Styles";
 
 const StyledParagraph = styled.p`

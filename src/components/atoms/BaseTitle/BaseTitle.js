@@ -70,7 +70,7 @@ const H6 = styled.h6`
   font-weight: ${Styles.FontWeight.Bold};
   line-height: ${Styles.HeadingHeight.H6};
   font-family: ${Styles.FontFamily.Heading};
-  text-transform: "uppercase";
+  text-transform: uppercase;
   ${Styles.ScreenSizes.medium`
   font-size: ${Styles.HeadingSizeMobile.H6};
   font-weight: ${Styles.FontWeight.Bold};

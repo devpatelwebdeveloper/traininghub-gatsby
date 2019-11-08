@@ -1,13 +1,14 @@
-import React from "react"
-import PropTypes from "prop-types"
-import { Link } from "gatsby"
-import Col from "react-bootstrap/Col"
-import styled from "styled-components"
-import BaseTitle from "../../atoms/BaseTitle/BaseTitle"
+import React from "react";
+import PropTypes from "prop-types";
+import { Link } from "gatsby";
+import styled from "styled-components";
+import Styles from "../../../styles/Styles";
+import Col from "react-bootstrap/Col";
+import BaseTitle from "../../atoms/BaseTitle/BaseTitle";
 
 const StyledCol = styled(Col)`
   margin: 25px auto;
-`
+`;
 
 const Card = styled.div`
   width: 100%;
@@ -15,8 +16,8 @@ const Card = styled.div`
   display: block;
   position: relative;
   text-align: left;
-  color: #525c65;
-  background-color: #fff;
+  color: ${Styles.Colors.BaseWhite};
+  background-color: ${Styles.Colors.BaseWhite};
   text-decoration: none;
   border-radius: 6px;
   box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.15);
@@ -25,7 +26,7 @@ const Card = styled.div`
   &:hover {
     box-shadow: 2px 4px 8px 0px rgba(46, 61, 73, 0.2);
   }
-`
+`;
 
 const StyledImg = styled.img`
   width: auto;
@@ -35,30 +36,26 @@ const StyledImg = styled.img`
   margin-right: 20px;
   border-bottom-left-radius: 6px;
   border-top-left-radius: 6px;
-`
+`;
 
 const CardContent = styled.div`
   width: 100%;
   padding: 20px 20px;
   h6 {
-    margin-top: 0;
-    margin-bottom: 0.75rem;
-    color: #02ccba !important;
-    font-weight: 600;
-    font-size: 0.5625rem;
-    line-height: 0.75rem;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+    display: inline;
+    font-size: 10px;
+    color: ${Styles.Colors.BrandOrange};
+    background-color: rgba(219, 59, 0, 0.1);
+    padding: 5px 10px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
   }
   h5 {
-    margin-top: 0;
-    margin-bottom: 0.375rem;
-    padding-right: 0.75rem;
-    font-weight: 400;
-    font-size: 1.5rem;
-    line-height: 24px;
+    margin: 10px;
+    font-size: ${Styles.FontSize.Medium};
   }
-`
+`;
 
 export default class BaseTile extends React.PureComponent {
   render() {
@@ -75,13 +72,11 @@ export default class BaseTile extends React.PureComponent {
               <CardContent>
                 <BaseTitle title={this.props.title} size="H6" />
                 <BaseTitle title={this.props.subtitle} size="H5" />
-
-                <h5 />
               </CardContent>
             </Card>
           </Link>
         </StyledCol>
-      )
+      );
     }
     return (
       <StyledCol lg={4} md={6} sm={12}>
@@ -94,12 +89,10 @@ export default class BaseTile extends React.PureComponent {
           <CardContent>
             <BaseTitle title={this.props.title} size="H6" />
             <BaseTitle title={this.props.subtitle} size="H5" />
-
-            <h5 />
           </CardContent>
         </Card>
       </StyledCol>
-    )
+    );
   }
 }
 
@@ -109,4 +102,4 @@ BaseTile.propTypes = {
   image: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
   href: PropTypes.string,
-}
+};

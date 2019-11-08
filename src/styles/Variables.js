@@ -27,15 +27,15 @@ const Colors = {
 };
 
 const FontSize = {
-  Small: "16px",
-  Medium: "20px",
+  Small: "14px", // This is the mobile size
+  Medium: "16px",
   Large: "24px",
 };
 
 const LineHeight = {
-  Small: "20px",
+  Small: "24px",
   Medium: "24px",
-  Large: "32px",
+  Large: "40px",
 };
 
 const FontWeight = {

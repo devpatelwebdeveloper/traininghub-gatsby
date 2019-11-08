@@ -9,7 +9,8 @@ const StyledParagraph = styled.p`
   font-size: ${Styles.FontSize.Medium};
   font-weight: ${Styles.FontWeight.Normal};
   line-height: ${Styles.LineHeight.Medium};
-  font-family: ${Styles.FontFamily.Paragraph} ${Styles.ScreenSizes.small`
+  font-family: ${Styles.FontFamily.Paragraph};
+  ${Styles.ScreenSizes.small`
   font-size: ${Styles.FontSize.Small};
   font-weight: ${Styles.FontWeight.Normal};
   line-height: ${Styles.LineHeight.Small};

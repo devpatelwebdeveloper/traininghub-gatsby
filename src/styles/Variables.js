@@ -27,7 +27,7 @@ const Colors = {
 };
 
 const FontSize = {
-  Small: "14px",
+  Small: "14px", // This is the mobile size
   Medium: "16px",
   Large: "24px",
 };

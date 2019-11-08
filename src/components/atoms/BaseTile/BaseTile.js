@@ -7,17 +7,17 @@ const ResponsiveImage = styled.img`
   height: auto;
 `;
 
-export default class BaseTile extends React.PureComponent {
+export default class BaseTile extends React.Component {
   static propTypes = {
-    Image: PropTypes.string.isRequired,
-    Alt: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    alt: PropTypes.string.isRequired,
   };
   static defaultProps = {
-    Image: "https://unsplash.it/1500?random",
-    Alt: "alt",
+    image: "https://unsplash.it/1500?random",
+    alt: "alt",
   };
   render() {
-    const { Image, Alt } = this.props;
-    return <ResponsiveImage src={Image} alt={Alt} title={Alt} />;
+    const { image, alt } = this.props;
+    return <ResponsiveImage src={image} alt={alt} title={alt} />;
   }
 }

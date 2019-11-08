@@ -23,7 +23,7 @@
 - [ ] Testimonials
 - [ ] Blogs
 - [ ] Blog Single
-- [ ] [ ] Blog Tags
+- [ ] Blog Tags
 - [ ] Accordion
 - [ ] Contact Form
 - [ ] Apply Now Form

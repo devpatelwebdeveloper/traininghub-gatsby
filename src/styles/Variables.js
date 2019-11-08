@@ -44,25 +44,26 @@ const FontWeight = {
 };
 
 const HeadingSize = {
-  H1: "72px",
-  H2: "56px",
-  H3: "36px",
+  H1: "56px",
+  H2: "36px",
+  H3: "28px",
+  H4: "24px",
+  H5: "20px",
+  H6: "16px",
+};
+
+const HeadingHeight = {
+  H1: "64px",
+  H2: "48px",
+  H3: "32px",
   H4: "28px",
   H5: "24px",
   H6: "20px",
 };
 
-const HeadingHeight = {
-  H1: "88px",
-  H2: "64px",
-  H3: "48px",
-  H4: "32px",
-  H5: "28px",
-  H6: "24px",
-};
-
 const FontFamily = {
   Paragraph: "'Merriweather', serif",
+  Heading: "'Montserrat', sans-serif",
 };
 
 export {

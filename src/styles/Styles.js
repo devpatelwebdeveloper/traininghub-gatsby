@@ -6,6 +6,7 @@ import {
   FontWeight,
   HeadingSize,
   HeadingHeight,
+  FontFamily,
 } from "./Variables";
 
 const Styles = {
@@ -16,6 +17,7 @@ const Styles = {
   FontWeight: FontWeight,
   HeadingSize: HeadingSize,
   HeadingHeight: HeadingHeight,
+  FontFamily: FontFamily,
 };
 
 export default Styles;

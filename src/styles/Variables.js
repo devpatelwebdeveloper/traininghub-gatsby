@@ -61,6 +61,10 @@ const HeadingHeight = {
   H6: "24px",
 };
 
+const FontFamily = {
+  Paragraph: "'Merriweather', serif",
+};
+
 export {
   ScreenSizes,
   Colors,
@@ -69,4 +73,5 @@ export {
   FontWeight,
   HeadingSize,
   HeadingHeight,
+  FontFamily,
 };

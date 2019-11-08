@@ -2,22 +2,18 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import media from "../../../styles/ScreenSizes";
+import Styles from "../../../styles/Styles";
 
 const StyledParagraph = styled.p`
-  color: #000000;
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 20px;
-  ${media.medium`
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 20px;
-   `}
-  ${media.small`
-  font-size: 12px;
-  font-weight: normal;
-  line-height: 16px;
-   `}
+  color: ${Styles.Colors.DefaultFont};
+  font-size: ${Styles.FontSize.Medium};
+  font-weight: ${Styles.FontWeight.Normal};
+  line-height: ${Styles.LineHeight.Medium};
+  font-family: ${Styles.FontFamily.Paragraph} ${Styles.ScreenSizes.small`
+  font-size: ${Styles.FontSize.Small};
+  font-weight: ${Styles.FontWeight.Normal};
+  line-height: ${Styles.LineHeight.Small};
+   `};
 `;
 
 const StyledParagraphCenter = styled(StyledParagraph)`

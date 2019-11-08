@@ -6,7 +6,18 @@
 const plugins = [
   "gatsby-plugin-react-helmet",
   "gatsby-plugin-styled-components",
-]
+];
+
+plugins.push({
+  resolve: `gatsby-plugin-google-fonts`,
+  options: {
+    fonts: [
+      `limelight`,
+      `source sans pro\:300,400,400i,700`, // you can also specify font weights and styles
+    ],
+    display: "swap",
+  },
+});
 
 module.exports = {
   plugins: plugins,
@@ -14,4 +25,4 @@ module.exports = {
     title: "TrainingHub.io",
     author: "Dev",
   },
-}
+};

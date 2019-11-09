@@ -1,18 +1,24 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
+import Styles from "../../../styles/Styles";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import BaseTile from "../../atoms/BaseTile/BaseTile";
 import BaseLink from "../../atoms/BaseLink/BaseLink";
+import BaseTitle from "../../atoms/BaseTitle/BaseTitle";
+import Paragraph from "../../atoms/Paragraph/Paragraph";
 
 const StyledRow = styled(Row)`
-  margin: 5px auto;
-  background: #fff;
+  margin: 10px auto;
+  background: ${Styles.Colors.BaseWhite};
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
-  border: 1px solid #e7e7e7;
+  border: 1px solid ${Styles.Colors.BaseBorderGrey};
   .col {
     padding: 0;
+    margin: auto;
+  }
+  .col-md-7 {
     margin: auto;
   }
 `;
@@ -29,6 +35,33 @@ const StyledButton = styled(BaseLink)`
     color 0.15s cubic-bezier(0.4, 0, 0.2, 1),
     background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1);
   justify-content: center;
+`;
+
+const Tags = styled.div`
+  margin: 10px auto;
+`;
+
+const StyledLabel = styled.span`
+  margin: 5px;
+  display: inline;
+  font-size: 10px;
+  color: ${Styles.Colors.BrandOrange};
+  background-color: rgba(219, 59, 0, 0.1);
+  padding: 5px 10px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+`;
+const StyledDate = styled.span`
+  margin: 5px;
+  display: inline;
+  font-size: 10px;
+  color: ${Styles.Colors.BrandGreen};
+  background-color: rgba(13, 127, 80, 0.1);
+  padding: 5px 10px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
 `;
 
 export default class SingleCourseBlock extends React.Component {
@@ -66,11 +99,12 @@ export default class SingleCourseBlock extends React.Component {
           <BaseTile Image={CourseImg} Alt="title" />
         </CourseImage>
         <Col md={7}>
-          <h2>{CourseTitle}</h2>
-          <div>
-            <span>{CourseTech}</span> <span>{CourseStartDate}</span>
-          </div>
-          <p>{CourseDescription}</p>
+          <BaseTitle title={CourseTitle} size="H4" />
+          <Tags>
+            <StyledLabel>{CourseTech}</StyledLabel>
+            <StyledDate>{CourseStartDate}</StyledDate>
+          </Tags>
+          <Paragraph>{CourseDescription}</Paragraph>
         </Col>
         <Col>
           <StyledButton

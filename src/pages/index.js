@@ -25,7 +25,6 @@ export default function HomePage() {
         /> */}
         <Clients />
         <Tiles />
-
         <CourseCards />
       </Layout>
     </>

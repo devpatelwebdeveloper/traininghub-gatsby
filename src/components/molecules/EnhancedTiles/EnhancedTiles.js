@@ -13,7 +13,7 @@ const CardType = styled.div`
   border: 1px solid ${Styles.Colors.BaseLightBlue};
   border-bottom-width: 2px;
   width: 100%;
-  min-height: 400px;
+  min-height: 550px;
   margin-bottom: 3%;
   overflow: hidden;
   text-align: center;

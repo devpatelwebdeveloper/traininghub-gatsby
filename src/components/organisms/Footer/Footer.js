@@ -1,12 +1,13 @@
-import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import styled from 'styled-components';
+import React from "react";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import styled from "styled-components";
+import Styles from "../../../styles/Styles";
 
 const FooterStyle = styled.footer`
-  background: rgb(35, 39, 42);
-  color: #ffffff;
+  background: ${Styles.Colors.BaseLightBlue};
+  color: ${Styles.Colors.DefaultFont};
   margin: none;
   overflow: hidden;
   ul {

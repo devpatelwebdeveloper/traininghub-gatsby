@@ -1,10 +1,20 @@
 /* eslint-disable func-names */
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import smoothscroll from 'smoothscroll-polyfill';
-// import $ from 'jquery';
 import styled from 'styled-components';
 
 const StyledDiv = styled.div`
+  .hide {
+    visibility: hidden;
+    opacity: 0;
+  }
+  .show {
+    visibility: visible;
+    opacity: 1;
+  }
+`;
+
+const StyledButton = styled.button`
   display: inline-block;
   background-color: #ff9800;
   width: 50px;
@@ -15,31 +25,8 @@ const StyledDiv = styled.div`
   bottom: 30px;
   right: 30px;
   transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
-  opacity: 0;
   z-index: 1000;
-
-  .hide {
-    visibility: hidden;
-  }
-  .show {
-    visibility: visible;
-  }
-`;
-const StyledButton = styled.button``;
-
-function scrollbkToTop() {
-  // Transition effect for navbar
-  // $(window).scroll(function() {
-  //   // checks if window is scrolled more than 500px, adds/removes solid class
-  //   if ($(this).scrollTop() > 450) {
-  //     $('#back-to-top').addClass('show');
-  //     $('#back-to-top').removeClass('hide');
-  //   } else {
-  //     $('#back-to-top').removeClass('show');
-  //     $('#back-to-top').addClass('hide');
-  //   }
-  // });
-}
+  `;
 
 const scrollToTop = () => {
   window.scroll({ top: 0, left: 0, behavior: 'smooth' });
@@ -48,12 +35,29 @@ const scrollToTop = () => {
 };
 
 export default function ScrollToTop() {
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener('scroll', scrollbkToTop, true);
+  });
+
+  function scrollbkToTop() {
+    if (window.scrollY > 350) {
+      if (!show) {
+        setShow(true);
+      }
+    } else {
+      if (show) {
+        setShow(false);
+      }
+    }
+  }
+
   return (
     <>
-      {scrollbkToTop()}
       <StyledDiv>
-        <StyledButton id="back-to-top" className="hide" onClick={scrollToTop}>
-          Top
+        <StyledButton id="back-to-top" className={show ? 'show' : 'hide'} onClick={scrollToTop}>
+          Top.....
         </StyledButton>
       </StyledDiv>
     </>

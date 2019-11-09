@@ -6,9 +6,6 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-const ClientContainer = styled(Section)`
-  background: ${Styles.Colors.BaseElement};
-`;
 const StyledCol = styled(Col)`
   margin: auto;
 `;
@@ -21,17 +18,20 @@ const ClientLogo = styled.img`
 
 export default function Logo() {
   return (
-    <ClientContainer>
+    <Section
+      background={Styles.Colors.BaseElement}
+      padding="20px"
+      margin="50px">
       <Container>
         <Row>
           {clientList.map((client) => (
-            <StyledCol md={2} sm={6} xs={6}>
+            <StyledCol md={2} sm={6} xs={4}>
               <ClientLogo src={client.image} alt={client.alt} />
             </StyledCol>
           ))}
         </Row>
       </Container>
-    </ClientContainer>
+    </Section>
   );
 }
 

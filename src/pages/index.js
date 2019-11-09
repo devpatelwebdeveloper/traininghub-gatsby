@@ -24,12 +24,7 @@ export default function HomePage() {
           Background="https://unsplash.it/1500?random"
         /> */}
         <Clients />
-        <Section>
-          <BaseTitle title="Heading test" size="H1" center underline />
-          <Container>
-            <Tiles />
-          </Container>
-        </Section>
+        <Tiles />
         <CourseCards />
       </Layout>
     </>

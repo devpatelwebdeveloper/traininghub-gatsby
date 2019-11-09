@@ -1,19 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-// import { RandomId } from "../../GlobalFunctions/GlobalFuncions";
 import Styles from "../../../styles/Styles";
 import Container from "react-bootstrap/Container";
 
 const StyledSection = styled.section`
-  margin-top: 50px;
-  margin-bottom: 50px;
-  .white {
-    background-color: #ffffff;
-  }
-  .blue {
-    background-color: #00aeef;
-  }
+  margin-bottom: ${(props) => props.margin || "50px"};
+  padding: ${(props) => props.padding || "0px"} 0px;
+  background-color: ${(props) => props.background || Styles.Colors.BaseWhite};
 `;
 
 function randomString(length, chars) {
@@ -26,23 +20,26 @@ function randomString(length, chars) {
 export default class Section extends React.Component {
   static propTypes = {
     Id: PropTypes.string,
-    ComposedClassName: PropTypes.string,
     Fluid: PropTypes.bool.isRequired,
-    // Children: PropTypes.any.isRequired,
     children: PropTypes.oneOfType([
       PropTypes.arrayOf(PropTypes.node),
       PropTypes.node,
     ]).isRequired,
+    background: PropTypes.string.isRequired,
+    margin: PropTypes.string.isRequired,
+    padding: PropTypes.string.isRequired,
   };
   static defaultProps = {
     Id: "",
-    ComposedClassName: "white",
     Fluid: false,
     children: "",
+    background: Styles.Colors.BaseWhite,
+    margin: "auto",
+    padding: "0px",
   };
 
   render() {
-    const { ComposedClassName, Fluid, children, Id } = this.props;
+    const { Fluid, children, Id, background, margin, padding } = this.props;
 
     const uId = Id
       ? Id
@@ -51,7 +48,11 @@ export default class Section extends React.Component {
           "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",
         );
     return (
-      <StyledSection id={uId} className={ComposedClassName}>
+      <StyledSection
+        id={uId}
+        background={background}
+        margin={margin}
+        padding={padding}>
         <Container fluid={Fluid}>{children}</Container>
       </StyledSection>
     );

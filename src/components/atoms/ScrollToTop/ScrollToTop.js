@@ -1,7 +1,9 @@
 /* eslint-disable func-names */
-import React, { useEffect, useState } from 'react';
-import smoothscroll from 'smoothscroll-polyfill';
-import styled from 'styled-components';
+import React, { useEffect, useState } from "react";
+import smoothscroll from "smoothscroll-polyfill";
+import styled from "styled-components";
+import Styles from "../../../styles/Styles";
+import { Upicon } from "../../../contents/icons/icons";
 
 const StyledDiv = styled.div`
   .hide {
@@ -12,24 +14,40 @@ const StyledDiv = styled.div`
     visibility: visible;
     opacity: 1;
   }
+  .icon {
+    width: 50px;
+    height: 50px;
+    &:hover {
+      fill: ${Styles.Colors.BrandOrange};
+      cursor: pointer;
+      border: ${Styles.Colors.BrandPurple};
+    }
+  }
 `;
-
-const StyledButton = styled.button`
+const StyledButton = styled.div`
   display: inline-block;
-  background-color: #ff9800;
   width: 50px;
   height: 50px;
   text-align: center;
-  border-radius: 4px;
   position: fixed;
   bottom: 30px;
   right: 30px;
   transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
   z-index: 1000;
-  `;
+  ${Styles.ScreenSizes.small`
+  bottom: 5px;
+  right: 5px; 
+   `};
+  .icon {
+    ${Styles.ScreenSizes.small`
+    width: 25px;
+    height: 25px;
+     `};
+  }
+`;
 
 const scrollToTop = () => {
-  window.scroll({ top: 0, left: 0, behavior: 'smooth' });
+  window.scroll({ top: 0, left: 0, behavior: "smooth" });
   // above is not supported by safari, chrome or ie
   smoothscroll.polyfill();
 };
@@ -38,7 +56,7 @@ export default function ScrollToTop() {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
-    window.addEventListener('scroll', scrollbkToTop, true);
+    window.addEventListener("scroll", scrollbkToTop, true);
   });
 
   function scrollbkToTop() {
@@ -56,8 +74,11 @@ export default function ScrollToTop() {
   return (
     <>
       <StyledDiv>
-        <StyledButton id="back-to-top" className={show ? 'show' : 'hide'} onClick={scrollToTop}>
-          Top.....
+        <StyledButton
+          id="back-to-top"
+          className={show ? "show" : "hide"}
+          onClick={scrollToTop}>
+          {Upicon}
         </StyledButton>
       </StyledDiv>
     </>

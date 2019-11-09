@@ -12,9 +12,7 @@ const CardType = styled.div`
   background-color: ${Styles.Colors.BaseLightBlue};
   border: 1px solid ${Styles.Colors.BaseLightBlue};
   border-bottom-width: 2px;
-
   width: 100%;
-  min-width: 300px;
   min-height: 400px;
   margin-bottom: 3%;
   overflow: hidden;

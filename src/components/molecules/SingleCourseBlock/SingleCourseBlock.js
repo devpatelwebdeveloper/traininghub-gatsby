@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import Styles from "../../../styles/Styles";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import BaseTile from "../../atoms/BaseTile/BaseTile";
-import BaseLink from "../../atoms/BaseLink/BaseLink";
+import Button from "../Button/Button";
 import BaseTitle from "../../atoms/BaseTitle/BaseTitle";
 import Paragraph from "../../atoms/Paragraph/Paragraph";
 
@@ -25,16 +25,6 @@ const StyledRow = styled(Row)`
 const CourseImage = styled(Col)`
   padding-left: 0px;
   padding-right: 0px;
-`;
-
-const StyledButton = styled(BaseLink)`
-  background-color: transparent !important;
-  border: 1px solid #1358db;
-  color: #1358db;
-  transition: border-color 0.15s cubic-bezier(0.4, 0, 0.2, 1),
-    color 0.15s cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1);
-  justify-content: center;
 `;
 
 const Tags = styled.div`
@@ -107,16 +97,12 @@ export default class SingleCourseBlock extends React.Component {
           <Paragraph>{CourseDescription}</Paragraph>
         </Col>
         <Col>
-          <StyledButton
-            children="Explore Course"
-            href={ExploreCourseButtonLink}
-            composedClassName="btn btn-primary btn-block btn-lg"
+          <Button
+            link={ExploreCourseButtonLink}
+            text="Explore Course"
+            external
           />
-          <StyledButton
-            children="test"
-            href={EnrolNowButtonLink}
-            composedClassName="btn btn-primary btn-block btn-lg"
-          />
+          <Button link="contact" text="Contact us" outline />
         </Col>
       </StyledRow>
     );

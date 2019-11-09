@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import BaseTile from "../../atoms/BaseTile/BaseTile";
@@ -13,6 +13,7 @@ const StyledRow = styled(Row)`
   border: 1px solid #e7e7e7;
   .col {
     padding: 0;
+    margin: auto;
   }
 `;
 const CourseImage = styled(Col)`

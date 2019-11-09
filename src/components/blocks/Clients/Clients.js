@@ -1,16 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 import Styles from "../../../styles/Styles";
+import Section from "../../organisms/Section/Section";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-const ClientContainer = styled.section`
+const ClientContainer = styled(Section)`
   background: ${Styles.Colors.BaseElement};
-  padding: 25px;
-  margin-bottom: 25px;
-  display: flex;
-  align-item: center;
+`;
+const StyledCol = styled(Col)`
+  margin: auto;
 `;
 const ClientLogo = styled.img`
   display: block;
@@ -25,9 +25,9 @@ export default function Logo() {
       <Container>
         <Row>
           {clientList.map((client) => (
-            <Col md={2} sm={6}>
+            <StyledCol md={2} sm={6} xs={6}>
               <ClientLogo src={client.image} alt={client.alt} />
-            </Col>
+            </StyledCol>
           ))}
         </Row>
       </Container>

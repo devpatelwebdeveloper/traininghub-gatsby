@@ -7,13 +7,13 @@
 - [x] Button
 - [x] Paragraph
 - [x] Image
-- [ ] Slider
+- [x] Slider
 - [x] EnhancedTiles
 - [x] CourseTiles
 - [x] CourseBlock
 - [ ] Navigation
 - [x] Footer
-- [ ] Back To Top
+- [x] Back To Top
 - [x] TopBanner Static
 - [ ] TopBanner Slider
 - [ ] TopBanner Video
@@ -24,6 +24,5 @@
 - [ ] Blogs
 - [ ] Blog Single
 - [ ] Blog Tags
-- [ ] Accordion
 - [ ] Contact Form
 - [ ] Apply Now Form

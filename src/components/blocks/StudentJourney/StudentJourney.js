@@ -1,8 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Section from "../../organisms/Section/Section";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Section from "../../organisms/Section/Section";
+import Styles from "../../../styles/Styles";
 import BaseTitle from "../../atoms/BaseTitle/BaseTitle";
 import BaseTile from "../../atoms/BaseTile/BaseTile";
 import Paragraph from "../../atoms/Paragraph/Paragraph";
@@ -34,7 +35,10 @@ export default class StudentJourney extends React.Component {
       imageTwoAlt,
     } = this.props;
     return (
-      <Section>
+      <Section
+        background={Styles.Colors.BaseElement}
+        padding="20px"
+        marginBottom="50px">
         <BaseTitle title={heading} size="H2" center underline />
         <Row>
           <Col>

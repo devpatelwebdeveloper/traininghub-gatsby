@@ -10,11 +10,7 @@ import BaseTitle from "../../atoms/BaseTitle/BaseTitle";
 import Paragraph from "../../atoms/Paragraph/Paragraph";
 import BaseTile from "../../atoms/BaseTile/BaseTile";
 import BaseLink from "../../atoms/BaseLink/BaseLink";
-
-// const Section = styled.section`
-//   margin-top: 50px;
-//   margin-bottom: 50px;
-// `;
+import Button from "../../molecules/Button/Button";
 
 const AlternateRow = styled(Row)`
   .mobileShow {
@@ -78,24 +74,23 @@ export default class ContentGenericAligned extends React.PureComponent {
       <React.Fragment>
         <BaseTitle title={Title} size="H3" />
         <Paragraph>{Text}</Paragraph>
-        <BaseLink
+
+        <Button
+          link={ButtonOneLink}
+          text={ButtonOneText}
           external={ButtonOneExternal}
-          href={ButtonOneLink}
-          composedClassName="btn btn-md btn-primary">
-          {ButtonOneText}
-        </BaseLink>
-        <BaseLink
+        />
+        <Button
+          link={ButtonTwoExternal}
+          text={ButtonTwoText}
           external={ButtonTwoExternal}
-          href={ButtonTwoLink}
-          composedClassName="btn btn-md btn-primary">
-          {ButtonTwoText}
-        </BaseLink>
+        />
       </React.Fragment>
     );
 
     if (ImageLeft) {
       return (
-        <Section>
+        <Section marginTop="50px" marginBottom="50px">
           <Container>
             <AlternateRow>
               <Col md={6} className="mobileHide">

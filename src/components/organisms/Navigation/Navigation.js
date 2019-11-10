@@ -72,7 +72,7 @@ export default function Navigation() {
             <Link to="/coursesingle" className="nav-link">
               Ielts / Celpip
             </Link>
-            <Link to=" " className="nav-link">
+            <Link to="/recruitment" className="nav-link">
               Recruitment
             </Link>
             <Link to=" " className="nav-link">

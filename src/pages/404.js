@@ -16,7 +16,7 @@ const FourOFour = styled.img`
   height: 50%;
 `;
 
-export default function HomePage() {
+export default function PageNotFound() {
   const Toptitle = "Top Title Test";
   const Subtitle = "Sub Title";
   return (

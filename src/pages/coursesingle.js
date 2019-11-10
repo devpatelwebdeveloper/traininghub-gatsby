@@ -12,10 +12,10 @@ export default function CourseSingle() {
       <Head title="Courses" />
       <Layout>
         <TopBannerCourse
-          CourseTitle="Microsoft SQl Developer"
-          Subtitle="Microsoft"
-          Text={`Become Microsoft Sql Developer`}
-          CourseImage="https://unsplash.it/1500?random"
+          courseTitle="Microsoft SQl Developer"
+          subtitle="Microsoft"
+          text="Become Microsoft Sql Developer"
+          courseImage="https://unsplash.it/1500?random"
         />
         <ContentGenericAligned
           Title="Title"

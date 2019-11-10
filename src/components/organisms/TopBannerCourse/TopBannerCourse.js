@@ -14,10 +14,10 @@ const StyledSection = styled.section`
   min-height: 50vh;
   background-color: #101d42;
   color: ${Styles.Colors.BaseWhite};
-  background-image: url(${SchoolBoard});
+  background-image: url(${(props) => props.background || SchoolBoard});
   background-repeat: no-repeat;
   background-size: 400px;
-  background-position: 105% 150%, 95% 60%, center bottom;
+  background-position: 100% 10%, 95% 60%, center bottom;
   h1,
   h4,
   p {
@@ -40,35 +40,35 @@ const LeftCol = styled(Col)`
 
 export default class TopBannerCourse extends React.PureComponent {
   static propTypes = {
-    CourseTitle: PropTypes.any.isRequired,
-    Subtitle: PropTypes.string,
-    Text: PropTypes.any.isRequired,
-    CourseImage: PropTypes.string,
+    courseTitle: PropTypes.any.isRequired,
+    subtitle: PropTypes.string,
+    text: PropTypes.any.isRequired,
+    courseImage: PropTypes.string,
     background: PropTypes.string.isRequired,
   };
   static defaultProps = {
-    CourseTitle: "Programs and Courses",
-    Subtitle: "Your Next IT Career is here",
-    Text: `TrainingHub offers a wide variety of programs and courses built on adaptive curriculum and led by leading industry experts.`,
-    CourseImage: "",
+    courseTitle: "Programs and Courses",
+    subtitle: "Your Next IT Career is here",
+    text: `TrainingHub offers a wide variety of programs and courses built on adaptive curriculum and led by leading industry experts.`,
+    courseImage: "",
     background: SchoolBoard,
   };
   render() {
-    const { CourseTitle, Subtitle, Text, CourseImage, Background } = this.props;
-    const courseImg = CourseImage ? (
-      <BannerImage src={CourseImage} alt={CourseTitle} />
+    const { courseTitle, subtitle, text, courseImage, background } = this.props;
+    const courseImg = courseImage ? (
+      <BannerImage src={courseImage} alt={courseTitle} />
     ) : null;
-    const SubHeading = Subtitle ? (
-      <BaseTitle title={Subtitle} size="H4" />
+    const subHeading = subtitle ? (
+      <BaseTitle title={subtitle} size="H4" />
     ) : null;
     return (
-      <StyledSection>
+      <StyledSection background={background}>
         <Container>
           <Row>
             <LeftCol md={6}>
-              <BaseTitle title={CourseTitle} size="H1" />
-              {SubHeading}
-              <Paragraph>{Text}</Paragraph>
+              <BaseTitle title={courseTitle} size="H1" />
+              {subHeading}
+              <Paragraph>{text}</Paragraph>
             </LeftCol>
             <Col md={6}>{courseImg}</Col>
           </Row>

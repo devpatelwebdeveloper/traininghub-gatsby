@@ -23,6 +23,7 @@ const ButtonPrimary = styled.button`
   }
   ${Styles.ScreenSizes.small`
   width:100%;
+  margin: 10px auto;
    `};
 `;
 
@@ -45,6 +46,7 @@ const ButtonOutline = styled.button`
   }
   ${Styles.ScreenSizes.small`
   width:100%;
+  margin: 10px auto;
    `};
 `;
 

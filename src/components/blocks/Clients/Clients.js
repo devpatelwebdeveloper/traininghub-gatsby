@@ -21,7 +21,7 @@ export default function Logo() {
     <Section
       background={Styles.Colors.BaseElement}
       padding="20px"
-      margin="50px">
+      marginBottom="50px">
       <Container>
         <Row>
           {clientList.map((client) => (

@@ -6,9 +6,12 @@ import BaseLink from "../../atoms/BaseLink/BaseLink";
 
 const ButtonPrimary = styled.button`
   color: ${Styles.Colors.BaseWhite};
+  font-family: ${Styles.FontFamily.Heading};
+  font-size: ${Styles.FontSize.Medium};
+  font-weight: ${Styles.FontWeight.Normal};
   background-color: ${Styles.Colors.DefaultFont};
   border: 2px solid transparent;
-  margin: 10px auto;
+  margin: 10px 10px;
   min-width: 200px;
   height: 48px;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
@@ -25,9 +28,12 @@ const ButtonPrimary = styled.button`
 
 const ButtonOutline = styled.button`
   color: ${Styles.Colors.DefaultFont};
+  font-family: ${Styles.FontFamily.Heading};
+  font-size: ${Styles.FontSize.Medium};
+  font-weight: ${Styles.FontWeight.Normal};
   background-color: ${Styles.Colors.BaseWhite};
   border: 2px solid ${Styles.Colors.DefaultFont};
-  margin: 10px auto;
+  margin: 10px 10px;
   min-width: 200px;
   height: 48px;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,

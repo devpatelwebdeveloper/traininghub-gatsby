@@ -5,7 +5,8 @@ import Styles from "../../../styles/Styles";
 import Container from "react-bootstrap/Container";
 
 const StyledSection = styled.section`
-  margin-bottom: ${(props) => props.margin || "50px"};
+  margin-top: ${(props) => props.marginTop || "50px"};
+  margin-bottom: ${(props) => props.marginBottom || "50px"};
   padding: ${(props) => props.padding || "0px"} 0px;
   background-color: ${(props) => props.background || Styles.Colors.BaseWhite};
 `;
@@ -26,7 +27,8 @@ export default class Section extends React.Component {
       PropTypes.node,
     ]).isRequired,
     background: PropTypes.string.isRequired,
-    margin: PropTypes.string.isRequired,
+    marginTop: PropTypes.string.isRequired,
+    marginBottom: PropTypes.string.isRequired,
     padding: PropTypes.string.isRequired,
   };
   static defaultProps = {
@@ -34,12 +36,21 @@ export default class Section extends React.Component {
     Fluid: false,
     children: "",
     background: Styles.Colors.BaseWhite,
-    margin: "auto",
+    marginTop: "auto",
+    marginBottom: "auto",
     padding: "0px",
   };
 
   render() {
-    const { Fluid, children, Id, background, margin, padding } = this.props;
+    const {
+      Fluid,
+      children,
+      Id,
+      background,
+      marginTop,
+      marginBottom,
+      padding,
+    } = this.props;
 
     const uId = Id
       ? Id
@@ -51,7 +62,8 @@ export default class Section extends React.Component {
       <StyledSection
         id={uId}
         background={background}
-        margin={margin}
+        marginTop={marginTop}
+        marginBottom={marginBottom}
         padding={padding}>
         <Container fluid={Fluid}>{children}</Container>
       </StyledSection>

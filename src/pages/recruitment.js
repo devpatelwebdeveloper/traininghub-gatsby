@@ -5,11 +5,10 @@ import Layout from "../components/templates/Layout/Layout";
 import TopBannerCourse from "../components/organisms/TopBannerCourse/TopBannerCourse";
 import Background from "../contents/icons/recruitment.svg";
 import Section from "../components/organisms/Section/Section";
-import Col from "react-bootstrap/Col";
 import Head from "../components/organisms/Head/Head";
 import ContentGenericAligned from "../components/blocks/ContentGenericAligned/ContentGenericAligned";
 import Paragraph from "../components/atoms/Paragraph/Paragraph";
-import Button from "../components/molecules/Button/Button";
+import IconList from "../components/blocks/IconList/IconList";
 
 const contentOne = (
   <Paragraph>
@@ -72,6 +71,35 @@ const contentFour = (
   </React.Fragment>
 );
 
+const contentFive = (
+  <React.Fragment>
+    <Paragraph>
+      Are you looking for placement in the USA ?
+      <a href="https://www.ctech.xyz/" target="_blank" rel="noopener">
+        Centurion Tech
+      </a>{" "}
+      is partnered with{" "}
+      <a href="http://mintextech.com/" target="_blank" rel="noopener">
+        MintexTech
+      </a>
+      . With{" "}
+      <a href="http://mintextech.com/" target="_blank" rel="noopener">
+        MintexTech
+      </a>{" "}
+      we will be able to help you out to get placement in united states of
+      America provided you have valid visa status.
+    </Paragraph>
+    <Paragraph>
+      <a href="http://mintextech.com/" target="_blank" rel="noopener">
+        MintexTech
+      </a>{" "}
+      is 12 years old company in USA and serving across the country and so far
+      served more than 2500+ people to be placed in different industry either on
+      permanent or contract basis.
+    </Paragraph>
+  </React.Fragment>
+);
+
 export default function Recruitment() {
   return (
     <React.Fragment>
@@ -111,8 +139,8 @@ export default function Recruitment() {
           <ContentGenericAligned
             title="Loan a resource with premises model"
             text={contentThree}
-            image="https://traininghub.io/wp-content/uploads/2019/07/Recruitment_Ctech.jpg"
-            alt="Recruitment"
+            image="http://traininghub.io/wp-content/uploads/2019/07/LoanAResourcewithPremises_SharedCoWorking_Ctech.jpg"
+            alt="Loan a resource"
           />
         </Section>
         <Section
@@ -129,7 +157,15 @@ export default function Recruitment() {
           />
         </Section>
         <Section marginTop="25px" marginBottom="25px" padding="50px">
-          <Paragraph>Icon List</Paragraph>
+          <IconList />
+        </Section>
+        <Section marginTop="50px" marginBottom="25px">
+          <ContentGenericAligned
+            title="Placement in USA"
+            text={contentFive}
+            image="http://traininghub.io/wp-content/uploads/2019/07/PlacementUSA_Ctech2.jpg"
+            alt="Loan a resource"
+          />
         </Section>
       </Layout>
     </React.Fragment>

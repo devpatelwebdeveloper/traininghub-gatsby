@@ -1,5 +1,5 @@
 import React from "react";
-import Navigation from "../../organisms/Navigation/Navigation";
+import Navigation from "../../organisms/Navigation/NavigationTest";
 import Footer from "../../organisms/Footer/Footer";
 import ScrollToTop from "../../atoms/ScrollToTop/ScrollToTop";
 

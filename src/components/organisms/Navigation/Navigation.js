@@ -1,7 +1,7 @@
 /* eslint-disable func-names */
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import media from "../../../styles/ScreenSizes";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
@@ -27,67 +27,82 @@ const StyledNavbar = styled(Navbar)`
    `}
 `;
 
-function scroll() {
-  // Transition effect for navbar
-  // window.onscroll = function() {
-  //   // checks if window is scrolled more than 500px, adds/removes solid class
-  //   if (window.scrollTop() > 450) {
-  //     document.getElementById("the-box")
-  //     document.getElementById("top-nav").classList.add("solid")
-  //   } else {
-  //     document.getElementById("top-nav").classList.remove("solid")
-  //   }
-  // }
-}
+const sharedStyle = css`
+  border-bottom: 4px solid red;
+`
+
+const StyledLink = styled(Link)`
+  &:hover {
+    ${sharedStyle}
+  }
+`;
+
+const StyledNavDropdown = styled(NavDropdown)`
+  &:hover {
+    ${sharedStyle}
+  }
+`;
 
 export default function Navigation() {
+  const link = useRef();
+  const [show, setShow] = useState("none");
+
+  useEffect(() => {
+    link.current.addEventListener('click', handleClick);
+
+    return () => {
+      link.current.removeEventListener('click', handleClick);
+    };
+  });
+
+  function handleClick(e) {
+    e.preventDefault();
+
+    const showVar = show === "none" ? "block" : "none";
+
+    document.getElementById("dropdown01-div").style.display = showVar;
+
+    setShow(showVar);
+  }
+
   return (
     <>
-      <StyledNavbar expand="lg" sticky="top" id="top-nav" className="">
-        {scroll()}
-        <Link to="/">
-          <Navbar.Brand>Traininghub</Navbar.Brand>
-        </Link>
-
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
-          <Nav>
-            <Link className="nav-link" to="/">
-              Home
-            </Link>
-            <Link className="nav-link" to="/courses">
-              Courses
-            </Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
-            <Link to="/coursesingle" className="nav-link">
-              Ielts / Celpip
-            </Link>
-            <Link to="/recruitment" className="nav-link">
-              Recruitment
-            </Link>
-            <Link to=" " className="nav-link">
-              {" "}
-              Blogs
-            </Link>
-            <Link to=" " className="nav-link">
-              Contact us
-            </Link>
-            <Link to=" " className="nav-link">
-              Ctech
-            </Link>
-          </Nav>
-        </Navbar.Collapse>
-      </StyledNavbar>
+      <nav className="navbar navbar-expand-lg navbar-light bg-light rounded">
+        <div className="container">
+          <a className="navbar-brand" href="#">Traininghub</a>
+          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbar">
+            <ul className="navbar-nav mr-auto">
+              <li className="nav-item dropdown megamenu-li" style={{ position: "static" }}>
+                <a ref={link} className="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mega Menu 1</a>
+                <div id="dropdown01-div" className="dropdown-menu megamenu" style={{ position: "absolute", width: "100%", display: show }} aria-labelledby="dropdown01">
+                  <div className="row">
+                    <div className="col-sm-6 col-lg-3">
+                      <h5>Microsoft Technologies</h5>
+                      <a className="dropdown-item" href="#">Another action</a>
+                      <a className="dropdown-item" href="#">Something else here</a>
+                      <a className="dropdown-item" href="#">Another action</a>
+                      <a className="dropdown-item" href="#">Something else here</a>
+                    </div>
+                    <div className="col-sm-6 col-lg-3">
+                      <h5>Web Technologies</h5>
+                      <a className="dropdown-item" href="#">Another action</a>
+                      <a className="dropdown-item" href="#">Something else here</a>
+                      <a className="dropdown-item" href="#">Another action</a>
+                    </div>
+                    <div className="col-sm-6 col-lg-3">
+                      <h5>QE</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus in veritatis, facilis eligendi sunt, culpa autem harum porro earum.</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </>
   );
 }

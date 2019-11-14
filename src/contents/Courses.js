@@ -20,13 +20,14 @@ const Courses = [
     subtitle: "SQL Server Integration Services",
     image: icons.microsoft,
     alt: "courses/sqldeveloper",
-    href: "courses/sqldeveloper",
+    href: "/courses/microsoft",
   },
   {
     title: "Microsoft",
     subtitle: "SQL Server Reporting Services",
     image: icons.microsoft,
     alt: "",
+    href: "/courses/microsoft/sqlserverdeveloper",
   },
   {
     title: "Microsoft",

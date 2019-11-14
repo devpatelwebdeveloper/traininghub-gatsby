@@ -7,8 +7,13 @@ import BaseTitle from "../../atoms/BaseTitle/BaseTitle";
 
 export default function TilesBlock() {
   return (
-    <Section>
-      <BaseTitle title="Heading test" size="H1" center underline />
+    <Section marginTop="25px">
+      <BaseTitle
+        title="Redifining future in IT Learning"
+        size="H1"
+        center
+        underline
+      />
       <Row>
         {Tiles.map((tile) => (
           <EnhancedTiles

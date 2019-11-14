@@ -82,7 +82,7 @@ export default class CarouselItem extends React.Component {
       <Button
         link={buttonLink}
         text={buttonText}
-        outline={buttonStyle ? true : false}
+        outline
         external={buttonExternal ? true : false}
       />
     ) : null;

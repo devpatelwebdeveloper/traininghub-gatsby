@@ -42,7 +42,7 @@ const ButtonOutline = styled.button`
   &:hover {
     color: ${Styles.Colors.BaseWhite};
     background-color: ${Styles.Colors.DefaultFont};
-    border: 2px solid transparent;
+    border: 2px solid ${Styles.Colors.BaseWhite};
   }
   ${Styles.ScreenSizes.small`
   width:100%;

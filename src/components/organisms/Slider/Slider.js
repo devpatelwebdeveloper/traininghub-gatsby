@@ -32,7 +32,7 @@ export default function Slider() {
               image={HomePageSlider.image}
               description={HomePageSlider.description}
               buttonText={HomePageSlider.buttonText}
-              buttonLink={HomePageSlider.buttonText}
+              buttonLink={HomePageSlider.buttonLink}
               buttonExternal={HomePageSlider.external}
               buttonStyle={HomePageSlider.buttonStyle}
             />

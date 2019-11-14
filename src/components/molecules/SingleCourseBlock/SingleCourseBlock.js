@@ -15,14 +15,16 @@ const StyledRow = styled(Row)`
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
   border: 1px solid ${Styles.Colors.BaseBorderGrey};
   .col {
-    padding: 0;
+    padding: 0px;
     margin: auto;
   }
   .col-md-7 {
+    padding: 10px;
     margin: auto;
   }
 `;
 const CourseImage = styled(Col)`
+  margin: 0px auto;
   padding-left: 0px;
   padding-right: 0px;
 `;
@@ -62,43 +64,43 @@ export default class SingleCourseBlock extends React.Component {
     CourseTech: PropTypes.string.isRequired,
     CourseStartDate: PropTypes.string.isRequired,
     ExploreCourseButtonLink: PropTypes.string.isRequired,
-    EnrolNowButtonLink: PropTypes.string.isRequired,
   };
   static defaultProps = {
-    CourseImg: "https://unsplash.it/1500?random",
-    CourseTitle: "Course Coming Soon",
-    CourseDescription: "We are working on developing the best IT Course",
-    CourseTech: "TrainingHub",
-    CourseStartDate: "Coming Soon",
-    ExploreCourseButtonLink: "#",
-    EnrolNowButtonLink: "#",
+    courseImg: "",
+    courseTitle: "Course Coming Soon",
+    courseDescription: "We are working on developing the best IT Course",
+    courseTech: "TrainingHub",
+    courseStartDate: "Coming Soon",
+    exploreCourseButtonLink: "#",
   };
   render() {
     const {
-      CourseImg,
-      CourseTitle,
-      CourseDescription,
-      CourseTech,
-      CourseStartDate,
-      ExploreCourseButtonLink,
-      EnrolNowButtonLink,
+      courseImg,
+      courseTitle,
+      courseDescription,
+      courseTech,
+      courseStartDate,
+      exploreCourseButtonLink,
     } = this.props;
+    const isCourseStartDate =
+      courseStartDate !== "" ? courseStartDate : "Coming Soon";
+
     return (
       <StyledRow>
         <CourseImage>
-          <BaseTile Image={CourseImg} Alt="title" />
+          <BaseTile image={courseImg} alt={courseTitle} />
         </CourseImage>
         <Col md={7}>
-          <BaseTitle title={CourseTitle} size="H4" />
+          <BaseTitle title={courseTitle} size="H4" />
           <Tags>
-            <StyledLabel>{CourseTech}</StyledLabel>
-            <StyledDate>{CourseStartDate}</StyledDate>
+            <StyledLabel>{courseTech}</StyledLabel>
+            <StyledDate>{isCourseStartDate}</StyledDate>
           </Tags>
-          <Paragraph>{CourseDescription}</Paragraph>
+          <Paragraph>{courseDescription}</Paragraph>
         </Col>
         <Col>
           <Button
-            link={ExploreCourseButtonLink}
+            link={exploreCourseButtonLink}
             text="Explore Course"
             external
           />

@@ -2,20 +2,24 @@ import React from "react";
 import Section from "../../organisms/Section/Section";
 import Container from "react-bootstrap/Container";
 import SingleCourseBlock from "../../molecules/SingleCourseBlock/SingleCourseBlock";
+import { Courses } from "../../../contents/Courses";
 
 export default function TilesBlock() {
   return (
     <Section>
-      <SingleCourseBlock
-        CourseImg="https://unsplash.it/1500?random"
-        CourseTitle="Course Name"
-        CourseDescription="The part-time Data Analytics course was designed to introduce students to the fundamentals of data analysis."
-        CourseTech="Microsoft"
-        CourseStartDate="Nov 30 3019"
-        ExploreCourseButtonLink="https://www.google.com"
-        EnrolNowButtonLink="https://www.google.com"
-      />
-      <SingleCourseBlock />
+      {Courses.map((course) => {
+        return (
+          <SingleCourseBlock
+            courseImg={course.courseImage}
+            courseTitle={course.subtitle}
+            courseDescription={course.description}
+            courseTech={course.title}
+            courseStartDate={course.startDate}
+            exploreCourseButtonLink={course.href}
+            enrolNowButtonLink="/contact"
+          />
+        );
+      })}
     </Section>
   );
 }

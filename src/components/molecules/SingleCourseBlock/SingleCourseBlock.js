@@ -58,12 +58,12 @@ const StyledDate = styled.span`
 
 export default class SingleCourseBlock extends React.Component {
   static propTypes = {
-    CourseImg: PropTypes.string.isRequired,
-    CourseTitle: PropTypes.string.isRequired,
-    CourseDescription: PropTypes.string.isRequired,
-    CourseTech: PropTypes.string.isRequired,
-    CourseStartDate: PropTypes.string.isRequired,
-    ExploreCourseButtonLink: PropTypes.string.isRequired,
+    courseImg: PropTypes.string.isRequired,
+    courseTitle: PropTypes.string.isRequired,
+    courseDescription: PropTypes.string.isRequired,
+    courseTech: PropTypes.string.isRequired,
+    courseStartDate: PropTypes.string.isRequired,
+    exploreCourseButtonLink: PropTypes.string.isRequired,
   };
   static defaultProps = {
     courseImg: "",

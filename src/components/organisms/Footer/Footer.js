@@ -1,9 +1,13 @@
 import React from "react";
+import { Link } from "gatsby";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import styled from "styled-components";
 import Styles from "../../../styles/Styles";
+import Paragraph from "../../atoms/Paragraph/Paragraph";
+import BaseTitle from "../../atoms/BaseTitle/BaseTitle";
+import BaseLink from "../../atoms/BaseLink/BaseLink";
 
 const FooterStyle = styled.footer`
   background: ${Styles.Colors.BaseLightBlue};
@@ -11,8 +15,19 @@ const FooterStyle = styled.footer`
   margin: none;
   overflow: hidden;
   ul {
+    font-family: ${Styles.FontFamily.Paragraph};
     list-style: none;
     padding: 0px;
+  }
+  p {
+    font-size: ${Styles.FontSize.Small};
+  }
+  a {
+    color: ${Styles.Colors.DefaultFont};
+    font-size: ${Styles.FontSize.Small};
+    &:hover {
+      color: ${Styles.Colors.BrandOrange};
+    }
   }
 `;
 const FooterMain = styled(Container)`
@@ -26,15 +41,11 @@ const AddressCol = styled(Col)`
 `;
 
 const FooterLogo = styled.img`
-  width: 150px;
-  height: 50px;
+  width: 250px;
 `;
 
 const FeaturedLinks = styled(Col)`
   margin: 20px auto;
-  h6 {
-    color: #00aeef;
-  }
 `;
 
 const CoursesLink = styled(Col)`
@@ -42,7 +53,8 @@ const CoursesLink = styled(Col)`
 `;
 const FooterLegal = styled(Container)`
   margin: 20px auto;
-  border-top: 1px solid #ffffff;
+  border-top: 1px solid ${Styles.Colors.BaseBorderGrey};
+  padding-top: 10px;
 `;
 
 export default function Footer() {
@@ -50,39 +62,81 @@ export default function Footer() {
     <FooterStyle>
       <FooterMain>
         <Row>
-          <AddressCol md={4}>
-            <FooterLogo src="https://unsplash.it/1500?random" alt="" />
-            <p>
-              BrainStation is the global leader in digital skills training. We
-              empower businesses and brands to succeed in the digital age.
-            </p>
+          <AddressCol md={4} sm={6}>
+            <FooterLogo
+              src="https://devashish-lms.s3.ca-central-1.amazonaws.com/logo_TrainingHub.png"
+              alt="TrainingHub.io"
+            />
+            <Paragraph>
+              TrainingHub thrives helping great minds to upgrade / change their
+              career in field of IT. We empower our students to succeed in this
+              digital age.
+            </Paragraph>
           </AddressCol>
-          <FeaturedLinks md={2}>
-            <h6>About</h6>
+          <FeaturedLinks md={2} sm={6}>
+            <BaseTitle title="About" size="H5" />
             <ul>
-              <li>About us</li>
-              <li>Recruitment</li>
-              <li>Work with us</li>
+              <li>
+                <Link to="/about">About us</Link>
+              </li>
+              <li>
+                <Link to="/recruitment">Recruitment</Link>
+              </li>
+              <li>
+                <Link to="/careers">Work with us</Link>
+              </li>
             </ul>
           </FeaturedLinks>
-          <CoursesLink md={6}>
-            <h6>Courses</h6>
+          <CoursesLink md={6} sm={12}>
+            <BaseTitle title="Courses" size="H5" />
             <Row>
               <Col md={6}>
-                <h6>Mircosoft</h6>
+                <BaseTitle title="Microsoft" size="H6" />
                 <ul>
-                  <li>Microsoft SQL Developer</li>
-                  <li>SQL Server Integration Services</li>
-                  <li>SQL Server Reporting Services</li>
-                  <li>SQL Server Analysis Services</li>
+                  <li>
+                    <Link to="/courses/microsofttechnologies/sqlserverdevelopment">
+                      Microsoft SQL Developer
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/courses/microsofttechnologies">
+                      SQL Server Integration Services
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/courses/microsofttechnologies">
+                      SQL Server Reporting Services
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/courses/microsofttechnologies">
+                      SQL Server Analysis Services
+                    </Link>
+                  </li>
                 </ul>
               </Col>
               <Col md={6}>
-                <h6>QE</h6>
+                <BaseTitle title="QA" size="H6" />
                 <ul>
-                  <li>Microsoft SQL Developer</li>
-                  <li>Test 2</li>
-                  <li>Test 3</li>
+                  <li>
+                    <Link to="/courses/qualityengineering">
+                      Quality Engineering
+                    </Link>
+                  </li>
+                </ul>
+                <BaseTitle title="Web Development" size="H6" />
+                <ul>
+                  <li>
+                    <Link to="/courses/webdevelopment">HTML & CSS</Link>
+                  </li>
+                  <li>
+                    <Link to="/courses/webdevelopment">JavaScript</Link>
+                  </li>
+                  <li>
+                    <Link to="/courses/webdevelopment">
+                      Fullstack Developer
+                    </Link>
+                  </li>
                 </ul>
               </Col>
             </Row>
@@ -92,17 +146,19 @@ export default function Footer() {
       <FooterLegal>
         <Row>
           <Col md={8}>
-            <p>
+            <Paragraph>
               All Content © TrianingHub.io 2019. "TrainingHub.io",
               TrainingHub.io logo and "We Deliver What We Promise" are
               trademarks of TrainingHub.io All Rights Reserved.
-            </p>
+            </Paragraph>
           </Col>
           <Col md={2}>
-            <p>Privacy</p>
+            <Paragraph>
+              <Link to="/privacy">Privacy</Link>
+            </Paragraph>
           </Col>
           <Col md={2}>
-            <p>Social</p>
+            <Paragraph>Social</Paragraph>
           </Col>
         </Row>
       </FooterLegal>

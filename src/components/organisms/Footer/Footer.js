@@ -62,7 +62,7 @@ export default function Footer() {
     <FooterStyle>
       <FooterMain>
         <Row>
-          <AddressCol md={4}>
+          <AddressCol md={4} sm={6}>
             <FooterLogo
               src="https://devashish-lms.s3.ca-central-1.amazonaws.com/logo_TrainingHub.png"
               alt="TrainingHub.io"
@@ -73,7 +73,7 @@ export default function Footer() {
               digital age.
             </Paragraph>
           </AddressCol>
-          <FeaturedLinks md={2}>
+          <FeaturedLinks md={2} sm={6}>
             <BaseTitle title="About" size="H5" />
             <ul>
               <li>
@@ -83,11 +83,11 @@ export default function Footer() {
                 <Link to="/recruitment">Recruitment</Link>
               </li>
               <li>
-                <Link to="/careers">About us</Link>
+                <Link to="/careers">Work with us</Link>
               </li>
             </ul>
           </FeaturedLinks>
-          <CoursesLink md={6}>
+          <CoursesLink md={6} sm={12}>
             <BaseTitle title="Courses" size="H5" />
             <Row>
               <Col md={6}>
@@ -116,11 +116,27 @@ export default function Footer() {
                 </ul>
               </Col>
               <Col md={6}>
-                <h6>QE</h6>
+                <BaseTitle title="QA" size="H6" />
                 <ul>
-                  <li>Microsoft SQL Developer</li>
-                  <li>Test 2</li>
-                  <li>Test 3</li>
+                  <li>
+                    <Link to="/courses/qualityengineering">
+                      Quality Engineering
+                    </Link>
+                  </li>
+                </ul>
+                <BaseTitle title="Web Development" size="H6" />
+                <ul>
+                  <li>
+                    <Link to="/courses/webdevelopment">HTML & CSS</Link>
+                  </li>
+                  <li>
+                    <Link to="/courses/webdevelopment">JavaScript</Link>
+                  </li>
+                  <li>
+                    <Link to="/courses/webdevelopment">
+                      Fullstack Developer
+                    </Link>
+                  </li>
                 </ul>
               </Col>
             </Row>
@@ -137,10 +153,12 @@ export default function Footer() {
             </Paragraph>
           </Col>
           <Col md={2}>
-            <p>Privacy</p>
+            <Paragraph>
+              <Link to="/privacy">Privacy</Link>
+            </Paragraph>
           </Col>
           <Col md={2}>
-            <p>Social</p>
+            <Paragraph>Social</Paragraph>
           </Col>
         </Row>
       </FooterLegal>

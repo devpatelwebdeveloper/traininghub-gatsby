@@ -29,7 +29,7 @@ const StyledNavbar = styled(Navbar)`
 
 const sharedStyle = css`
   border-bottom: 4px solid red;
-`
+`;
 
 const StyledLink = styled(Link)`
   &:hover {
@@ -48,10 +48,10 @@ export default function Navigation() {
   const [show, setShow] = useState("none");
 
   useEffect(() => {
-    link.current.addEventListener('click', handleClick);
+    link.current.addEventListener("click", handleClick);
 
     return () => {
-      link.current.removeEventListener('click', handleClick);
+      link.current.removeEventListener("click", handleClick);
     };
   });
 
@@ -69,32 +69,74 @@ export default function Navigation() {
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-light rounded">
         <div className="container">
-          <a className="navbar-brand" href="#">Traininghub</a>
-          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
+          <Link className="navbar-brand" to="/">
+            Traininghub
+          </Link>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-controls="navbars"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbar">
             <ul className="navbar-nav mr-auto">
-              <li className="nav-item dropdown megamenu-li" style={{ position: "static" }}>
-                <a ref={link} className="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mega Menu 1</a>
-                <div id="dropdown01-div" className="dropdown-menu megamenu" style={{ position: "absolute", width: "100%", display: show }} aria-labelledby="dropdown01">
+              <li
+                className="nav-item dropdown megamenu-li"
+                style={{ position: "static" }}>
+                <a
+                  ref={link}
+                  className="nav-link dropdown-toggle"
+                  href=""
+                  id="dropdown01"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false">
+                  Mega Menu 1
+                </a>
+                <div
+                  id="dropdown01-div"
+                  className="dropdown-menu megamenu"
+                  style={{ position: "absolute", width: "100%", display: show }}
+                  aria-labelledby="dropdown01">
                   <div className="row">
                     <div className="col-sm-6 col-lg-3">
                       <h5>Microsoft Technologies</h5>
-                      <a className="dropdown-item" href="#">Another action</a>
-                      <a className="dropdown-item" href="#">Something else here</a>
-                      <a className="dropdown-item" href="#">Another action</a>
-                      <a className="dropdown-item" href="#">Something else here</a>
+                      <a className="dropdown-item" href="#">
+                        Another action
+                      </a>
+                      <a className="dropdown-item" href="#">
+                        Something else here
+                      </a>
+                      <a className="dropdown-item" href="#">
+                        Another action
+                      </a>
+                      <a className="dropdown-item" href="#">
+                        Something else here
+                      </a>
                     </div>
                     <div className="col-sm-6 col-lg-3">
                       <h5>Web Technologies</h5>
-                      <a className="dropdown-item" href="#">Another action</a>
-                      <a className="dropdown-item" href="#">Something else here</a>
-                      <a className="dropdown-item" href="#">Another action</a>
+                      <a className="dropdown-item" href="#">
+                        Another action
+                      </a>
+                      <a className="dropdown-item" href="#">
+                        Something else here
+                      </a>
+                      <a className="dropdown-item" href="#">
+                        Another action
+                      </a>
                     </div>
                     <div className="col-sm-6 col-lg-3">
                       <h5>QE</h5>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus in veritatis, facilis eligendi sunt, culpa autem harum porro earum.</p>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Necessitatibus in veritatis, facilis eligendi
+                        sunt, culpa autem harum porro earum.
+                      </p>
                     </div>
                   </div>
                 </div>

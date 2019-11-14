@@ -30,7 +30,7 @@ const Card = styled.div`
 
 const StyledImg = styled.img`
   width: auto;
-  max-width: 100%;
+  max-width: 25%;
   height: 9rem;
   float: left;
   margin-right: 20px;

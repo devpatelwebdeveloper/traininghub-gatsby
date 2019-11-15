@@ -15,8 +15,8 @@ const StyledDiv = styled.div`
     opacity: 1;
   }
   .icon {
-    width: 50px;
-    height: 50px;
+    width: 32px;
+    height: 32px;
     &:hover {
       fill: ${Styles.Colors.BrandOrange};
       cursor: pointer;
@@ -27,8 +27,8 @@ const StyledDiv = styled.div`
 const StyledButton = styled.div`
 color:${Styles.Colors.BaseIcon}
   display: inline-block;
-  width: 50px;
-  height: 50px;
+  width: 32px;
+  height: 32px;
   text-align: center;
   position: fixed;
   bottom: 30px;
@@ -36,13 +36,13 @@ color:${Styles.Colors.BaseIcon}
   transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
   z-index: 1000;
   ${Styles.ScreenSizes.small`
-  bottom: 5px;
-  right: 5px; 
+  bottom: 15px;
+  right: 15px; 
    `};
   .icon {
     ${Styles.ScreenSizes.small`
-    width: 25px;
-    height: 25px;
+    width: 32px;
+    height: 32px;
      `};
   }
 `;

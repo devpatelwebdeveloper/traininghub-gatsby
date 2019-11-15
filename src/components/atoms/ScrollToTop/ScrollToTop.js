@@ -4,8 +4,6 @@ import smoothscroll from "smoothscroll-polyfill";
 import styled from "styled-components";
 import Styles from "../../../styles/Styles";
 import { Upicon } from "../../../contents/icons/icons";
-import { Icon } from "react-icons-kit";
-import { chevronUp } from "react-icons-kit/fa/chevronUp";
 
 const StyledDiv = styled.div`
   .hide {
@@ -16,36 +14,37 @@ const StyledDiv = styled.div`
     visibility: visible;
     opacity: 1;
   }
+  .icon {
+    width: 50px;
+    height: 50px;
+    &:hover {
+      fill: ${Styles.Colors.BrandOrange};
+      cursor: pointer;
+      border: ${Styles.Colors.BrandPurple};
+    }
+  }
 `;
-const StyledButton = styled.button`
-  background-color: ${Styles.Colors.DefaultFont};
-  border: 2px solid ${Styles.Colors.DefaultFont};
-  color: ${Styles.Colors.BaseIcon};
-  padding: 0px;
+const StyledButton = styled.div`
+color:${Styles.Colors.BaseIcon}
   display: inline-block;
-  width: 48px;
-  height: 48px;
+  width: 50px;
+  height: 50px;
   text-align: center;
   position: fixed;
   bottom: 30px;
   right: 30px;
   transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
   z-index: 1000;
-  &:hover {
-    background-color: ${Styles.Colors.BaseLightBlue};
-    border: 2px solid ${Styles.Colors.DefaultFont};
-  }
   ${Styles.ScreenSizes.small`
-  width: 24px;
-  height: 24px;
-  bottom: 15px;
-  right: 15px; 
-  i{
-    width:8px;
-    padding:0px;
-    margin:-15px;
-  }
+  bottom: 5px;
+  right: 5px; 
    `};
+  .icon {
+    ${Styles.ScreenSizes.small`
+    width: 25px;
+    height: 25px;
+     `};
+  }
 `;
 
 const scrollToTop = () => {
@@ -80,7 +79,7 @@ export default function ScrollToTop() {
           id="back-to-top"
           className={show ? "show" : "hide"}
           onClick={scrollToTop}>
-          <Icon icon={chevronUp} />
+          {Upicon}
         </StyledButton>
       </StyledDiv>
     </>

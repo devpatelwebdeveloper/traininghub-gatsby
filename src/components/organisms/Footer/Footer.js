@@ -7,7 +7,10 @@ import styled from "styled-components";
 import Styles from "../../../styles/Styles";
 import Paragraph from "../../atoms/Paragraph/Paragraph";
 import BaseTitle from "../../atoms/BaseTitle/BaseTitle";
-import BaseLink from "../../atoms/BaseLink/BaseLink";
+import { Icon } from "react-icons-kit";
+import { facebookSquare } from "react-icons-kit/fa/facebookSquare";
+import { twitterSquare } from "react-icons-kit/fa/twitterSquare";
+import { linkedinSquare } from "react-icons-kit/fa/linkedinSquare";
 
 const FooterStyle = styled.footer`
   background: ${Styles.Colors.BaseLightBlue};
@@ -158,7 +161,21 @@ export default function Footer() {
             </Paragraph>
           </Col>
           <Col md={2}>
-            <Paragraph>Social</Paragraph>
+            <a
+              href="https://www.facebook.com/TrainingHubCanada/"
+              target="_blank"
+              rel="noopener noreferrer">
+              <Icon size={32} icon={facebookSquare} />
+            </a>
+            <a
+              href="https://twitter.com/TrainingHubCan"
+              target="_blank"
+              rel="noopener noreferrer">
+              <Icon size={32} icon={twitterSquare} />
+            </a>
+            {/*<Link to="/privacy">
+              <Icon size={32} icon={linkedinSquare} />
+  </Link>*/}
           </Col>
         </Row>
       </FooterLegal>

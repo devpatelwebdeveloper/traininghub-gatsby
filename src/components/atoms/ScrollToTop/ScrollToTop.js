@@ -25,6 +25,7 @@ const StyledDiv = styled.div`
   }
 `;
 const StyledButton = styled.div`
+color:${Styles.Colors.BaseIcon}
   display: inline-block;
   width: 50px;
   height: 50px;

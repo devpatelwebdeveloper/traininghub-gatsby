@@ -12,7 +12,7 @@ const Head = ({ title }) => {
       }
     }
   `);
-  const url = "https://devpatel.io/";
+  const url = "https://www.traininghub.io/";
   return (
     <Helmet title={`${title} | ${data.site.siteMetadata.title}`}>
       <meta

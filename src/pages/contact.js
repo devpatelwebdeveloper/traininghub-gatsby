@@ -6,7 +6,9 @@ import Head from "../components/organisms/Head/Head";
 import Section from "../components/organisms/Section/Section";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import BaseTitle from "../components/atoms/BaseTitle/BaseTitle";
 import Paragraph from "../components/atoms/Paragraph/Paragraph";
+import ContactForm from "../components/organisms/Forms/ContactForms";
 import { Icon } from "react-icons-kit";
 import { mapMarker } from "react-icons-kit/fa/mapMarker";
 import { phone } from "react-icons-kit/fa/phone";
@@ -27,12 +29,13 @@ export default function Contact() {
     <>
       <Head title="Contact us" />
       <Layout>
-        <Section>
+        <Section marginTop="50px" marginBottom="50px">
           <Row>
-            <Col>
-              <p>test</p>
+            <Col md={6}>
+              <ContactForm />
             </Col>
-            <ContactCol>
+            <ContactCol md={6}>
+              <BaseTitle title="Get in Touch" size="H3" />
               <Paragraph>
                 <Icon size={32} icon={mapMarker} /> Unit-402, 989 Derry Road E,
                 Mississauga ON L5T 2J8

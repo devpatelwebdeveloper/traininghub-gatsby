@@ -17,6 +17,10 @@ const FooterStyle = styled.footer`
   color: ${Styles.Colors.DefaultFont};
   margin: none;
   overflow: hidden;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+
   ul {
     font-family: ${Styles.FontFamily.Paragraph};
     list-style: none;
@@ -32,6 +36,9 @@ const FooterStyle = styled.footer`
       color: ${Styles.Colors.BrandOrange};
     }
   }
+  ${Styles.ScreenSizes.medium`
+  position: inherit;
+   `};
 `;
 const FooterMain = styled(Container)`
   margin: 20px auto;
@@ -84,6 +91,9 @@ export default function Footer() {
               </li>
               <li>
                 <Link to="/recruitment">Recruitment</Link>
+              </li>
+              <li>
+                <Link to="/contact">Contact us</Link>
               </li>
               <li>
                 <Link to="/careers">Work with us</Link>

@@ -32,10 +32,11 @@ export default function Contact() {
         <Section marginTop="50px" marginBottom="50px">
           <Row>
             <Col md={6}>
+              <BaseTitle title="Contact us" size="H3" />
               <ContactForm />
             </Col>
             <ContactCol md={6}>
-              <BaseTitle title="Get in Touch" size="H3" />
+              <BaseTitle title="Get in touch" size="H3" />
               <Paragraph>
                 <Icon size={32} icon={mapMarker} /> Unit-402, 989 Derry Road E,
                 Mississauga ON L5T 2J8

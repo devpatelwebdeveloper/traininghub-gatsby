@@ -24,5 +24,6 @@
 - [ ] Blogs
 - [ ] Blog Single
 - [ ] Blog Tags
-- [ ] Contact Form
+- [x] Contact Form
+- [x] Contact Map GreyScale
 - [ ] Apply Now Form

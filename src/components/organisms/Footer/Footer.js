@@ -19,7 +19,6 @@ const FooterStyle = styled.footer`
   overflow: hidden;
   bottom: 0;
   width: 100%;
-  position: absolute;
 
   ul {
     font-family: ${Styles.FontFamily.Paragraph};

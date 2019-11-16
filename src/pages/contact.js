@@ -8,6 +8,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import BaseTitle from "../components/atoms/BaseTitle/BaseTitle";
 import Paragraph from "../components/atoms/Paragraph/Paragraph";
+import Mapembed from "../components/atoms/Gmap/Gmap";
 import ContactForm from "../components/organisms/Forms/ContactForms";
 import { Icon } from "react-icons-kit";
 import { mapMarker } from "react-icons-kit/fa/mapMarker";
@@ -31,12 +32,15 @@ export default function Contact() {
       <Layout>
         <Section marginTop="50px" marginBottom="50px">
           <Row>
-            <Col md={6}>
-              <BaseTitle title="Contact us" size="H3" />
-              <ContactForm />
-            </Col>
             <ContactCol md={6}>
-              <BaseTitle title="Get in touch" size="H3" />
+              <BaseTitle title="Get in touch" size="H3" center underline />
+              <Paragraph>
+                We feel proud in answering what we are doin! Feel free to
+                contact us with any contact us with any question of concerns and
+                if you have any questions or concerns or even if you would like
+                you know more about ur facility. We look forward to hearing from
+                you!
+              </Paragraph>
               <Paragraph>
                 <Icon size={32} icon={mapMarker} /> Unit-402, 989 Derry Road E,
                 Mississauga ON L5T 2J8
@@ -49,7 +53,14 @@ export default function Contact() {
                 <a href="mailto:info@traininghub.io">info@traininghub.io</a>
               </Paragraph>
             </ContactCol>
+            <Col md={6}>
+              <BaseTitle title="Contact us" size="H3" center underline />
+              <ContactForm />
+            </Col>
           </Row>
+        </Section>
+        <Section fluid>
+          <Mapembed />
         </Section>
       </Layout>
     </>

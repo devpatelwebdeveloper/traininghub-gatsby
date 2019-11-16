@@ -9,6 +9,9 @@ const StyledSection = styled.section`
   margin-bottom: ${(props) => props.marginBottom || "50px"};
   padding: ${(props) => props.padding || "0px"} 0px;
   background-color: ${(props) => props.background || Styles.Colors.BaseWhite};
+  .container-fluid {
+    padding: 0px;
+  }
 `;
 
 function randomString(length, chars) {
@@ -20,8 +23,8 @@ function randomString(length, chars) {
 
 export default class Section extends React.Component {
   static propTypes = {
-    Id: PropTypes.string,
-    Fluid: PropTypes.bool.isRequired,
+    id: PropTypes.string,
+    fluid: PropTypes.bool.isRequired,
     children: PropTypes.oneOfType([
       PropTypes.arrayOf(PropTypes.node),
       PropTypes.node,
@@ -32,8 +35,8 @@ export default class Section extends React.Component {
     padding: PropTypes.string.isRequired,
   };
   static defaultProps = {
-    Id: "",
-    Fluid: false,
+    id: "",
+    fluid: false,
     children: "",
     background: Styles.Colors.BaseWhite,
     marginTop: "auto",
@@ -43,17 +46,17 @@ export default class Section extends React.Component {
 
   render() {
     const {
-      Fluid,
+      fluid,
       children,
-      Id,
+      id,
       background,
       marginTop,
       marginBottom,
       padding,
     } = this.props;
 
-    const uId = Id
-      ? Id
+    const uId = id
+      ? id
       : randomString(
           32,
           "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",
@@ -65,7 +68,7 @@ export default class Section extends React.Component {
         marginTop={marginTop}
         marginBottom={marginBottom}
         padding={padding}>
-        <Container fluid={Fluid}>{children}</Container>
+        <Container fluid={fluid}>{children}</Container>
       </StyledSection>
     );
   }

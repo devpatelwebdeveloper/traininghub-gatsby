@@ -50,7 +50,7 @@ const AddressCol = styled(Col)`
 `;
 
 const FooterLogo = styled.img`
-  width: 250px;
+  max-width: 200px;
 `;
 
 const FeaturedLinks = styled(Col)`

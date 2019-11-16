@@ -12,9 +12,9 @@ export default function CourseSingle() {
       <Head title="Sql Server Development - Microsot" />
       <Layout>
         <TopBannerCourse
-          courseTitle="Microsoft SQl Developer"
+          courseTitle="Microsoft SQL Developer"
           subtitle="Microsoft"
-          text="Become Microsoft Sql Developer"
+          text="Build and maintain SQL Server databases, and gain meaningful insight into enterprise data with Real World SQL Server Training Curriculum."
           courseImage="https://unsplash.it/1500?random"
         />
         <ContentGenericAligned
@@ -23,7 +23,7 @@ export default function CourseSingle() {
           image="https://unsplash.it/1500?random"
           alt="Title"
           ImageLeft
-          buttonOneLink="https://www.google.com"
+          buttonOneLink="/"
           buttonOneText="button one text"
           buttonOneExternal
         />

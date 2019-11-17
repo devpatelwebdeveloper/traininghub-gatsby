@@ -10,6 +10,7 @@ import BaseTitle from "../components/atoms/BaseTitle/BaseTitle";
 import Paragraph from "../components/atoms/Paragraph/Paragraph";
 import Mapembed from "../components/atoms/Gmap/Gmap";
 import ContactForm from "../components/organisms/Forms/ContactForms";
+import FounderCard from "../components/molecules/FounderImage/FounderImage";
 import { Icon } from "react-icons-kit";
 import { mapMarker } from "react-icons-kit/fa/mapMarker";
 import { phone } from "react-icons-kit/fa/phone";
@@ -61,6 +62,27 @@ export default function Contact() {
         </Section>
         <Section fluid>
           <Mapembed />
+        </Section>
+        <Section>
+          <Row>
+            <Col md={9}>
+              <Paragraph>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum.
+              </Paragraph>
+            </Col>
+            <Col md={3}>
+              <FounderCard />
+            </Col>
+          </Row>
         </Section>
       </Layout>
     </>

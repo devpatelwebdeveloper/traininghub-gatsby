@@ -40,11 +40,3 @@ export default class Paragraph extends React.Component {
     return <StyledParagraph>{children}</StyledParagraph>;
   }
 }
-
-// export default function Paragraph(props) {
-//   return <StyledParagraph>{props.children}</StyledParagraph>;
-// }
-
-Paragraph.propTypes = {
-  children: PropTypes.string.isRequired,
-};

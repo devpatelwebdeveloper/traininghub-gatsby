@@ -9,8 +9,9 @@ import Col from "react-bootstrap/Col";
 import BaseTitle from "../components/atoms/BaseTitle/BaseTitle";
 import Paragraph from "../components/atoms/Paragraph/Paragraph";
 import Mapembed from "../components/atoms/Gmap/Gmap";
-import NumberedTimeLine from "../components/molecules/NumeredTimeLine/NumeredTimeLine";
+import NumberedTimeLine from "../components/blocks/NumeredTimeLine/NumeredTimeLine";
 import ContactForm from "../components/organisms/Forms/ContactForms";
+import { Values } from "../contents/Values";
 import { Icon } from "react-icons-kit";
 import { mapMarker } from "react-icons-kit/fa/mapMarker";
 import { phone } from "react-icons-kit/fa/phone";
@@ -66,7 +67,7 @@ export default function Contact() {
         <Section>
           <Row>
             <Col>
-              <NumberedTimeLine />
+              <NumberedTimeLine lists={Values} title="Our Values" />
             </Col>
           </Row>
         </Section>

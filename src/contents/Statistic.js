@@ -1,44 +1,27 @@
 import Professional from "./icons/Professionals.svg";
+import Experience from "./icons/Experience.svg";
+import Enterprise from "./icons/Enterprise.svg";
+import NorthAmerica from "./icons/NorthAmerica.svg";
 const Statistics = [
   {
     icon: Professional,
     statistic: "500+",
-    text: "Test 1",
+    text: "Professionals Trained",
   },
   {
-    icon: Professional,
-    statistic: "500+",
-    text: "Test 2",
+    icon: Experience,
+    statistic: "20+",
+    text: "Years of Experience",
   },
   {
-    icon: Professional,
-    statistic: "500+",
-    text: "Test 3",
+    icon: Enterprise,
+    statistic: "10+",
+    text: "Multi - National Clients",
   },
   {
-    icon: Professional,
-    statistic: "500+",
-    text: "Test 4",
-  },
-  {
-    icon: Professional,
-    statistic: "500+",
-    text: "Test 5",
-  },
-  {
-    icon: Professional,
-    statistic: "500+",
-    text: "Test 6",
-  },
-  {
-    icon: Professional,
-    statistic: "500+",
-    text: "Test 7",
-  },
-  {
-    icon: Professional,
-    statistic: "500+",
-    text: "Test 8",
+    icon: NorthAmerica,
+    statistic: "1",
+    text: "Teaching Amazing talents all over North America",
   },
 ];
 

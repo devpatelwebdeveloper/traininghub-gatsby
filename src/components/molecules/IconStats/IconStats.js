@@ -4,6 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import styled from "styled-components";
 import BaseTitle from "../../atoms/BaseTitle/BaseTitle";
+import Paragraph from "../../atoms/Paragraph/Paragraph";
 
 const Icon = styled.img`
   width: 50px;
@@ -39,7 +40,7 @@ export default class IconStatistics extends React.Component {
             </Col>
             <Col xs={9}>
               <BaseTitle title={statistic} size="H5" />
-              <p>{text}</p>
+              <Paragraph>{text}</Paragraph>
             </Col>
           </Row>
         </StyledCol>

@@ -9,6 +9,7 @@ import Col from "react-bootstrap/Col";
 import BaseTitle from "../components/atoms/BaseTitle/BaseTitle";
 import Paragraph from "../components/atoms/Paragraph/Paragraph";
 import Mapembed from "../components/atoms/Gmap/Gmap";
+import NumberedTimeLine from "../components/molecules/NumeredTimeLine/NumeredTimeLine";
 import ContactForm from "../components/organisms/Forms/ContactForms";
 import { Icon } from "react-icons-kit";
 import { mapMarker } from "react-icons-kit/fa/mapMarker";
@@ -61,6 +62,13 @@ export default function Contact() {
         </Section>
         <Section fluid>
           <Mapembed />
+        </Section>
+        <Section>
+          <Row>
+            <Col>
+              <NumberedTimeLine />
+            </Col>
+          </Row>
         </Section>
       </Layout>
     </>

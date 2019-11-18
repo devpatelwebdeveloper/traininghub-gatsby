@@ -85,11 +85,13 @@ const Courses = [
     title: "Web Development",
     subtitle: "HTML5 / CSS3",
     image: icons.web,
+    href: "/courses/webdevelopment/htmlcss",
     alt: "",
     description:
       "New to coding? Our entry-level Web Development course is perfect for you. You’ll gain a foundational knowledge of HTML & CSS and build websites from scratch in our most popular course.",
     startDate: "",
     courseImage: courseImage.web,
+    noOfHours: "60",
   },
   {
     title: "Web Development",

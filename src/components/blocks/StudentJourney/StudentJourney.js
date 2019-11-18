@@ -37,20 +37,21 @@ export default class StudentJourney extends React.Component {
     return (
       <Section
         background={Styles.Colors.BaseElement}
-        padding="20px"
-        marginBottom="50px">
+        padding="24px"
+        marginTop="24px"
+        marginBottom="24px">
         <BaseTitle title={heading} size="H2" center underline />
         <Row>
-          <Col>
-            <Paragraph centered>{paragraphContent}</Paragraph>
+          <Col md={{ span: 10, offset: 1 }}>
+            <Paragraph center>{paragraphContent}</Paragraph>
           </Col>
         </Row>
-        <Row>
+        <Row style={{ paddingTop: "24px" }}>
           <Col>
-            <BaseTile Image={imageOne} Alt={imageOneAlt} />
+            <BaseTile image={imageOne} alt={imageOneAlt} />
           </Col>
           <Col>
-            <BaseTile Image={imageTwo} Alt={imageTwoAlt} />
+            <BaseTile image={imageTwo} alt={imageTwoAlt} />
           </Col>
         </Row>
       </Section>

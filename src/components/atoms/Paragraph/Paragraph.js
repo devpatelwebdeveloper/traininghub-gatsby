@@ -26,15 +26,15 @@ export default class Paragraph extends React.Component {
       PropTypes.arrayOf(PropTypes.node),
       PropTypes.node,
     ]).isRequired,
-    centered: PropTypes.bool.isRequired,
+    center: PropTypes.bool.isRequired,
   };
   static defaultProps = {
     children: "",
-    centered: false,
+    center: false,
   };
   render() {
-    const { children, centered } = this.props;
-    if (centered) {
+    const { children, center } = this.props;
+    if (center) {
       return <StyledParagraphCenter>{children}</StyledParagraphCenter>;
     }
     return <StyledParagraph>{children}</StyledParagraph>;

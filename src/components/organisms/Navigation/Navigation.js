@@ -28,7 +28,18 @@ const StyledNavbar = styled(Navbar)`
 `;
 
 const StyledNavDropdown = styled(NavDropdown)`
-  width: 50rem;
+  ${media.huge`
+    width: 50rem;
+  `}
+  ${media.large`
+    width: 50rem;
+  `}
+  ${media.medium`
+    width: 50rem;
+  `}
+  ${media.small`
+    width: 17rem;
+  `}
 `;
 
 const sharedStyle = css`

@@ -1,5 +1,5 @@
 const ScreenSizes = {
-  huge: 1440,
+  huge: 1600,
   large: 1170,
   medium: 768,
   small: 450,

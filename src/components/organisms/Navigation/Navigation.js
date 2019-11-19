@@ -27,6 +27,10 @@ const StyledNavbar = styled(Navbar)`
    `}
 `;
 
+const StyledNavDropdown = styled(NavDropdown)`
+  width: 50rem;
+`;
+
 const sharedStyle = css`
   border-bottom: 4px solid red;
 `;
@@ -37,11 +41,11 @@ const StyledLink = styled(Link)`
   }
 `;
 
-const StyledNavDropdown = styled(NavDropdown)`
-  &:hover {
-    ${sharedStyle}
-  }
-`;
+// const StyledNavDropdown = styled(NavDropdown)`
+//   &:hover {
+//     ${sharedStyle}
+//   }
+// `;
 
 export default function Navigation() {
   const link = useRef();
@@ -67,6 +71,48 @@ export default function Navigation() {
 
   return (
     <>
+      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="mr-auto">
+            <Nav.Link href="#features">Features</Nav.Link>
+            <Nav.Link href="#pricing">Pricing</Nav.Link>
+            <StyledNavDropdown title="Dropdown" id="collasible-nav-dropdown">
+              <div className="row">
+                <div className="col-sm-6 col-lg-3">
+                  <h5>Microsoft Technologies</h5>
+                  <NavDropdown.Item href="#action/3.1">Another action</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.2"> Something else here</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.1">Another action</NavDropdown.Item>
+                </div>
+                <div className="col-sm-6 col-lg-3">
+                  <h5>Web Technologies</h5>
+
+                  <NavDropdown.Item href="#action/3.1">Another action</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.1">Something else here</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.1">Another action</NavDropdown.Item>
+                </div>
+                <div className="col-sm-6 col-lg-3">
+                  <h5>QE</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit. Necessitatibus in veritatis, facilis eligendi
+                    sunt, culpa autem harum porro earum.
+                  </p>
+                </div>
+              </div>
+            </StyledNavDropdown>
+          </Nav>
+          <Nav>
+            <Nav.Link href="#deets">More deets</Nav.Link>
+            <Nav.Link eventKey={2} href="#memes">
+              Dank memes
+      </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+
       <nav className="navbar navbar-expand-lg navbar-light bg-light rounded">
         <div className="container">
           <Link className="navbar-brand" to="/">

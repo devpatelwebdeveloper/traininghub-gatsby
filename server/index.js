@@ -1,12 +1,10 @@
 const express = require('express');
-const bodyParser = require('body-parser');
-const { graphqlExpress, graphiqlExpress } = require('apollo-server-express');
-const { makeExecutableSchema } = require('graphql-tools');
+const { ApolloServer, gql } = require('apollo-server-express');
 
 const { Courses } = require('./Courses');
 
 // The GraphQL schema in string form
-const typeDefs = `
+const typeDefs = gql`
   type Course { title: String, subtitle: String, image: String, alt: String, description: String, startDate: String, courseImage: String }
   type Query { courses: [Course] }
 `;
@@ -18,22 +16,19 @@ const resolvers = {
   },
 };
 
-// Put together a schema
-const schema = makeExecutableSchema({
-  typeDefs,
-  resolvers,
+const server = new ApolloServer({
+  typeDefs, resolvers, playground: {
+    endpoint: '/graphql',
+    settings: {
+      'editor.theme': 'light'
+    }
+  }
 });
 
-// Initialize the app
 const app = express();
 
-// The GraphQL endpoint
-app.use('/graphql', bodyParser.json(), graphqlExpress({ schema }));
+server.applyMiddleware({ app });
 
-// GraphiQL, a visual editor for queries
-app.use('/graphiql', graphiqlExpress({ endpointURL: '/graphql' }));
-
-// Start the server
-app.listen(3000, () => {
-  console.log('Go to http://localhost:3000/graphiql to run queries!');
-});
+app.listen({ port: 8000 }, () =>
+  console.log(`🚀 Server ready at http://localhost:8000${server.graphqlPath}`)
+);

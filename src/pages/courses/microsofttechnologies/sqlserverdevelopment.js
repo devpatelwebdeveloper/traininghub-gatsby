@@ -5,6 +5,7 @@ import TopBannerCourse from "../../../components/organisms/TopBannerCourse/TopBa
 import ContentGenericAligned from "../../../components/blocks/ContentGenericAligned/ContentGenericAligned";
 import BaseTitle from "../../../components/atoms/BaseTitle/BaseTitle";
 import StudentJourney from "../../../components/blocks/StudentJourney/StudentJourney";
+import RelatedCourses from "../../../components/blocks/RelatedCourses/RelatedCourses";
 
 export default function CourseSingle() {
   return (
@@ -35,6 +36,7 @@ export default function CourseSingle() {
           imageTwo="https://unsplash.it/1500?random"
           imageTwoAlt="Image Two Text"
         />
+        <RelatedCourses title="Microsoft" />
       </Layout>
     </>
   );

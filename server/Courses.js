@@ -16,6 +16,9 @@ const courseImage = {
     "https://devashish-lms.s3.ca-central-1.amazonaws.com/QualityEngineering_TrainingHub.jpg",
 };
 
+// INSERT INTO`course`(`title`, `subtitle`, `icon`, `alt`, `href`,`description`, `course_image`)
+// VALUES('Microsoft', 'Microsoft SQL Developer', 'microsoft.jpg', 'SQL Server Development', '/courses/microsofttechnologies/sqlserverdevelopment', 'Build and maintain SQL Server databases, and gain meaningful insight into enterprise data with Real World SQL Server Training Curriculum.', 'sqlDeveloper_TrainingHub.jpg')
+
 const Courses = [
   {
     title: "Microsoft",

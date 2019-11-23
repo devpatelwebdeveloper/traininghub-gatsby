@@ -29,10 +29,16 @@
     "gatsby": "^2.17.6",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-react-helmet": "^3.1.13",
+    "gatsby-plugin-sass": "^2.1.23",
     "gatsby-plugin-styled-components": "^3.1.11",
     "gatsby-source-graphql": "^2.1.24",
     "graphql": "^14.5.8",
     "graphql-tools": "^4.0.6",
+<<<<<<< HEAD
+    "mysql": "^2.17.1",
+    "node-sass": "^4.13.0",
+=======
+>>>>>>> ccfcd168453f5de36c2593915cff8581079639f3
     "prop-types": "^15.7.2",
     "react": "^16.11.0",
     "react-bootstrap": "^1.0.0-beta.14",

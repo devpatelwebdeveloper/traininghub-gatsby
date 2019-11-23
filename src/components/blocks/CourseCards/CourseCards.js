@@ -27,7 +27,6 @@ export default function CourseCards() {
   }
 `)
 
-  console.log("Data.................", data);
   return (
     <Section padding="20px" margin="50px">
       <BaseTitle

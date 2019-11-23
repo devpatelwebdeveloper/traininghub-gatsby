@@ -17,7 +17,18 @@ plugins.push({
     ],
     display: "swap",
   },
-});
+},
+  {
+    resolve: "gatsby-source-graphql",
+    options: {
+      // This type will contain remote schema Query type
+      typeName: "traininghub",
+      // This is the field under which it's accessible
+      fieldName: "traininghub",
+      // URL to query from
+      url: "http://localhost:3000/graphql",
+    },
+  });
 
 module.exports = {
   plugins: plugins,

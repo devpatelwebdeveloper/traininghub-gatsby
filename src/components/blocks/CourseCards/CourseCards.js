@@ -1,11 +1,32 @@
 import React from "react";
+import { graphql, useStaticQuery } from "gatsby"
+
 import Section from "../../organisms/Section/Section";
 import Row from "react-bootstrap/Row";
 import CourseCard from "../../molecules/CourseCard/CourseCard";
 import { Courses } from "../../../contents/Courses";
 import BaseTitle from "../../atoms/BaseTitle/BaseTitle";
 
+
+
 export default function CourseCards() {
+  const data = useStaticQuery(graphql`
+  query {
+    traininghub {
+      courses {
+        alt
+        courseImage
+        description
+        href
+        icon
+        startDate
+        subtitle
+        title
+      }
+    }
+  }
+`)
+
   return (
     <Section padding="20px" margin="50px">
       <BaseTitle
@@ -15,12 +36,12 @@ export default function CourseCards() {
         underline
       />
       <Row>
-        {Courses.map((course) => (
+        {data.traininghub.courses.map((course) => (
           <CourseCard
             key={course.subtitle}
             title={course.title}
             subtitle={course.subtitle}
-            image={course.image}
+            image={course.icon}
             alt={course.alt}
             href={course.href}
           />
@@ -29,3 +50,4 @@ export default function CourseCards() {
     </Section>
   );
 }
+

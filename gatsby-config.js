@@ -9,27 +9,29 @@ const plugins = [
   `gatsby-plugin-sass`,
 ];
 
-plugins.push({
-  resolve: `gatsby-plugin-google-fonts`,
-  options: {
-    fonts: [
-      `limelight`,
-      `source sans pro\:300,400,400i,700`, // you can also specify font weights and styles
-    ],
-    display: "swap",
-  },
-},
+plugins.push(
   {
-    resolve: "gatsby-source-graphql",
+    resolve: `gatsby-plugin-google-fonts`,
     options: {
-      // This type will contain remote schema Query type
-      typeName: "traininghub",
-      // This is the field under which it's accessible
-      fieldName: "traininghub",
-      // URL to query from
-      url: "http://localhost:3000/graphql",
+      fonts: [
+        `limelight`,
+        `source sans pro\:300,400,400i,700`, // you can also specify font weights and styles
+      ],
+      display: "swap",
     },
-  });
+  },
+  // {
+  //   resolve: "gatsby-source-graphql",
+  //   options: {
+  //     // This type will contain remote schema Query type
+  //     typeName: "traininghub",
+  //     // This is the field under which it's accessible
+  //     fieldName: "traininghub",
+  //     // URL to query from
+  //     url: "http://localhost:3000/graphql",
+  //   },
+  // }
+);
 
 module.exports = {
   plugins: plugins,

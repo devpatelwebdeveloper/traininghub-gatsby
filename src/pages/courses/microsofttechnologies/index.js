@@ -2,10 +2,10 @@ import React from "react";
 import Layout from "../../../components/templates/Layout/Layout";
 import Head from "../../../components/organisms/Head/Head";
 import TopBannerCourse from "../../../components/organisms/TopBannerCourse/TopBannerCourse";
+import Section from "../../../components/organisms/Section/Section";
 import ContentGenericAligned from "../../../components/blocks/ContentGenericAligned/ContentGenericAligned";
-import BaseTitle from "../../../components/atoms/BaseTitle/BaseTitle";
 import StudentJourney from "../../../components/blocks/StudentJourney/StudentJourney";
-import Accordion from "../../../components/blocks/Accordion/Accordion";
+import RelatedCourses from "../../../components/blocks/RelatedCourses/RelatedCourses";
 
 export default function CourseSingle() {
   return (
@@ -13,30 +13,23 @@ export default function CourseSingle() {
       <Head title="Courses" />
       <Layout>
         <TopBannerCourse
-          courseTitle="Microsoft SQl Developer"
-          subtitle="Microsoft"
-          text="Become Microsoft Sql Developer"
-          courseImage="https://unsplash.it/1500?random"
+          courseTitle="Microsoft Technologies"
+          subtitle="The most stable tech since decades"
+          text="Get hands-on Microsoft SQL Server training to master the most widely used database management system and open the door to new career possibilities."
         />
-        <ContentGenericAligned
-          Title="Title"
-          Text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centurie"
-          Image="https://unsplash.it/1500?random"
-          Alt="Title"
-          ImageLeft
-          ButtonOneLink="https://www.google.com"
-          ButtonOneText="Button one text"
-          ButtonOneExternal
-        />
+        <Section margin="24px" padding="24px">
+          <ContentGenericAligned
+            title="Microsoft Sql Server Development"
+            text="Microsoft Technologies are most widely used database management system in big enterprise. We have catered our courses in a way that it serves the knowledge to students of all level of expertise from no prior knowledge to intermediate to Experts. We cover some most important duties of a SQL Developer like - build robust databases, develop scalable Transact-SQL applications, learn data warehousing concepts and build custom Business Intelligence solutions for greater insight into data to make smarter business decisions."
+            image="https://i2.wp.com/www.stirista.com/wp-content/uploads/database-marketing-strategies.png?zoom=2.625&resize=364%2C275&ssl=1"
+            alt="Microsoft Technologies"
+          />
+        </Section>
         <StudentJourney
-          heading="Heading Text"
-          paragraphContent="Paragraph Text"
-          imageOne="https://unsplash.it/1500?random"
-          imageOneAlt="Image One Text"
-          imageTwo="https://unsplash.it/1500?random"
-          imageTwoAlt="Image Two Text"
+          heading="Why Microsoft Technologies"
+          paragraphContent="Microsoft's Database Management system is one of the most stable and widely used in big banking and enterprises. The average salary of Microsoft Sql Server Developer based on research is $85,000. The assignments during the course are actual problems that as a Developer student can face in their actual job place. We provide 100% job assistance after completing the course."
         />
-        <Accordion />
+        <RelatedCourses title="Microsoft" />
       </Layout>
     </>
   );

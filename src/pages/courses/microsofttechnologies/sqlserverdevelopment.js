@@ -6,6 +6,8 @@ import ContentGenericAligned from "../../../components/blocks/ContentGenericAlig
 import BaseTitle from "../../../components/atoms/BaseTitle/BaseTitle";
 import StudentJourney from "../../../components/blocks/StudentJourney/StudentJourney";
 import RelatedCourses from "../../../components/blocks/RelatedCourses/RelatedCourses";
+import Accordion from "../../../components/blocks/Accordion/Accordion";
+import { SqlServerDeveloper } from "../../../contents/Accordions/SqlServerDeveloperAcc";
 
 export default function CourseSingle() {
   return (
@@ -36,6 +38,7 @@ export default function CourseSingle() {
           imageTwo="https://unsplash.it/1500?random"
           imageTwoAlt="Image Two Text"
         />
+        <Accordion accordions={SqlServerDeveloper} />
         <RelatedCourses title="Microsoft" />
       </Layout>
     </>

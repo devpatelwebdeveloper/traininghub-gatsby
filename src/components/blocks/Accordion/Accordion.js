@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import styled from "styled-components";
 import Styles from "../../../styles/Styles";
 import AccordionItem from "../../molecules/AccordionItem/AccordionItem";
@@ -41,13 +42,20 @@ const data = [
 ];
 
 class Accordion extends React.Component {
+  static propTypes = {
+    accordions: PropTypes.array,
+  };
+  static defaultProps = {
+    accordions: data,
+  };
   render() {
+    const { accordions } = this.props;
     return (
       <AccordionList>
-        {data.map((data, key) => {
+        {accordions.map((accordion, key) => {
           return (
             <AccordionSingleList {...key}>
-              <AccordionItem {...data} />
+              <AccordionItem {...accordion} />
             </AccordionSingleList>
           );
         })}

@@ -89,3 +89,42 @@ VALUES('Web Development', 'JavaScript', 'webdesign.svg', 'JavaScript', '', "If y
 INSERT INTO`course`(`title`, `subtitle`, `icon`, `alt`, `href`,`description`, `course_image`)
 VALUES('Web Development', 'Fullstack Developer', 'webdesign.svg', 'Fullstack Developer', '', "We will review the React concepts in introduction and continue to learn topics that include Node and Express, MongoDB and Mongoose, validation and querying, routing and advanced models, and at last deployment of our app.", 'WebDeveloper_Traininghub.jpg');
 
+
+CREATE TABLE `registration` (
+  `id` int(11) NOT NULL,
+  `role` int(2) NOT NULL,
+  `email` varchar(30) NOT NULL,
+  `phone_number` int(10) NOT NULL,
+  `address` varchar(200) NOT NULL,
+  `city` varchar(50) NOT NULL,
+  `country` varchar(20) NOT NULL,
+  `display_name` varchar(50) NOT NULL,
+  `short_bio` varchar(200) NOT NULL,
+  `password` varchar(60) NOT NULL,
+  `dob` datetime NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `created_by` int(11) NOT NULL,
+  `modified_at` timestamp  NULL,
+  `modified_by` int(11)  NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `registration`
+--
+ALTER TABLE `registration`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `registration`
+--
+ALTER TABLE `registration`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+COMMIT;

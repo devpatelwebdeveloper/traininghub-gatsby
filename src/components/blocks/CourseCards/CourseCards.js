@@ -4,10 +4,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import Section from "../../organisms/Section/Section";
 import Row from "react-bootstrap/Row";
 import CourseCard from "../../molecules/CourseCard/CourseCard";
-import { Courses } from "../../../contents/Courses";
 import BaseTitle from "../../atoms/BaseTitle/BaseTitle";
-
-
 
 export default function CourseCards() {
   const data = useStaticQuery(graphql`

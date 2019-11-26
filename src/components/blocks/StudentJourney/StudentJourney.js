@@ -12,18 +12,18 @@ export default class StudentJourney extends React.Component {
   static propTypes = {
     heading: PropTypes.string.isRequired,
     paragraphContent: PropTypes.any.isRequired,
-    imageOne: PropTypes.string.isRequired,
-    imageOneAlt: PropTypes.string.isRequired,
-    imageTwo: PropTypes.string.isRequired,
-    imageTwoAlt: PropTypes.string.isRequired,
+    imageOne: PropTypes.string,
+    imageOneAlt: PropTypes.string,
+    imageTwo: PropTypes.string,
+    imageTwoAlt: PropTypes.string,
   };
   static defaultProps = {
     heading: "Heading",
     paragraphContent: "",
-    imageOne: "https://unsplash.it/1500?random",
-    imageOneAlt: "Alt 1",
-    imageTwo: "https://unsplash.it/1500?random",
-    imageTwoAlt: "Alt 2",
+    imageOne: "",
+    imageOneAlt: "",
+    imageTwo: "",
+    imageTwoAlt: "",
   };
   render() {
     const {
@@ -34,6 +34,17 @@ export default class StudentJourney extends React.Component {
       imageTwo,
       imageTwoAlt,
     } = this.props;
+
+    const images = imageOne ? (
+      <Row>
+        <Col>
+          <BaseTile Image={imageOne} Alt={imageOneAlt} />
+        </Col>
+        <Col>
+          <BaseTile Image={imageTwo} Alt={imageTwoAlt} />
+        </Col>
+      </Row>
+    ) : null;
     return (
       <Section
         background={Styles.Colors.BaseElement}
@@ -45,14 +56,7 @@ export default class StudentJourney extends React.Component {
             <Paragraph centered>{paragraphContent}</Paragraph>
           </Col>
         </Row>
-        <Row>
-          <Col>
-            <BaseTile Image={imageOne} Alt={imageOneAlt} />
-          </Col>
-          <Col>
-            <BaseTile Image={imageTwo} Alt={imageTwoAlt} />
-          </Col>
-        </Row>
+        {images}
       </Section>
     );
   }

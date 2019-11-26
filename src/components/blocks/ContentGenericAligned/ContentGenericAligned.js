@@ -2,14 +2,12 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Styles from "../../../styles/Styles";
-import Section from "../../organisms/Section/Section";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import BaseTitle from "../../atoms/BaseTitle/BaseTitle";
 import Paragraph from "../../atoms/Paragraph/Paragraph";
 import BaseTile from "../../atoms/BaseTile/BaseTile";
-import BaseLink from "../../atoms/BaseLink/BaseLink";
 import Button from "../../molecules/Button/Button";
 
 const StyledContainer = styled(Container)`

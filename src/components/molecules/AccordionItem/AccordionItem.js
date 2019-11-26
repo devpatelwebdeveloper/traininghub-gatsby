@@ -26,6 +26,10 @@ const AccordionIcon = styled.span`
       : null};
 `;
 
+const TitleSpace = styled.div`
+  max-width: 85%;
+`;
+
 const AccordionItemTitle = styled.div`
   display: block;
   padding: 16px 24px;
@@ -97,7 +101,9 @@ class AccordionItem extends React.Component {
           this.setState({ opened: !opened });
         }}>
         <AccordionItemTitle>
-          <BaseTitle title={title} size="H3" />
+          <TitleSpace>
+            <BaseTitle title={title} size="H5" />
+          </TitleSpace>
           <AccordionIcon
             {...(opened
               ? { open: true, title: "Close" }

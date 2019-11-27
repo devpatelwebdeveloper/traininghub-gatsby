@@ -267,4 +267,14 @@ const SqlServerDeveloper = [
   },
 ];
 
-export { SqlServerDeveloper };
+const SQLServerIntegrationServices = [
+  {
+    title: "Chapter 1 : SSIS Architecture and Fundamentals",
+    paragraph: (
+      <ul>
+        <li>Chapter 1 : SSIS Architecture and Fundamentals</li>
+      </ul>
+    ),
+  },
+];
+export { SqlServerDeveloper, SQLServerIntegrationServices };

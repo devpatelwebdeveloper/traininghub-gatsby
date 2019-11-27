@@ -45,7 +45,8 @@
   },
   "devDependencies": {
     "prettier": "^1.18.2",
-    "smoothscroll-polyfill": "^0.4.4"
+    "smoothscroll-polyfill": "^0.4.4",
+    "mem": ">=4.0.0"
   },
   "repository": {
     "type": "git",

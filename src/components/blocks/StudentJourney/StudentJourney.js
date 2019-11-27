@@ -38,10 +38,10 @@ export default class StudentJourney extends React.Component {
     const images = imageOne ? (
       <Row>
         <Col>
-          <BaseTile Image={imageOne} Alt={imageOneAlt} />
+          <BaseTile image={imageOne} alt={imageOneAlt} />
         </Col>
         <Col>
-          <BaseTile Image={imageTwo} Alt={imageTwoAlt} />
+          <BaseTile image={imageTwo} alt={imageTwoAlt} />
         </Col>
       </Row>
     ) : null;

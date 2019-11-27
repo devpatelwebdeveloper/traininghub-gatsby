@@ -29,7 +29,7 @@ const StyledSection = styled.section`
 `;
 const BannerImage = styled.img`
   display: block;
-  max-width: 60%;
+  max-width: 90%;
   height: auto;
   margin: 50px auto;
 `;

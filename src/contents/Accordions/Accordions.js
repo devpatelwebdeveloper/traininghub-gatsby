@@ -678,9 +678,142 @@ const SQLServerAnalysisServices = [
   },
 ];
 
+const html_css = [
+  {
+    title: "Chapter 1 : Introduction to Coding & HTML",
+    paragraph:
+      "Welcome to Web Development! Before jumping into any coding, we’ll give you a high-level overview of how the internet works and go through the tools we’ll need for the course. Learning HTML, or Hypertext Markup Language, is the first step in being able to build functional websites. In this lesson, we’ll introduce HTML, talk about elements and discuss, the importance of building websites with accessibility in mind.",
+  },
+  {
+    title: "Chapter 2 : HTML Elements",
+    paragraph:
+      "In this lesson we’ll continue to explore various HTML elements, including HTML5 semantic elements that help us build accessible, SEO-friendly websites. We’ll look at how to properly describe our content and add structure to our web pages using this markup language. We’ll also dive into attributes and investigate what role they play in HTML as well as how they relate to links and images. There will also be an HTML mock up exercise available for extra practice at home!",
+  },
+  {
+    title: "Chapter 3 : Introduction to CSS",
+    paragraph:
+      "HTML is used to create content on our website and give pages their structure. To style it, we need another language – CSS, or Cascading Style Sheets. With CSS, you can control virtually any visual aspect of your HTML. We’ll learn how to target elements using CSS and get comfortable with the language’s syntax. In this lesson, we’ll also deep dive into understanding CSS cascades, specificity, inheritance, and how to successfully debug your code.",
+  },
+  {
+    title:
+      "Chapter 4 : CSS Measurements, Dev Tools & Text Editor Customization",
+    paragraph:
+      "Working with dimensions and CSS measurements, we will explore the various ways elements can be spaced and sized and how they relate to each other. Then we’ll dive into Dev Tools, the secret weapon for any designer or developer, to help really understand what is happening in our websites. In this lesson we’ll also learn how to customize our text editors, to help us work faster and more efficiently.",
+  },
+  {
+    title: "Chapter 5 : CSS Typography",
+    paragraph:
+      "In this lesson we’ll dive headfirst into the world of CSS typography, including how to use fonts hosted on the web or on our computer. We’ll also cover how to use CSS Normalize – a preset code snippet that helps make our site more consistent across browsers. The lesson ends off with a client-challenge exercise where students are asked to mimic a design and turn it into code. This is a common task for digital designers and web developers, and will require students to draw on all the skills they’ve learned up to this lesson.",
+  },
+  {
+    title: "Chapter 6 : Layout Methods I",
+    paragraph:
+      "In this lesson, we’ll learn how to layout pages effectively using Flexbox – a modern layout method that will help us create dynamic designs. Then we’ll take on the Display property. This will help us understand how to best approach working with the various types of elements and how they work in relation to one another. We’ll also explore the relationship between those using Assistive Technologies and how we can create websites that best meet their needs. In this lesson, we’ll also introduce the Fundamental Design Conversion Project!",
+  },
+  {
+    title: "Chapter 7 : Layout Methods II",
+    paragraph:
+      "To help students master the power of Flexbox, this lesson explores the more complex topics and concepts associated with Flexbox layouts. We will then take on advanced layout best-practices and how to approach and solve many of the challenges associated with creating complex layouts.",
+  },
+  {
+    title: "Chapter 8 : Responsive Design & Images",
+    paragraph:
+      "When someone visits your website, you want them to have the best experience, no matter what device they are using. In this lesson you’ll learn how to use media queries to craft websites that rearrange and restyle elements based on what screen size your user is on. We’ll also explore the use of different images formats, what role they play on our websites, and how to best optimize them to keep our websites lightening fast.",
+  },
+  {
+    title: "Chapter 9 : Positioning & Before/After Elements",
+    paragraph:
+      "Now that we’re comfortable with layouts we’ll tackle positioning to help us understand how to add interesting styles to our websites. This includes features like keeping a navigation bar at the top of our page as we scroll and overlapping elements. We’ll finish up this lesson with a round-up exercise to help solidify the concepts we have covered so far.",
+  },
+  {
+    title: "Chapter 10 : Pseudo Selectors & Advanced Lists and Navigations",
+    paragraph:
+      "In this lesson, we’ll be walking through pseudo-selectors to enhance our websites with things like hover effects and focus states. We will also be exploring advanced uses of lists including how to use them to build drop- down menus.",
+  },
+  {
+    title:
+      "Chapter 11 : Transitions, CSS Filters, Transforms, Perspective & Animations",
+    paragraph:
+      "Working with keyframes, we’ll look into how we can create animations using CSS. We’ll also explore other useful properties like transitions, transforms and CSS filters that help us modify the position and shape of our elements. In this lesson, we’ll also learn how to apply photoshop-like filters and subtle transitions to give our website some enhanced user experience. ",
+  },
+  {
+    title: "Chapter 12 : Cross-Browser Compatibility & Floats",
+    paragraph:
+      "The internet is always changing and not all browsers play well with different types of code! In this lesson, we’ll learn how to manage cross-browser issues that can come up through the use of prefixes, and we’ll also explore the layout method of floats. In this lesson you’ll also be introduced to the Responsive Design Conversion Project.",
+  },
+  {
+    title: "Chapter 13 : Forms",
+    paragraph:
+      "Forms are one of the final aspects of HTML that we will explore in this course. In this lesson you’ll learn how to style forms and how they interact with a server. We’ll also cover how to make your form accessible and easy to use for all types of users.",
+  },
+  {
+    title: "Chapter 14 : Advanced Selectors",
+    paragraph:
+      "In this lesson we’ll show you more complex selectors and explore the powerful effects you can create without using a programming language. We’ll also create a sliding navigation by using dynamically target elements and writing smarter CSS declarations with advanced selectors.",
+  },
+  {
+    title: "Chapter 15 : SCSS",
+    paragraph:
+      "Let’s give your CSS super powers! In this lesson we’ll teach you the newer syntax of Sass – SCSS. With this preprocessing language, you will be able to extend the basic functionalities of CSS by adding features such as variables, nesting, and more. This will create CSS that is more maintainable, organized, and modular.",
+  },
+  {
+    title: "Chapter 16 : jQuery & jQuery Plugins",
+    paragraph:
+      "For our final lesson, we will be exploring how to add interactions to our website through the use of jQuery, a JavaScript library. With the use of plugins, we will be able to quickly and easily add interesting effects and features.",
+  },
+];
+
+const javascript = [
+  {
+    title: "Chapter 1 : Intro to JavaScript, Control Flow, & Loops",
+    paragraph:
+      "Welcome to JavaScript! Today we’ll be introduced to what programming languages are and go over JavaScript syntax, variables, and script tags. We’ll also poke around and get comfortable in the Chrome Developer Tools console. In this lesson we’ll also be exploring loops, ‘if statements’ and Booleans. This knowledge will help us write more exciting code that flows based on logic.",
+  },
+  {
+    title: "Chapter 2 : Functions & Scope",
+    paragraph:
+      "What is a function, and how is it used? In this lesson we’ll review built-in functions, and learn how to create and call our own functions. We will also explore parameters and arguments, and how to use them. In this lesson we’ll introduce the topic of scope and get some practice with working in different scopes. We’ll also talk about best practices with scoping variables.",
+  },
+  {
+    title: "Chapter 3 : Data Structures, Object Methods & Enumeration",
+    paragraph:
+      "What is an object, an array, and a class, and how can we use them? In this lesson we’ll answer these questions, and also dive into object properties, methods, and “this”. We will also discuss passing variables by reference vs. value. In this lesson we’ll look into a few object and array methods, and then talk about enumerating through objects and arrays. We will also introduce the for-in loop!",
+  },
+  {
+    title:
+      "Chapter 4 : Advanced Array Methods, Introduction to the DOM, jQuery, & Events",
+    paragraph:
+      "In this lesson, we’ll cover more advanced functional programming topics such as mapping and filtering arrays. We’ll also give an overview of when, where, and how you can use jQuery on your pages. Getting comfortable with exploring jQuery will include learning about events and effects, and working in the jQuery API.",
+  },
+  {
+    title:
+      "Chapter 5 : jQuery Best Practices, Browser Events, Event Listeners, & Event Delegation",
+    paragraph:
+      "In this lesson we’ll put together all of the skills we’ve learned so far, as well as introducing how to add new HTML to the page with JavaScript. We’ll learn about how to allow our sites to listen for events such as button and mouse clicks.",
+  },
+  {
+    title:
+      "Chapter 6 : Command Line, Git and GitHub, GitHub Pages, Structuring an App, & ES6 Modules",
+    paragraph:
+      "This lesson will be focused on tooling, where we will be learning about the power of the command line and code organization. This includes using GitHub for code storage and organization, as well as learning best practices when it comes to organizing our code. ",
+  },
+  {
+    title: "Chapter 7 : Asynchronous JavaScript & Intro to APIs and AJAX",
+    paragraph:
+      "So far we’ve learned about managing our own data that we’ve made available. In the lesson we’ll learn how to access data from external sources through the power of APIs. We can make requests and understand the concepts behind accessing live data.",
+  },
+  {
+    title: "Chapter 8 : Promises & API Codealong",
+    paragraph:
+      "In this lesson we’ll explore the concepts behind using Promises which allow us to chain multiple API calls and be assured that previous requests are complete before making new ones. We’ll also go on a codealong journey where we’ll learn all about using APIs to make our projects more exciting.",
+  },
+];
+
 export {
   SqlServerDeveloper,
   SQLServerIntegrationServices,
   SQLServerReportingServices,
   SQLServerAnalysisServices,
+  html_css,
+  javascript,
 };

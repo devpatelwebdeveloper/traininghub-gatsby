@@ -49,6 +49,10 @@ const StyledNavDropdown = styled(NavDropdown)`
     border-radius: 0px !important;
     border: none !important;
     width: 100%;
+    box-shadow: 0 1px 0 rgba(12, 13, 14, 0.1), 0 1px 6px rgba(59, 64, 69, 0.1);
+    ${Styles.ScreenSizes.small`
+    box-shadow: none;
+  `}
   }
   .row {
     margin: 0px !important;

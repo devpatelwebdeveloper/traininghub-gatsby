@@ -1,207 +1,121 @@
-/* eslint-disable func-names */
 import React, { useEffect, useRef, useState } from "react";
+import styled from "styled-components";
+import Styles from "../../../styles/Styles";
+import BaseLink from "../../atoms/BaseLink/BaseLink";
 import Navbar from "react-bootstrap/Navbar";
-import styled, { css } from "styled-components";
-import media from "../../../styles/ScreenSizes";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import { Link } from "gatsby";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
 
-const StyledNavbar = styled(Navbar)`
-  height: 50px;
-  background-color: #ffffff;
-  border: none;
-  color: #ffffff;
-  z-index: 100;
-  transition: background-color 1s ease 0s;
-  box-shadow: 0 1px 0 rgba(12, 13, 14, 0.1), 0 1px 6px rgba(59, 64, 69, 0.1);
-  &.solid {
-    background-color: #00aeef;
-    transition: background-color 1s ease 0s;
+const StyledNav = styled(Navbar)`
+z-index:1;
+background-color: #ffffff;
+box-shadow: 0 1px 0 rgba(12, 13, 14, 0.1), 0 1px 6px rgba(59, 64, 69, 0.1);
+  ${Styles.ScreenSizes.huge`
+  .logo {
+    height: 40px;
   }
-  ${media.medium`
-  backgrond-color:#ffffff;
-   `}
-  ${media.small`
-  backgrond-color:#ffffff;
-   `}
+  `}
+  ${Styles.ScreenSizes.large`
+  .logo {
+    height: 40px;
+  }
+  `}
+  ${Styles.ScreenSizes.medium`
+  max-height:100vh;
+  overflow-x:scroll;
+  .logo {
+    height: 40px;
+  }
+  `}
+  ${Styles.ScreenSizes.small`
+   
+    .logo{
+        width:200px;
+        height:auto;
+    }
+  `}
+`;
+const StyledDescription = styled(Col)`
+  ${Styles.ScreenSizes.small`
+    display:none;
+  `}
 `;
 
 const StyledNavDropdown = styled(NavDropdown)`
-  ${media.huge`
-    width: 50rem;
-  `}
-  ${media.large`
-    width: 50rem;
-  `}
-  ${media.medium`
-    width: 50rem;
-  `}
-  ${media.small`
-    width: 17rem;
-  `}
-`;
-
-const sharedStyle = css`
-  border-bottom: 4px solid red;
-`;
-
-const StyledLink = styled(Link)`
-  &:hover {
-    ${sharedStyle}
+  position: static !important;
+  .dropdown-menu {
+    margin: 0px;
+    border-radius: 0px !important;
+    border: none !important;
+    width: 100%;
+  }
+  .row {
+    margin: 0px !important;
   }
 `;
 
-// const StyledNavDropdown = styled(NavDropdown)`
-//   &:hover {
-//     ${sharedStyle}
-//   }
-// `;
-
-export default function Navigation() {
-  const link = useRef();
-  const [show, setShow] = useState("none");
-
-  useEffect(() => {
-    link.current.addEventListener("click", handleClick);
-
-    return () => {
-      link.current.removeEventListener("click", handleClick);
-    };
-  });
-
-  function handleClick(e) {
-    e.preventDefault();
-
-    const showVar = show === "none" ? "block" : "none";
-
-    document.getElementById("dropdown01-div").style.display = showVar;
-
-    setShow(showVar);
-  }
-
+export default function Navi() {
   return (
     <>
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="mr-auto">
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
-            <StyledNavDropdown title="Dropdown" id="collasible-nav-dropdown">
-              <div className="row">
-                <div className="col-sm-6 col-lg-3">
-                  <h5>Microsoft Technologies</h5>
-                  <NavDropdown.Item href="#action/3.1">Another action</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2"> Something else here</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.1">Another action</NavDropdown.Item>
-                </div>
-                <div className="col-sm-6 col-lg-3">
-                  <h5>Web Technologies</h5>
+      <StyledNav expand="lg" sticky="top">
+        <BaseLink href="/" composedClassName="nav-link">
+          <img
+            src="https://traininghub.io/wp-content/uploads/2019/07/logosTrainingHub.png"
+            className="logo"
+            alt="React Bootstrap logo"
+          />
+        </BaseLink>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
+          <Nav>
+            <BaseLink href="/" composedClassName="nav-link">
+              Home
+            </BaseLink>
+            <BaseLink href="/about" composedClassName="nav-link">
+              About Us
+            </BaseLink>
 
-                  <NavDropdown.Item href="#action/3.1">Another action</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.1">Something else here</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.1">Another action</NavDropdown.Item>
-                </div>
-                <div className="col-sm-6 col-lg-3">
+            <StyledNavDropdown title="Courses" id="basic-nav-dropdown">
+              <Row>
+                <StyledDescription>
                   <h5>QE</h5>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing
-                    elit. Necessitatibus in veritatis, facilis eligendi
-                    sunt, culpa autem harum porro earum.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Necessitatibus in veritatis, facilis eligendi sunt, culpa
+                    autem harum porro earum.
                   </p>
-                </div>
-              </div>
+                </StyledDescription>
+                <Col>
+                  <h5>Microsoft Technologies</h5>
+                  <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                </Col>
+                <Col>
+                  <h5>Web Technologies</h5>
+                  <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                </Col>
+                <Col>
+                  <h5>Microsoft Technologies</h5>
+                  <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                </Col>
+              </Row>
             </StyledNavDropdown>
-          </Nav>
-          <Nav>
-            <Nav.Link href="#deets">More deets</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              Dank memes
-      </Nav.Link>
+            <BaseLink href="/recruitment" composedClassName="nav-link">
+              Recruitment
+            </BaseLink>
+            <BaseLink href="/contact" composedClassName="nav-link">
+              Contact us
+            </BaseLink>
           </Nav>
         </Navbar.Collapse>
-      </Navbar>
-
-      <nav className="navbar navbar-expand-lg navbar-light bg-light rounded">
-        <div className="container">
-          <Link className="navbar-brand" to="/">
-            Traininghub
-          </Link>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbar"
-            aria-controls="navbars"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbar">
-            <ul className="navbar-nav mr-auto">
-              <li
-                className="nav-item dropdown megamenu-li"
-                style={{ position: "static" }}>
-                <a
-                  ref={link}
-                  className="nav-link dropdown-toggle"
-                  href=""
-                  id="dropdown01"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false">
-                  Mega Menu 1
-                </a>
-                <div
-                  id="dropdown01-div"
-                  className="dropdown-menu megamenu"
-                  style={{ position: "absolute", width: "100%", display: show }}
-                  aria-labelledby="dropdown01">
-                  <div className="row">
-                    <div className="col-sm-6 col-lg-3">
-                      <h5>Microsoft Technologies</h5>
-                      <a className="dropdown-item" href="#">
-                        Another action
-                      </a>
-                      <a className="dropdown-item" href="#">
-                        Something else here
-                      </a>
-                      <a className="dropdown-item" href="#">
-                        Another action
-                      </a>
-                      <a className="dropdown-item" href="#">
-                        Something else here
-                      </a>
-                    </div>
-                    <div className="col-sm-6 col-lg-3">
-                      <h5>Web Technologies</h5>
-                      <a className="dropdown-item" href="#">
-                        Another action
-                      </a>
-                      <a className="dropdown-item" href="#">
-                        Something else here
-                      </a>
-                      <a className="dropdown-item" href="#">
-                        Another action
-                      </a>
-                    </div>
-                    <div className="col-sm-6 col-lg-3">
-                      <h5>QE</h5>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Necessitatibus in veritatis, facilis eligendi
-                        sunt, culpa autem harum porro earum.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      </StyledNav>
     </>
   );
 }

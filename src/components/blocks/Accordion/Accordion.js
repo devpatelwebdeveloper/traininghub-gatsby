@@ -5,7 +5,6 @@ import Styles from "../../../styles/Styles";
 import Section from "../../organisms/Section/Section";
 import BaseTitle from "../../atoms/BaseTitle/BaseTitle";
 import AccordionItem from "../../molecules/AccordionItem/AccordionItem";
-import { nonExecutableDefinitionMessage } from "graphql/validation/rules/ExecutableDefinitions";
 
 const AccordionList = styled.ul`
   list-style: none;

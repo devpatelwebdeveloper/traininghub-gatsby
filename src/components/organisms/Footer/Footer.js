@@ -86,7 +86,7 @@ export default function Footer() {
             <BaseTitle title="About" size="H5" />
             <ul>
               <li>
-                <Link to="/about">About us</Link>
+                <Link to="/about-us">About us</Link>
               </li>
               <li>
                 <Link to="/recruitment">Recruitment</Link>

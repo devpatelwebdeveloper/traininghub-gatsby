@@ -14,7 +14,7 @@ import {
 } from "../../../contents/Navigation/Navigation";
 
 const StyledDescription = styled(Col)`
-  ${Styles.ScreenSizes.small`
+  ${Styles.ScreenSizes.medium`
     display:none;
   `}
 `;
@@ -77,7 +77,6 @@ export default class NavigationDropdown extends React.Component {
               );
             })}
           </Col>
-
           <Col>
             <BaseTitle title="Other Courses" size="H6" />
             {OtherTech.map((course, key) => {

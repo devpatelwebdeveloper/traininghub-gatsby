@@ -59,9 +59,7 @@ export default function Navi() {
             <NavigationInternal
               title="Courses"
               descTitle="Our available courses"
-              description="Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Necessitatibus in veritatis, facilis eligendi sunt, culpa autem
-            harum porro earum."
+              description="All the courses and the course contents are handcrafted with the real world scenarios in mind. We keep on continuously updating the courses as new technologies are introduced and the requirement of job changes."
             />
             <BaseLink href="/recruitment" composedClassName="nav-link">
               Recruitment

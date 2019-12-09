@@ -57,11 +57,15 @@ export default function Navi() {
                     title={navItem.DisplayText}
                     descTitle={navItem.descTitle}
                     description={navItem.description}
+                    key={key}
                   />
                 );
               }
               return (
-                <BaseLink href={navItem.Link} composedClassName="nav-link">
+                <BaseLink
+                  href={navItem.Link}
+                  composedClassName="nav-link"
+                  key={key}>
                   {navItem.DisplayText}
                 </BaseLink>
               );

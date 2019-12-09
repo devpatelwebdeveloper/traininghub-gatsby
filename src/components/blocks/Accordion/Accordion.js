@@ -39,18 +39,6 @@ const data = [
     title: "Pricing plans Teast",
     paragraph,
   },
-  {
-    title: "How to apply asd",
-    paragraph,
-  },
-  {
-    title: "Purchasing process",
-    paragraph,
-  },
-  {
-    title: "Usage guides test",
-    paragraph,
-  },
 ];
 
 class Accordion extends React.Component {

@@ -5,6 +5,7 @@ import BaseLink from "../../atoms/BaseLink/BaseLink";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavigationInternal from "./NavigationInternal";
+import { TopNavigation } from "../../../contents/Navigation/Navigation";
 
 const StyledNav = styled(Navbar)`
 background-color: ${Styles.Colors.BaseWhite};
@@ -49,24 +50,22 @@ export default function Navi() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
           <Nav>
-            <BaseLink href="/" composedClassName="nav-link">
-              Home
-            </BaseLink>
-            <BaseLink href="/about" composedClassName="nav-link">
-              About Us
-            </BaseLink>
-
-            <NavigationInternal
-              title="Courses"
-              descTitle="Our available courses"
-              description="All the courses and the course contents are handcrafted with the real world scenarios in mind. We keep on continuously updating the courses as new technologies are introduced and the requirement of job changes."
-            />
-            <BaseLink href="/recruitment" composedClassName="nav-link">
-              Recruitment
-            </BaseLink>
-            <BaseLink href="/contact" composedClassName="nav-link">
-              Contact us
-            </BaseLink>
+            {TopNavigation.map((navItem, key) => {
+              if (navItem.Dropdown) {
+                return (
+                  <NavigationInternal
+                    title={navItem.DisplayText}
+                    descTitle={navItem.descTitle}
+                    description={navItem.description}
+                  />
+                );
+              }
+              return (
+                <BaseLink href={navItem.Link} composedClassName="nav-link">
+                  {navItem.DisplayText}
+                </BaseLink>
+              );
+            })}
           </Nav>
         </Navbar.Collapse>
       </StyledNav>

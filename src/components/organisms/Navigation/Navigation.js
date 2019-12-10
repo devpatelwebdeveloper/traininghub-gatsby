@@ -55,8 +55,8 @@ export default function Navi() {
                 return (
                   <NavigationInternal
                     title={navItem.DisplayText}
-                    descTitle={navItem.descTitle}
-                    description={navItem.description}
+                    descTitle={navItem.DescTitle}
+                    description={navItem.Description}
                   />
                 );
               }

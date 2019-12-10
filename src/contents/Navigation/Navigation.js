@@ -3,37 +3,37 @@ const TopNavigation = [
     DisplayText: "Home",
     Link: "/",
     Dropdown: false,
-    descTitle: "Home",
-    description: "",
+    DescTitle: "Home",
+    Description: "",
   },
   {
     DisplayText: "About us",
     Link: "/about-us",
     Dropdown: false,
-    descTitle: "About us",
-    description: "",
+    DescTitle: "About us",
+    Description: "",
   },
   {
     DisplayText: "Courses",
     Link: "#",
     Dropdown: true,
-    descTitle: "Our available courses",
-    description:
+    DescTitle: "Our available courses",
+    Description:
       "All the courses and the course contents are handcrafted with the real world scenarios in mind. We keep on continuously updating the courses as new technologies are introduced and the requirement of job changes.",
   },
   {
     DisplayText: "Recruitment",
     Link: "/recruitment",
     Dropdown: false,
-    descTitle: "Recruitment",
-    description: "",
+    DescTitle: "Recruitment",
+    Description: "",
   },
   {
     DisplayText: "Contact us",
     Link: "/contact",
     Dropdown: false,
-    descTitle: "Contact us",
-    description: "",
+    DescTitle: "Contact us",
+    Description: "",
   },
 ];
 

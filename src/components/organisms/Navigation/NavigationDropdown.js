@@ -56,10 +56,10 @@ export default class NavigationDropdown extends React.Component {
           <Col>
             <BaseTitle title="Microsoft Technologies" size="H6" />
             {Courses.map((course, key) => {
-              if (course.title === "Microsoft") {
+              if (course.tag === "Microsoft") {
                 return (
                   <NavDropdown.Item href={course.href} key={key}>
-                    {course.subtitle}
+                    {course.title}
                   </NavDropdown.Item>
                 );
               }
@@ -69,10 +69,10 @@ export default class NavigationDropdown extends React.Component {
           <Col>
             <BaseTitle title="Web Technologies" size="H6" />
             {Courses.map((course, key) => {
-              if (course.title === "Web Development") {
+              if (course.tag === "Web Development") {
                 return (
                   <NavDropdown.Item href={course.href} key={key}>
-                    {course.subtitle}
+                    {course.title}
                   </NavDropdown.Item>
                 );
               }
@@ -82,10 +82,10 @@ export default class NavigationDropdown extends React.Component {
           <Col>
             <BaseTitle title="Quality Engineering" size="H6" />
             {Courses.map((course, key) => {
-              if (course.title === "QA") {
+              if (course.tag === "QA") {
                 return (
                   <NavDropdown.Item href={course.href} key={key}>
-                    {course.subtitle}
+                    {course.title}
                   </NavDropdown.Item>
                 );
               }
@@ -93,10 +93,10 @@ export default class NavigationDropdown extends React.Component {
             })}
             <BaseTitle title="Data" size="H6" />
             {Courses.map((course, key) => {
-              if (course.title === "Data") {
+              if (course.tag === "Data") {
                 return (
                   <NavDropdown.Item href={course.href} key={key}>
-                    {course.subtitle}
+                    {course.title}
                   </NavDropdown.Item>
                 );
               }

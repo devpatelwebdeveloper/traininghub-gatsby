@@ -11,9 +11,9 @@ export default function TilesBlock() {
         return (
           <SingleCourseBlock
             courseImg={course.courseImage}
-            courseTitle={course.subtitle}
+            courseTitle={course.title}
             courseDescription={course.description}
-            courseTech={course.title}
+            courseTech={course.tag}
             courseStartDate={course.startDate}
             exploreCourseButtonLink={course.href}
             enrolNowButtonLink="/contact"

@@ -7,7 +7,7 @@ import BaseTitle from "../../atoms/BaseTitle/BaseTitle";
 
 export default function RelatedCourseCards({ title }) {
   // This is to filter the tiles based on Tech
-  const RelatedCourses = Courses.filter((course) => course.title === title);
+  const RelatedCourses = Courses.filter((course) => course.tag === title);
 
   return (
     <Section padding="20px" margin="50px">
@@ -15,9 +15,9 @@ export default function RelatedCourseCards({ title }) {
       <Row>
         {RelatedCourses.map((course) => (
           <CourseCard
-            key={course.subtitle}
+            key={course.title}
+            tag={course.tag}
             title={course.title}
-            subtitle={course.subtitle}
             image={course.image}
             alt={course.alt}
             href={course.href}

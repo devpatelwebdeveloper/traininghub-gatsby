@@ -19,7 +19,7 @@ export default function CourseCards() {
           <CourseCard
             key={course.subtitle}
             title={course.title}
-            subtitle={course.subtitle}
+            tag={course.tag}
             image={course.image}
             alt={course.alt}
             href={course.href}

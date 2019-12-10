@@ -13,24 +13,24 @@ import { Courses } from "../../../contents/Courses";
 
 export default function CourseSingle() {
   const Course = Courses.find((course) => {
-    return course.subtitle === "Microsoft SQL Developer";
+    return course.title === "Microsoft SQL Developer";
   });
   return (
     <>
-      <Head title={`${Course.subtitle} - ${Course.title}`} />
+      <Head title={`${Course.title} - ${Course.tag}`} />
       <Layout>
         <TopBannerCourse
-          courseTitle={Course.subtitle}
-          subtitle={Course.title}
+          courseTitle={Course.title}
+          subtitle={Course.tag}
           text={Course.description}
           courseImage={Course.coursePage.courseImage}
         />
         <Section margin="24px" padding="24px">
           <ContentGenericAligned
-            title={Course.subtitle}
+            title={Course.title}
             text={Course.coursePage.courseIntroduction}
             image={Course.coursePage.courseIntroductionImage}
-            alt={Course.subtitle}
+            alt={Course.title}
             ImageLeft
             buttonOneLink="/contact-us"
             buttonOneText="Contact us"

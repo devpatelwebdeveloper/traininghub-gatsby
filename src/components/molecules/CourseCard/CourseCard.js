@@ -59,21 +59,21 @@ const CardContent = styled.div`
 
 export default class BaseTile extends React.PureComponent {
   static propTypes = {
+    tag: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
-    subtitle: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
     alt: PropTypes.string.isRequired,
     href: PropTypes.string,
   };
   static defaultProps = {
-    title: "Title",
-    subtitle: "Subtitle",
+    tag: "Title",
+    title: "Subtitle",
     image: "https://unsplash.it/1500?random",
     alt: "Alt",
     href: "",
   };
   render() {
-    const { title, subtitle, image, alt, href } = this.props;
+    const { tag, title, image, alt, href } = this.props;
     if (href) {
       return (
         <StyledCol lg={4} md={6} sm={12}>
@@ -81,8 +81,8 @@ export default class BaseTile extends React.PureComponent {
             <Card>
               <StyledImg alt={alt} title={alt} src={image} />
               <CardContent>
-                <BaseTitle title={title} size="H6" />
-                <BaseTitle title={subtitle} size="H5" />
+                <BaseTitle title={tag} size="H6" />
+                <BaseTitle title={title} size="H5" />
               </CardContent>
             </Card>
           </Link>
@@ -94,8 +94,8 @@ export default class BaseTile extends React.PureComponent {
         <Card>
           <StyledImg alt={alt} title={alt} src={image} />
           <CardContent>
-            <BaseTitle title={title} size="H6" />
-            <BaseTitle title={subtitle} size="H5" />
+            <BaseTitle title={tag} size="H6" />
+            <BaseTitle title={title} size="H5" />
           </CardContent>
         </Card>
       </StyledCol>

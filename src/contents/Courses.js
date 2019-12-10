@@ -19,8 +19,8 @@ const courseImage = {
 
 const Courses = [
   {
-    title: "Microsoft",
-    subtitle: "Microsoft SQL Developer",
+    tag: "Microsoft",
+    title: "Microsoft SQL Developer",
     image: icons.microsoft,
     alt: "SQL Server Development",
     href: "/courses/microsofttechnologies/sqlserverdevelopment",
@@ -50,8 +50,8 @@ const Courses = [
     },
   },
   {
-    title: "Microsoft",
-    subtitle: "SQL Server Integration Services",
+    tag: "Microsoft",
+    title: "SQL Server Integration Services",
     image: icons.microsoft,
     alt: "courses/sqldeveloper",
     href: "/courses/microsofttechnologies/sqlserverintegrationservices",
@@ -61,8 +61,8 @@ const Courses = [
     courseImage: courseImage.microsoft,
   },
   {
-    title: "Microsoft",
-    subtitle: "SQL Server Reporting Services",
+    tag: "Microsoft",
+    title: "SQL Server Reporting Services",
     image: icons.microsoft,
     alt: "",
     href: "/courses/microsoft/sqlserverdeveloper",
@@ -72,8 +72,8 @@ const Courses = [
     courseImage: courseImage.microsoft,
   },
   {
-    title: "Microsoft",
-    subtitle: "SQL Server Analysis Services",
+    tag: "Microsoft",
+    title: "SQL Server Analysis Services",
     image: icons.microsoft,
     alt: "",
     description:
@@ -82,8 +82,8 @@ const Courses = [
     courseImage: courseImage.microsoft,
   },
   {
-    title: "Microsoft",
-    subtitle: "Business Intelligence",
+    tag: "Microsoft",
+    title: "Business Intelligence",
     image: icons.microsoft,
     alt: "",
     description:
@@ -93,8 +93,8 @@ const Courses = [
     courseImage: courseImage.microsoft,
   },
   {
-    title: "QA",
-    subtitle: "Quality Engineering",
+    tag: "QA",
+    title: "Quality Engineering",
     image: icons.qe,
     alt: "",
     description:
@@ -103,8 +103,8 @@ const Courses = [
     courseImage: courseImage.qe,
   },
   {
-    title: "Web Development",
-    subtitle: "HTML5 / CSS3",
+    tag: "Web Development",
+    title: "HTML5 / CSS3",
     image: icons.web,
     alt: "",
     description:
@@ -113,8 +113,8 @@ const Courses = [
     courseImage: courseImage.web,
   },
   {
-    title: "Web Development",
-    subtitle: "JavaScript",
+    tag: "Web Development",
+    title: "JavaScript",
     image: icons.web,
     alt: "",
     description:
@@ -125,8 +125,8 @@ const Courses = [
   },
 
   {
-    title: "Web Development",
-    subtitle: "Fullstack Developer",
+    tag: "Web Development",
+    title: "Fullstack Developer",
     image: icons.web,
     alt: "",
     description:
@@ -135,8 +135,8 @@ const Courses = [
     courseImage: courseImage.web,
   },
   {
-    title: "Data",
-    subtitle: "Big Data Hadoop & Spark",
+    tag: "Data",
+    title: "Big Data Hadoop & Spark",
     image: icons.web,
     alt: "",
     description:

@@ -10,47 +10,8 @@ import RelatedCourses from "../../../components/blocks/RelatedCourses/RelatedCou
 import Accordion from "../../../components/blocks/Accordion/Accordion";
 import { SqlServerDeveloper } from "../../../contents/Accordions/Accordions";
 import { Courses } from "../../../contents/Courses";
+import SingleCoursePage from "../../../components/templates/Layout/SingleCoursePage";
 
-export default function CourseSingle() {
-  const Course = Courses.find((course) => {
-    return course.title === "Microsoft SQL Developer";
-  });
-  return (
-    <>
-      <Head title={`${Course.title} - ${Course.tag}`} />
-      <Layout>
-        <TopBannerCourse
-          courseTitle={Course.title}
-          subtitle={Course.tag}
-          text={Course.description}
-          courseImage={Course.coursePage.courseImage}
-        />
-        <Section margin="24px" padding="24px">
-          <ContentGenericAligned
-            title={Course.title}
-            text={Course.coursePage.courseIntroduction}
-            image={Course.coursePage.courseIntroductionImage}
-            alt={Course.title}
-            ImageLeft
-            buttonOneLink="/contact-us"
-            buttonOneText="Contact us"
-            buttonOneExternal
-          />
-        </Section>
-        <StudentJourney
-          heading={Course.coursePage.studentJourney.heading}
-          paragraphContent={Course.coursePage.studentJourney.paragraphContent}
-          imageOne={Course.coursePage.studentJourney.imageOne}
-          imageOneAlt={Course.coursePage.studentJourney.imageOneAlt}
-          imageTwo={Course.coursePage.studentJourney.imageTwo}
-          imageTwoAlt={Course.coursePage.studentJourney.imageTwoAlt}
-        />
-        <Accordion
-          accordions={Course.coursePage.courseContent}
-          title="Course Content"
-        />
-        <RelatedCourses title="Microsoft" />
-      </Layout>
-    </>
-  );
+export default function SqlServerDevelopment() {
+  return <SingleCoursePage courseName="Microsoft SQL Developer" />;
 }

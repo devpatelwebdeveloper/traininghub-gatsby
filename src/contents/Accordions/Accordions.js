@@ -678,7 +678,7 @@ const SQLServerAnalysisServices = [
   },
 ];
 
-const html_css = [
+const Html_Css = [
   {
     title: "Chapter 1 : Introduction to Coding & HTML",
     paragraph:
@@ -763,7 +763,7 @@ const html_css = [
   },
 ];
 
-const javascript = [
+const Javascript = [
   {
     title: "Chapter 1 : Intro to JavaScript, Control Flow, & Loops",
     paragraph:
@@ -809,11 +809,14 @@ const javascript = [
   },
 ];
 
+const QualityEngineering = [{}];
+
 export {
   SqlServerDeveloper,
   SQLServerIntegrationServices,
   SQLServerReportingServices,
   SQLServerAnalysisServices,
-  html_css,
-  javascript,
+  Html_Css,
+  Javascript,
+  QualityEngineering,
 };

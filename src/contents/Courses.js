@@ -1,3 +1,4 @@
+import { SqlServerDeveloper, Javascript } from "./Accordions/Accordions";
 const icons = {
   microsoft:
     "https://devashish-lms.s3.ca-central-1.amazonaws.com/svgIcons/microsoft.svg",
@@ -27,6 +28,26 @@ const Courses = [
       "Build and maintain SQL Server databases, and gain meaningful insight into enterprise data with Real World SQL Server Training Curriculum.",
     startDate: "Nov 30 3019",
     courseImage: courseImage.microsoft,
+    coursePage: {
+      courseImage:
+        "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/SQLServer.jpg",
+      courseIntroduction:
+        "The introductory course curriculum helps you take your Microsoft SQL Server skills to the next level. Build robust databases, develop scalable Transact-SQL applications, learn data warehousing concepts and build custom Business Intelligence solutions for greater insight into data to make smarter business decisions.",
+      courseIntroductionImage:
+        "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/SqlServerDevelopment.png",
+      courseContent: SqlServerDeveloper,
+      studentJourney: {
+        heading: "Student Journey",
+        paragraphContent:
+          "Upon enrolling the course, you will get training by professional with over 20 years of experience. The course is designed in a way that no or minimum prior knowledge is required for enrolment. The topics are covered in a way that student can achieve in-depth knowledge of eachcontext. You will also be the part of our wide network of Slack. Assignments will be marked by instructor with explaination for better understanding. Upon successfully completion of the course, pathway to next step will be discussed based on individual's knowledge gain. We provide 100% job search assistance.",
+        imageOne:
+          "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/database-management.png",
+        imageOneAlt: "Database management system",
+        imageTwo:
+          "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/sqlquery.jpg",
+        imageTwoAlt: "SQL Query",
+      },
+    },
   },
   {
     title: "Microsoft",
@@ -100,7 +121,9 @@ const Courses = [
       "If you have a solid understanding of HTML and CSS, you can unlock the full power of front-end development by making your projects more dynamic and interactive with JavaScript.",
     startDate: "",
     courseImage: courseImage.web,
+    courseContent: Javascript,
   },
+
   {
     title: "Web Development",
     subtitle: "Fullstack Developer",

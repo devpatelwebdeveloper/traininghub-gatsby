@@ -9,39 +9,46 @@ import StudentJourney from "../../../components/blocks/StudentJourney/StudentJou
 import RelatedCourses from "../../../components/blocks/RelatedCourses/RelatedCourses";
 import Accordion from "../../../components/blocks/Accordion/Accordion";
 import { SqlServerDeveloper } from "../../../contents/Accordions/Accordions";
+import { Courses } from "../../../contents/Courses";
 
 export default function CourseSingle() {
+  const Course = Courses.find((course) => {
+    return course.subtitle === "Microsoft SQL Developer";
+  });
   return (
     <>
-      <Head title="Sql Server Development - Microsoft" />
+      <Head title={`${Course.subtitle} - ${Course.title}`} />
       <Layout>
         <TopBannerCourse
-          courseTitle="Microsoft SQL Developer"
-          subtitle="Microsoft"
-          text="Build and maintain SQL Server databases, and gain meaningful insight into enterprise data with Real World SQL Server Training Curriculum."
-          courseImage="https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/SQLServer.jpg"
+          courseTitle={Course.subtitle}
+          subtitle={Course.title}
+          text={Course.description}
+          courseImage={Course.coursePage.courseImage}
         />
         <Section margin="24px" padding="24px">
           <ContentGenericAligned
-            title="Microsoft SQL Server Developer"
-            text="The introductory course curriculum helps you take your Microsoft SQL Server skills to the next level. Build robust databases, develop scalable Transact-SQL applications, learn data warehousing concepts and build custom Business Intelligence solutions for greater insight into data to make smarter business decisions."
-            image="https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/SqlServerDevelopment.png"
-            alt="Sql Server Developer"
+            title={Course.subtitle}
+            text={Course.coursePage.courseIntroduction}
+            image={Course.coursePage.courseIntroductionImage}
+            alt={Course.subtitle}
             ImageLeft
-            buttonOneLink="/contact"
+            buttonOneLink="/contact-us"
             buttonOneText="Contact us"
             buttonOneExternal
           />
         </Section>
         <StudentJourney
-          heading="Student Journey"
-          paragraphContent="Upon enrolling the course, you will get training by professional with over 20 years of experience. The course is designed in a way that no or minimum prior knowledge is required for enrolment. The topics are covered in a way that student can achieve in-depth knowledge of eachcontext. You will also be the part of our wide network of Slack. Assignments will be marked by instructor with explaination for better understanding. Upon successfully completion of the course, pathway to next step will be discussed based on individual's knowledge gain. We provide 100% job search assistance."
-          imageOne="https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/database-management.png"
-          imageOneAlt="Database management system"
-          imageTwo="https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/sqlquery.jpg"
-          imageTwoAlt="SQL Query"
+          heading={Course.coursePage.studentJourney.heading}
+          paragraphContent={Course.coursePage.studentJourney.paragraphContent}
+          imageOne={Course.coursePage.studentJourney.imageOne}
+          imageOneAlt={Course.coursePage.studentJourney.imageOneAlt}
+          imageTwo={Course.coursePage.studentJourney.imageTwo}
+          imageTwoAlt={Course.coursePage.studentJourney.imageTwoAlt}
         />
-        <Accordion accordions={SqlServerDeveloper} title="Course Content" />
+        <Accordion
+          accordions={Course.coursePage.courseContent}
+          title="Course Content"
+        />
         <RelatedCourses title="Microsoft" />
       </Layout>
     </>

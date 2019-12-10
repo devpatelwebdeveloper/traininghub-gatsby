@@ -30,7 +30,7 @@ const TopNavigation = [
   },
   {
     DisplayText: "Contact us",
-    Link: "/contact",
+    Link: "/contact-us",
     Dropdown: false,
     DescTitle: "Contact us",
     Description: "",

@@ -4,7 +4,7 @@ import Styles from "../../../styles/Styles";
 import BaseLink from "../../atoms/BaseLink/BaseLink";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import NavigationInternal from "./NavigationInternal";
+import NavigationInternal from "./NavigationDropdown";
 import { TopNavigation } from "../../../contents/Navigation/Navigation";
 
 const StyledNav = styled(Navbar)`

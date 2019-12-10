@@ -1,17 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import Styles from "../../../styles/Styles";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import Styles from "../../../styles/Styles";
 import Paragraph from "../../atoms/Paragraph/Paragraph";
 import BaseTitle from "../../atoms/BaseTitle/BaseTitle";
-import {
-  MicrosoftTech,
-  WebTech,
-  OtherTech,
-} from "../../../contents/Navigation/Navigation";
+import { Courses } from "../../../contents/Courses";
 
 const StyledDescription = styled(Col)`
   ${Styles.ScreenSizes.medium`
@@ -59,32 +55,52 @@ export default class NavigationDropdown extends React.Component {
           </StyledDescription>
           <Col>
             <BaseTitle title="Microsoft Technologies" size="H6" />
-            {MicrosoftTech.map((course, key) => {
-              return (
-                <NavDropdown.Item href={course.Link} key={key}>
-                  {course.DisplayText}
-                </NavDropdown.Item>
-              );
+            {Courses.map((course, key) => {
+              if (course.title === "Microsoft") {
+                return (
+                  <NavDropdown.Item href={course.href} key={key}>
+                    {course.subtitle}
+                  </NavDropdown.Item>
+                );
+              }
+              return null;
             })}
           </Col>
           <Col>
             <BaseTitle title="Web Technologies" size="H6" />
-            {WebTech.map((course, key) => {
-              return (
-                <NavDropdown.Item href={course.Link} key={key}>
-                  {course.DisplayText}
-                </NavDropdown.Item>
-              );
+            {Courses.map((course, key) => {
+              if (course.title === "Web Development") {
+                return (
+                  <NavDropdown.Item href={course.href} key={key}>
+                    {course.subtitle}
+                  </NavDropdown.Item>
+                );
+              }
+              return null;
             })}
           </Col>
           <Col>
-            <BaseTitle title="Other Courses" size="H6" />
-            {OtherTech.map((course, key) => {
-              return (
-                <NavDropdown.Item href={course.Link} key={key}>
-                  {course.DisplayText}
-                </NavDropdown.Item>
-              );
+            <BaseTitle title="Quality Engineering" size="H6" />
+            {Courses.map((course, key) => {
+              if (course.title === "QA") {
+                return (
+                  <NavDropdown.Item href={course.href} key={key}>
+                    {course.subtitle}
+                  </NavDropdown.Item>
+                );
+              }
+              return null;
+            })}
+            <BaseTitle title="Data" size="H6" />
+            {Courses.map((course, key) => {
+              if (course.title === "Data") {
+                return (
+                  <NavDropdown.Item href={course.href} key={key}>
+                    {course.subtitle}
+                  </NavDropdown.Item>
+                );
+              }
+              return null;
             })}
           </Col>
         </Row>

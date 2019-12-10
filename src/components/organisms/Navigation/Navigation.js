@@ -50,22 +50,18 @@ export default function Navi() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
           <Nav>
-            {TopNavigation.map((navItem, key) => {
+            {TopNavigation.map((navItem) => {
               if (navItem.Dropdown) {
                 return (
                   <NavigationInternal
                     title={navItem.DisplayText}
                     descTitle={navItem.descTitle}
                     description={navItem.description}
-                    key={key}
                   />
                 );
               }
               return (
-                <BaseLink
-                  href={navItem.Link}
-                  composedClassName="nav-link"
-                  key={key}>
+                <BaseLink href={navItem.Link} composedClassName="nav-link">
                   {navItem.DisplayText}
                 </BaseLink>
               );

@@ -111,6 +111,16 @@ const Courses = [
     startDate: "",
     courseImage: courseImage.web,
   },
+  {
+    title: "Data",
+    subtitle: "Big Data Hadoop & Spark",
+    image: icons.web,
+    alt: "",
+    description:
+      "Our Big Data Hadoop & Spark Regular training course is designed to coverall required big data tools. This course will help you to understand the basics and advanced concept of Hadoop & Spark with all components like HDFS, Map Reduce, YARN, Sqoop, Flume, Hive, Impala, Spark Core API, Spark SQL, Spark Streaming, Oozie, ZooKeeper and some basics of Hadoop administration. Most importantly, this course focused on hands-on exercises, real-time use cases and topic wise code practice which will help you to get practical use of tools and codes rather than knowing only theoretical concepts.",
+    startDate: "",
+    courseImage: courseImage.web,
+  },
 ];
 
 export { Courses };

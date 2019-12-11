@@ -5,13 +5,18 @@ import CourseCard from "../../molecules/CourseCard/CourseCard";
 import { Courses } from "../../../contents/Courses";
 import BaseTitle from "../../atoms/BaseTitle/BaseTitle";
 
-export default function RelatedCourseCards({ title }) {
+export default function RelatedCourseCards({ title, topHeader }) {
   // This is to filter the tiles based on Tech
   const RelatedCourses = Courses.filter((course) => course.tag === title);
 
   return (
     <Section padding="20px" margin="50px">
-      <BaseTitle title="Related Courses" size="H3" center underline />
+      <BaseTitle
+        title={topHeader ? topHeader : "Related Courses"}
+        size="H3"
+        center
+        underline
+      />
       <Row>
         {RelatedCourses.map((course) => (
           <CourseCard

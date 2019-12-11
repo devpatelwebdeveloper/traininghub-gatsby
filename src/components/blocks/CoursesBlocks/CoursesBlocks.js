@@ -16,7 +16,7 @@ export default function TilesBlock() {
             courseTech={course.tag}
             courseStartDate={course.startDate}
             exploreCourseButtonLink={course.href}
-            enrolNowButtonLink="/contact"
+            enrolNowButtonLink="/contact-us"
           />
         );
       })}

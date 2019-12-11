@@ -8,25 +8,12 @@ import NavigationInternal from "./NavigationDropdown";
 import { TopNavigation } from "../../../contents/Navigation/Navigation";
 
 const StyledNav = styled(Navbar)`
-background-color: ${Styles.Colors.BaseWhite};
-box-shadow: 0 1px 0 rgba(12, 13, 14, 0.1), 0 1px 6px rgba(59, 64, 69, 0.1);
-  ${Styles.ScreenSizes.huge`
+  background-color: ${Styles.Colors.BaseWhite};
+  box-shadow: 0 1px 0 rgba(12, 13, 14, 0.1), 0 1px 6px rgba(59, 64, 69, 0.1);
   .logo {
     height: 40px;
   }
-  `}
-  ${Styles.ScreenSizes.large`
-  .logo {
-    height: 40px;
-  }
-  `}
-  ${Styles.ScreenSizes.medium`
-  max-height:100vh;
-  overflow-x:scroll;
-  .logo {
-    height: 40px;
-  }
-  `}
+
   ${Styles.ScreenSizes.small`
    
     .logo{

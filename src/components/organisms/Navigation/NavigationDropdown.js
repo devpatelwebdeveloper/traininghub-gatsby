@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Col from "react-bootstrap/Col";
@@ -58,9 +59,9 @@ export default class NavigationDropdown extends React.Component {
             {Courses.map((course, key) => {
               if (course.tag === "Microsoft") {
                 return (
-                  <NavDropdown.Item href={course.href} key={key}>
+                  <Link to={course.href} key={key} className="dropdown-item">
                     {course.title}
-                  </NavDropdown.Item>
+                  </Link>
                 );
               }
               return null;
@@ -71,9 +72,9 @@ export default class NavigationDropdown extends React.Component {
             {Courses.map((course, key) => {
               if (course.tag === "Web Development") {
                 return (
-                  <NavDropdown.Item href={course.href} key={key}>
+                  <Link to={course.href} key={key} className="dropdown-item">
                     {course.title}
-                  </NavDropdown.Item>
+                  </Link>
                 );
               }
               return null;
@@ -84,9 +85,9 @@ export default class NavigationDropdown extends React.Component {
             {Courses.map((course, key) => {
               if (course.tag === "QA") {
                 return (
-                  <NavDropdown.Item href={course.href} key={key}>
+                  <Link to={course.href} key={key} className="dropdown-item">
                     {course.title}
-                  </NavDropdown.Item>
+                  </Link>
                 );
               }
               return null;
@@ -95,9 +96,9 @@ export default class NavigationDropdown extends React.Component {
             {Courses.map((course, key) => {
               if (course.tag === "Data") {
                 return (
-                  <NavDropdown.Item href={course.href} key={key}>
+                  <Link to={course.href} key={key} className="dropdown-item">
                     {course.title}
-                  </NavDropdown.Item>
+                  </Link>
                 );
               }
               return null;

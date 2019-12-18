@@ -18,7 +18,7 @@ export default class SingleCoursePage extends React.Component {
     courseName: "",
   };
   render() {
-    const { courseName } = this.props;
+    const { courseName, currentHref } = this.props;
     const Course = Courses.find((course) => {
       return course.title === courseName;
     });
@@ -56,7 +56,7 @@ export default class SingleCoursePage extends React.Component {
             accordions={Course.coursePage.courseContent}
             title="Course Content"
           />
-          <RelatedCourses title={Course.tag} />
+          <RelatedCourses title={Course.tag} currentHref={currentHref} />
         </Layout>
       </>
     );

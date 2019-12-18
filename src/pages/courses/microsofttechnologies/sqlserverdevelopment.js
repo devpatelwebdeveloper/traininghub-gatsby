@@ -2,5 +2,10 @@ import React from "react";
 import SingleCoursePage from "../../../components/templates/Layout/SingleCoursePage";
 
 export default function SqlServerDevelopment() {
-  return <SingleCoursePage courseName="Microsoft SQL Developer" />;
+  return (
+    <SingleCoursePage
+      courseName="Microsoft SQL Developer"
+      currentHref={window.location.href}
+    />
+  );
 }

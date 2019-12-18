@@ -56,7 +56,7 @@ export default class SingleCoursePage extends React.Component {
             accordions={Course.coursePage.courseContent}
             title="Course Content"
           />
-          <RelatedCourses title={Course.tag} currentHref={currentHref} />
+          <RelatedCourses title={Course.tag} currentHref={Course.href} />
         </Layout>
       </>
     );

@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 import Styles from "../styles/Styles";
 import Layout from "../components/templates/Layout/Layout";
 import TopBannerCourse from "../components/organisms/TopBannerCourse/TopBannerCourse";

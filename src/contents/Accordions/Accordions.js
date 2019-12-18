@@ -809,7 +809,251 @@ const Javascript = [
   },
 ];
 
-const QualityEngineering = [{}];
+const QualityEngineering = [
+  {
+    title: "Module 1",
+    paragraph: (
+      <ul>
+        <li>Quality and Quality Engineering</li>
+        <li>Roles and Responsibility</li>
+        <li>Introduction to Testing</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Module 2",
+    paragraph: (
+      <ul>
+        <li>Overview of SDLC</li>
+        <li>Various delivery Type</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Module 3",
+    paragraph: (
+      <ul>
+        <li>Overview of testing types</li>
+        <li>Different phase in testing</li>
+        <li>QA partners and stakeholders</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Module 4",
+    paragraph: (
+      <ul>
+        <li>Introduction to various documentation</li>
+        <li>Create your own test documents</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Module 5",
+    paragraph: (
+      <ul>
+        <li>Defect Management</li>
+        <li>Defect life cycle</li>
+        <li>Defect tracking and reporting</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Module 6",
+    paragraph: (
+      <ul style="line-height:2.1em">
+        <li>How to perform manual testing?</li>
+        <li>Various type of manual testing</li>
+        <li>Tools for manual testing</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Module 7",
+    paragraph: (
+      <ul>
+        <li>Automation testing</li>
+        <li>Tools and Technique</li>
+        <li>Various type of Automation testing</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Module 8",
+    paragraph: (
+      <ul>
+        <li>Write first java program</li>
+        <li>Loops and conditional statement</li>
+        <li>OOPS</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Module 9",
+    paragraph: (
+      <ul>
+        <li>Introduction to Selenium</li>
+        <li>Selenium RC</li>
+        <li>Selenium Web Driver</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Module 10",
+    paragraph: (
+      <ul>
+        <li>Object Based automation</li>
+        <li>Framework and Reporting</li>
+        <li>DevOps integration</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Module 11",
+    paragraph: (
+      <ul>
+        <li>SOAP Webservices</li>
+        <li>REST API</li>
+        <li>Various tool for API automation</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Module 12",
+    paragraph: (
+      <ul>
+        <li>Code versioning</li>
+        <li>Various technique for code versioning</li>
+      </ul>
+    ),
+  },
+];
+
+const BigDataHadoopSpark = [
+  {
+    title: "Module 1: Introduction to Big Data and Hadoop Ecosystem",
+    paragraph: (
+      <ul style="line-height:2.1em">
+        <li>Introduction to Big Data</li>
+        <li>Hadoop Ecosystem</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Module 2: Hadoop Framework and HDFS",
+    paragraph: (
+      <ul style="line-height: 2.1em;">
+        <li>Hadoop Framework</li>
+        <li>Hadoop Distributed File System (HDFS)</li>
+        <li>Hadoop Cluster</li>
+        <li>Understanding HDFS Commands & Web UI</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Module 3: Hadoop Map Reduce and YARN Framework",
+    paragraph: (
+      <ul style="line-height: 2.1em;">
+        <li>Map Reduce – The Processing Layer</li>
+        <li>Hadoop YARN Framework – Resource Management</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Module 4: Apache SQOOP",
+    paragraph: (
+      <ul style="line-height: 2.1em;">
+        <li>Overview of Sqoop</li>
+        <li>Working with Sqoop Tools</li>
+        <li>Sqoop Jobs</li>
+        <li>Sqoop Configurations</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Module 5: Apache Flume",
+    paragraph: (
+      <ul style="line-height: 2.1em;">
+        <li>Overview of Flume</li>
+        <li>Working with Flume</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Module 6: Apache Pig",
+    paragraph: (
+      <ul style="line-height:2.1em">
+        <li>Overview of Pig</li>
+        <li>Working with Pig</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Module 7: Apache Hive",
+    paragraph: (
+      <ul style="line-height: 2.1em;">
+        <li>Overview of Hive</li>
+        <li>Understanding Hive</li>
+        <li>Hive Language</li>
+        <li>Hive Advanced</li>
+        <li>Hive Comparison</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Module 8: Apache Impala",
+    paragraph: (
+      <ul>
+        <li></li>
+      </ul>
+    ),
+  },
+  {
+    title: "Module 8: Apache Impala",
+    paragraph: (
+      <ul style="line-height: 2.1em;">
+        <li>Overview of Impala</li>
+        <li>Working with Impala</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Module 9: Apache SparkUsing Scala",
+    paragraph: (
+      <ul style="line-height: 2.1em;">
+        <li>Overview of Spark</li>
+        <li>Understanding Spark Environment</li>
+        <li>Spark Core API</li>
+        <li>Spark SQL</li>
+        <li>Spark Streaming</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Module 10: Oozie & Zookeeper",
+    paragraph: (
+      <ul style="line-height: 2.1em;">
+        <li>Overview of Oozie</li>
+        <li>Overview of Zookeeper</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Module 11: Hadoop Administration Essentials",
+    paragraph: (
+      <ul>
+        <li>
+          Setup and Installation of Single-Node and Multi-Node Hadoop Cluster
+        </li>
+      </ul>
+    ),
+  },
+  {
+    title: "Module12: Projects & Assignments",
+    paragraph:
+      "You will be working on different real-life use cases to learn the industrial use of Hadoop components like Map Reduce, Sqoop, Flume, Pig, Hive,Spark and Spark Streaming.",
+  },
+];
 
 export {
   SqlServerDeveloper,
@@ -819,4 +1063,5 @@ export {
   Html_Css,
   Javascript,
   QualityEngineering,
+  BigDataHadoopSpark,
 };

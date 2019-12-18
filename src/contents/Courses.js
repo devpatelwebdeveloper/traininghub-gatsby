@@ -1,4 +1,14 @@
-import { SqlServerDeveloper, Javascript } from "./Accordions/Accordions";
+import React from "react";
+import Paragraph from "../components/atoms/Paragraph/Paragraph";
+import {
+  SqlServerDeveloper,
+  SQLServerIntegrationServices,
+  SQLServerReportingServices,
+  SQLServerAnalysisServices,
+  Html_Css,
+  Javascript,
+  QualityEngineering,
+} from "./Accordions/Accordions";
 const icons = {
   microsoft:
     "https://devashish-lms.s3.ca-central-1.amazonaws.com/svgIcons/microsoft.svg",
@@ -104,13 +114,52 @@ const Courses = [
   },
   {
     tag: "Web Development",
-    title: "HTML5 / CSS3",
+    title: "HTML5 - CSS3",
     image: icons.web,
-    alt: "",
+    alt: "Web Development HTML5 / CSS3",
+    href: "/courses/webdevelopment/html5-css3",
     description:
       "New to coding? Our entry-level Web Development course is perfect for you. You’ll gain a foundational knowledge of HTML & CSS and build websites from scratch in our most popular course.",
     startDate: "",
     courseImage: courseImage.web,
+    coursePage: {
+      courseImage:
+        "https://devashish-lms.s3.ca-central-1.amazonaws.com/WebDeveloper/WebDeveloper.jpg",
+      courseIntroduction: (
+        <>
+          <Paragraph>
+            This course is the perfect mixture of lessons and hands-on practice.
+            After each lesson, you’ll have the opportunity to test and
+            strengthen your new skills through an exercise or project, designed
+            to help you solidify your knowledge. In Web Development you can
+            expect to learn:
+          </Paragraph>
+          <ul>
+            <li>HTML, CSS, and responsive design</li>
+            <li>Precompiled syntaxes such as Sass</li>
+            <li>Converting professional designs to HTML &amp; CSS</li>
+            <li>Layout models like Flexbox</li>
+            <li>Best practices for modern web development</li>
+            <li>Website accessibility requirements</li>
+            <li>Intro to JavaScript &amp; jQuery</li>
+          </ul>
+        </>
+      ),
+      courseIntroductionImage:
+        "https://devashish-lms.s3.ca-central-1.amazonaws.com/WebDeveloper/WebDeveloperHtml_css.jpg",
+      courseContent: Html_Css,
+      studentJourney: {
+        heading: "Student Journey",
+        paragraphContent:
+          "We are committed to providing an inclusive, safe, and welcoming classroom for all that choose to learn with us. From the moment you walk into your first class you’ll be a member of the huge real world developers. Whether you’re here to start a career transition, upskill at work, or support your side hustle, you’re coming to the right place. Some of the skills you will be learning in this course are:",
+        imageOne:
+          "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/database-management.png",
+        imageOneAlt: "HTML5 CSS3",
+        imageTwo:
+          "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/sqlquery.jpg",
+        imageTwoAlt: "SASS",
+      },
+    },
   },
   {
     tag: "Web Development",
@@ -134,6 +183,7 @@ const Courses = [
     startDate: "",
     courseImage: courseImage.web,
   },
+
   {
     tag: "Data",
     title: "Big Data Hadoop & Spark",

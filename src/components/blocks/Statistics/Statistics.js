@@ -16,18 +16,16 @@ export default class StatisticsCounter extends React.Component {
 
     return (
       <>
-        <Section>
-          <Row>
-            {stats.map((statistic) => (
-              <IconStats
-                key={statistic.text}
-                text={statistic.text}
-                statistic={statistic.statistic}
-                icon={statistic.icon}
-              />
-            ))}
-          </Row>
-        </Section>
+        <Row>
+          {stats.map((statistic) => (
+            <IconStats
+              key={statistic.text}
+              text={statistic.text}
+              statistic={statistic.statistic}
+              icon={statistic.icon}
+            />
+          ))}
+        </Row>
       </>
     );
   }

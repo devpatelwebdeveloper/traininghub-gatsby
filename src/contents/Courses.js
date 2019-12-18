@@ -130,13 +130,13 @@ const Courses = [
         "https://devashish-lms.s3.ca-central-1.amazonaws.com/WebDeveloper/WebDeveloper.jpg",
       courseIntroduction: (
         <>
-          <Paragraph>
+          <>
             This course is the perfect mixture of lessons and hands-on practice.
             After each lesson, you’ll have the opportunity to test and
             strengthen your new skills through an exercise or project, designed
             to help you solidify your knowledge. In Web Development you can
             expect to learn:
-          </Paragraph>
+          </>
           <ul>
             <li>HTML, CSS, and responsive design</li>
             <li>Precompiled syntaxes such as Sass</li>
@@ -149,7 +149,7 @@ const Courses = [
         </>
       ),
       courseIntroductionImage:
-        "https://devashish-lms.s3.ca-central-1.amazonaws.com/WebDeveloper/WebDeveloperHtml_css.jpg",
+        "https://devashish-lms.s3.ca-central-1.amazonaws.com/WebDeveloper/WebDevelopment.png",
       courseContent: Html_Css,
       studentJourney: {
         heading: "Student Journey",

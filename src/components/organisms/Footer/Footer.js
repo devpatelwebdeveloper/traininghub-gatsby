@@ -7,6 +7,7 @@ import styled from "styled-components";
 import Styles from "../../../styles/Styles";
 import Paragraph from "../../atoms/Paragraph/Paragraph";
 import BaseTitle from "../../atoms/BaseTitle/BaseTitle";
+import { Courses } from "../../../contents/Courses";
 import { Icon } from "react-icons-kit";
 import { facebookSquare } from "react-icons-kit/fa/facebookSquare";
 import { twitterSquare } from "react-icons-kit/fa/twitterSquare";
@@ -88,6 +89,7 @@ export default function Footer() {
               <li>
                 <Link to="/about-us">About us</Link>
               </li>
+
               <li>
                 <Link to="/recruitment">Recruitment</Link>
               </li>
@@ -139,13 +141,17 @@ export default function Footer() {
                 <BaseTitle title="Web Development" size="H6" />
                 <ul>
                   <li>
-                    <Link to="/courses/webdevelopment">HTML & CSS</Link>
+                    <Link to="/courses/webdevelopment/html5-css3">
+                      HTML & CSS
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/courses/webdevelopment">JavaScript</Link>
+                    <Link to="/courses/webdevelopment/javascript">
+                      JavaScript
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/courses/webdevelopment">
+                    <Link to="/courses/webdevelopment/fullstack-development">
                       Fullstack Developer
                     </Link>
                   </li>

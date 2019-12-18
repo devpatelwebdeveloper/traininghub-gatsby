@@ -809,6 +809,55 @@ const Javascript = [
   },
 ];
 
+const FullstackDevelopment = [
+  {
+    title: "Chapter 1 : React Dive in deep",
+    paragraph:
+      "The basic requirement for this course is React so we will deep dive ES6 techniques and later we will talk in depth about front-end framework: React",
+  },
+  {
+    title: "Chapter 2 : Introduction to Express",
+    paragraph:
+      "Front-end of our app is all ready! We’ll turn the project into a fully-fledged full-stack application through the power of Node JS. You’ll learn how to build fully functional API using the server-side framework Express, and how to manage the flow of data through HTTP requests and responses.",
+  },
+  {
+    title: "Chapter 3 : Introduction to MongoDB",
+    paragraph:
+      "While continuing building out our application’s back-end by learning about the database ecosystem, and we’ll examine the differences between relational vs non-relational databases",
+  },
+  {
+    title: "Chapter 4 : Introduction to Models and Mongoose",
+    paragraph:
+      "In this session, we will be learning how to build predictable and re-usable data models through our application, working with Mongoose to create schemas, validate types, and populate your database with meaningful data.",
+  },
+  {
+    title: "Chapter 5 : Routing ",
+    paragraph:
+      "Learning about routing and its difference in the client and server side components for our application is very important! And that’s the target in this session. We’ll look at ways we can refactor and augment our server side router, and implement client side routs using React-Router.",
+  },
+  {
+    title: "Chapter 6 : Advanced Mongoose Querying & Back-end Authentication",
+    paragraph:
+      "We will be learning how to make advanced queries to our Mondo Database through Mongoose. We will also look into how to add authentication to our application using JWT-JSON Web Tokens.",
+  },
+  {
+    title: "Chapter 7 : Front-End Authentication",
+    paragraph:
+      "By this time, we have successfully learned how to manage backend authentication. Now, we’ll start to focus on how to create a user experience in our React app that supports taking a signed in user through the journey of using our app, and protecting routes against unauthorized users.",
+  },
+  {
+    title: "Chapter 8 : Deploying our Application",
+    paragraph:
+      "As the application is all ready to launch, we will learn how to secure the application from any malicious misuse. Finally, we will learn ho to deploy your application onto the web so that it becomes publicly available.",
+  },
+  {
+    title:
+      "Chapter 9 : Scaling our app, Project Presentations Future path talks. ",
+    paragraph:
+      "As we wrap up the course, we will discuss about the application developer and its reality as a profession. We will make our application more scalable. Reasons behind testing the application and its importance.",
+  },
+];
+
 const QualityEngineering = [
   {
     title: "Module 1",
@@ -1062,6 +1111,7 @@ export {
   SQLServerAnalysisServices,
   Html_Css,
   Javascript,
+  FullstackDevelopment,
   QualityEngineering,
   BigDataHadoopSpark,
 };

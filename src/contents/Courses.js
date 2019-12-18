@@ -7,6 +7,7 @@ import {
   SQLServerAnalysisServices,
   Html_Css,
   Javascript,
+  FullstackDevelopment,
   QualityEngineering,
 } from "./Accordions/Accordions";
 const icons = {
@@ -168,25 +169,63 @@ const Courses = [
     tag: "Web Development",
     title: "JavaScript",
     image: icons.web,
-    alt: "",
+    alt: "SQL Server Development",
     href: "/courses/webdevelopment/javascript",
     description:
       "If you have a solid understanding of HTML and CSS, you can unlock the full power of front-end development by making your projects more dynamic and interactive with JavaScript.",
     startDate: "",
     courseImage: courseImage.web,
-    courseContent: Javascript,
+    coursePage: {
+      courseImage:
+        "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/SQLServer.jpg",
+      courseIntroduction:
+        "The introductory course curriculum helps you take your Microsoft SQL Server skills to the next level. Build robust databases, develop scalable Transact-SQL applications, learn data warehousing concepts and build custom Business Intelligence solutions for greater insight into data to make smarter business decisions.",
+      courseIntroductionImage:
+        "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/SqlServerDevelopment.png",
+      courseContent: Javascript,
+      studentJourney: {
+        heading: "Student Journey",
+        paragraphContent:
+          "Upon enrolling the course, you will get training by professional with over 20 years of experience. The course is designed in a way that no or minimum prior knowledge is required for enrolment. The topics are covered in a way that student can achieve in-depth knowledge of eachcontext. You will also be the part of our wide network of Slack. Assignments will be marked by instructor with explaination for better understanding. Upon successfully completion of the course, pathway to next step will be discussed based on individual's knowledge gain. We provide 100% job search assistance.",
+        imageOne:
+          "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/database-management.png",
+        imageOneAlt: "Database management system",
+        imageTwo:
+          "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/sqlquery.jpg",
+        imageTwoAlt: "SQL Query",
+      },
+    },
   },
-
   {
     tag: "Web Development",
     title: "Fullstack Developer",
     href: "/courses/webdevelopment/fullstack-development",
     image: icons.web,
-    alt: "",
+    alt: "SQL Server Development",
     description:
       "We will review the React concepts in introduction and continue to learn topics that include Node and Express, MongoDB and Mongoose, validation and querying, routing and advanced models, and at last deployment of our app.",
     startDate: "",
     courseImage: courseImage.web,
+    coursePage: {
+      courseImage:
+        "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/SQLServer.jpg",
+      courseIntroduction:
+        "This course is made for developers committed to doing what it takes to level up. You’ll able to really dig in and explore complex concepts every class. We ensure an engaging and intensive experience that can be balanced with a full-time job. We believe in learning through exercises and by creating awesome projects. From scope outline to deployment, your in-class learning will be focused on real world skills through the creation of a single-page web application.",
+      courseIntroductionImage:
+        "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/SqlServerDevelopment.png",
+      courseContent: FullstackDevelopment,
+      studentJourney: {
+        heading: "Student Journey",
+        paragraphContent:
+          "Upon enrolling the course, you will get training by professional with over 20 years of experience. The course is designed in a way that no or minimum prior knowledge is required for enrolment. The topics are covered in a way that student can achieve in-depth knowledge of eachcontext. You will also be the part of our wide network of Slack. Assignments will be marked by instructor with explaination for better understanding. Upon successfully completion of the course, pathway to next step will be discussed based on individual's knowledge gain. We provide 100% job search assistance.",
+        imageOne:
+          "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/database-management.png",
+        imageOneAlt: "Database management system",
+        imageTwo:
+          "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/sqlquery.jpg",
+        imageTwoAlt: "SQL Query",
+      },
+    },
   },
 
   {

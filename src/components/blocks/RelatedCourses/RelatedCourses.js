@@ -22,7 +22,32 @@ export default class Paragraph extends React.Component {
     const RelatedCourses = Courses.filter(
       (currentcourse) => currentcourse.tag === title,
     );
-    console.log(currentHref);
+
+    if (RelatedCourses.length <= 1) {
+      return (
+        <Section padding="20px" margin="50px">
+          <BaseTitle title="Other Courses" size="H3" center underline />
+          <Row>
+            {Courses.map((course) => {
+              if (currentHref.includes(course.href)) {
+                return null;
+              }
+              return (
+                <CourseCard
+                  key={course.title}
+                  tag={course.tag}
+                  title={course.title}
+                  image={course.image}
+                  alt={course.alt}
+                  href={course.href}
+                />
+              );
+            })}
+          </Row>
+        </Section>
+      );
+    }
+
     return (
       <Section padding="20px" margin="50px">
         <BaseTitle title={topHeader} size="H3" center underline />
@@ -31,7 +56,6 @@ export default class Paragraph extends React.Component {
             if (currentHref.includes(course.href)) {
               return null;
             }
-            // console.log(course.href);
             return (
               <CourseCard
                 key={course.title}

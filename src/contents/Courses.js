@@ -109,12 +109,32 @@ const Courses = [
     tag: "QA",
     title: "Quality Engineering",
     image: icons.qe,
-    alt: "",
-    href: "",
+    alt: "Quality Engineering",
+    href: "/courses/qualityengineering",
     description:
-      "Quality Engineering is designed for technical and non-technical individual who wants to be part of glowing career as software test engineer. This course will introduce students to various concept and processes of software testing which are used to verify that developed solutions match business need.",
+      "Study concepts and processes of software testing to verify implemented solutions against documented specifications against documented specifications.",
     startDate: "",
     courseImage: courseImage.qe,
+    coursePage: {
+      courseImage:
+        "https://devashish-lms.s3.ca-central-1.amazonaws.com/QualityEngineering/QE.png",
+      courseIntroduction:
+        "The course is designed for technical and non-technical individual who wants to be part of glowing career as software test engineer. This course will introduce students to various concept and processes of software testing which are used to verify that developed solutions match business need.",
+      courseIntroductionImage:
+        "https://devashish-lms.s3.ca-central-1.amazonaws.com/QualityEngineering/QualityEngineering.png",
+      courseContent: QualityEngineering,
+      studentJourney: {
+        heading: "Student Journey",
+        paragraphContent:
+          "Upon enrolling the course, you will get training by professional with over 20 years of experience. The course is designed in a way that no or minimum prior knowledge is required for enrolment. The topics are covered in a way that student can achieve in-depth knowledge of eachcontext. You will also be the part of our wide network of Slack. Assignments will be marked by instructor with explaination for better understanding. Upon successfully completion of the course, pathway to next step will be discussed based on individual's knowledge gain. We provide 100% job search assistance.",
+        imageOne:
+          "https://devashish-lms.s3.ca-central-1.amazonaws.com/QualityEngineering/QualityEngineering_StudentJourney1.jpeg",
+        imageOneAlt: "Quality Engineering Graph",
+        imageTwo:
+          "https://devashish-lms.s3.ca-central-1.amazonaws.com/QualityEngineering/QualityEngineering_StudentJourney2.jpg",
+        imageTwoAlt: "Responsive Website QA",
+      },
+    },
   },
   {
     tag: "Web Development",
@@ -217,7 +237,7 @@ const Courses = [
       studentJourney: {
         heading: "Student Journey",
         paragraphContent:
-          "Upon enrolling the course, you will get training by professional with over 20 years of experience. The course is designed in a way that no or minimum prior knowledge is required for enrolment. The topics are covered in a way that student can achieve in-depth knowledge of eachcontext. You will also be the part of our wide network of Slack. Assignments will be marked by instructor with explaination for better understanding. Upon successfully completion of the course, pathway to next step will be discussed based on individual's knowledge gain. We provide 100% job search assistance.",
+          "Once you enroll to the courses, we will quickly recap the knowledge of HTML5, CSS3, Basic JavaScript. Which will teach fundamental web development concepts. We will continue learning core javascript function. As you move through the course, we will be leaning towards React and its concepts. At the end of the course, we will be developing a fully functional app and launch it live.",
         imageOne:
           "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/database-management.png",
         imageOneAlt: "Database management system",

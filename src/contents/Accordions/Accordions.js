@@ -910,7 +910,7 @@ const QualityEngineering = [
   {
     title: "Module 6",
     paragraph: (
-      <ul style="line-height:2.1em">
+      <ul>
         <li>How to perform manual testing?</li>
         <li>Various type of manual testing</li>
         <li>Tools for manual testing</li>

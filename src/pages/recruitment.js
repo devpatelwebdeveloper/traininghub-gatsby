@@ -114,7 +114,7 @@ export default function Recruitment() {
           <ContentGenericAligned
             title="What We Offer"
             text={contentOne}
-            image="https://traininghub.io/wp-content/uploads/2019/07/Recruitment_Ctech.jpg"
+            image="https://devashish-lms.s3.ca-central-1.amazonaws.com/recruitment/WhatWeOffer.png"
             alt="Centurion Tech"
             buttonOneLink="https://www.ctech.xyz/"
             buttonOneText="Learn more"
@@ -129,7 +129,7 @@ export default function Recruitment() {
           <ContentGenericAligned
             title="Job Seeker"
             text={contentTwo}
-            image="http://traininghub.io/wp-content/uploads/2019/07/interview-tips.jpg"
+            image="https://devashish-lms.s3.ca-central-1.amazonaws.com/recruitment/JobSeeker.png"
             alt="Job Seeker"
             imageLeft
           />
@@ -138,7 +138,7 @@ export default function Recruitment() {
           <ContentGenericAligned
             title="Loan a resource with premises model"
             text={contentThree}
-            image="http://traininghub.io/wp-content/uploads/2019/07/LoanAResourcewithPremises_SharedCoWorking_Ctech.jpg"
+            image="https://devashish-lms.s3.ca-central-1.amazonaws.com/recruitment/LoanPremises.png"
             alt="Loan a resource"
           />
         </Section>
@@ -150,7 +150,7 @@ export default function Recruitment() {
           <ContentGenericAligned
             title="Employers"
             text={contentFour}
-            image="http://traininghub.io/wp-content/uploads/2019/07/Employers.jpg"
+            image="https://devashish-lms.s3.ca-central-1.amazonaws.com/recruitment/Employer.png"
             alt="Employers"
             imageLeft
           />
@@ -162,8 +162,8 @@ export default function Recruitment() {
           <ContentGenericAligned
             title="Placement in USA"
             text={contentFive}
-            image="http://traininghub.io/wp-content/uploads/2019/07/PlacementUSA_Ctech2.jpg"
-            alt="Loan a resource"
+            image="https://devashish-lms.s3.ca-central-1.amazonaws.com/recruitment/USPlacement.jpg"
+            alt="Placement in USA"
           />
         </Section>
       </Layout>

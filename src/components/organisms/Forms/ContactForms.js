@@ -52,7 +52,7 @@ const StyledForm = styled(Form)`
 export default function ContactForm() {
   return (
     <>
-      <StyledForm>
+      <StyledForm name="contact" method="POST" data-netlify="true">
         <Form.Group controlId="firstName">
           <Form.Label>First Name</Form.Label>
           <Form.Control type="text" placeholder="First Name" />

@@ -9,6 +9,7 @@ import {
   Javascript,
   FullstackDevelopment,
   QualityEngineering,
+  BigDataHadoopSpark,
 } from "./Accordions/Accordions";
 const icons = {
   microsoft:
@@ -17,6 +18,8 @@ const icons = {
     "https://devashish-lms.s3.ca-central-1.amazonaws.com/svgIcons/webdesign.svg",
   qe:
     "https://devashish-lms.s3.ca-central-1.amazonaws.com/svgIcons/quality-assurance.svg",
+  bigdata:
+    "https://devashish-lms.s3.ca-central-1.amazonaws.com/svgIcons/server.svg",
 };
 
 const courseImage = {
@@ -26,6 +29,8 @@ const courseImage = {
     "https://devashish-lms.s3.ca-central-1.amazonaws.com/WebDeveloper_Traininghub.jpg",
   qe:
     "https://devashish-lms.s3.ca-central-1.amazonaws.com/QualityEngineering_TrainingHub.jpg",
+  bigdata:
+    "https://devashish-lms.s3.ca-central-1.amazonaws.com/BigData/bigdata.jpg",
 };
 
 const Courses = [
@@ -247,17 +252,47 @@ const Courses = [
       },
     },
   },
-
   {
     tag: "Data",
     title: "Big Data Hadoop & Spark",
-    image: icons.web,
-    alt: "",
+    href: "/courses/big-data-hadoop-spark",
+    image: icons.bigdata,
+    alt: "SQL Server Development",
     description:
-      "Our Big Data Hadoop & Spark Regular training course is designed to coverall required big data tools. This course will help you to understand the basics and advanced concept of Hadoop & Spark with all components like HDFS, Map Reduce, YARN, Sqoop, Flume, Hive, Impala, Spark Core API, Spark SQL, Spark Streaming, Oozie, ZooKeeper and some basics of Hadoop administration. Most importantly, this course focused on hands-on exercises, real-time use cases and topic wise code practice which will help you to get practical use of tools and codes rather than knowing only theoretical concepts.",
+      "A full-fledged hands-on Big Data Hadoop and Spark training designed by the industry experts to build your in-depth knowledge of Big Data Hadoop ecosystem and computing framework using HadoopMap Reduce and Sparkincluding HDFS, YARN, Sqoop, Flume, Pig, Hive, Impala, HBase, Kafka, Oozie and ZooKeeper.",
     startDate: "",
-    courseImage: courseImage.web,
+    courseImage: courseImage.bigdata,
+    coursePage: {
+      courseImage:
+        "https://devashish-lms.s3.ca-central-1.amazonaws.com/BigData/BigData.png",
+      courseIntroduction:
+        "Our Big Data Hadoop & Spark Regular training course is designed to coverall required big data tools. This course will help you to understand the basics and advanced concept of Hadoop & Spark with all components like HDFS, Map Reduce, YARN, Sqoop, Flume, Hive, Impala, Spark Core API, Spark SQL, Spark Streaming, Oozie, ZooKeeper and some basics of Hadoop administration. Most importantly, this course focused on hands-on exercises, real-time use cases and topic wise code practice which will help you to get practical use of tools and codes rather than knowing only theoretical concepts.",
+      courseIntroductionImage:
+        "https://devashish-lms.s3.ca-central-1.amazonaws.com/BigData/BigDataHadoopSpark.jpg",
+      courseContent: BigDataHadoopSpark,
+      studentJourney: {
+        heading: "Student Journey",
+        paragraphContent:
+          "Once you enroll to the courses, we will quickly recap the knowledge of HTML5, CSS3, Basic JavaScript. Which will teach fundamental web development concepts. We will continue learning core javascript function. As you move through the course, we will be leaning towards React and its concepts. At the end of the course, we will be developing a fully functional app and launch it live.",
+        imageOne:
+          "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/database-management.png",
+        imageOneAlt: "Database management system",
+        imageTwo:
+          "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/sqlquery.jpg",
+        imageTwoAlt: "SQL Query",
+      },
+    },
   },
+  // {
+  //   tag: "Data",
+  //   title: "Big Data Hadoop & Spark",
+  //   image: icons.web,
+  //   alt: "",
+  //   description:
+  //     "Our Big Data Hadoop & Spark Regular training course is designed to coverall required big data tools. This course will help you to understand the basics and advanced concept of Hadoop & Spark with all components like HDFS, Map Reduce, YARN, Sqoop, Flume, Hive, Impala, Spark Core API, Spark SQL, Spark Streaming, Oozie, ZooKeeper and some basics of Hadoop administration. Most importantly, this course focused on hands-on exercises, real-time use cases and topic wise code practice which will help you to get practical use of tools and codes rather than knowing only theoretical concepts.",
+  //   startDate: "",
+  //   courseImage: courseImage.web,
+  // },
 ];
 
 export { Courses };

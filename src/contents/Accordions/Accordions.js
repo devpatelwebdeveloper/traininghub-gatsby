@@ -982,7 +982,7 @@ const BigDataHadoopSpark = [
   {
     title: "Module 1: Introduction to Big Data and Hadoop Ecosystem",
     paragraph: (
-      <ul style="line-height:2.1em">
+      <ul>
         <li>Introduction to Big Data</li>
         <li>Hadoop Ecosystem</li>
       </ul>
@@ -991,7 +991,7 @@ const BigDataHadoopSpark = [
   {
     title: "Module 2: Hadoop Framework and HDFS",
     paragraph: (
-      <ul style="line-height: 2.1em;">
+      <ul>
         <li>Hadoop Framework</li>
         <li>Hadoop Distributed File System (HDFS)</li>
         <li>Hadoop Cluster</li>
@@ -1002,7 +1002,7 @@ const BigDataHadoopSpark = [
   {
     title: "Module 3: Hadoop Map Reduce and YARN Framework",
     paragraph: (
-      <ul style="line-height: 2.1em;">
+      <ul>
         <li>Map Reduce – The Processing Layer</li>
         <li>Hadoop YARN Framework – Resource Management</li>
       </ul>
@@ -1011,7 +1011,7 @@ const BigDataHadoopSpark = [
   {
     title: "Module 4: Apache SQOOP",
     paragraph: (
-      <ul style="line-height: 2.1em;">
+      <ul>
         <li>Overview of Sqoop</li>
         <li>Working with Sqoop Tools</li>
         <li>Sqoop Jobs</li>
@@ -1022,7 +1022,7 @@ const BigDataHadoopSpark = [
   {
     title: "Module 5: Apache Flume",
     paragraph: (
-      <ul style="line-height: 2.1em;">
+      <ul>
         <li>Overview of Flume</li>
         <li>Working with Flume</li>
       </ul>
@@ -1031,7 +1031,7 @@ const BigDataHadoopSpark = [
   {
     title: "Module 6: Apache Pig",
     paragraph: (
-      <ul style="line-height:2.1em">
+      <ul>
         <li>Overview of Pig</li>
         <li>Working with Pig</li>
       </ul>
@@ -1040,7 +1040,7 @@ const BigDataHadoopSpark = [
   {
     title: "Module 7: Apache Hive",
     paragraph: (
-      <ul style="line-height: 2.1em;">
+      <ul>
         <li>Overview of Hive</li>
         <li>Understanding Hive</li>
         <li>Hive Language</li>
@@ -1060,7 +1060,7 @@ const BigDataHadoopSpark = [
   {
     title: "Module 8: Apache Impala",
     paragraph: (
-      <ul style="line-height: 2.1em;">
+      <ul>
         <li>Overview of Impala</li>
         <li>Working with Impala</li>
       </ul>
@@ -1069,7 +1069,7 @@ const BigDataHadoopSpark = [
   {
     title: "Module 9: Apache SparkUsing Scala",
     paragraph: (
-      <ul style="line-height: 2.1em;">
+      <ul>
         <li>Overview of Spark</li>
         <li>Understanding Spark Environment</li>
         <li>Spark Core API</li>
@@ -1081,7 +1081,7 @@ const BigDataHadoopSpark = [
   {
     title: "Module 10: Oozie & Zookeeper",
     paragraph: (
-      <ul style="line-height: 2.1em;">
+      <ul>
         <li>Overview of Oozie</li>
         <li>Overview of Zookeeper</li>
       </ul>

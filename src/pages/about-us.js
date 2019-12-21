@@ -80,7 +80,7 @@ export default function AboutPage() {
             imageLeft
             title="Who we are?"
             text={contentOne}
-            image="https://traininghub.io/wp-content/uploads/2019/07/Recruitment_Ctech.jpg"
+            image="https://devashish-lms.s3.ca-central-1.amazonaws.com/Aboutus/Aboutus.png"
             alt="Centurion Tech"
             buttonOneLink="/contact-us"
             buttonOneText="Contact us"
@@ -97,8 +97,8 @@ export default function AboutPage() {
           <ContentGenericAligned
             title="About our handcrafted courses"
             text={contentTwo}
-            image="http://traininghub.io/wp-content/uploads/2019/07/interview-tips.jpg"
-            alt="Job Seeker"
+            image="https://devashish-lms.s3.ca-central-1.amazonaws.com/Aboutus/HandcraftedCourses.png"
+            alt="About our handcrafter courses"
           />
         </Section>
 
@@ -107,11 +107,18 @@ export default function AboutPage() {
             imageLeft
             title={PageContent[0].title}
             text={PageContent[0].paragraph}
-            image="https://traininghub.io/wp-content/uploads/2019/07/Recruitment_Ctech.jpg"
+            image="https://devashish-lms.s3.ca-central-1.amazonaws.com/Aboutus/KalpeshPatel.jpg"
             alt="Profile of Founder"
           />
         </Section>
-
+        <Section
+          marginTop="25px"
+          marginBottom="25px"
+          padding="25px"
+          background={Styles.Colors.BaseLightBlue}>
+          <BaseTitle title="By the numbers" size="H3" center underline />
+          <StatisticsCounter stats={Statistics} />
+        </Section>
         <Section>
           <Row>
             <Col>
@@ -119,13 +126,6 @@ export default function AboutPage() {
               <NumberedTimeLine lists={Values} title="Our Values" />
             </Col>
           </Row>
-        </Section>
-        <Section
-          marginTop="50px"
-          marginBottom="25px"
-          background={Styles.Colors.BaseLightBlue}>
-          <BaseTitle title="By the numbers" size="H3" center underline />
-          <StatisticsCounter stats={Statistics} />
         </Section>
       </Layout>
     </>

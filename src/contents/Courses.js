@@ -202,11 +202,11 @@ const Courses = [
     courseImage: courseImage.web,
     coursePage: {
       courseImage:
-        "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/SQLServer.jpg",
+        "https://devashish-lms.s3.ca-central-1.amazonaws.com/Javascript/JavaScript.jpg",
       courseIntroduction:
         "The introductory course curriculum helps you take your Microsoft SQL Server skills to the next level. Build robust databases, develop scalable Transact-SQL applications, learn data warehousing concepts and build custom Business Intelligence solutions for greater insight into data to make smarter business decisions.",
       courseIntroductionImage:
-        "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/SqlServerDevelopment.png",
+        "https://devashish-lms.s3.ca-central-1.amazonaws.com/Javascript/Javascript.png",
       courseContent: Javascript,
       studentJourney: {
         heading: "Student Journey",
@@ -283,16 +283,6 @@ const Courses = [
       },
     },
   },
-  // {
-  //   tag: "Data",
-  //   title: "Big Data Hadoop & Spark",
-  //   image: icons.web,
-  //   alt: "",
-  //   description:
-  //     "Our Big Data Hadoop & Spark Regular training course is designed to coverall required big data tools. This course will help you to understand the basics and advanced concept of Hadoop & Spark with all components like HDFS, Map Reduce, YARN, Sqoop, Flume, Hive, Impala, Spark Core API, Spark SQL, Spark Streaming, Oozie, ZooKeeper and some basics of Hadoop administration. Most importantly, this course focused on hands-on exercises, real-time use cases and topic wise code practice which will help you to get practical use of tools and codes rather than knowing only theoretical concepts.",
-  //   startDate: "",
-  //   courseImage: courseImage.web,
-  // },
 ];
 
 export { Courses };

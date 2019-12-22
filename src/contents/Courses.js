@@ -213,11 +213,11 @@ const Courses = [
         paragraphContent:
           "Upon enrolling the course, you will get training by professional with over 20 years of experience. The course is designed in a way that no or minimum prior knowledge is required for enrolment. The topics are covered in a way that student can achieve in-depth knowledge of eachcontext. You will also be the part of our wide network of Slack. Assignments will be marked by instructor with explaination for better understanding. Upon successfully completion of the course, pathway to next step will be discussed based on individual's knowledge gain. We provide 100% job search assistance.",
         imageOne:
-          "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/database-management.png",
-        imageOneAlt: "Database management system",
+          "https://devashish-lms.s3.ca-central-1.amazonaws.com/FullstackDeveloper/Fullstack+copy.png",
+        imageOneAlt: "Technology stack",
         imageTwo:
           "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/sqlquery.jpg",
-        imageTwoAlt: "SQL Query",
+        imageTwoAlt: "IDE",
       },
     },
   },
@@ -237,18 +237,18 @@ const Courses = [
       courseIntroduction:
         "This course is made for developers committed to doing what it takes to level up. You’ll able to really dig in and explore complex concepts every class. We ensure an engaging and intensive experience that can be balanced with a full-time job. We believe in learning through exercises and by creating awesome projects. From scope outline to deployment, your in-class learning will be focused on real world skills through the creation of a single-page web application.",
       courseIntroductionImage:
-        "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/SqlServerDevelopment.png",
+        "https://devashish-lms.s3.ca-central-1.amazonaws.com/FullstackDeveloper/FullstackDeveloper.png",
       courseContent: FullstackDevelopment,
       studentJourney: {
         heading: "Student Journey",
         paragraphContent:
           "Once you enroll to the courses, we will quickly recap the knowledge of HTML5, CSS3, Basic JavaScript. Which will teach fundamental web development concepts. We will continue learning core javascript function. As you move through the course, we will be leaning towards React and its concepts. At the end of the course, we will be developing a fully functional app and launch it live.",
         imageOne:
-          "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/database-management.png",
-        imageOneAlt: "Database management system",
+          "https://devashish-lms.s3.ca-central-1.amazonaws.com/FullstackDeveloper/Fullstack+copy.png",
+        imageOneAlt: "Fullstack",
         imageTwo:
-          "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/sqlquery.jpg",
-        imageTwoAlt: "SQL Query",
+          "https://devashish-lms.s3.ca-central-1.amazonaws.com/FullstackDeveloper/Fullstack1.png",
+        imageTwoAlt: "Technology stack",
       },
     },
   },

@@ -33,7 +33,7 @@ const StyledImg = styled.img`
   max-width: 25%;
   height: 9rem;
   float: left;
-  margin-right: 20px;
+  margin: 0 20px;
   border-bottom-left-radius: 6px;
   border-top-left-radius: 6px;
 `;

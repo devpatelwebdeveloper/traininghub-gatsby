@@ -15,7 +15,6 @@ export default function Slider() {
 
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
-    setDirection(e.direction);
   };
 
   return (

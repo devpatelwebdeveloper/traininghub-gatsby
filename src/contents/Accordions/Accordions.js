@@ -952,7 +952,188 @@ const FullstackDevelopment = [
       "As we wrap up the course, we will discuss about the application developer and its reality as a profession. We will make our application more scalable. Reasons behind testing the application and its importance.",
   },
 ];
-const ReactRedux = [];
+const ReactRedux = [
+  {
+    title: "Chapter 1 : Welcome to React",
+    paragraph: (
+      <ul>
+        <li>Obstacles and Roadblocks</li>
+        <li>React’s Future</li>
+        <li>Keeping Up with the Changes</li>
+        <li>Working with Files</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Chapter 2 : Emerging JavaScript",
+    paragraph: (
+      <ul>
+        <li>Declaring Variables in ES6</li>
+        <li>Arrow Functions</li>
+        <li>Transpiling ES6</li>
+        <li>ES6 Objects and Arrays</li>
+        <li>Promies</li>
+        <li>Classes</li>
+        <li>ES6 Modules</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Chapter 3 : Functional Programming with Javascript",
+    paragraph: (
+      <ul>
+        <li>What is means to Be Functional</li>
+        <li>Imperative Versus Declarative</li>
+        <li>
+          Functional Concepts
+          <ul>
+            <li>Immutability</li>
+            <li>Pure Functions</li>
+            <li>Data Transformations</li>
+            <li>Higher-Order Functions</li>
+            <li>Recursion</li>
+            <li>Composition</li>
+          </ul>
+        </li>
+      </ul>
+    ),
+  },
+  {
+    title: "Chapter 4 : Pure React",
+    paragraph: (
+      <ul>
+        <li>Setup</li>
+        <li>The Virtual DOM</li>
+        <li>React Elements</li>
+        <li>ReactDOM</li>
+        <li>Children</li>
+        <li>Constructing Elements with Data</li>
+        <li>React Components</li>
+        <li>Dom Rendering</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Chapter 5 : Props, State, and the Component Tree",
+    paragraph: (
+      <ul>
+        <li>Property Validation</li>
+        <li>Refs</li>
+        <li>React State Management</li>
+        <li>State Within the Component Tree</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Chapter 6 : The Component LifeCycle",
+    paragraph: (
+      <ul>
+        <li>Meet the Lifecycle Methods</li>
+        <li>See the Lifecycle methods in Action</li>
+        <li>The Initial Rendering Phase</li>
+        <li>The Updating Phase</li>
+        <li>The Unmounting Phase</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Chapter 7 : Redux",
+    paragraph: (
+      <ul>
+        <li>State</li>
+        <li>Actions</li>
+        <li>Reducers</li>
+        <li>The Store</li>
+        <li>Action Creators</li>
+        <li>Middleware</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Chapter 8 : React Redux",
+    paragraph: (
+      <ul>
+        <li>Explicitly Passing the Store</li>
+        <li>Passing the Store via Context</li>
+        <li>Presentational Versus Container Components</li>
+        <li>The React Redux Provider</li>
+        <li>React Redux connect</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Chapter 9 : React Router",
+    paragraph: (
+      <ul>
+        <li>Incorporating the Router</li>
+        <li>Nesting Routes</li>
+        <li>Router Parameters</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Chapter 10 : Hooks",
+    paragraph: (
+      <ul>
+        <li>Introduction to Hooks</li>
+        <li>State Hook</li>
+        <li>Effect Hook</li>
+        <li>Rules of Hooks</li>
+        <li>Hooks API</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Chapter 11 : Node JS (Express Framework)",
+    paragraph: (
+      <ul>
+        <li>Introduction to Node js</li>
+        <li>Express Framework</li>
+        <li>Accessing API from Browser</li>
+        <li>Data Source</li>
+        <li>Connect to database</li>
+        <li>Performing CRUD operations</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Chapter 12 : React and Integration Testing",
+    paragraph: (
+      <ul>
+        <li>We will learn about Test Driven Development</li>
+        <li>
+          Get to know about techniques to write test cases and its importance
+        </li>
+        <li>Introduction to libraries: ESLint, Jest, Enzyme and Mocking</li>
+        <li>Performing Snapshot Testing</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Project 1: Building a Todo list App",
+    paragraph: (
+      <ul>
+        <li>Getting Started</li>
+        <li>Creating the UI</li>
+        <li>
+          Creating the Functionality
+          <ul>
+            <li>Initializing our State Object</li>
+            <li>Handling the Form Submit</li>
+            <li>Populating Our State</li>
+            <li>Displaying the Tasks</li>
+            <li>Adding the Finishing Touches</li>
+          </ul>
+        </li>
+      </ul>
+    ),
+  },
+  {
+    title: "Project 2: Fullstack Web App",
+    paragraph:
+      "We will be creating a Fullstack LMS Web Application to put your knowledge on into action. In the exercise we will be using class and functional components. We will be using Express framework, Bootstrap and MySql Database to build our exercise. Our UI will interact with HTTP server using API’s.",
+  },
+];
 
 const QualityEngineering = [
   {

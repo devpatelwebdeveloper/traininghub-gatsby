@@ -164,6 +164,7 @@ const Courses = [
       },
     },
   },
+  //Business Intelligence
   {
     tag: "Microsoft",
     title: "Business Intelligence",
@@ -195,6 +196,7 @@ const Courses = [
       },
     },
   },
+  //Quality Engineering
   {
     tag: "QA",
     title: "Quality Engineering",
@@ -226,6 +228,7 @@ const Courses = [
       },
     },
   },
+  //HTML5 CSS3
   {
     tag: "Web Development",
     title: "HTML5 - CSS3",
@@ -275,6 +278,7 @@ const Courses = [
       },
     },
   },
+  //JavaScript
   {
     tag: "Web Development",
     title: "JavaScript",
@@ -306,6 +310,7 @@ const Courses = [
       },
     },
   },
+  //Fullstack Developer
   {
     tag: "Web Development",
     title: "Fullstack Developer",
@@ -337,6 +342,39 @@ const Courses = [
       },
     },
   },
+  //React-Redux
+  {
+    tag: "Web Development",
+    title: "React Redux",
+    href: "/courses/webdevelopment/react-redux",
+    image: icons.web,
+    alt: "React Redux",
+    description:
+      "We will review the React concepts in introduction and continue to learn topics that include Node and Express, MongoDB and Mongoose, validation and querying, routing and advanced models, and at last deployment of our app.",
+    startDate: "",
+    courseImage: courseImage.web,
+    coursePage: {
+      courseImage:
+        "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/SQLServer.jpg",
+      courseIntroduction:
+        "React is for anyone who wants to level up their JavaScript skill set and improve their workflows. If you are Junior developer, or working with vanilla JavaScript and looking to add another skill in to your resume, React is very high in demand library backed by Facebook, which will Make you a more valuable asset to any modern dev team. If you have prior knowledge of React already and looking to brush up the skills and ready to take deep dive into the advanced concept, you are looking at the right course to upgrade yourself and move from junior to intermediate & senior dev.",
+      courseIntroductionImage:
+        "https://devashish-lms.s3.ca-central-1.amazonaws.com/FullstackDeveloper/FullstackDeveloper.png",
+      courseContent: ReactRedux,
+      studentJourney: {
+        heading: "Student Journey",
+        paragraphContent:
+          "Once you enroll to the courses, we will quickly recap the knowledge of HTML5, CSS3, Basic JavaScript. Which will teach fundamental web development concepts. We will continue learning core javascript function. As you move through the course, we will be leaning towards React and its concepts. At the end of the course, we will be developing a fully functional app and launch it live.",
+        imageOne:
+          "https://devashish-lms.s3.ca-central-1.amazonaws.com/FullstackDeveloper/Fullstack+copy.png",
+        imageOneAlt: "Fullstack",
+        imageTwo:
+          "https://devashish-lms.s3.ca-central-1.amazonaws.com/FullstackDeveloper/Fullstack1.png",
+        imageTwoAlt: "Technology stack",
+      },
+    },
+  },
+  //Big Data Hadoop & Spark
   {
     tag: "Data",
     title: "Big Data Hadoop & Spark",

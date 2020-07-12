@@ -2,5 +2,5 @@ import React from "react";
 import SingleCoursePage from "../../../components/templates/Layout/SingleCoursePage";
 
 export default function SqlServerDevelopment() {
-  return <SingleCoursePage courseName="SQL Server Integration Services" />;
+  return <SingleCoursePage courseName="SQL Server Analysis Services" />;
 }

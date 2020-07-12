@@ -187,9 +187,12 @@ export default function Footer() {
               rel="noopener noreferrer">
               <Icon size={32} icon={twitterSquare} />
             </a>
-            {/*<Link to="/privacy">
+            <a
+              href="https://www.linkedin.com/company/traininghubcan/"
+              target="_blank"
+              rel="noopener noreferrer">
               <Icon size={32} icon={linkedinSquare} />
-  </Link>*/}
+            </a>
           </Col>
         </Row>
       </FooterLegal>

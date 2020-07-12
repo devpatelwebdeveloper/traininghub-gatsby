@@ -36,7 +36,7 @@ export default function CourseCards() {
         underline
       />
       <Row>
-        {randCourse.map((course) => (
+        {Courses.map((course) => (
           <CourseCard
             key={course.subtitle}
             title={course.title}

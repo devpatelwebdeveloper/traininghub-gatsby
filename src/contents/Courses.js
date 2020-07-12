@@ -8,6 +8,7 @@ import {
   MicrosoftBI,
   Html_Css,
   Javascript,
+  ReactRedux,
   FullstackDevelopment,
   QualityEngineering,
   BigDataHadoopSpark,
@@ -35,6 +36,7 @@ const courseImage = {
 };
 
 const Courses = [
+  //Microsoft SQL Developer
   {
     tag: "Microsoft",
     title: "Microsoft SQL Developer",
@@ -56,6 +58,102 @@ const Courses = [
       studentJourney: {
         heading: "Student Journey",
         paragraphContent:
+          "Upon enrolling the course, you will get training by professional with over 20 years of experience. The course is designed in a way that no or minimum prior knowledge is required for enrolment. The topics are covered in a way that student can achieve in-depth knowledge of each context. You will also be the part of our wide network of Slack. Assignments will be marked by instructor with explaination for better understanding. Upon successfully completion of the course, pathway to next step will be discussed based on individual's knowledge gain. We provide 100% job search assistance.",
+        imageOne:
+          "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/database-management.png",
+        imageOneAlt: "Database management system",
+        imageTwo:
+          "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/sqlquery.jpg",
+        imageTwoAlt: "SQL Query",
+      },
+    },
+  },
+  //SQL Server Integration Services
+  {
+    tag: "Microsoft",
+    title: "SQL Server Integration Services",
+    image: icons.microsoft,
+    alt: "SQL Server Integration Services",
+    href: "/courses/microsofttechnologies/sqlserverintegrationservices",
+    description:
+      "This hands-on SSIS training course will help you learn to create dynamic packages for migrating, processing, and reporting on data.",
+    startDate: "",
+    courseImage: courseImage.microsoft,
+    coursePage: {
+      courseImage:
+        "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/SQLServer.jpg",
+      courseIntroduction:
+        "The introductory course curriculum helps you take your Microsoft SQL Server skills to the next level. Build robust databases, develop scalable Transact-SQL applications, learn data warehousing concepts and build custom Business Intelligence solutions for greater insight into data to make smarter business decisions.",
+      courseIntroductionImage:
+        "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/SqlServerDevelopment.png",
+      courseContent: SQLServerIntegrationServices,
+      studentJourney: {
+        heading: "Student Journey",
+        paragraphContent:
+          "Upon enrolling the course, you will get training by professional with over 20 years of experience. The course is designed in a way that no or minimum prior knowledge is required for enrolment. The topics are covered in a way that student can achieve in-depth knowledge of each context. You will also be the part of our wide network of Slack. Assignments will be marked by instructor with explaination for better understanding. Upon successfully completion of the course, pathway to next step will be discussed based on individual's knowledge gain. We provide 100% job search assistance.",
+        imageOne:
+          "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/database-management.png",
+        imageOneAlt: "Database management system",
+        imageTwo:
+          "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/sqlquery.jpg",
+        imageTwoAlt: "SQL Query",
+      },
+    },
+  },
+  //SQL Server Reporting Services
+  {
+    tag: "Microsoft",
+    title: "SQL Server Reporting Services",
+    image: icons.microsoft,
+    alt: "SQL Server Reporting Services",
+    href: "/courses/microsofttechnologies/sqlserverreportingservices",
+    description:
+      "This great SSRS course will provide you with the knowledge and skills to develop simple business reports and automate report delivery.",
+    startDate: "",
+    courseImage: courseImage.microsoft,
+    coursePage: {
+      courseImage:
+        "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/SQLServer.jpg",
+      courseIntroduction:
+        "The introductory course curriculum helps you take your Microsoft SQL Server skills to the next level. Build robust databases, develop scalable Transact-SQL applications, learn data warehousing concepts and build custom Business Intelligence solutions for greater insight into data to make smarter business decisions.",
+      courseIntroductionImage:
+        "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/SqlServerDevelopment.png",
+      courseContent: SQLServerReportingServices,
+      studentJourney: {
+        heading: "Student Journey",
+        paragraphContent:
+          "Upon enrolling the course, you will get training by professional with over 20 years of experience. The course is designed in a way that no or minimum prior knowledge is required for enrolment. The topics are covered in a way that student can achieve in-depth knowledge of each context. You will also be the part of our wide network of Slack. Assignments will be marked by instructor with explaination for better understanding. Upon successfully completion of the course, pathway to next step will be discussed based on individual's knowledge gain. We provide 100% job search assistance.",
+        imageOne:
+          "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/database-management.png",
+        imageOneAlt: "Database management system",
+        imageTwo:
+          "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/sqlquery.jpg",
+        imageTwoAlt: "SQL Query",
+      },
+    },
+  },
+  // SQL Server Analysis Services
+  {
+    tag: "Microsoft",
+    title: "SQL Server Analysis Services",
+    image: icons.microsoft,
+    alt: "SQL Server Analysis Services",
+    href: "/courses/microsofttechnologies/sqlserveranalysisservices",
+    description:
+      "Learn Microsoft’s online analytical processing and data mining tool. SSAS is used as a tool by organizations to analyze and make sense of information possibly spread out across multiple databases, or in disparate tables or files.",
+    startDate: "",
+    courseImage: courseImage.microsoft,
+    coursePage: {
+      courseImage:
+        "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/SQLServer.jpg",
+      courseIntroduction:
+        "The introductory course curriculum helps you take your Microsoft SQL Server skills to the next level. Build robust databases, develop scalable Transact-SQL applications, learn data warehousing concepts and build custom Business Intelligence solutions for greater insight into data to make smarter business decisions.",
+      courseIntroductionImage:
+        "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/SqlServerDevelopment.png",
+      courseContent: SQLServerAnalysisServices,
+      studentJourney: {
+        heading: "Student Journey",
+        paragraphContent:
           "Upon enrolling the course, you will get training by professional with over 20 years of experience. The course is designed in a way that no or minimum prior knowledge is required for enrolment. The topics are covered in a way that student can achieve in-depth knowledge of eachcontext. You will also be the part of our wide network of Slack. Assignments will be marked by instructor with explaination for better understanding. Upon successfully completion of the course, pathway to next step will be discussed based on individual's knowledge gain. We provide 100% job search assistance.",
         imageOne:
           "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/database-management.png",
@@ -68,46 +166,13 @@ const Courses = [
   },
   {
     tag: "Microsoft",
-    title: "SQL Server Integration Services",
-    image: icons.microsoft,
-    alt: "courses/sqldeveloper",
-    href: "/courses/microsofttechnologies/sqlserverintegrationservices",
-    description:
-      "This hands-on SSIS training course will help you learn to create dynamic packages for migrating, processing, and reporting on data.",
-    startDate: "",
-    courseImage: courseImage.microsoft,
-  },
-  {
-    tag: "Microsoft",
-    title: "SQL Server Reporting Services",
-    image: icons.microsoft,
-    alt: "",
-    href: "/courses/microsoft/sqlserverdeveloper",
-    description:
-      "This great SSRS course will provide you with the knowledge and skills to develop simple business reports and automate report delivery.",
-    startDate: "",
-    courseImage: courseImage.microsoft,
-  },
-  {
-    tag: "Microsoft",
-    title: "SQL Server Analysis Services",
-    image: icons.microsoft,
-    alt: "Microsoft",
-    href: "",
-    description:
-      "Learn Microsoft’s online analytical processing and data mining tool. SSAS is used as a tool by organizations to analyze and make sense of information possibly spread out across multiple databases, or in disparate tables or files.",
-    startDate: "",
-    courseImage: courseImage.microsoft,
-  },
-  {
-    tag: "Microsoft",
     title: "Business Intelligence",
     image: icons.microsoft,
     alt: "SQL Server Development",
     href: "/courses/microsofttechnologies/businessintelligence",
     description:
       "Build and maintain SQL Server databases, and gain meaningful insight into enterprise data with Real World SQL Server Training Curriculum.",
-    startDate: "Nov 30 3019",
+    startDate: "",
     courseImage: courseImage.microsoft,
     coursePage: {
       courseImage:

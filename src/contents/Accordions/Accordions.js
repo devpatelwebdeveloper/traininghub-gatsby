@@ -677,6 +677,101 @@ const SQLServerAnalysisServices = [
     ),
   },
 ];
+const MicrosoftBI = [
+  {
+    title: "What is BI?",
+    paragraph: (
+      <ul>
+        <li>Introduction to Business Intelligence</li>
+        <li>Understanding the concept of Data Modeling, Data Cleaning</li>
+        <li>Learning about Data Analysis </li>
+        <li>Data Representation and Data Transformation</li>
+      </ul>
+    ),
+  },
+  {
+    title: "ETL Overview",
+    paragraph: (
+      <ul>
+        <li>Introduction to ETL</li>
+        <li>The various steps involved Extract, Transform, Load</li>
+        <li>Loading the data into a database table</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Sql Server Development",
+    paragraph: (
+      <ul>
+        <li>Relational Database Fundamentals</li>
+        <li>Manipulating Query Results</li>
+        <li>Advanced Query Techniques</li>
+        <li>Creating a Database...</li>
+        <li>
+          Check out full course{" "}
+          <a href="/courses/microsofttechnologies/sqlserverdevelopment">here</a>
+        </li>
+      </ul>
+    ),
+  },
+  {
+    title: "SQL Server Integration Services",
+    paragraph: (
+      <ul>
+        <li>SSIS Architecture and Fundamentals</li>
+        <li>SSIS Data Transformation</li>
+        <li>OLAP and Data Warehouse</li>
+        <li>Fundamental</li>
+        <li>Designing Data Integration with SSIS</li>
+        <li>Deploying and Managing SSIS Projects</li>
+        <li>
+          Check out full course{" "}
+          <a href="/courses/microsofttechnologies/sqlserverintegrationservices">
+            here
+          </a>
+        </li>
+      </ul>
+    ),
+  },
+  {
+    title: "SQL Server Analysis Services",
+    paragraph: (
+      <ul>
+        <li>SSAS Installation and Configuration</li>
+        <li>Basic SSAS Entities & Usage</li>
+        <li>Dimension Wizard and Attributes</li>
+        <li>Cube Wizard and Relations</li>
+        <li>Dimension Types & KPI</li>
+        <li>SSAS Partitions and Aggregations...</li>
+        <li>
+          Check out full course{" "}
+          <a href="/courses/microsofttechnologies/sqlserveranalysisservices">
+            here
+          </a>
+        </li>
+      </ul>
+    ),
+  },
+  {
+    title: "SQL Server Reporting Services",
+    paragraph: (
+      <ul>
+        <li>Reporting Services Architecture</li>
+        <li>Advanced Report Features</li>
+        <li>Implementing Report Models</li>
+        <li>Reporting Services Security</li>
+        <li>Adding Custom Code</li>
+        <li>Creating Basic Reports</li>
+        <li>
+          Check out full course{" "}
+          <a href="/courses/microsofttechnologies/sqlserverreportingservices">
+            here
+          </a>
+        </li>
+      </ul>
+    ),
+  },
+];
 
 const Html_Css = [
   {
@@ -857,6 +952,7 @@ const FullstackDevelopment = [
       "As we wrap up the course, we will discuss about the application developer and its reality as a profession. We will make our application more scalable. Reasons behind testing the application and its importance.",
   },
 ];
+const ReactRedux = [];
 
 const QualityEngineering = [
   {
@@ -1109,9 +1205,11 @@ export {
   SQLServerIntegrationServices,
   SQLServerReportingServices,
   SQLServerAnalysisServices,
+  MicrosoftBI,
   Html_Css,
   Javascript,
   FullstackDevelopment,
+  ReactRedux,
   QualityEngineering,
   BigDataHadoopSpark,
 };

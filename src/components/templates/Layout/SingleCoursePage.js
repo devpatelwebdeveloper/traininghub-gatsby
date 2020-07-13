@@ -28,7 +28,7 @@ export default class SingleCoursePage extends React.Component {
         <Layout>
           <TopBannerCourse
             courseTitle={Course.title}
-            subtitle={Course.tag}
+            // subtitle={Course.tag} This can be the subtitle
             text={Course.description}
             courseImage={Course.coursePage.courseImage}
           />

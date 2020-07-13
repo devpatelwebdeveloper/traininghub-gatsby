@@ -51,14 +51,14 @@ const Courses = [
       courseImage:
         "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/SQLServer.jpg",
       courseIntroduction:
-        "The introductory course curriculum helps you take your Microsoft SQL Server skills to the next level. Build robust databases, develop scalable Transact-SQL applications, learn data warehousing concepts and build custom Business Intelligence solutions for greater insight into data to make smarter business decisions.",
+        "This MS SQL training enables you to manage database solutions and various operations on databases meant for developers to master the descriptive language to work for relational databases. Students will learn SQL architecture, client/server relation, and database types Deploying several functions, operators, etc. for designing relational databases Modifying data using T-SQL, views, and stored procedures The concepts of trigger and the creation of triggers Using records for searching, sorting, indexing, and grouping ,Backup and restoration of databases Optimizing database objects, ensuring data integrity.",
       courseIntroductionImage:
         "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/SqlServerDevelopment.png",
       courseContent: SqlServerDeveloper,
       studentJourney: {
         heading: "Student Journey",
         paragraphContent:
-          "Upon enrolling the course, you will get training by professional with over 20 years of experience. The course is designed in a way that no or minimum prior knowledge is required for enrolment. The topics are covered in a way that student can achieve in-depth knowledge of each context. You will also be the part of our wide network of Slack. Assignments will be marked by instructor with explaination for better understanding. Upon successfully completion of the course, pathway to next step will be discussed based on individual's knowledge gain. We provide 100% job search assistance.",
+          "Upon enrolling the course, you will get training by professional with over 20 years of experience. The course is designed in a way that no or minimum prior knowledge is required for enrolment. The topics are covered in a way that student can achieve in-depth knowledge of each context. You will also be the part of our wide network of Slack. Assignments will be marked by instructor with explanation for better understanding. Upon successfully completion of the course, pathway to next step will be discussed based on individual's knowledge gain.",
         imageOne:
           "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/database-management.png",
         imageOneAlt: "Database management system",
@@ -90,7 +90,7 @@ const Courses = [
       studentJourney: {
         heading: "Student Journey",
         paragraphContent:
-          "Upon enrolling the course, you will get training by professional with over 20 years of experience. The course is designed in a way that no or minimum prior knowledge is required for enrolment. The topics are covered in a way that student can achieve in-depth knowledge of each context. You will also be the part of our wide network of Slack. Assignments will be marked by instructor with explaination for better understanding. Upon successfully completion of the course, pathway to next step will be discussed based on individual's knowledge gain. We provide 100% job search assistance.",
+          "Upon enrolling the course, you will get training by professional with over 20 years of experience. The course is designed in a way that no or minimum prior knowledge is required for enrolment. The topics are covered in a way that student can achieve in-depth knowledge of each context. You will also be the part of our wide network of Slack. Assignments will be marked by instructor with explanation for better understanding. Upon successfully completion of the course, pathway to next step will be discussed based on individual's knowledge gain.",
         imageOne:
           "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/database-management.png",
         imageOneAlt: "Database management system",
@@ -122,7 +122,7 @@ const Courses = [
       studentJourney: {
         heading: "Student Journey",
         paragraphContent:
-          "Upon enrolling the course, you will get training by professional with over 20 years of experience. The course is designed in a way that no or minimum prior knowledge is required for enrolment. The topics are covered in a way that student can achieve in-depth knowledge of each context. You will also be the part of our wide network of Slack. Assignments will be marked by instructor with explaination for better understanding. Upon successfully completion of the course, pathway to next step will be discussed based on individual's knowledge gain. We provide 100% job search assistance.",
+          "Upon enrolling the course, you will get training by professional with over 20 years of experience. The course is designed in a way that no or minimum prior knowledge is required for enrolment. The topics are covered in a way that student can achieve in-depth knowledge of each context. You will also be the part of our wide network of Slack. Assignments will be marked by instructor with explanation for better understanding. Upon successfully completion of the course, pathway to next step will be discussed based on individual's knowledge gain.",
         imageOne:
           "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/database-management.png",
         imageOneAlt: "Database management system",
@@ -154,7 +154,7 @@ const Courses = [
       studentJourney: {
         heading: "Student Journey",
         paragraphContent:
-          "Upon enrolling the course, you will get training by professional with over 20 years of experience. The course is designed in a way that no or minimum prior knowledge is required for enrolment. The topics are covered in a way that student can achieve in-depth knowledge of eachcontext. You will also be the part of our wide network of Slack. Assignments will be marked by instructor with explaination for better understanding. Upon successfully completion of the course, pathway to next step will be discussed based on individual's knowledge gain. We provide 100% job search assistance.",
+          "Upon enrolling the course, you will get training by professional with over 20 years of experience. The course is designed in a way that no or minimum prior knowledge is required for enrolment. The topics are covered in a way that student can achieve in-depth knowledge of eachcontext. You will also be the part of our wide network of Slack. Assignments will be marked by instructor with explanation for better understanding. Upon successfully completion of the course, pathway to next step will be discussed based on individual's knowledge gain.",
         imageOne:
           "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/database-management.png",
         imageOneAlt: "Database management system",
@@ -167,26 +167,26 @@ const Courses = [
   //Business Intelligence
   {
     tag: "Microsoft",
-    title: "Business Intelligence",
+    title: "Business Intelligence (BI)",
     image: icons.microsoft,
     alt: "SQL Server Development",
     href: "/courses/microsofttechnologies/businessintelligence",
     description:
-      "Build and maintain SQL Server databases, and gain meaningful insight into enterprise data with Real World SQL Server Training Curriculum.",
+      "Industry-designed combo training course that includes the Microsoft Business Intelligence tool and its components like SSRS, SSIS, and SSAS that use the SQL Server. This training will provide you with full proficiency in working with MSBI, ETL tasks, analytics, data integration, and reporting.",
     startDate: "",
     courseImage: courseImage.microsoft,
     coursePage: {
       courseImage:
         "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/SQLServer.jpg",
       courseIntroduction:
-        "The introductory course curriculum helps you take your Microsoft SQL Server skills to the next level. Build robust databases, develop scalable Transact-SQL applications, learn data warehousing concepts and build custom Business Intelligence solutions for greater insight into data to make smarter business decisions.",
+        "Our MSBI master's program lets you gain proficiency in Microsoft Business Intelligence. You will work on real-world industry projects pertaining to the three components of MSBI, SSIS for ETL, SSAS for analysis, and SSRS for reporting along with data mining queries, Visual Studio, SQL Server, OLAP, generating Cubes, data sources, and converting raw data into business insights. As part of this training, you will also receive the official course material issued by Microsoft for Analyzing Data with SQL Server Reporting Services and Querying Data with Transact-SQL.",
       courseIntroductionImage:
         "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/SqlServerDevelopment.png",
       courseContent: MicrosoftBI,
       studentJourney: {
         heading: "Student Journey",
         paragraphContent:
-          "Upon enrolling the course, you will get training by professional with over 20 years of experience. The course is designed in a way that no or minimum prior knowledge is required for enrolment. The topics are covered in a way that student can achieve in-depth knowledge of eachcontext. You will also be the part of our wide network of Slack. Assignments will be marked by instructor with explaination for better understanding. Upon successfully completion of the course, pathway to next step will be discussed based on individual's knowledge gain. We provide 100% job search assistance.",
+          "After this course student will gain in Depth Knowledge of DW Concepts including ETL and Multidimensional Modelling Data modeling, transformation, and representation. Various steps of ETL process. SSRS architecture and components. Install and Configure MSBI System and implement end to end ETL system using SSIS. Create cube and administer them in SSAS. Create Multiple types of reports, Charts, Dashboard and visualization using SSRS/Power view etc.. Understanding the concept and need of ad-hoc reporting. Integrate various BI tools to build a complete BI solution.",
         imageOne:
           "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/database-management.png",
         imageOneAlt: "Database management system",
@@ -218,7 +218,7 @@ const Courses = [
       studentJourney: {
         heading: "Student Journey",
         paragraphContent:
-          "Upon enrolling the course, you will get training by professional with over 20 years of experience. The course is designed in a way that no or minimum prior knowledge is required for enrolment. The topics are covered in a way that student can achieve in-depth knowledge of eachcontext. You will also be the part of our wide network of Slack. Assignments will be marked by instructor with explaination for better understanding. Upon successfully completion of the course, pathway to next step will be discussed based on individual's knowledge gain. We provide 100% job search assistance.",
+          "Upon enrolling the course, you will get training by professional with over 20 years of experience. The course is designed in a way that no or minimum prior knowledge is required for enrolment. The topics are covered in a way that student can achieve in-depth knowledge of eachcontext. You will also be the part of our wide network of Slack. Assignments will be marked by instructor with explanation for better understanding. Upon successfully completion of the course, pathway to next step will be discussed based on individual's knowledge gain.",
         imageOne:
           "https://devashish-lms.s3.ca-central-1.amazonaws.com/QualityEngineering/QualityEngineering_StudentJourney1.jpeg",
         imageOneAlt: "Quality Engineering Graph",
@@ -300,7 +300,7 @@ const Courses = [
       studentJourney: {
         heading: "Student Journey",
         paragraphContent:
-          "Upon enrolling the course, you will get training by professional with over 20 years of experience. The course is designed in a way that no or minimum prior knowledge is required for enrolment. The topics are covered in a way that student can achieve in-depth knowledge of eachcontext. You will also be the part of our wide network of Slack. Assignments will be marked by instructor with explaination for better understanding. Upon successfully completion of the course, pathway to next step will be discussed based on individual's knowledge gain. We provide 100% job search assistance.",
+          "Upon enrolling the course, you will get training by professional with over 20 years of experience. The course is designed in a way that no or minimum prior knowledge is required for enrolment. The topics are covered in a way that student can achieve in-depth knowledge of eachcontext. You will also be the part of our wide network of Slack. Assignments will be marked by instructor with explanation for better understanding. Upon successfully completion of the course, pathway to next step will be discussed based on individual's knowledge gain.",
         imageOne:
           "https://devashish-lms.s3.ca-central-1.amazonaws.com/FullstackDeveloper/Fullstack+copy.png",
         imageOneAlt: "Technology stack",

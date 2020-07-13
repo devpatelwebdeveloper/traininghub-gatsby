@@ -167,7 +167,7 @@ const Courses = [
   //Business Intelligence
   {
     tag: "Microsoft",
-    title: "Business Intelligence (BI)",
+    title: "Business Intelligence (MSBI)",
     image: icons.microsoft,
     alt: "SQL Server Development",
     href: "/courses/microsofttechnologies/businessintelligence",

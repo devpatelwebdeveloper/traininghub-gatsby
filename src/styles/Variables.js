@@ -44,7 +44,7 @@ const FontWeight = {
 };
 
 const HeadingSize = {
-  H1: "56px",
+  H1: "42px",
   H2: "36px",
   H3: "28px",
   H4: "24px",
@@ -53,7 +53,7 @@ const HeadingSize = {
 };
 
 const HeadingHeight = {
-  H1: "64px",
+  H1: "48px",
   H2: "48px",
   H3: "32px",
   H4: "28px",

@@ -27,7 +27,7 @@ export default function CourseSingle() {
         </Section>
         <StudentJourney
           heading="Why Microsoft Technologies"
-          paragraphContent="Microsoft's Database Management system is one of the most stable and widely used in big banking and enterprises. The average salary of Microsoft Sql Server Developer based on research is $85,000. The assignments during the course are actual problems that as a Developer student can face in their actual job place. We provide 100% job assistance after completing the course."
+          paragraphContent="Microsoft's Database Management system is one of the most stable and widely used in big banking and enterprises. The average salary of Microsoft Sql Server Developer based on research is $85,000. The assignments during the course are actual problems that as a Developer student can face in their actual job place. "
         />
         <RelatedCourses
           title="Microsoft"

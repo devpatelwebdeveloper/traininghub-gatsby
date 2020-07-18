@@ -11,18 +11,6 @@ import RelatedCourses from "../../blocks/RelatedCourses/RelatedCourses";
 import Accordion from "../../blocks/Accordion/Accordion";
 import { Courses } from "../../../contents/Courses";
 
-// const CourseLayout = styled(Layout)`
-//   @media print {
-//     display: none;
-//   }
-//   -webkit-touch-callout: none;
-//   -webkit-user-select: none;
-//   -khtml-user-select: none;
-//   -moz-user-select: none;
-//   -ms-user-select: none;
-//   user-select: none;
-// `;
-
 export default class SingleCoursePage extends React.Component {
   static propTypes = {
     courseName: PropTypes.any.isRequired,

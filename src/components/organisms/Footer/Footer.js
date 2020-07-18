@@ -127,6 +127,12 @@ export default function Footer() {
                     </Link>
                   </li>
                 </ul>
+                <BaseTitle title="Python" size="H6" />
+                <ul>
+                  <li>
+                    <Link to="/courses/python">Python & Data Science</Link>
+                  </li>
+                </ul>
               </Col>
               <Col md={6}>
                 <BaseTitle title="QA" size="H6" />

@@ -12,6 +12,7 @@ import {
   FullstackDevelopment,
   QualityEngineering,
   BigDataHadoopSpark,
+  Python,
 } from "./Accordions/Accordions";
 const icons = {
   microsoft:
@@ -22,6 +23,8 @@ const icons = {
     "https://devashish-lms.s3.ca-central-1.amazonaws.com/svgIcons/quality-assurance.svg",
   bigdata:
     "https://devashish-lms.s3.ca-central-1.amazonaws.com/svgIcons/server.svg",
+  python:
+    "https://devashish-lms.s3.ca-central-1.amazonaws.com/svgIcons/python-file.svg",
 };
 
 const courseImage = {
@@ -33,6 +36,8 @@ const courseImage = {
     "https://devashish-lms.s3.ca-central-1.amazonaws.com/QualityEngineering_TrainingHub.jpg",
   bigdata:
     "https://devashish-lms.s3.ca-central-1.amazonaws.com/BigData/bigdata.jpg",
+  python:
+    "https://devashish-lms.s3.ca-central-1.amazonaws.com/python/pythonTrainingHub_io.jpg",
 };
 
 const Courses = [
@@ -380,7 +385,7 @@ const Courses = [
     title: "Big Data Hadoop & Spark",
     href: "/courses/big-data-hadoop-spark",
     image: icons.bigdata,
-    alt: "SQL Server Development",
+    alt: "Big Data Hadoop & Spark",
     description:
       "A full-fledged hands-on Big Data Hadoop and Spark training designed by the industry experts to build your in-depth knowledge of Big Data Hadoop ecosystem and computing framework using HadoopMap Reduce and Sparkincluding HDFS, YARN, Sqoop, Flume, Pig, Hive, Impala, HBase, Kafka, Oozie and ZooKeeper.",
     startDate: "",
@@ -403,6 +408,39 @@ const Courses = [
         imageTwo:
           "https://devashish-lms.s3.ca-central-1.amazonaws.com/BigData/set-of-mysql-queries-in-a-database-management-software--942201142-b7feffd8e5454596bcaf1a06091b2ff0.jpg",
         imageTwoAlt: "Database management system",
+      },
+    },
+  },
+  //Python
+  {
+    tag: "Python",
+    title: "Python",
+    href: "/courses/python",
+    image: icons.python,
+    alt: "Python",
+    description:
+      "Learn the essentials of Python for your development projects – by learning core python. Learn to solve core data science problems using Python with Data Science with Python course",
+    startDate: "",
+    courseImage: courseImage.python,
+    coursePage: {
+      courseImage:
+        "https://devashish-lms.s3.ca-central-1.amazonaws.com/python/python_TrainingHub_io_Intro.jpg",
+      courseIntroduction:
+        "Our Python Course training will help you gain in-depth knowledge on all the essential concepts of Object-Oriented Programming, Python Programming, third-party modules, etc .Our Python Syllabus is developed by expert-level programming professionals to make sure of providing the best anytime-anywhere training environment for the aspirants. Python course details provide you valuable and super clear information about all the Python programming concepts and also help you become a notable Python developer in the future",
+      courseIntroductionImage:
+        "https://devashish-lms.s3.ca-central-1.amazonaws.com/python/pythonTrainingHub_io.jpg",
+      courseContent: Python,
+      studentJourney: {
+        heading: "Student Journey",
+        paragraphContent: `With our blended program  which includes self paces learning (in presence of Mentor to solve your doubts) and having Industry expert as  Instructors, you will learn the most in-demand concepts, skills, and tools.
+          Python training from TrainingHub is an ideal way to get an exposure to various features of Python programming, advanced Python programming, Python scripting, Python for Data Analysis and Big Data. Our curriculum is wholly based on real-time scenarios based on Python implemented in today’s world.
+          `,
+        imageOne:
+          "https://devashish-lms.s3.ca-central-1.amazonaws.com/python/DataScience_Training_Hub_io.jpeg",
+        imageOneAlt: "Data Science",
+        imageTwo:
+          "https://devashish-lms.s3.ca-central-1.amazonaws.com/python/python_TrainingHub_io.jpg",
+        imageTwoAlt: "Python Programming",
       },
     },
   },

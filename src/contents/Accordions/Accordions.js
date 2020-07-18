@@ -1381,6 +1381,143 @@ const BigDataHadoopSpark = [
   },
 ];
 
+const Python = [
+  {
+    title: "Module: 01",
+    paragraph: (
+      <ul>
+        <li>A Installing Python</li>
+        <li>Documentation</li>
+        <li>Command Line</li>
+        <li>Variables</li>
+        <li>Simple Python Syntax</li>
+        <li>Keywords</li>
+        <li>Import Module</li>
+        <li>Additional Topics</li>
+        <li>Using Different IDE for python</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Module: 02",
+    paragraph: (
+      <ul>
+        <li>If Elif Else</li>
+        <li>Iterable</li>
+        <li>For</li>
+        <li>Loops</li>
+        <li>Execute</li>
+        <li>Exceptions</li>
+        <li>Data Types</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Module: 03",
+    paragraph: (
+      <ul>
+        <li>Number Types</li>
+        <li>More Number Types</li>
+        <li>Strings</li>
+        <li>More Strings</li>
+        <li>Files</li>
+        <li>Lists</li>
+        <li>Dictionaries</li>
+        <li>Tuples</li>
+        <li>Sets</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Module: 04",
+    paragraph: (
+      <ul>
+        <li>Comprehensions</li>
+        <li>Definitions</li>
+        <li>Functions</li>
+        <li>Default Arguments</li>
+        <li>Doc Strings</li>
+        <li>Variadic Functions</li>
+        <li>Factorial</li>
+        <li>Function Objects</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Module: 05",
+    paragraph: (
+      <ul>
+        <li>Lambda</li>
+        <li>Generators</li>
+        <li>Closures</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Module: 06",
+    paragraph: (
+      <ul>
+        <li>OOPS</li>
+        <li>Creating Our Own Objects</li>
+        <li>Attributes and Methods</li>
+        <li>@classmethod and @staticmethod</li>
+        <li>Encapsulation</li>
+        <li>Abstraction</li>
+        <li>Private vs Public Variables</li>
+        <li>Inheritance</li>
+        <li>Polymorphism</li>
+        <li>super()</li>
+        <li>Dunder Methods</li>
+        <li>Multiple Inheritance</li>
+        <li>MRO - Method Resolution Order</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Module: 07",
+    paragraph: (
+      <ul>
+        <li>The import statement</li>
+        <li>Module search path</li>
+        <li>Creating Modules</li>
+        <li>Using packages</li>
+        <li>Function and Module aliases</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Module: 08",
+    paragraph: (
+      <ul>
+        <li>Syntax errors</li>
+        <li>Exceptions</li>
+        <li>Using try/catch/else/finally</li>
+        <li>Handling multiple exceptions</li>
+        <li>Ignoring exceptions</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Data Science with Python:",
+    paragraph: (
+      <ol>
+        <li>Data Science Environment Setup</li>
+        <li>Over View of Data Science</li>
+        <li>A glance at Python’s essential libraries</li>
+        <li>NUMPY For Data Science</li>
+        <li>Data pre-processing with Numpy; Introducing EDA</li>
+        <li>Pandas For Data Science</li>
+        <li>Data loading and pre-processing with pandas</li>
+        <li>
+          Data Visualization and presentation using seaborn, ggplot and
+          matplotlib
+        </li>
+        <li>Data Processing</li>
+      </ol>
+    ),
+  },
+];
+
 export {
   SqlServerDeveloper,
   SQLServerIntegrationServices,
@@ -1393,4 +1530,5 @@ export {
   ReactRedux,
   QualityEngineering,
   BigDataHadoopSpark,
+  Python,
 };

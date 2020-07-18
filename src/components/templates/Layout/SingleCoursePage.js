@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import styled, { css } from "styled-components";
 import Layout from "./Layout";
 import Section from "../../organisms/Section/Section";
 import Head from "../../organisms/Head/Head";
@@ -9,6 +10,18 @@ import StudentJourney from "../../blocks/StudentJourney/StudentJourney";
 import RelatedCourses from "../../blocks/RelatedCourses/RelatedCourses";
 import Accordion from "../../blocks/Accordion/Accordion";
 import { Courses } from "../../../contents/Courses";
+
+// const CourseLayout = styled(Layout)`
+//   @media print {
+//     display: none;
+//   }
+//   -webkit-touch-callout: none;
+//   -webkit-user-select: none;
+//   -khtml-user-select: none;
+//   -moz-user-select: none;
+//   -ms-user-select: none;
+//   user-select: none;
+// `;
 
 export default class SingleCoursePage extends React.Component {
   static propTypes = {

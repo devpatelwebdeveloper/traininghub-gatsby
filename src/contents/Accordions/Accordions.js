@@ -679,95 +679,125 @@ const SQLServerAnalysisServices = [
 ];
 const MicrosoftBI = [
   {
-    title: "What is BI?",
+    title: "Part 1: Dimension Modeling & Data Ware Housing",
     paragraph: (
       <ul>
-        <li>Introduction to Business Intelligence</li>
-        <li>Understanding the concept of Data Modeling, Data Cleaning</li>
-        <li>Learning about Data Analysis </li>
-        <li>Data Representation and Data Transformation</li>
+        <li>Dimension Modeling & Data Ware Housing</li>
+        <li>Basic concepts of Business Intelligence</li>
+        <li>Basic concepts of Data Warehousing</li>
+        <li>Designing facts and dimensions</li>
+        <li>Employing key performance indicators</li>
+        <li>Dimensional modeling process to design Data Warehouse</li>
       </ul>
     ),
   },
   {
-    title: "ETL Overview",
+    title: "Part 2: MS SQL Server Integration Services (SSIS)",
     paragraph: (
       <ul>
-        <li>Introduction to ETL</li>
-        <li>The various steps involved Extract, Transform, Load</li>
-        <li>Loading the data into a database table</li>
-      </ul>
-    ),
-  },
-  {
-    title: "Sql Server Development",
-    paragraph: (
-      <ul>
-        <li>Relational Database Fundamentals</li>
-        <li>Manipulating Query Results</li>
-        <li>Advanced Query Techniques</li>
-        <li>Creating a Database...</li>
         <li>
-          Check out full course{" "}
-          <a href="/courses/microsofttechnologies/sqlserverdevelopment">here</a>
+          Extract, Transform and Load (ETL) data – Covering various
+          transformations
         </li>
+        <li>Solve data management problems by migrating and processing data</li>
+        <li>
+          Demo on populating data into dimension and fact table using adventure
+          works data warehouse
+        </li>
+        <li>ETL Framework</li>
+        <li>Enhance package functionality with scripting</li>
+        <li>Implementing loops to import multiple files</li>
+        <li>Handling errors and managing exception rows</li>
+        <li>SSIS Package Performance Tuning & Best practices</li>
+        <li>Deploy packages to an SSIS server</li>
+        <li>Administering the storage, security and execution of packages</li>
       </ul>
     ),
   },
   {
-    title: "SQL Server Integration Services",
+    title: "Part 3: MS SQL Server Reporting Services (SSRS)",
     paragraph: (
       <ul>
-        <li>SSIS Architecture and Fundamentals</li>
-        <li>SSIS Data Transformation</li>
-        <li>OLAP and Data Warehouse</li>
-        <li>Fundamental</li>
-        <li>Designing Data Integration with SSIS</li>
-        <li>Deploying and Managing SSIS Projects</li>
         <li>
-          Check out full course{" "}
-          <a href="/courses/microsofttechnologies/sqlserverintegrationservices">
-            here
-          </a>
+          Producing table and matrix report with drill down and drill through
+          functionality
         </li>
+        <li>
+          Produce reports with enhanced visualization features such as charts,
+          map and gauge
+        </li>
+        <li>
+          Integrate parameters, filters and interactive components into reports
+        </li>
+        <li>Create reports on SSAS cubes with Report Builder</li>
+        <li>Deploying reports to the Report Server</li>
+        <li>Creating cached instances, snapshots and subscriptions</li>
+        <li>Configuring and testing security on report items</li>
+        <li>Report performance tuning</li>
       </ul>
     ),
   },
   {
-    title: "SQL Server Analysis Services",
+    title:
+      "Part 4: MS SQL Server Analysis Services – Multidimensional Analysis Model (SSAS)",
     paragraph: (
       <ul>
-        <li>SSAS Installation and Configuration</li>
-        <li>Basic SSAS Entities & Usage</li>
-        <li>Dimension Wizard and Attributes</li>
-        <li>Cube Wizard and Relations</li>
-        <li>Dimension Types & KPI</li>
-        <li>SSAS Partitions and Aggregations...</li>
+        <li>Creating and deploying a cube</li>
+        <li>Extend hierarchies and exploit advanced dimension relationships</li>
+        <li>Configuring many-to-many dimension relationships</li>
+        <li>Building aggregations with the Aggregation Design Wizard</li>
         <li>
-          Check out full course{" "}
-          <a href="/courses/microsofttechnologies/sqlserveranalysisservices">
-            here
-          </a>
+          Implement Key Performance Indicators to monitor business objectives
         </li>
+        <li>Cube storage mode - MOLAP, ROLAP and HOLAP</li>
+        <li>
+          Implementing an action to open a Reporting Services report or to
+          analyze data using Excel
+        </li>
+        <li>Automating cube processing with an XMLA script</li>
       </ul>
     ),
   },
   {
-    title: "SQL Server Reporting Services",
+    title:
+      "Part 5: MS SQL Server Analysis Services - Tabular Analysis Model (SSAS)",
     paragraph: (
       <ul>
-        <li>Reporting Services Architecture</li>
-        <li>Advanced Report Features</li>
-        <li>Implementing Report Models</li>
-        <li>Reporting Services Security</li>
-        <li>Adding Custom Code</li>
-        <li>Creating Basic Reports</li>
+        <li>Basics of in memory processing</li>
+        <li>Multiple dimensional model vs. tabular analysis model</li>
+        <li>Creating and deploying a tabular analysis cube</li>
+        <li>Building hierarchy and dimension relationship</li>
         <li>
-          Check out full course{" "}
-          <a href="/courses/microsofttechnologies/sqlserverreportingservices">
-            here
-          </a>
+          Implement Key Performance Indicators to monitor business objectives
         </li>
+        <li>Query language DAX</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Part 6: MDX Queries",
+    paragraph: (
+      <ul>
+        <li>Basics of MDX</li>
+        <li>Working with Sets</li>
+        <li>Working with Calculations</li>
+        <li>Working with Hierarchical Calculations</li>
+        <li>Working with Time Intelligence functions like QTD, YTD</li>
+        <li>Deploying calculations</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Part 7: Power BI",
+    paragraph: (
+      <ul>
+        <li>Perform Power BI desktop data transformation</li>
+        <li>Describe Power BI desktop modelling</li>
+        <li>Create a Power BI desktop visualization</li>
+        <li>Implement the Power BI service</li>
+        <li>Describe how to connect to Excel data</li>
+        <li>Describe how to collaborate with Power BI data</li>
+        <li>Connect directly to data stores</li>
       </ul>
     ),
   },

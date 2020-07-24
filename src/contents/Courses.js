@@ -138,37 +138,37 @@ const Courses = [
   //   },
   // },
   // SQL Server Analysis Services
-  {
-    tag: "Microsoft",
-    title: "SQL Server Analysis Services",
-    image: icons.microsoft,
-    alt: "SQL Server Analysis Services",
-    href: "/courses/microsofttechnologies/sqlserveranalysisservices",
-    description:
-      "Learn Microsoft’s online analytical processing and data mining tool. SSAS is used as a tool by organizations to analyze and make sense of information possibly spread out across multiple databases, or in disparate tables or files.",
-    startDate: "",
-    courseImage: courseImage.microsoft,
-    coursePage: {
-      courseImage:
-        "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/SQLServer.jpg",
-      courseIntroduction:
-        "The introductory course curriculum helps you take your Microsoft SQL Server skills to the next level. Build robust databases, develop scalable Transact-SQL applications, learn data warehousing concepts and build custom Business Intelligence solutions for greater insight into data to make smarter business decisions.",
-      courseIntroductionImage:
-        "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/SqlServerDevelopment.png",
-      courseContent: SQLServerAnalysisServices,
-      studentJourney: {
-        heading: "Student Journey",
-        paragraphContent:
-          "Upon enrolling the course, you will get training by professional with over 20 years of experience. The course is designed in a way that no or minimum prior knowledge is required for enrolment. The topics are covered in a way that student can achieve in-depth knowledge of eachcontext. You will also be the part of our wide network of Slack. Assignments will be marked by instructor with explanation for better understanding. Upon successfully completion of the course, pathway to next step will be discussed based on individual's knowledge gain.",
-        imageOne:
-          "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/database-management.png",
-        imageOneAlt: "Database management system",
-        imageTwo:
-          "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/sqlquery.jpg",
-        imageTwoAlt: "SQL Query",
-      },
-    },
-  },
+  // {
+  //   tag: "Microsoft",
+  //   title: "SQL Server Analysis Services",
+  //   image: icons.microsoft,
+  //   alt: "SQL Server Analysis Services",
+  //   href: "/courses/microsofttechnologies/sqlserveranalysisservices",
+  //   description:
+  //     "Learn Microsoft’s online analytical processing and data mining tool. SSAS is used as a tool by organizations to analyze and make sense of information possibly spread out across multiple databases, or in disparate tables or files.",
+  //   startDate: "",
+  //   courseImage: courseImage.microsoft,
+  //   coursePage: {
+  //     courseImage:
+  //       "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/SQLServer.jpg",
+  //     courseIntroduction:
+  //       "The introductory course curriculum helps you take your Microsoft SQL Server skills to the next level. Build robust databases, develop scalable Transact-SQL applications, learn data warehousing concepts and build custom Business Intelligence solutions for greater insight into data to make smarter business decisions.",
+  //     courseIntroductionImage:
+  //       "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/SqlServerDevelopment.png",
+  //     courseContent: SQLServerAnalysisServices,
+  //     studentJourney: {
+  //       heading: "Student Journey",
+  //       paragraphContent:
+  //         "Upon enrolling the course, you will get training by professional with over 20 years of experience. The course is designed in a way that no or minimum prior knowledge is required for enrolment. The topics are covered in a way that student can achieve in-depth knowledge of eachcontext. You will also be the part of our wide network of Slack. Assignments will be marked by instructor with explanation for better understanding. Upon successfully completion of the course, pathway to next step will be discussed based on individual's knowledge gain.",
+  //       imageOne:
+  //         "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/database-management.png",
+  //       imageOneAlt: "Database management system",
+  //       imageTwo:
+  //         "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/sqlquery.jpg",
+  //       imageTwoAlt: "SQL Query",
+  //     },
+  //   },
+  // },
   //Business Intelligence
   {
     tag: "Microsoft",

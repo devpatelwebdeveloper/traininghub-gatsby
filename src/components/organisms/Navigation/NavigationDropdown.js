@@ -28,6 +28,9 @@ const StyledNavDropdown = styled(NavDropdown)`
     box-shadow: none;
   `}
   }
+  dropdown-item {
+    padding-bottom: 8px;
+  }
   .row {
     margin: 0px !important;
   }
@@ -66,6 +69,17 @@ export default class NavigationDropdown extends React.Component {
               }
               return null;
             })}
+            <BaseTitle title="Python & DataScience" size="H6" />
+            {Courses.map((course, key) => {
+              if (course.tag === "Python") {
+                return (
+                  <Link to={course.href} key={key} className="dropdown-item">
+                    {course.title}
+                  </Link>
+                );
+              }
+              return null;
+            })}
           </Col>
           <Col>
             <BaseTitle title="Web Technologies" size="H6" />
@@ -95,17 +109,6 @@ export default class NavigationDropdown extends React.Component {
             <BaseTitle title="Data" size="H6" />
             {Courses.map((course, key) => {
               if (course.tag === "Data") {
-                return (
-                  <Link to={course.href} key={key} className="dropdown-item">
-                    {course.title}
-                  </Link>
-                );
-              }
-              return null;
-            })}
-            <BaseTitle title="Python & DataScience" size="H6" />
-            {Courses.map((course, key) => {
-              if (course.tag === "Python") {
                 return (
                   <Link to={course.href} key={key} className="dropdown-item">
                     {course.title}

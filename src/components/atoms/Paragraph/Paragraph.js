@@ -9,7 +9,7 @@ const StyledParagraph = styled.p`
   font-weight: ${Styles.FontWeight.Normal};
   line-height: ${Styles.LineHeight.Medium};
   font-family: ${Styles.FontFamily.Paragraph};
-  text-align: justify;
+
   ${Styles.ScreenSizes.small`
   font-size: ${Styles.FontSize.Small};
   font-weight: ${Styles.FontWeight.Normal};
@@ -18,7 +18,12 @@ const StyledParagraph = styled.p`
    `};
 `;
 
-const StyledParagraphCenter = styled(StyledParagraph)``;
+const StyledParagraphCenter = styled(StyledParagraph)`
+  text-align: center;
+`;
+const StyledParagraphJustify = styled(StyledParagraph)`
+  text-align: justify;
+`;
 
 export default class Paragraph extends React.Component {
   static propTypes = {
@@ -27,16 +32,21 @@ export default class Paragraph extends React.Component {
       PropTypes.node,
     ]).isRequired,
     centered: PropTypes.bool.isRequired,
+    justified: PropTypes.bool.isRequired,
   };
   static defaultProps = {
     children: "",
     centered: false,
+    justified: false,
   };
   render() {
-    const { children, centered } = this.props;
-    if (centered) {
+    const { children, centered, justified } = this.props;
+    if (centered && !justified) {
       return <StyledParagraphCenter>{children}</StyledParagraphCenter>;
+    } else if (justified && !centered) {
+      return <StyledParagraphJustify>{children}</StyledParagraphJustify>;
     }
+
     return <StyledParagraph>{children}</StyledParagraph>;
   }
 }

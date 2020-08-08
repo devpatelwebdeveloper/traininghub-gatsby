@@ -76,6 +76,7 @@ export default class ContentGenericAligned extends React.PureComponent {
       buttonTwoLink,
       buttonTwoText,
       buttonTwoExternal,
+      textJustified,
     } = this.props;
     const img = <BaseTile image={image} alt={alt} />;
 
@@ -100,7 +101,7 @@ export default class ContentGenericAligned extends React.PureComponent {
     const textArea = (
       <React.Fragment>
         <BaseTitle title={title} size="H3" />
-        <Paragraph>{text}</Paragraph>
+        <Paragraph justified={textJustified}>{text}</Paragraph>
 
         {FirstButton}
         {SecondButton}

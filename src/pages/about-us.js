@@ -258,6 +258,7 @@ export default function AboutPage() {
         />
         <Section marginTop="50px" marginBottom="25px">
           <ContentGenericAligned
+            textJustified
             imageLeft={About.imageLeft}
             title={About.title}
             text={About.cont}
@@ -276,6 +277,7 @@ export default function AboutPage() {
           padding="50px"
           background={Styles.Colors.BaseLightBlue}>
           <ContentGenericAligned
+            textJustified
             title={Objective.title}
             text={Objective.cont}
             image={Objective.image}
@@ -284,6 +286,7 @@ export default function AboutPage() {
         </Section>
         <Section marginTop="25px" marginBottom="25px" padding="50px">
           <ContentGenericAligned
+            textJustified
             imageLeft={Trainer.imageLeft}
             title={Trainer.title}
             text={Trainer.cont}
@@ -297,6 +300,7 @@ export default function AboutPage() {
           padding="50px"
           background={Styles.Colors.BaseLightBlue}>
           <ContentGenericAligned
+            textJustified
             imageLeft={Support.imageLeft}
             title={Support.title}
             text={Support.cont}
@@ -306,6 +310,7 @@ export default function AboutPage() {
         </Section>
         <Section marginTop="50px" marginBottom="25px">
           <ContentGenericAligned
+            textJustified
             imageLeft={Founder.imageLeft}
             title={Founder.title}
             text={Founder.cont}

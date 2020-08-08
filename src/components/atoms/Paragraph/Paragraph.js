@@ -9,16 +9,16 @@ const StyledParagraph = styled.p`
   font-weight: ${Styles.FontWeight.Normal};
   line-height: ${Styles.LineHeight.Medium};
   font-family: ${Styles.FontFamily.Paragraph};
+  text-align: justify;
   ${Styles.ScreenSizes.small`
   font-size: ${Styles.FontSize.Small};
   font-weight: ${Styles.FontWeight.Normal};
   line-height: ${Styles.LineHeight.Small};
+  
    `};
 `;
 
-const StyledParagraphCenter = styled(StyledParagraph)`
-  text-align: center;
-`;
+const StyledParagraphCenter = styled(StyledParagraph)``;
 
 export default class Paragraph extends React.Component {
   static propTypes = {

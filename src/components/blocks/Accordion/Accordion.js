@@ -36,7 +36,7 @@ const paragraph =
 
 const data = [
   {
-    title: "Pricing plans Teast",
+    title: "Pricing plans test",
     paragraph,
   },
 ];

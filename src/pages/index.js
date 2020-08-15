@@ -6,6 +6,7 @@ import Tiles from "../components/blocks/Tiles/Tiles";
 import Clients from "../components/blocks/Clients/Clients";
 import CourseCards from "../components/blocks/CourseCards/CourseCards";
 import Slider from "../components/organisms/Slider/Slider";
+import { HomePageCards } from "../contents/HomePageCards";
 
 export default function HomePage() {
   const Toptitle = "Top Title Test";
@@ -21,7 +22,7 @@ export default function HomePage() {
           Background="https://unsplash.it/1500?random"
         /> 
         <Clients />*/}
-        <Tiles />
+        <Tiles title="Redifining future in IT Learning" tiles={HomePageCards} />
         <CourseCards />
       </Layout>
     </>

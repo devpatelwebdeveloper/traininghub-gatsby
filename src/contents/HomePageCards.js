@@ -29,7 +29,7 @@ const HomePageCards = [
     alt: "Corporate Training",
     title: "Corporate Training",
     text:
-      "Customized training content for your entire team. Challenging, focused real-time scenarios,cloud-based lab practice in the learning experience. Our approach is to look at your needs and help in solving with appropriate solutions.",
+      "Customized training content for your entire team. Challenging, focused real-time scenarios, cloud-based lab practice in the learning experience. Our approach is to look at your needs and help in solving with appropriate solutions.",
   },
   {
     image:
@@ -37,7 +37,7 @@ const HomePageCards = [
     alt: "Enterprise Training",
     title: "Enterprise Training",
     text:
-      "Customized training programs according to client requirements. Instructor-led training,Dedicated Mentoring, End-to-End talent transformation, lab-practices, 24*7 access to the resources, and provide training with all available cutting edge technologies.",
+      "Customized training programs according to client requirements. Instructor-led training, Dedicated Mentoring, End-to-End talent transformation, lab-practices, 24*7 access to the resources, and provide training with all available cutting edge technologies.",
   },
   {
     image:
@@ -45,7 +45,7 @@ const HomePageCards = [
     alt: "Classroom/Online Training:",
     title: "Classroom/Online Training:",
     text:
-      "Technology skills are changing quickly. On the job, learning is the only way to keep up. Weprovide training to be social, self-directed, and easy to learn. Practice what you learn underexpert guidance.",
+      "Technology skills are changing quickly. On the job, learning is the only way to keep up. We provide training to be social, self-directed, and easy to learn. Practice what you learn under expert guidance.",
   },
 ];
 

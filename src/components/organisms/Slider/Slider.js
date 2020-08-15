@@ -2,14 +2,13 @@ import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import styled from "styled-components";
 import CarouselItem from "../../molecules/SliderSingle/SliderSingle";
-import { HomePageSliders } from "../../../contents/HomePageSliders";
 
 const StyledCarousel = styled(Carousel)`
   width: 100%;
   min-height: 450px;
 `;
 
-export default function Slider() {
+export default function Slider({ HomePageSlides }) {
   const [index, setIndex] = useState(0);
   const [direction, setDirection] = useState(null);
 
@@ -22,7 +21,7 @@ export default function Slider() {
       activeIndex={index}
       direction={direction}
       onSelect={handleSelect}>
-      {HomePageSliders.map((HomePageSlider) => {
+      {HomePageSlides.map((HomePageSlider) => {
         return (
           <Carousel.Item>
             <CarouselItem

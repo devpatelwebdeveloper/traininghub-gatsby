@@ -1,5 +1,16 @@
 const HomePageSliders = [
   {
+    title: "Jump Start into IT Career",
+    background:
+      "https://devashish-lms.s3.ca-central-1.amazonaws.com/server_TrainingHub.jpg",
+    image:
+      "https://devashish-lms.s3.ca-central-1.amazonaws.com/JumpStartCareer_TrainingHub.jpg",
+    description:
+      "People think IT is a field for programmers and tech supporters. No, there is a role for everyone in IT. So, want to start your career in IT?, Enroll with us for expert advice and gear-up for relevant training. Apart from skills that have a direct impact on your current profile, learn skills that make an immediate valuable impact. The amount of upskilling is useless unless youre inforce and apply the learning at your workplace. Why wait drop your inquiry for us.",
+    buttonText: "Explore Courses",
+    buttonLink: "/courses/",
+  },
+  {
     title: "Sql Server Developer",
     background:
       "https://devashish-lms.s3.ca-central-1.amazonaws.com/server_TrainingHub.jpg",

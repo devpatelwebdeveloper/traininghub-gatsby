@@ -112,18 +112,8 @@ export default function Footer() {
                     </Link>
                   </li>
                   <li>
-                    <Link to="/courses/microsofttechnologies">
-                      SQL Server Integration Services
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/courses/microsofttechnologies">
-                      SQL Server Reporting Services
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/courses/microsofttechnologies">
-                      SQL Server Analysis Services
+                    <Link to="/courses/microsofttechnologies/businessintelligence">
+                      MSBI
                     </Link>
                   </li>
                 </ul>
@@ -135,21 +125,21 @@ export default function Footer() {
                 </ul>
               </Col>
               <Col md={6}>
-                <BaseTitle title="QA" size="H6" />
+                <BaseTitle title="Data" size="H6" />
                 <ul>
                   <li>
-                    <Link to="/courses/qualityengineering">
-                      Quality Engineering
+                    <Link to="/courses/data/big-data-hadoop-spark">
+                      Big Data Hadoop & Spark
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/courses/data/data-warehousing">
+                      Data Warehousing
                     </Link>
                   </li>
                 </ul>
                 <BaseTitle title="Web Development" size="H6" />
                 <ul>
-                  <li>
-                    <Link to="/courses/webdevelopment/html5-css3">
-                      HTML & CSS
-                    </Link>
-                  </li>
                   <li>
                     <Link to="/courses/webdevelopment/javascript">
                       JavaScript
@@ -158,6 +148,11 @@ export default function Footer() {
                   <li>
                     <Link to="/courses/webdevelopment/fullstack-development">
                       Fullstack Developer
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/courses/webdevelopment/react-redux">
+                      React Redux
                     </Link>
                   </li>
                 </ul>

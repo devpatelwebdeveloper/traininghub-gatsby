@@ -1,5 +1,5 @@
 import React from "react";
-import SingleCoursePage from "../../../components/templates/Layout/SingleCoursePage";
+import SingleCoursePage from "../../../../components/templates/Layout/SingleCoursePage";
 
 export default function SqlServerDevelopment() {
   return <SingleCoursePage courseName="Big Data Hadoop & Spark" />;

@@ -13,6 +13,7 @@ import {
   QualityEngineering,
   BigDataHadoopSpark,
   Python,
+  DWH,
 } from "./Accordions/Accordions";
 const icons = {
   microsoft:
@@ -50,7 +51,7 @@ const Courses = [
     href: "/courses/microsofttechnologies/sqlserverdevelopment",
     description:
       "Build and maintain SQL Server databases, and gain meaningful insight into enterprise data with Real World SQL Server Training Curriculum.",
-    startDate: "Nov 30 3019",
+    // startDate: "Nov 30 3019",
     courseImage: courseImage.microsoft,
     coursePage: {
       courseImage:
@@ -73,6 +74,7 @@ const Courses = [
       },
     },
   },
+
   //SQL Server Integration Services
   // {
   //   tag: "Microsoft",
@@ -201,6 +203,71 @@ const Courses = [
       },
     },
   },
+  //Python
+  {
+    tag: "Python",
+    title: "Python",
+    href: "/courses/python",
+    image: icons.python,
+    alt: "Python",
+    description:
+      "Learn the essentials of Python for your development projects – by learning core python. Learn to solve core data science problems using Python with Data Science with Python course",
+    startDate: "",
+    courseImage: courseImage.python,
+    coursePage: {
+      courseImage:
+        "https://devashish-lms.s3.ca-central-1.amazonaws.com/python/python_TrainingHub_io_Intro.jpg",
+      courseIntroduction:
+        "Our Python Course training will help you gain in-depth knowledge on all the essential concepts of Object-Oriented Programming, Python Programming, third-party modules, etc .Our Python Syllabus is developed by expert-level programming professionals to make sure of providing the best anytime-anywhere training environment for the aspirants. Python course details provide you valuable and super clear information about all the Python programming concepts and also help you become a notable Python developer in the future",
+      courseIntroductionImage:
+        "https://devashish-lms.s3.ca-central-1.amazonaws.com/python/pythonTrainingHub_io.jpg",
+      courseContent: Python,
+      studentJourney: {
+        heading: "Student Journey",
+        paragraphContent: `With our blended program  which includes self paces learning (in presence of Mentor to solve your doubts) and having Industry expert as  Instructors, you will learn the most in-demand concepts, skills, and tools.
+          Python training from TrainingHub is an ideal way to get an exposure to various features of Python programming, advanced Python programming, Python scripting, Python for Data Analysis and Big Data. Our curriculum is wholly based on real-time scenarios based on Python implemented in today’s world.
+          `,
+        imageOne:
+          "https://devashish-lms.s3.ca-central-1.amazonaws.com/python/DataScience_Training_Hub_io.jpeg",
+        imageOneAlt: "Data Science",
+        imageTwo:
+          "https://devashish-lms.s3.ca-central-1.amazonaws.com/python/python_TrainingHub_io.jpg",
+        imageTwoAlt: "Python Programming",
+      },
+    },
+  },
+  //Big Data Hadoop & Spark
+  {
+    tag: "Data",
+    title: "Big Data Hadoop & Spark",
+    href: "/courses/data/big-data-hadoop-spark",
+    image: icons.bigdata,
+    alt: "Big Data Hadoop & Spark",
+    description:
+      "A full-fledged hands-on Big Data Hadoop and Spark training designed by the industry experts to build your in-depth knowledge of Big Data Hadoop ecosystem and computing framework using HadoopMap Reduce and Sparkincluding HDFS, YARN, Sqoop, Flume, Pig, Hive, Impala, HBase, Kafka, Oozie and ZooKeeper.",
+    startDate: "",
+    courseImage: courseImage.bigdata,
+    coursePage: {
+      courseImage:
+        "https://devashish-lms.s3.ca-central-1.amazonaws.com/BigData/BigData.png",
+      courseIntroduction:
+        "Our Big Data Hadoop & Spark Regular training course is designed to coverall required big data tools. This course will help you to understand the basics and advanced concept of Hadoop & Spark with all components like HDFS, Map Reduce, YARN, Sqoop, Flume, Hive, Impala, Spark Core API, Spark SQL, Spark Streaming, Oozie, ZooKeeper and some basics of Hadoop administration. Most importantly, this course focused on hands-on exercises, real-time use cases and topic wise code practice which will help you to get practical use of tools and codes rather than knowing only theoretical concepts.",
+      courseIntroductionImage:
+        "https://devashish-lms.s3.ca-central-1.amazonaws.com/BigData/BigDataHadoopSpark.jpg",
+      courseContent: BigDataHadoopSpark,
+      studentJourney: {
+        heading: "Student Journey",
+        paragraphContent:
+          "Once you enroll to the courses, we will quickly recap the knowledge of HTML5, CSS3, Basic JavaScript. Which will teach fundamental web development concepts. We will continue learning core javascript function. As you move through the course, we will be leaning towards React and its concepts. At the end of the course, we will be developing a fully functional app and launch it live.",
+        imageOne:
+          "https://devashish-lms.s3.ca-central-1.amazonaws.com/BigData/BigDataHadoopSpark1.png",
+        imageOneAlt: "BigData Technologies",
+        imageTwo:
+          "https://devashish-lms.s3.ca-central-1.amazonaws.com/BigData/set-of-mysql-queries-in-a-database-management-software--942201142-b7feffd8e5454596bcaf1a06091b2ff0.jpg",
+        imageTwoAlt: "Database management system",
+      },
+    },
+  },
   //Quality Engineering
   {
     tag: "QA",
@@ -234,55 +301,55 @@ const Courses = [
     },
   },
   //HTML5 CSS3
-  {
-    tag: "Web Development",
-    title: "HTML5 - CSS3",
-    image: icons.web,
-    alt: "Web Development HTML5 / CSS3",
-    href: "/courses/webdevelopment/html5-css3",
-    description:
-      "New to coding? Our entry-level Web Development course is perfect for you. You’ll gain a foundational knowledge of HTML & CSS and build websites from scratch in our most popular course.",
-    startDate: "",
-    courseImage: courseImage.web,
-    coursePage: {
-      courseImage:
-        "https://devashish-lms.s3.ca-central-1.amazonaws.com/WebDeveloper/WebDeveloper.jpg",
-      courseIntroduction: (
-        <>
-          <>
-            This course is the perfect mixture of lessons and hands-on practice.
-            After each lesson, you’ll have the opportunity to test and
-            strengthen your new skills through an exercise or project, designed
-            to help you solidify your knowledge. In Web Development you can
-            expect to learn:
-          </>
-          <ul>
-            <li>HTML, CSS, and responsive design</li>
-            <li>Precompiled syntaxes such as Sass</li>
-            <li>Converting professional designs to HTML &amp; CSS</li>
-            <li>Layout models like Flexbox</li>
-            <li>Best practices for modern web development</li>
-            <li>Website accessibility requirements</li>
-            <li>Intro to JavaScript &amp; jQuery</li>
-          </ul>
-        </>
-      ),
-      courseIntroductionImage:
-        "https://devashish-lms.s3.ca-central-1.amazonaws.com/WebDeveloper/WebDevelopment.png",
-      courseContent: Html_Css,
-      studentJourney: {
-        heading: "Student Journey",
-        paragraphContent:
-          "We are committed to providing an inclusive, safe, and welcoming classroom for all that choose to learn with us. From the moment you walk into your first class you’ll be a member of the huge real world developers circle. Whether you’re here to start a career transition, upskill at work, or support your side hustle, you’re coming to the right place. Some of the skills you will be learning in this course are:",
-        imageOne:
-          "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/database-management.png",
-        imageOneAlt: "HTML5 CSS3",
-        imageTwo:
-          "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/sqlquery.jpg",
-        imageTwoAlt: "SASS",
-      },
-    },
-  },
+  // {
+  //   tag: "Web Development",
+  //   title: "HTML5 - CSS3",
+  //   image: icons.web,
+  //   alt: "Web Development HTML5 / CSS3",
+  //   href: "/courses/webdevelopment/html5-css3",
+  //   description:
+  //     "New to coding? Our entry-level Web Development course is perfect for you. You’ll gain a foundational knowledge of HTML & CSS and build websites from scratch in our most popular course.",
+  //   startDate: "",
+  //   courseImage: courseImage.web,
+  //   coursePage: {
+  //     courseImage:
+  //       "https://devashish-lms.s3.ca-central-1.amazonaws.com/WebDeveloper/WebDeveloper.jpg",
+  //     courseIntroduction: (
+  //       <>
+  //         <>
+  //           This course is the perfect mixture of lessons and hands-on practice.
+  //           After each lesson, you’ll have the opportunity to test and
+  //           strengthen your new skills through an exercise or project, designed
+  //           to help you solidify your knowledge. In Web Development you can
+  //           expect to learn:
+  //         </>
+  //         <ul>
+  //           <li>HTML, CSS, and responsive design</li>
+  //           <li>Precompiled syntaxes such as Sass</li>
+  //           <li>Converting professional designs to HTML &amp; CSS</li>
+  //           <li>Layout models like Flexbox</li>
+  //           <li>Best practices for modern web development</li>
+  //           <li>Website accessibility requirements</li>
+  //           <li>Intro to JavaScript &amp; jQuery</li>
+  //         </ul>
+  //       </>
+  //     ),
+  //     courseIntroductionImage:
+  //       "https://devashish-lms.s3.ca-central-1.amazonaws.com/WebDeveloper/WebDevelopment.png",
+  //     courseContent: Html_Css,
+  //     studentJourney: {
+  //       heading: "Student Journey",
+  //       paragraphContent:
+  //         "We are committed to providing an inclusive, safe, and welcoming classroom for all that choose to learn with us. From the moment you walk into your first class you’ll be a member of the huge real world developers circle. Whether you’re here to start a career transition, upskill at work, or support your side hustle, you’re coming to the right place. Some of the skills you will be learning in this course are:",
+  //       imageOne:
+  //         "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/database-management.png",
+  //       imageOneAlt: "HTML5 CSS3",
+  //       imageTwo:
+  //         "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/sqlquery.jpg",
+  //       imageTwoAlt: "SASS",
+  //     },
+  //   },
+  // },
   //JavaScript
   {
     tag: "Web Development",
@@ -379,68 +446,35 @@ const Courses = [
       },
     },
   },
-  //Big Data Hadoop & Spark
+  //DWH
   {
     tag: "Data",
-    title: "Big Data Hadoop & Spark",
-    href: "/courses/big-data-hadoop-spark",
-    image: icons.bigdata,
-    alt: "Big Data Hadoop & Spark",
+    title: "Data Warehousing",
+    image: icons.microsoft,
+    alt: "SQL Server Development",
+    href: "/courses/data/data-warehousing",
     description:
-      "A full-fledged hands-on Big Data Hadoop and Spark training designed by the industry experts to build your in-depth knowledge of Big Data Hadoop ecosystem and computing framework using HadoopMap Reduce and Sparkincluding HDFS, YARN, Sqoop, Flume, Pig, Hive, Impala, HBase, Kafka, Oozie and ZooKeeper.",
+      "Industry-designed combo training course that includes the Microsoft Business Intelligence tool and its components like SSRS, SSIS, and SSAS that use the SQL Server. This training will provide you with full proficiency in working with MSBI, ETL tasks, analytics, data integration, and reporting.",
     startDate: "",
-    courseImage: courseImage.bigdata,
+    courseImage: courseImage.microsoft,
     coursePage: {
       courseImage:
-        "https://devashish-lms.s3.ca-central-1.amazonaws.com/BigData/BigData.png",
+        "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/SQLServer.jpg",
       courseIntroduction:
-        "Our Big Data Hadoop & Spark Regular training course is designed to coverall required big data tools. This course will help you to understand the basics and advanced concept of Hadoop & Spark with all components like HDFS, Map Reduce, YARN, Sqoop, Flume, Hive, Impala, Spark Core API, Spark SQL, Spark Streaming, Oozie, ZooKeeper and some basics of Hadoop administration. Most importantly, this course focused on hands-on exercises, real-time use cases and topic wise code practice which will help you to get practical use of tools and codes rather than knowing only theoretical concepts.",
+        "Our DWH program lets you gain proficiency in Microsoft Business Intelligence. You will work on real-world industry projects pertaining to the three components of MSBI, SSIS for ETL, SSAS for analysis, and SSRS for reporting along with data mining queries, Visual Studio, SQL Server, OLAP, generating Cubes, data sources, and converting raw data into business insights. As part of this training, you will also receive the official course material issued by Microsoft for Analyzing Data with SQL Server Reporting Services and Querying Data with Transact-SQL.",
       courseIntroductionImage:
-        "https://devashish-lms.s3.ca-central-1.amazonaws.com/BigData/BigDataHadoopSpark.jpg",
-      courseContent: BigDataHadoopSpark,
+        "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/SqlServerDevelopment.png",
+      courseContent: DWH,
       studentJourney: {
         heading: "Student Journey",
         paragraphContent:
-          "Once you enroll to the courses, we will quickly recap the knowledge of HTML5, CSS3, Basic JavaScript. Which will teach fundamental web development concepts. We will continue learning core javascript function. As you move through the course, we will be leaning towards React and its concepts. At the end of the course, we will be developing a fully functional app and launch it live.",
+          "After this course student will gain in Depth Knowledge of DW Concepts including ETL and Multidimensional Modelling Data modeling, transformation, and representation. Various steps of ETL process. SSRS architecture and components. Install and Configure MSBI System and implement end to end ETL system using SSIS. Create cube and administer them in SSAS. Create Multiple types of reports, Charts, Dashboard and visualization using SSRS/Power view etc.. Understanding the concept and need of ad-hoc reporting. Integrate various BI tools to build a complete BI solution.",
         imageOne:
-          "https://devashish-lms.s3.ca-central-1.amazonaws.com/BigData/BigDataHadoopSpark1.png",
-        imageOneAlt: "BigData Technologies",
+          "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/database-management.png",
+        imageOneAlt: "Database management system",
         imageTwo:
-          "https://devashish-lms.s3.ca-central-1.amazonaws.com/BigData/set-of-mysql-queries-in-a-database-management-software--942201142-b7feffd8e5454596bcaf1a06091b2ff0.jpg",
-        imageTwoAlt: "Database management system",
-      },
-    },
-  },
-  //Python
-  {
-    tag: "Python",
-    title: "Python",
-    href: "/courses/python",
-    image: icons.python,
-    alt: "Python",
-    description:
-      "Learn the essentials of Python for your development projects – by learning core python. Learn to solve core data science problems using Python with Data Science with Python course",
-    startDate: "",
-    courseImage: courseImage.python,
-    coursePage: {
-      courseImage:
-        "https://devashish-lms.s3.ca-central-1.amazonaws.com/python/python_TrainingHub_io_Intro.jpg",
-      courseIntroduction:
-        "Our Python Course training will help you gain in-depth knowledge on all the essential concepts of Object-Oriented Programming, Python Programming, third-party modules, etc .Our Python Syllabus is developed by expert-level programming professionals to make sure of providing the best anytime-anywhere training environment for the aspirants. Python course details provide you valuable and super clear information about all the Python programming concepts and also help you become a notable Python developer in the future",
-      courseIntroductionImage:
-        "https://devashish-lms.s3.ca-central-1.amazonaws.com/python/pythonTrainingHub_io.jpg",
-      courseContent: Python,
-      studentJourney: {
-        heading: "Student Journey",
-        paragraphContent: `With our blended program  which includes self paces learning (in presence of Mentor to solve your doubts) and having Industry expert as  Instructors, you will learn the most in-demand concepts, skills, and tools.
-          Python training from TrainingHub is an ideal way to get an exposure to various features of Python programming, advanced Python programming, Python scripting, Python for Data Analysis and Big Data. Our curriculum is wholly based on real-time scenarios based on Python implemented in today’s world.
-          `,
-        imageOne:
-          "https://devashish-lms.s3.ca-central-1.amazonaws.com/python/DataScience_Training_Hub_io.jpeg",
-        imageOneAlt: "Data Science",
-        imageTwo:
-          "https://devashish-lms.s3.ca-central-1.amazonaws.com/python/python_TrainingHub_io.jpg",
-        imageTwoAlt: "Python Programming",
+          "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/sqlquery.jpg",
+        imageTwoAlt: "SQL Query",
       },
     },
   },

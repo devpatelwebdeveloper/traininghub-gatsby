@@ -803,6 +803,216 @@ const MicrosoftBI = [
   },
 ];
 
+const DWH = [
+  {
+    title: "Introduction to Data Warehousing",
+    paragraph: (
+      <ul>
+        <li>Overview of Data Warehousing</li>
+        <li>Considerations for a Data Warehouse Solution</li>
+        <li>Lab: Exploring a Data Warehouse Solution</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Dimension Modeling & Data Ware Housing",
+    paragraph: (
+      <ul>
+        <li>Dimension Modeling & Data Ware Housing</li>
+        <li>Basic concepts of Business Intelligence</li>
+        <li>Basic concepts of Data Warehousing</li>
+        <li>Designing facts and dimensions</li>
+        <li>Employing key performance indicators</li>
+        <li>Dimensional modeling process to design Data Warehouse</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Planning Data Warehouse Infrastructure",
+    paragraph: (
+      <ul>
+        <li>Considerations for Building a Data Warehouse</li>
+        <li>Data Warehouse Reference Architectures and Appliances</li>
+        <li>Lab: Planning Data Warehouse Infrastructure</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Designing and Implementing a Data Warehouse",
+    paragraph: (
+      <ul>
+        <li>Logical Design for a Data Warehouse</li>
+        <li>Physical Design for a Data Warehouse</li>
+        <li>Lab: Implementing a Data Warehouse Schema</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Columnstore Indexes",
+    paragraph: (
+      <ul>
+        <li>Introduction to Columnstore Indexes</li>
+        <li>Creating Columnstore Indexes</li>
+        <li>Working with Columnstore Indexes</li>
+        <li>Lab: Using Columnstore Indexes</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Creating an ETL Solution",
+    paragraph: (
+      <ul>
+        <li>Introduction to ETL with SSIS</li>
+        <li>Exploring Source Data</li>
+        <li>Implementing Data Flow</li>
+        <li>Lab: Implementing Data Flow in an SSIS Package</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Implementing Control Flow in an SSIS Package",
+    paragraph: (
+      <ul>
+        <li>Introduction to Control Flow</li>
+        <li>Creating Dynamic Packages</li>
+        <li>Introduction to Control Flow</li>
+        <li>Using Containers</li>
+        <li>
+          Lab: Implementing Control Flow in an SSIS Package and Lab: Using
+          Transactions and Checkpoints
+        </li>
+      </ul>
+    ),
+  },
+  {
+    title: "Debugging and Troubleshooting SSIS Packages",
+    paragraph: (
+      <ul>
+        <li>Debugging an SSIS Package</li>
+        <li>Logging SSIS Package Events</li>
+        <li>Handling Errors in an SSIS Package</li>
+        <li>Lab: Debugging and Troubleshooting an SSIS Package</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Implementing an Incremental ETL Process",
+    paragraph: (
+      <ul>
+        <li>Introduction to Incremental ETL</li>
+        <li>Extracting Modified Data</li>
+        <li>Temporal Tables</li>
+        <li>Lab: Extracting Modified DataLab: Loading Incremental Changes</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Extending SQL Server Integration Services (SSIS)",
+    paragraph: (
+      <ul>
+        <li>Using Custom Components in SSIS</li>
+        <li>Using Scripting in SSIS</li>
+        <li>Lab: Using Scripts and Custom Components</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Deploying and Configuring SSIS Packages",
+    paragraph: (
+      <ul>
+        <li>Overview of SSIS Deployment</li>
+        <li>Deploying SSIS Projects</li>
+        <li>Planning SSIS Package Execution</li>
+        <li>Lab: Deploying and Configuring SSIS Packages</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Enforcing Data Quality",
+    paragraph: (
+      <ul>
+        <li>Introduction to Data Quality</li>
+        <li>Using Data Quality Services to Cleanse Data</li>
+        <li>Using Data Quality Services to Match Data</li>
+        <li>Lab: Cleansing DataLab: De-duplicating Data</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Consuming Data in a Data Warehouse",
+    paragraph: (
+      <ul>
+        <li>Introduction to Business Intelligence</li>
+        <li>Introduction to Reporting</li>
+        <li>An Introduction to Data Analysis</li>
+        <li>Analyzing Data with Azure SQL Data Warehouse</li>
+        <li>Lab: Using Business Intelligence Tools</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Using Master Data Services",
+    paragraph: (
+      <ul>
+        <li>Master Data Services Concepts</li>
+        <li>Implementing a Master Data Services Model</li>
+        <li>Managing Master Data</li>
+        <li>Creating a Master Data Hub</li>
+        <li>Lab: Implementing Master Data Services</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Implementing an Azure SQL Data Warehouse",
+    paragraph: (
+      <ul>
+        <li>Implementing an Azure SQL Data Warehouse</li>
+        <li>Advantages of Azure SQL Data Warehouse</li>
+        <li>Developing an Azure SQL Data Warehouse</li>
+        <li>Migrating to an Azure SQ Data Warehouse</li>
+        <li>Lab: Implementing an Azure SQL Data Warehouse</li>
+      </ul>
+    ),
+  },
+  {
+    title: "MS SQL Server Reporting Services (SSRS)",
+    paragraph: (
+      <ul>
+        <li>
+          Producing table and matrix report with drill down and drill through
+          functionality
+        </li>
+        <li>
+          Produce reports with enhanced visualization features such as charts,
+          map and gauge
+        </li>
+        <li>
+          Integrate parameters, filters and interactive components into reports
+        </li>
+        <li>Create reports on SSAS cubes with Report Builder</li>
+        <li>Deploying reports to the Report Server</li>
+        <li>Creating cached instances, snapshots and subscriptions</li>
+        <li>Configuring and testing security on report items</li>
+        <li>Report performance tuning</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Power BI",
+    paragraph: (
+      <ul>
+        <li>Perform Power BI desktop data transformation</li>
+        <li>Describe Power BI desktop modelling</li>
+        <li>Create a Power BI desktop visualization</li>
+        <li>Implement the Power BI service</li>
+        <li>Describe how to connect to Excel data</li>
+        <li>Describe how to collaborate with Power BI data</li>
+        <li>Connect directly to data stores</li>
+      </ul>
+    ),
+  },
+];
+
 const Html_Css = [
   {
     title: "Chapter 1 : Introduction to Coding & HTML",
@@ -1561,4 +1771,5 @@ export {
   QualityEngineering,
   BigDataHadoopSpark,
   Python,
+  DWH,
 };

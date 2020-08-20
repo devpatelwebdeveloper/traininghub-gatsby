@@ -10,6 +10,7 @@ import {
   Javascript,
   ReactRedux,
   FullstackDevelopment,
+  Mern,
   QualityEngineering,
   BigDataHadoopSpark,
   Python,
@@ -382,38 +383,7 @@ const Courses = [
       },
     },
   },
-  //Fullstack Developer
-  {
-    tag: "Web Development",
-    title: "Fullstack Developer",
-    href: "/courses/webdevelopment/fullstack-development",
-    image: icons.web,
-    alt: "SQL Server Development",
-    description:
-      "We will review the React concepts in introduction and continue to learn topics that include Node and Express, MongoDB and Mongoose, validation and querying, routing and advanced models, and at last deployment of our app.",
-    startDate: "",
-    courseImage: courseImage.web,
-    coursePage: {
-      courseImage:
-        "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/SQLServer.jpg",
-      courseIntroduction:
-        "This course is made for developers committed to doing what it takes to level up. You’ll able to really dig in and explore complex concepts every class. We ensure an engaging and intensive experience that can be balanced with a full-time job. We believe in learning through exercises and by creating awesome projects. From scope outline to deployment, your in-class learning will be focused on real world skills through the creation of a single-page web application.",
-      courseIntroductionImage:
-        "https://devashish-lms.s3.ca-central-1.amazonaws.com/FullstackDeveloper/FullstackDeveloper.png",
-      courseContent: FullstackDevelopment,
-      studentJourney: {
-        heading: "Student Journey",
-        paragraphContent:
-          "Once you enroll to the courses, we will quickly recap the knowledge of HTML5, CSS3, Basic JavaScript. Which will teach fundamental web development concepts. We will continue learning core javascript function. As you move through the course, we will be leaning towards React and its concepts. At the end of the course, we will be developing a fully functional app and launch it live.",
-        imageOne:
-          "https://devashish-lms.s3.ca-central-1.amazonaws.com/FullstackDeveloper/Fullstack+copy.png",
-        imageOneAlt: "Fullstack",
-        imageTwo:
-          "https://devashish-lms.s3.ca-central-1.amazonaws.com/FullstackDeveloper/Fullstack1.png",
-        imageTwoAlt: "Technology stack",
-      },
-    },
-  },
+
   //React-Redux
   {
     tag: "Web Development",
@@ -446,6 +416,71 @@ const Courses = [
       },
     },
   },
+  //Fullstack Developer
+  {
+    tag: "Web Development",
+    title: "Fullstack Developer",
+    href: "/courses/webdevelopment/fullstack-development",
+    image: icons.web,
+    alt: "SQL Server Development",
+    description:
+      "We will review the React concepts in introduction and continue to learn topics that include Node and Express, MongoDB and Mongoose, validation and querying, routing and advanced models, and at last deployment of our app.",
+    startDate: "",
+    courseImage: courseImage.web,
+    coursePage: {
+      courseImage:
+        "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/SQLServer.jpg",
+      courseIntroduction:
+        "This course is made for developers committed to doing what it takes to level up. You’ll able to really dig in and explore complex concepts every class. We ensure an engaging and intensive experience that can be balanced with a full-time job. We believe in learning through exercises and by creating awesome projects. From scope outline to deployment, your in-class learning will be focused on real world skills through the creation of a single-page web application.",
+      courseIntroductionImage:
+        "https://devashish-lms.s3.ca-central-1.amazonaws.com/FullstackDeveloper/FullstackDeveloper.png",
+      courseContent: FullstackDevelopment,
+      studentJourney: {
+        heading: "Student Journey",
+        paragraphContent:
+          "Once you enroll to the courses, we will quickly recap the knowledge of HTML5, CSS3, Basic JavaScript. Which will teach fundamental web development concepts. We will continue learning core javascript function. As you move through the course, we will be leaning towards React and its concepts. At the end of the course, we will be developing a fully functional app and launch it live.",
+        imageOne:
+          "https://devashish-lms.s3.ca-central-1.amazonaws.com/FullstackDeveloper/Fullstack+copy.png",
+        imageOneAlt: "Fullstack",
+        imageTwo:
+          "https://devashish-lms.s3.ca-central-1.amazonaws.com/FullstackDeveloper/Fullstack1.png",
+        imageTwoAlt: "Technology stack",
+      },
+    },
+  },
+  //MERN
+  {
+    tag: "Web Development",
+    title: "MERN Stack",
+    href: "/courses/webdevelopment/mern-stack",
+    image: icons.web,
+    alt: "MERN",
+    description:
+      "We will review the React concepts in introduction and continue to learn topics that include Node and Express, MongoDB and Mongoose, validation and querying, routing and advanced models, and at last deployment of our app.",
+    startDate: "",
+    courseImage: courseImage.web,
+    coursePage: {
+      courseImage:
+        "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/SQLServer.jpg",
+      courseIntroduction:
+        "This course is made for developers committed to doing what it takes to level up. You’ll able to really dig in and explore complex concepts every class. We ensure an engaging and intensive experience that can be balanced with a full-time job. We believe in learning through exercises and by creating awesome projects. From scope outline to deployment, your in-class learning will be focused on real world skills through the creation of a single-page web application.",
+      courseIntroductionImage:
+        "https://devashish-lms.s3.ca-central-1.amazonaws.com/FullstackDeveloper/FullstackDeveloper.png",
+      courseContent: Mern,
+      studentJourney: {
+        heading: "Student Journey",
+        paragraphContent:
+          "Once you enroll to the courses, we will quickly recap the knowledge of HTML5, CSS3, Basic JavaScript. Which will teach fundamental web development concepts. We will continue learning core javascript function. As you move through the course, we will be leaning towards React and its concepts. At the end of the course, we will be developing a fully functional app and launch it live.",
+        imageOne:
+          "https://devashish-lms.s3.ca-central-1.amazonaws.com/FullstackDeveloper/Fullstack+copy.png",
+        imageOneAlt: "Fullstack",
+        imageTwo:
+          "https://devashish-lms.s3.ca-central-1.amazonaws.com/FullstackDeveloper/Fullstack1.png",
+        imageTwoAlt: "Technology stack",
+      },
+    },
+  },
+
   //DWH
   {
     tag: "Data",

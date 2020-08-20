@@ -1375,6 +1375,310 @@ const ReactRedux = [
   },
 ];
 
+const Mern = [
+  {
+    title: "HTML5",
+    paragraph: (
+      <ul>
+        <li>Introduction to HTML5</li>
+        <li>Element and Structure</li>
+        <li>Lists and Links</li>
+        <li>Tables</li>
+        <li>Forms</li>
+        <li>Semantic HTML</li>
+      </ul>
+    ),
+  },
+  {
+    title: "CSS3",
+    paragraph: (
+      <ul>
+        <li>Introduction To CSS</li>
+        <li>Selectors and Visual Rule</li>
+        <li>The Box Model</li>
+        <li>Display and Positioning</li>
+        <li>Colors</li>
+        <li>Typography</li>
+        <li>Grid</li>
+        <li>CSS – Transitions</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Git",
+    paragraph: (
+      <ul>
+        <li>Base Concept of Git</li>
+        <li>Working with Repositories</li>
+        <li>Branching, Merging and Pull Requests</li>
+      </ul>
+    ),
+  },
+  {
+    title: "JavaScript",
+    paragraph: (
+      <ul>
+        <li>
+          Introduction to Javascript and ES6
+          <ul>
+            <li>
+              Introduction to Javascript and ES6 new features. Understand about
+              imperative and declarative way of writing code.
+            </li>
+          </ul>
+        </li>
+        <li>
+          ES6 Advance & Functional Programming
+          <ul>
+            <li>
+              Learn advance concept like Data Transformation, Higher Order
+              Function, Immutability, Pure Function, Recursion etc.
+            </li>
+          </ul>
+        </li>
+        <li>
+          Classes and Arrow function
+          <ul>
+            <li>
+              Understand and write code using classes. Learn oops connect using
+              javascript. With ES6 one of important concept Arrow Function got
+              introduced, which is very useful in handling the context of
+              application
+            </li>
+          </ul>
+        </li>
+        <li>
+          Callback and Async
+          <ul>
+            <li>
+              Learn how Javascript execution work in Async way. Because of
+              javascript Async nature there are concept like callback and async
+              to execute functions after particular execution is done.
+            </li>
+          </ul>
+        </li>
+        <li>
+          Execution Context and this keyword
+          <ul>
+            <li>
+              Lean how Javascript manage current state and data in Execution
+              Context. Understand and application of 'This' Keyword (one of the
+              most imp concept)
+            </li>
+          </ul>
+        </li>
+      </ul>
+    ),
+  },
+  {
+    title: "React - Redux",
+    paragraph: (
+      <ul>
+        <li>
+          Introduction to React
+          <ul>
+            <li>
+              React Scope and Application usage. Popularity of react technology.
+              React vs other technologies. React Market Trend.{" "}
+            </li>
+          </ul>
+        </li>
+        <li>
+          React Setup and Main Concepts
+          <ul>
+            <li>
+              Learn how React works breaking down our React applications into
+              the smallest bits: elements and even fibers. Learn about
+              application setup and tools which will help in development. JSX
+              (JavaScript extension) that allows us to define React elements
+              using syntax that looks similar to HTML. Learn how to use JSX to
+              construct a React application.
+            </li>
+          </ul>
+        </li>
+        <li>
+          Props, State, and the Component Tree
+          <ul>
+            <li>
+              What is Data Management? And its impact on react components. Learn
+              and explore techniques that can be used for better data management
+              and reduce time spent debugging applications. Learn to construct a
+              component tree. A hierarchy of components that data was able to
+              flow through as properties. Learn to create stateful function
+              components. Learn how state can be sent down a component tree and
+              user interactions back up the component tree.
+            </li>
+          </ul>
+        </li>
+        <li>
+          React Hooks
+          <ul>
+            <li>
+              what is React Hooks (new addition in react 16.8)? and its
+              application. Learn how/where to use state and other React features
+              without writing a class components. Learn how to extract stateful
+              logic from a component and test it independently and in
+              integration reuse. Hooks allow you to reuse stateful logic without
+              changing your component hierarchy.
+            </li>
+          </ul>
+        </li>
+        <li>
+          React-Redux
+          <ul>
+            <li>
+              Learn/explore Redux State Management. This will help in building
+              big enterprise level applications to better manage the state from
+              single source of data.
+            </li>
+          </ul>
+        </li>
+        <li>
+          Redux Middleware
+          <ul>
+            <li>
+              We will learn about middleware to add logger and handling
+              asynchronous calls in large applications
+            </li>
+          </ul>
+        </li>
+        <li>
+          HOC and Custom Hooks
+          <ul>
+            <li>
+              Understand and learn advance concept like Higher Order Component
+              and Custom Hooks ,which will help to keep common logic like
+              authorization, submitting forms and etc. at once and reuse it in
+              application using composition.
+            </li>
+          </ul>
+        </li>
+        <li>
+          React Router
+          <ul>
+            <li>
+              What is React Router? Review how to leverage the Hash Router
+              component to handle routing on the client. JavaScript is loading
+              information and changing the UI. Learn role of routing solution
+              for browser history, bookmarks, and forward, back buttons etc.
+            </li>
+          </ul>
+        </li>
+      </ul>
+    ),
+  },
+  {
+    title: "MongoDB",
+    paragraph: (
+      <ul>
+        <li>Introduction to Mongo DB</li>
+        <li>Understanding the Basics & CRUD Operations</li>
+        <li>Schemas & Relations: How to Structure Documents</li>
+        <li>Exploring the Shell & The Server</li>
+        <li>Using the MongoDB Compass to Explore Data Visually</li>
+        <li>Diving into Create Operations</li>
+        <li>Read Operations - A Closer Look</li>
+        <li>Update Operations</li>
+        <li>Understanding Delete Operations</li>
+        <li>Working with Indexes</li>
+        <li>Working with Geospatial Data</li>
+        <li>Understanding the Aggregation Framework</li>
+        <li>Working with Numeric Data</li>
+        <li>MongoDB & Security</li>
+        <li>Performance, Fault Tolerance & Deployment</li>
+        <li>Transactions</li>
+        <li>From Shell to Driver</li>
+        <li>Introducing Stitch</li>
+        <li>Roundup</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Node JS",
+    paragraph: (
+      <ul>
+        <li>
+          Introduction and Foundation
+          <ul>
+            <li>
+              What is Node js /Application of node.js. Learn about node js
+              installation, build in libraries like buffer, http, path and url.
+            </li>
+          </ul>
+        </li>
+        <li>
+          File System and Express
+          <ul>
+            <li>
+              Learn to create a server using Express. File I/O operation into
+              server using File library.
+            </li>
+          </ul>
+        </li>
+        <li>
+          Asynchronous Programming
+          <ul>
+            <li>
+              Asynchronous vs synchronous .Understand asynchronous programming
+              concepts like Event Loop, Callback and Promises. Learn and explore
+              HTTP requests and Error handling.
+            </li>
+          </ul>
+        </li>
+        <li>
+          REST APIs
+          <ul>
+            <li>
+              Understand insights about the exposing API Endpoints for web
+              applications to consume. Learn concepts of request type Get and
+              Post.
+            </li>
+          </ul>
+        </li>
+        <li>
+          Authentication and Security
+          <ul>
+            <li>
+              What is authentication? What is session? Explore different
+              authentication features. Explore security related concepts and
+              learn to make server more secure by using library like Helmet and
+              by JWT token.
+            </li>
+          </ul>
+        </li>
+        <li>
+          Test Node Js Application
+          <ul>
+            <li>
+              What is testing /testing types - overview. Inroduction and
+              creation of test case . Learn how to test code in Node js to build
+              robust application . Setup of test case and mocking the libraries.
+            </li>
+          </ul>
+        </li>
+        <li>
+          REST with GraphQL
+          <ul>
+            <li>
+              Learn GraphQL way of exposing data, learn writing GraphQL queries,
+              API Mutation and GraphQL Playground.
+            </li>
+          </ul>
+        </li>
+        <li>
+          Microservice Application
+          <ul>
+            <li>
+              Understand Microservice architecture , learn docker ,run our node
+              js server using docker.
+            </li>
+          </ul>
+        </li>
+      </ul>
+    ),
+  },
+];
+
 const QualityEngineering = [
   {
     title: "Module 1",
@@ -1768,6 +2072,7 @@ export {
   Javascript,
   FullstackDevelopment,
   ReactRedux,
+  Mern,
   QualityEngineering,
   BigDataHadoopSpark,
   Python,

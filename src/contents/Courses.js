@@ -51,21 +51,21 @@ const Courses = [
     alt: "SQL Server Development",
     href: "/courses/microsofttechnologies/sqlserverdevelopment",
     description:
-      "Build and maintain SQL Server databases, and gain meaningful insight into enterprise data with Real World SQL Server Training Curriculum.",
+      "Learn how to build, develop, and maintain a SQL Server database by focusing on original features and tools of the SQL server. And how to alter tables using T-SQL, SELECT statements,indexes, queries, transaction types, and triggers. Database management skills like disaster recovery, data storage, replication, and data mirroring. Build and maintain SQL Server DB, and gain insights into enterprise data with real-world SQL Server Development Training.",
     // startDate: "Nov 30 3019",
     courseImage: courseImage.microsoft,
     coursePage: {
       courseImage:
         "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/SQLServer.jpg",
       courseIntroduction:
-        "This MS SQL training enables you to manage database solutions and various operations on databases meant for developers to master the descriptive language to work for relational databases. Students will learn SQL architecture, client/server relation, and database types Deploying several functions, operators, etc. for designing relational databases Modifying data using T-SQL, views, and stored procedures The concepts of trigger and the creation of triggers Using records for searching, sorting, indexing, and grouping ,Backup and restoration of databases Optimizing database objects, ensuring data integrity.",
+        "During this course, you will be able to learn what is SQL architecture, server/client relation,stored procedures, functions, SELECT statement, data types, views. how to modify data by using T-SQL, How to develop different operators and functions to design RDBMS, How to create and manage triggers, How to search, index, sort, and group by using records. (How to transactions - using isolation level and locking - preventing deadlocks.) How to implement optimized/efficient, scalable database, scripts/programs/queries for executions. How to recover,replicate, mirror, and store the data in the database. How to implement actions like installation,configure, planning, designing database, troubleshooting, and security, data recovering techniques. How to use advanced query techniques, advanced views, complex queries, user-defined functions, work with XML. You will also be able to monitor and control user access in optimizing the performance of the database.How to insert, update, and delete data, How to work on joins and sub-queries",
       courseIntroductionImage:
         "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/SqlServerDevelopment.png",
       courseContent: SqlServerDeveloper,
       studentJourney: {
         heading: "Student Journey",
         paragraphContent:
-          "Upon enrolling the course, you will get training by professional with over 20 years of experience. The course is designed in a way that no or minimum prior knowledge is required for enrolment. The topics are covered in a way that student can achieve in-depth knowledge of each context. You will also be the part of our wide network of Slack. Assignments will be marked by instructor with explanation for better understanding. Upon successfully completion of the course, pathway to next step will be discussed based on individual's knowledge gain.",
+          "Soon after enrolling in the course, you will get trained by professionals experienced with 10+ of experience. (The course is designed for software developers, BI Professionals, SQL andDatabase administrators, Big data and Hadoop professionals, BA, and Managers, Individuals looking for a career in SQL development.) There are no pre-requisites to enroll for the course.Hence anyone can gain in-depth knowledge of the content. Instructors conduct assignments and doubt clarifications for better understandings. After successful completion of the course, the expert’s advice will be provided based on individuals performance.",
         imageOne:
           "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/database-management.png",
         imageOneAlt: "Database management system",
@@ -180,21 +180,21 @@ const Courses = [
     alt: "SQL Server Development",
     href: "/courses/microsofttechnologies/businessintelligence",
     description:
-      "Industry-designed combo training course that includes the Microsoft Business Intelligence tool and its components like SSRS, SSIS, and SSAS that use the SQL Server. This training will provide you with full proficiency in working with MSBI, ETL tasks, analytics, data integration, and reporting.",
+      "Learn how to work on SSIS, SSAS, and SSRS, This course will lead you to master the MicrosoftBI platform. You can acquire hands-on expertise in data analysis and data integration, creating dashboards, data warehouses, data mining helps you become proficient with MSBI.",
     startDate: "",
     courseImage: courseImage.microsoft,
     coursePage: {
       courseImage:
         "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/SQLServer.jpg",
       courseIntroduction:
-        "Our MSBI master's program lets you gain proficiency in Microsoft Business Intelligence. You will work on real-world industry projects pertaining to the three components of MSBI, SSIS for ETL, SSAS for analysis, and SSRS for reporting along with data mining queries, Visual Studio, SQL Server, OLAP, generating Cubes, data sources, and converting raw data into business insights. As part of this training, you will also receive the official course material issued by Microsoft for Analyzing Data with SQL Server Reporting Services and Querying Data with Transact-SQL.",
+        "During this course tenure, you will learn how to analyze, integrate, and report to the SQL server.MSBI training will help you master Data Mining and Business Intelligence tools, you will also learn how to import, export wizards, data flow, and control flow tasks. The training injects you on how to work on ETL solutions, packages, OLAP, OLTP and configure with MSBI Tools. How to integrate various BI Tools to achieve a complete BI Solution. You can also learn about data migration techniques, data flow transformations, and control flow tasks, Multi-dimensional data modeling, representation, and data sources. You will be provided with access to learn about BI reports, dashboards, charts, Microsoft power view, and report building, Ad-hoc reporting, andData Visualization.",
       courseIntroductionImage:
         "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/SqlServerDevelopment.png",
       courseContent: MicrosoftBI,
       studentJourney: {
         heading: "Student Journey",
         paragraphContent:
-          "After this course student will gain in Depth Knowledge of DW Concepts including ETL and Multidimensional Modelling Data modeling, transformation, and representation. Various steps of ETL process. SSRS architecture and components. Install and Configure MSBI System and implement end to end ETL system using SSIS. Create cube and administer them in SSAS. Create Multiple types of reports, Charts, Dashboard and visualization using SSRS/Power view etc.. Understanding the concept and need of ad-hoc reporting. Integrate various BI tools to build a complete BI solution.",
+          "Soon after enrolling in the course, you will be trained by professionals experienced with 15+ of experience. MSBI stands top among the BI tools available in today’s market, which leads to a wide range of opportunities. The training is designed for Data analysts, Software architects, BIProfessionals, ETL developers, and individuals looking to up-skill their knowledge in MSBI.Having a basic knowledge of SQL, DMDB(Data Modelling and Data Warehousing), RDBMS would be fetching in getting training with MSBI. (There are no specific pre-requisites for this training, anyone can get this course and get trained in MSBI).",
         imageOne:
           "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/database-management.png",
         imageOneAlt: "Database management system",
@@ -212,21 +212,20 @@ const Courses = [
     image: icons.python,
     alt: "Python",
     description:
-      "Learn the essentials of Python for your development projects – by learning core python. Learn to solve core data science problems using Python with Data Science with Python course",
+      "Learn the optimal way to get exposure for python programming, python scripting, python for test automation, python for big data, and data analysis.",
     startDate: "",
     courseImage: courseImage.python,
     coursePage: {
       courseImage:
         "https://devashish-lms.s3.ca-central-1.amazonaws.com/python/python_TrainingHub_io_Intro.jpg",
       courseIntroduction:
-        "Our Python Course training will help you gain in-depth knowledge on all the essential concepts of Object-Oriented Programming, Python Programming, third-party modules, etc .Our Python Syllabus is developed by expert-level programming professionals to make sure of providing the best anytime-anywhere training environment for the aspirants. Python course details provide you valuable and super clear information about all the Python programming concepts and also help you become a notable Python developer in the future",
+        "During this course, you will learn more about python programming from the basics. You will gain in-depth knowledge of essential concepts like conditional statements, third-party modules, web scraping, shell scripting, error handling, Python web framework Django, etc. You will learn basic and advanced concepts of python programming, a comprehensive understanding of MasterObject-Oriented Programming concepts, Implement loops and conditional statements, expertise in creating python functions, Get familiar with IDEs, and python editors, string manipulations.Gain knowledge in advanced analytics and data visualization concept work by developing algorithms and build real-life applications. Get expertise in file handling.",
       courseIntroductionImage:
         "https://devashish-lms.s3.ca-central-1.amazonaws.com/python/pythonTrainingHub_io.jpg",
       courseContent: Python,
       studentJourney: {
         heading: "Student Journey",
-        paragraphContent: `With our blended program  which includes self paces learning (in presence of Mentor to solve your doubts) and having Industry expert as  Instructors, you will learn the most in-demand concepts, skills, and tools.
-          Python training from TrainingHub is an ideal way to get an exposure to various features of Python programming, advanced Python programming, Python scripting, Python for Data Analysis and Big Data. Our curriculum is wholly based on real-time scenarios based on Python implemented in today’s world.
+        paragraphContent: `Soon after enrolling in the course, you will get trained by professionals experienced with 10+ of experience. This course got designed for freshers, software developers, professionals with programming experience, testing professionals, project managers, Aspirants who desire to learn python programming, and Individuals looking for career growth in bigdata and python. There are no specific requirements to learn python. Anyone with basic programming knowledge is eligible to take python training. Instructors conduct assignments and doubt clarifications for better understandings. After successful completion of the course, the expert’s advice will be provided based on individuals performance.
           `,
         imageOne:
           "https://devashish-lms.s3.ca-central-1.amazonaws.com/python/DataScience_Training_Hub_io.jpeg",
@@ -259,7 +258,7 @@ const Courses = [
       studentJourney: {
         heading: "Student Journey",
         paragraphContent:
-          "Once you enroll to the courses, we will quickly recap the knowledge of HTML5, CSS3, Basic JavaScript. Which will teach fundamental web development concepts. We will continue learning core javascript function. As you move through the course, we will be leaning towards React and its concepts. At the end of the course, we will be developing a fully functional app and launch it live.",
+          "Soon after enrolling in the course, you will be trained by professionals experienced with 10+ of experience. By the end of the course, you will be able to... Big data and Hadoop architecture,Understanding of Hadoop clusters and important configurations, Complete setup of the Hadoop ecosystem, Hadoop distributed file system, MapReduce framework and application execution flow, data ingestion tools, Hive SQL, and Pig Latin Language. This course is designed forDevelopers, Project Managers, and architects. ETL, BI Professionals. There are no specific prerequisites for this training, anyone can get training on this course.",
         imageOne:
           "https://devashish-lms.s3.ca-central-1.amazonaws.com/BigData/BigDataHadoopSpark1.png",
         imageOneAlt: "BigData Technologies",
@@ -392,21 +391,21 @@ const Courses = [
     image: icons.web,
     alt: "React Redux",
     description:
-      "We will review the React concepts in introduction and continue to learn topics that include Node and Express, MongoDB and Mongoose, validation and querying, routing and advanced models, and at last deployment of our app.",
+      "Learn how to upskill your JavaScript skill set to improve workflows. This course will lead you to master with Reactjs architecture and components, Fundamentals of React with Redux, Async flow of redux, Redux testing and routing, Async actions, Data flow usage with react.",
     startDate: "",
     courseImage: courseImage.web,
     coursePage: {
       courseImage:
         "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/SQLServer.jpg",
       courseIntroduction:
-        "React is for anyone who wants to level up their JavaScript skill set and improve their workflows. If you are Junior developer, or working with vanilla JavaScript and looking to add another skill in to your resume, React is very high in demand library backed by Facebook, which will Make you a more valuable asset to any modern dev team. If you have prior knowledge of React already and looking to brush up the skills and ready to take deep dive into the advanced concept, you are looking at the right course to upgrade yourself and move from junior to intermediate & senior dev.",
+        "During this course tenure, you will learn how to upskill and become a successful client-side application developer. This training enables you to gain knowledge of Webpack, React Router,Async flow, and Async action, and build single-page applications easily & effectively. You will learn each concept and have practical executions with real-time examples. To upgrade yourself from junior level to senior and executive, this is the course of your choice. You will become a modern asset to the coding teams.",
       courseIntroductionImage:
         "https://devashish-lms.s3.ca-central-1.amazonaws.com/FullstackDeveloper/FullstackDeveloper.png",
       courseContent: ReactRedux,
       studentJourney: {
         heading: "Student Journey",
         paragraphContent:
-          "Once you enroll to the courses, we will quickly recap the knowledge of HTML5, CSS3, Basic JavaScript. Which will teach fundamental web development concepts. We will continue learning core javascript function. As you move through the course, we will be leaning towards React and its concepts. At the end of the course, we will be developing a fully functional app and launch it live.",
+          "Soon after enrolling in the course, you will be trained by professionals experienced with 14+ of experience.  This course is designed for Web developers, UI developers, and Front end developers. If you have prior knowledge of Reactjs, HTML, CSS, Javascript it would be fetching,Now get ready to take a deep dive into the advanced concepts with this course. Finally, this course will lead you to an opportunity to become a senior developer. At the end of the course,you will gain knowledge in building web applications, react compositional models, Managing your data with Redux, Building interactive web pages with components.",
         imageOne:
           "https://devashish-lms.s3.ca-central-1.amazonaws.com/FullstackDeveloper/Fullstack+copy.png",
         imageOneAlt: "Fullstack",
@@ -422,7 +421,7 @@ const Courses = [
     title: "Fullstack Developer",
     href: "/courses/webdevelopment/fullstack-development",
     image: icons.web,
-    alt: "SQL Server Development",
+    alt: "Fullstack Development",
     description:
       "We will review the React concepts in introduction and continue to learn topics that include Node and Express, MongoDB and Mongoose, validation and querying, routing and advanced models, and at last deployment of our app.",
     startDate: "",

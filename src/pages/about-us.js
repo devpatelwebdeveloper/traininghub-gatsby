@@ -252,8 +252,8 @@ export default function AboutPage() {
       <Layout>
         <TopBannerCourse
           courseTitle="About us"
-          text="Founded by Frustrated Trainer Who Believed"
-          text="A vision to upgrade your knowledge to serve better in Community"
+          subtitle="Founded by Frustrated Trainer"
+          text="TrainingHub is not only a e-learning platform but also provides classroom, online & corporate training services globally with certified & real-time experienced trainers in the industry. We provide tailored course content to your organizations, delivered with cutting edge technologies and support. We fulfill your career aspirations like job-assistance, job-support, and customizable courses. Get unlimited access to the community, tech talks, and events organized by TrainingHub. We make learning easy, value & affordable."
           background={Background}
         />
         <Section marginTop="50px" marginBottom="25px">

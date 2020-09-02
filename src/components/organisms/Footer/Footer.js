@@ -84,7 +84,7 @@ export default function Footer() {
             </Paragraph>
           </AddressCol>
           <FeaturedLinks md={2} sm={6}>
-            <BaseTitle title="About" size="H5" />
+            <BaseTitle title="Company" size="H5" />
             <ul>
               <li>
                 <Link to="/about-us">About us</Link>
@@ -102,8 +102,14 @@ export default function Footer() {
           </FeaturedLinks>
           <CoursesLink md={6} sm={12}>
             <BaseTitle title="Courses" size="H5" />
+
             <Row>
               <Col md={6}>
+                <ul>
+                  <li>
+                    <Link to="/courses">All Courses</Link>
+                  </li>
+                </ul>
                 <BaseTitle title="Microsoft" size="H6" />
                 <ul>
                   <li>
@@ -165,9 +171,9 @@ export default function Footer() {
         <Row>
           <Col md={8}>
             <Paragraph>
-              All Content © TrianingHub.io 2019. "TrainingHub.io",
-              TrainingHub.io logo and "We Deliver What We Promise" are
-              trademarks of TrainingHub.io All Rights Reserved.
+              {`All Content © TrainingHub.io ${new Date().getFullYear()}. 'TrainingHub.io',
+              TrainingHub.io logo and 'We Deliver What We Promise' are
+              trademarks of TrainingHub.io All Rights Reserved.`}
             </Paragraph>
           </Col>
           <Col md={2}>

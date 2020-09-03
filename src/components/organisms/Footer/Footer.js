@@ -140,7 +140,7 @@ export default function Footer() {
                   </li>
                   <li>
                     <Link to="/courses/data/data-warehousing">
-                      Data Warehousing
+                      Microsoft Data Warehousing
                     </Link>
                   </li>
                 </ul>

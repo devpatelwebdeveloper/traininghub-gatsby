@@ -29,4 +29,22 @@ const RecruitmentList = [
   },
 ];
 
-export { RecruitmentList };
+const JobSeekerList = [
+  { title: "Professional / Soft Skills Training." },
+  { title: "Career Counselling." },
+  {
+    title:
+      "Interview Preparations - Mock Interviews, Technical Interviews, etc..",
+  },
+  {
+    title: "Domain-Specific Training.",
+  },
+  {
+    title: "Cover letters/Resume preparations.",
+  },
+  {
+    title: "Marketing the potential candidates.",
+  },
+];
+
+export { RecruitmentList, JobSeekerList };

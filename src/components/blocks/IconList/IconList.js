@@ -1,13 +1,14 @@
 import React from "react";
+import PropTypes from "prop-types";
 import Row from "react-bootstrap/Row";
 import IconBullet from "../../atoms/IconBullets/IconBullets";
 import { RecruitmentList } from "../../../contents/RecruitmentBullets";
 
-export default function IconList() {
+export default function IconList({ lists }) {
   return (
     <React.Fragment>
       <Row>
-        {RecruitmentList.map((list) => (
+        {lists.map((list) => (
           <IconBullet title={list.title} />
         ))}
       </Row>

@@ -8,6 +8,7 @@ import Head from "../components/organisms/Head/Head";
 import ContentGenericAligned from "../components/blocks/ContentGenericAligned/ContentGenericAligned";
 import Paragraph from "../components/atoms/Paragraph/Paragraph";
 import IconList from "../components/blocks/IconList/IconList";
+import { RecruitmentList } from "../contents/RecruitmentBullets";
 
 const contentOne = (
   <Paragraph>
@@ -156,7 +157,7 @@ export default function Recruitment() {
           />
         </Section>
         <Section marginTop="25px" marginBottom="25px" padding="50px">
-          <IconList />
+          <IconList lists={RecruitmentList} />
         </Section>
         <Section marginTop="50px" marginBottom="25px">
           <ContentGenericAligned

@@ -8,41 +8,52 @@ import Head from "../components/organisms/Head/Head";
 import ContentGenericAligned from "../components/blocks/ContentGenericAligned/ContentGenericAligned";
 import Paragraph from "../components/atoms/Paragraph/Paragraph";
 import IconList from "../components/blocks/IconList/IconList";
+import { JobSeekerList } from "../contents/RecruitmentBullets";
 
 const contentOne = (
-  <Paragraph>
-    TrainingHub is owned by Centurion Technology Group, which connects clients
-    with the most qualified IT professionals in the country for contract and
-    permanent positions. Our clients have access to the most experienced
-    technology talent out there, while qualified candidates have access to the
-    most coveted jobs in IT. We have proven record of delivering effective
-    recruitment solutions for permanent and contract roles with our Canadian and
-    US clients. Our team will ensure your requirements are understood and
-    delivered. Our values at the heart of everything we do.
-  </Paragraph>
+  <>
+    <Paragraph>
+      Accelerate your career, find a community, and get benefits - No matter
+      where in the world you are to work. TrainingHub offers customized programs
+      that help you to find the perfect job for your skills and experience.
+      Follow our step-by-step guide to help you in finding a job you always
+      wanted to work. We can help you with job search, write resumes, and cover
+      letters.
+    </Paragraph>
+    <Paragraph>
+      <strong>
+        Upgrade your skills by joining our learning programs to get the desired
+        job in the IT industry in North America.
+      </strong>
+      We provide 100% job assistance for career path courses.
+    </Paragraph>
+  </>
 );
 const contentTwo = (
-  <Paragraph>
-    You’re ambitious and innovative. You deserve to work for a company that
-    shares those values. As technical experts whose focus is helping IT
-    professionals find jobs, we can show you how to market your strengths to
-    employers. Our success is built on getting to know you and learning about
-    your goals, experiences, and personality. With this advantage, we help you
-    to find the right job fit for you.
-  </Paragraph>
+  <>
+    <Paragraph>
+      TrainingHub.io connects developers with fast-growing organizations and
+      challenges - all by backing you with extensive benefits that protect your
+      stability and security.
+    </Paragraph>
+    <ul>
+      <li>An exciting portfolio of organizations.</li>
+      <li>24*7 HR Support.</li>
+      <li>Broad Health Care Coverage.</li>
+    </ul>
+  </>
 );
 const contentThree = (
   <React.Fragment>
-    <Paragraph>
-      We build skilled remote engineering teams so you can focus on hitting your
-      goals. More than just recruiting, we takes care of everything remote teams
-      need to thrive – from little things like managing office logistics to big
-      things like benefits, legal, and community.
-    </Paragraph>
     <ul>
-      <li>Access World-Class Talent</li>
-      <li>Build Teams That Are Skilled And Engaged</li>
-      <li>Don’t Sweat The Big Or Small Stuff</li>
+      <li>Professional / Soft Skills Training.</li>
+      <li>Career Counselling.</li>
+      <li>
+        Interview Preparations - Mock Interviews, Technical Interviews, etc.
+      </li>
+      <li>Domain-Specific Training.</li>
+      <li>Cover letters/Resume preparations.</li>
+      <li>Marketing the potential candidates.</li>
     </ul>
   </React.Fragment>
 );
@@ -50,22 +61,10 @@ const contentThree = (
 const contentFour = (
   <React.Fragment>
     <Paragraph>
-      If you are looking to recruit someone who can transform your organization,
-      we will give you access to more talent, more rapidly, in more places than
-      any other specialist recruitment company.
-    </Paragraph>
-    <Paragraph>
-      If you are looking for permanent, contract or temporary assignments our
-      consultants will provide you with expert insight into the specific
-      industry and our online database will connect you with the best vacancies
-      with Canada’s leading employers.
-    </Paragraph>
-    <Paragraph>
-      As a leader in providing IT skills and resources, CTech uses our market
-      knowledge and expertise to match organizations with the specialists they
-      need. Our IT Contracting division connects exceptional contractors with
-      the right employer, so our clients have the caliber of experienced
-      professionals to work on their diverse projects.
+      Save time and money - gain access to the top talent search programs
+      partnering with the TrainingHub.io. We help you to simplify the interview
+      fear by conducting Mock interviews and help you in gaining visibility to
+      the employers.
     </Paragraph>
   </React.Fragment>
 );
@@ -73,30 +72,35 @@ const contentFour = (
 const contentFive = (
   <React.Fragment>
     <Paragraph>
-      Are you looking for placement in the USA ?
-      <a href="https://www.ctech.xyz/" target="_blank" rel="noopener">
-        Centurion Tech
-      </a>{" "}
-      is partnered with{" "}
-      <a href="http://mintextech.com/" target="_blank" rel="noopener">
-        MintexTech
-      </a>
-      . With{" "}
-      <a href="http://mintextech.com/" target="_blank" rel="noopener">
-        MintexTech
-      </a>{" "}
-      we will be able to help you out to get placement in united states of
-      America provided you have valid visa status.
-    </Paragraph>
-    <Paragraph>
-      <a href="http://mintextech.com/" target="_blank" rel="noopener">
-        MintexTech
-      </a>{" "}
-      is 12 years old company in USA and serving across the country and so far
-      served more than 2500+ people to be placed in different industry either on
-      permanent or contract basis.
+      Explore the IT field statistics and career-driven courses at the job
+      market and get updated to them by joining with TrainingHub.io, Learn about
+      various career paths.
     </Paragraph>
   </React.Fragment>
+);
+const contentSix = (
+  <Paragraph>
+    Explore job opportunities to specific positions, and compare the wages
+    between different locations with the same position to analyze the market
+    trends. Get the latest news and reports by browsing.
+  </Paragraph>
+);
+const contentSeven = (
+  <>
+    <ul>
+      <li>Proven process of selection and recruitment.</li>
+      <li>Full screening prior to CV submission.</li>
+      <li>Reference / Credit checks.</li>
+      <li>Highly Competitive rates.</li>
+      <li>Client-focused.</li>
+    </ul>
+    <Paragraph>
+      TrainingHub.io prioritizes the client’s requirements and translates into a
+      tailored interview process and selects the most qualified resources. Over
+      the years we have built a significant relationship with leading employers
+      by fulfilling their requirements. Reach us to know better.
+    </Paragraph>
+  </>
 );
 
 export default function Recruitment() {
@@ -106,8 +110,8 @@ export default function Recruitment() {
       <Layout>
         <TopBannerCourse
           courseTitle="Job seeker"
-          subtitle="Global Opportunities To Your View"
-          text="Accelerate your career, find a community, and get benefits - No matter where in the world you are to work. TrainingHub.io offers customized programs that help you to find the perfect job for your skills and experience. Follow our step-by-step guide to help you in finding a job you always wanted to work. We can help you with job search, write resumes, and cover letters."
+          subtitle="The step from Learning to Earning"
+          text="TrainingHub.io connects developers with fast-growing organizations and challenges - all by backing you with extensive benefits that protect your stability and security."
           background={Background}
         />
         <Section marginTop="50px" marginBottom="25px">
@@ -116,9 +120,10 @@ export default function Recruitment() {
             text={contentOne}
             image="https://devashish-lms.s3.ca-central-1.amazonaws.com/recruitment/WhatWeOffer.png"
             alt="Centurion Tech"
-            buttonOneLink="https://www.ctech.xyz/"
-            buttonOneText="Learn more"
-            buttonOneExternal
+            buttonOneLink="/courses"
+            buttonOneText="Career path courses"
+            buttonTwoLink="/contact-us"
+            buttonTwoText="Contact us"
           />
         </Section>
         <Section
@@ -127,7 +132,7 @@ export default function Recruitment() {
           padding="50px"
           background={Styles.Colors.BaseLightBlue}>
           <ContentGenericAligned
-            title="Job Seeker"
+            title="Take on Big Challenges"
             text={contentTwo}
             image="https://devashish-lms.s3.ca-central-1.amazonaws.com/recruitment/JobSeeker.png"
             alt="Job Seeker"
@@ -136,7 +141,7 @@ export default function Recruitment() {
         </Section>
         <Section marginTop="50px" marginBottom="25px">
           <ContentGenericAligned
-            title="Loan a resource with premises model"
+            title="Our Career Path Courses Covers Areas Such As..."
             text={contentThree}
             image="https://devashish-lms.s3.ca-central-1.amazonaws.com/recruitment/LoanPremises.png"
             alt="Loan a resource"
@@ -148,20 +153,38 @@ export default function Recruitment() {
           padding="50px"
           background={Styles.Colors.BaseLightBlue}>
           <ContentGenericAligned
-            title="Employers"
+            title="Comprehensive Ecosystem "
             text={contentFour}
             image="https://devashish-lms.s3.ca-central-1.amazonaws.com/recruitment/Employer.png"
             alt="Employers"
             imageLeft
           />
         </Section>
-        <Section marginTop="25px" marginBottom="25px" padding="50px">
-          <IconList />
+        <Section marginTop="50px" marginBottom="25px">
+          <ContentGenericAligned
+            title="Choose a Career"
+            text={contentFive}
+            image="https://devashish-lms.s3.ca-central-1.amazonaws.com/recruitment/USPlacement.jpg"
+            alt="Placement in USA"
+          />
+        </Section>
+        <Section
+          marginTop="25px"
+          marginBottom="25px"
+          padding="50px"
+          background={Styles.Colors.BaseLightBlue}>
+          <ContentGenericAligned
+            title="Explore the Market"
+            text={contentSix}
+            image="https://devashish-lms.s3.ca-central-1.amazonaws.com/recruitment/Employer.png"
+            alt="Employers"
+            imageLeft
+          />
         </Section>
         <Section marginTop="50px" marginBottom="25px">
           <ContentGenericAligned
-            title="Placement in USA"
-            text={contentFive}
+            title="Choose a Career"
+            text={contentSeven}
             image="https://devashish-lms.s3.ca-central-1.amazonaws.com/recruitment/USPlacement.jpg"
             alt="Placement in USA"
           />

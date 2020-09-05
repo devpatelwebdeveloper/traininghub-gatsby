@@ -118,8 +118,8 @@ export default function Recruitment() {
           <ContentGenericAligned
             title="What We Offer"
             text={contentOne}
-            image="https://devashish-lms.s3.ca-central-1.amazonaws.com/recruitment/WhatWeOffer.png"
-            alt="Centurion Tech"
+            image="https://devashish-lms.s3.ca-central-1.amazonaws.com/WhatWeOffer_TrainingHub.png"
+            alt="What we offer at TrainingHub.io"
             buttonOneLink="/courses"
             buttonOneText="Career path courses"
             buttonTwoLink="/contact-us"
@@ -134,8 +134,8 @@ export default function Recruitment() {
           <ContentGenericAligned
             title="Take on Big Challenges"
             text={contentTwo}
-            image="https://devashish-lms.s3.ca-central-1.amazonaws.com/recruitment/JobSeeker.png"
-            alt="Job Seeker"
+            image="https://devashish-lms.s3.ca-central-1.amazonaws.com/TakeOnBigChallenge_TrainingHub.png"
+            alt="Take on Big Challenges with TrainingHub.io"
             imageLeft
           />
         </Section>
@@ -143,8 +143,8 @@ export default function Recruitment() {
           <ContentGenericAligned
             title="Our Career Path Courses Covers Areas Such As..."
             text={contentThree}
-            image="https://devashish-lms.s3.ca-central-1.amazonaws.com/recruitment/LoanPremises.png"
-            alt="Loan a resource"
+            image="https://devashish-lms.s3.ca-central-1.amazonaws.com/CareerPath_TrainingHub.png"
+            alt="Career Path"
           />
         </Section>
         <Section
@@ -153,10 +153,10 @@ export default function Recruitment() {
           padding="50px"
           background={Styles.Colors.BaseLightBlue}>
           <ContentGenericAligned
-            title="Comprehensive Ecosystem "
+            title="Comprehensive Ecosystem"
             text={contentFour}
-            image="https://devashish-lms.s3.ca-central-1.amazonaws.com/recruitment/Employer.png"
-            alt="Employers"
+            image="https://devashish-lms.s3.ca-central-1.amazonaws.com/InterviewMockTest_TrainingHub.png"
+            alt="Comprehensive Ecosystem"
             imageLeft
           />
         </Section>
@@ -164,8 +164,8 @@ export default function Recruitment() {
           <ContentGenericAligned
             title="Choose a Career"
             text={contentFive}
-            image="https://devashish-lms.s3.ca-central-1.amazonaws.com/recruitment/USPlacement.jpg"
-            alt="Placement in USA"
+            image="https://devashish-lms.s3.ca-central-1.amazonaws.com/ChooseACareer_TrainingHub.png"
+            alt="TrainingHub.io helps to choose Career"
           />
         </Section>
         <Section
@@ -176,8 +176,8 @@ export default function Recruitment() {
           <ContentGenericAligned
             title="Explore the Market"
             text={contentSix}
-            image="https://devashish-lms.s3.ca-central-1.amazonaws.com/recruitment/Employer.png"
-            alt="Employers"
+            image="https://devashish-lms.s3.ca-central-1.amazonaws.com/ExploreTheMarket_TrainingHub.png"
+            alt="Explore the Market"
             imageLeft
           />
         </Section>
@@ -185,8 +185,8 @@ export default function Recruitment() {
           <ContentGenericAligned
             title="Choose a Career"
             text={contentSeven}
-            image="https://devashish-lms.s3.ca-central-1.amazonaws.com/recruitment/USPlacement.jpg"
-            alt="Placement in USA"
+            image="https://devashish-lms.s3.ca-central-1.amazonaws.com/CareerChoice_TrainingHub.png"
+            alt="Choose A Career"
           />
         </Section>
       </Layout>

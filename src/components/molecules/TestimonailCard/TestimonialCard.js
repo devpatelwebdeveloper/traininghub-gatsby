@@ -16,12 +16,16 @@ const Testimonial = styled.div`
   font-family: ${Styles.FontFamily.Paragraph};
   ${Styles.ScreenSizes.small`
   width: 100%;  
+  max-width: 100%;
    `};
 `;
 const TestimonialBody = styled.div`
   padding: 30px 30px 80px;
   height: 430px;
   // text-align: justify;
+  ${Styles.ScreenSizes.small`
+ height:auto;
+   `};
 `;
 const TestimonialFooter = styled.div`
   background-color: ${Styles.Colors.BrandYellow};

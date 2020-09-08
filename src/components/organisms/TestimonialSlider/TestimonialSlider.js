@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import Styles from "../../../styles/Styles";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -32,7 +33,7 @@ export default function Carousel({ testimonials, title }) {
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 576,
+        breakpoint: 769,
         settings: {
           slidesToShow: 1,
         },
@@ -43,7 +44,7 @@ export default function Carousel({ testimonials, title }) {
   return (
     <>
       <Section marginTop="50px" marginBottom="25px">
-        <BaseTitle title={title} size="H3" center underline />
+        <BaseTitle title={title} size="H4" center underline />
         <Slider {...settings} ref={ref}>
           {slideItems}
         </Slider>

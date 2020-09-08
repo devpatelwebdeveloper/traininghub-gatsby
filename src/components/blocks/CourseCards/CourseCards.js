@@ -1,4 +1,5 @@
 import React from "react";
+import Styles from "../../../styles/Styles";
 import Section from "../../organisms/Section/Section";
 import Row from "react-bootstrap/Row";
 import CourseCard from "../../molecules/CourseCard/CourseCard";
@@ -28,7 +29,11 @@ export default function CourseCards() {
   // }
   // const randCourse = shuffle(Courses);
   return (
-    <Section padding="20px" margin="50px">
+    <Section
+      padding="20px"
+      margin="50px"
+      padding="50px"
+      background={Styles.Colors.BaseLightBlue}>
       <BaseTitle
         title="Achieve your career goals with industry-recognized learning paths"
         size="H3"

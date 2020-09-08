@@ -22,7 +22,7 @@ export default function HomePage() {
         <CourseCards />
         <TestimonialSlider
           testimonials={Testimonials}
-          title="This is the title"
+          title="Don’t just take it from us."
         />
       </Layout>
     </>

@@ -10,6 +10,12 @@ import Paragraph from "../../atoms/Paragraph/Paragraph";
 import BaseTile from "../../atoms/BaseTile/BaseTile";
 import Button from "../../molecules/Button/Button";
 
+const GenericAlignedImg = styled.div`
+  max-width: 480px !important;
+  border-radius: 20px;
+  margin: auto;
+`;
+
 const StyledContainer = styled(Container)`
   .col-md-6 {
     margin: auto;
@@ -78,7 +84,11 @@ export default class ContentGenericAligned extends React.PureComponent {
       buttonTwoExternal,
       textJustified,
     } = this.props;
-    const img = <BaseTile image={image} alt={alt} />;
+    const img = (
+      <GenericAlignedImg>
+        <BaseTile image={image} alt={alt} />
+      </GenericAlignedImg>
+    );
 
     const FirstButton =
       buttonOneText === "Button 1" ? null : (

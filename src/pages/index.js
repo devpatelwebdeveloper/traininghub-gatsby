@@ -1,10 +1,7 @@
 import React from "react";
 import Layout from "../components/templates/Layout/Layout";
 import Head from "../components/organisms/Head/Head";
-import TopBanner from "../components/organisms/TopBanner/TopBanner";
-import Section from "../components/organisms/Section/Section";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+
 import Tiles from "../components/blocks/Tiles/Tiles";
 import Clients from "../components/blocks/Clients/Clients";
 import CourseCards from "../components/blocks/CourseCards/CourseCards";
@@ -13,6 +10,7 @@ import { HomePageCards } from "../contents/HomePageCards";
 import { HomePageSliders } from "../contents/HomePageSliders";
 import TestimonialCard from "../components/molecules/TestimonailCard/TestimonialCard";
 import TestimonialSlider from "../components/organisms/TestimonialSlider/TestimonialSlider";
+import Testimonials from "../contents/Testimonials";
 
 export default function HomePage() {
   return (
@@ -22,11 +20,10 @@ export default function HomePage() {
         <Slider HomePageSlides={HomePageSliders} />
         <Tiles title="Redefining future in IT Learning" tiles={HomePageCards} />
         <CourseCards />
-        <Section marginTop="50px" marginBottom="25px">
-          <Row>
-            <TestimonialSlider />
-          </Row>
-        </Section>
+        <TestimonialSlider
+          testimonials={Testimonials}
+          title="This is the title"
+        />
       </Layout>
     </>
   );

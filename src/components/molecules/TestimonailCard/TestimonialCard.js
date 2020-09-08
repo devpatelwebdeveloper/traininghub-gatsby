@@ -8,19 +8,20 @@ import Paragraph from "../../atoms/Paragraph/Paragraph";
 const Testimonial = styled.div`
   background-color: #fff;
   border-radius: 20px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  // box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border: 1px solid ${Styles.Colors.BaseBorderGrey};
   overflow: hidden;
-  max-width: 100%;
-  width: 400px;
+  max-width: 360px;
+  height: auto;
   font-family: ${Styles.FontFamily.Paragraph};
   ${Styles.ScreenSizes.small`
-  width: 100%;
-  
+  width: 100%;  
    `};
 `;
 const TestimonialBody = styled.div`
-  padding: 40px 40px 80px;
-  height: 400px;
+  padding: 30px 30px 80px;
+  height: 430px;
+  // text-align: justify;
 `;
 const TestimonialFooter = styled.div`
   background-color: ${Styles.Colors.BrandYellow};
@@ -33,6 +34,8 @@ const TestimonialFooter = styled.div`
     height: 120px;
     width: 120px;
     margin-top: -100px;
+    margin-right: auto;
+    margin-left: auto;
   }
 `;
 

@@ -139,7 +139,7 @@ export default function Recruitment() {
             imageLeft
           />
         </Section>
-        <Section marginTop="50px" marginBottom="25px">
+        <Section marginTop="25px" marginBottom="25px">
           <ContentGenericAligned
             title="Our Career Path Courses Covers Areas Such As..."
             text={contentThree}
@@ -147,11 +147,7 @@ export default function Recruitment() {
             alt="Career Path"
           />
         </Section>
-        <Section
-          marginTop="25px"
-          marginBottom="25px"
-          padding="50px"
-          background={Styles.Colors.BaseLightBlue}>
+        <Section padding="25px" background={Styles.Colors.BaseLightBlue}>
           <ContentGenericAligned
             title="Comprehensive Ecosystem"
             text={contentFour}
@@ -160,7 +156,7 @@ export default function Recruitment() {
             imageLeft
           />
         </Section>
-        <Section marginTop="50px" marginBottom="25px">
+        <Section marginTop="25px" marginBottom="25px">
           <ContentGenericAligned
             title="Choose a Career"
             text={contentFive}
@@ -171,7 +167,7 @@ export default function Recruitment() {
         <Section
           marginTop="25px"
           marginBottom="25px"
-          padding="50px"
+          padding="25px"
           background={Styles.Colors.BaseLightBlue}>
           <ContentGenericAligned
             title="Explore the Market"
@@ -181,7 +177,7 @@ export default function Recruitment() {
             imageLeft
           />
         </Section>
-        <Section marginTop="50px" marginBottom="25px">
+        <Section marginTop="25px" marginBottom="25px">
           <ContentGenericAligned
             title="Choose a Career"
             text={contentSeven}
@@ -193,3 +189,5 @@ export default function Recruitment() {
     </React.Fragment>
   );
 }
+
+//code

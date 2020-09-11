@@ -24,6 +24,24 @@ const StyledNav = styled(Navbar)`
   `}
 `;
 
+const StyledNavDropdown = styled(NavDropdown)`
+  .dropdown-menu {
+    border-radius: 0px !important;
+    border: none !important;
+
+    box-shadow: 0 1px 0 rgba(12, 13, 14, 0.1), 0 1px 6px rgba(59, 64, 69, 0.1);
+    ${Styles.ScreenSizes.small`
+    box-shadow: none;
+  `}
+  }
+  dropdown-item {
+    padding-bottom: 8px;
+  }
+  .row {
+    margin: 0px !important;
+  }
+`;
+
 export default function Navi() {
   return (
     <>
@@ -54,7 +72,7 @@ export default function Navi() {
                 </BaseLink>
               );
             })}
-            <NavDropdown title="Recruitment" id="nav-dropdown">
+            <StyledNavDropdown title="Recruitment" id="nav-dropdown">
               <NavDropdown.Item>
                 <BaseLink href="/employers" composedClassName="nav-link">
                   Employers
@@ -65,7 +83,7 @@ export default function Navi() {
                   Job Seeker
                 </BaseLink>
               </NavDropdown.Item>
-            </NavDropdown>
+            </StyledNavDropdown>
             <BaseLink href="/contact-us" composedClassName="nav-link">
               Contact us
             </BaseLink>

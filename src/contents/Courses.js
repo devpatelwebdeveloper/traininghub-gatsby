@@ -483,9 +483,9 @@ const Courses = [
   //DWH
   {
     tag: "Data",
-    title: "Microsoft Data Warehousing",
+    title: "Microsoft DWH",
     image: icons.microsoft,
-    alt: "Microsoft Data Warehousing",
+    alt: "Microsoft DWH",
     href: "/courses/data/data-warehousing",
     description:
       "Industry-designed combo training course that includes the Microsoft Business Intelligence tool and its components like SSRS, SSIS, and SSAS that use the SQL Server. This training will provide you with full proficiency in working with MSBI, ETL tasks, analytics, data integration, and reporting.",

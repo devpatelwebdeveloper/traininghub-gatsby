@@ -90,7 +90,10 @@ export default function Footer() {
                 <Link to="/about-us">About us</Link>
               </li>
               <li>
-                <Link to="/recruitment">Recruitment</Link>
+                <Link to="/employers">Employers</Link>
+              </li>
+              <li>
+                <Link to="/job-seeker">Job Seeker</Link>
               </li>
               <li>
                 <Link to="/contact-us">Contact us</Link>
@@ -140,7 +143,7 @@ export default function Footer() {
                   </li>
                   <li>
                     <Link to="/courses/data/data-warehousing">
-                      Microsoft Data Warehousing
+                      Microsoft DWH
                     </Link>
                   </li>
                 </ul>

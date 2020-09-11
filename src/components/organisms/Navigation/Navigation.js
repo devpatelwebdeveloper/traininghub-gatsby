@@ -4,6 +4,7 @@ import Styles from "../../../styles/Styles";
 import BaseLink from "../../atoms/BaseLink/BaseLink";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+import NavDropdown from "react-bootstrap/NavDropdown";
 import NavigationInternal from "./NavigationDropdown";
 import { TopNavigation } from "../../../contents/Navigation/Navigation";
 
@@ -53,6 +54,21 @@ export default function Navi() {
                 </BaseLink>
               );
             })}
+            <NavDropdown title="Recruitment" id="nav-dropdown">
+              <NavDropdown.Item>
+                <BaseLink href="/employers" composedClassName="nav-link">
+                  Employers
+                </BaseLink>
+              </NavDropdown.Item>
+              <NavDropdown.Item>
+                <BaseLink href="/job-seeker" composedClassName="nav-link">
+                  Job Seeker
+                </BaseLink>
+              </NavDropdown.Item>
+            </NavDropdown>
+            <BaseLink href="/contact-us" composedClassName="nav-link">
+              Contact us
+            </BaseLink>
           </Nav>
         </Navbar.Collapse>
       </StyledNav>

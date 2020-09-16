@@ -7,6 +7,7 @@ const plugins = [
   "gatsby-plugin-react-helmet",
   "gatsby-plugin-styled-components",
   `gatsby-plugin-sass`,
+  "gatsby-plugin-sitemap",
 ];
 
 plugins.push(
@@ -38,5 +39,6 @@ module.exports = {
   siteMetadata: {
     title: "TrainingHub.io",
     author: "Dev",
+    siteUrl: "https://www.traininghub.io",
   },
 };

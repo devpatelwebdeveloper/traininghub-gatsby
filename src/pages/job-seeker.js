@@ -14,11 +14,12 @@ const contentOne = (
   <>
     <Paragraph>
       Accelerate your career, find a community, and get benefits - No matter
-      where in the world you are to work. TrainingHub offers customized programs
-      that help you to find the perfect job for your skills and experience.
-      Follow our step-by-step guide to help you in finding a job you always
-      wanted to work. We can help you with job search, write resumes, and cover
-      letters.
+      where in the world you are to work. TrainingHub.io offers customized
+      programs that help you to find the perfect job for your skills and
+      experience. Follow our step-by-step guide to help you in finding a job you
+      always wanted to work. We can help you with job search, write resumes, and
+      cover letters. You can come and visit our location and meet our expert
+      employment consultant and get started.
     </Paragraph>
     <Paragraph>
       <strong>
@@ -34,7 +35,9 @@ const contentTwo = (
     <Paragraph>
       TrainingHub.io connects developers with fast-growing organizations and
       challenges - all by backing you with extensive benefits that protect your
-      stability and security.
+      stability and security. We can help you to understand the skills required
+      for getting jobs and can arrange your training and provide 100% placement
+      assistance to get the required job.
     </Paragraph>
     <ul>
       <li>An exciting portfolio of organizations.</li>
@@ -45,6 +48,14 @@ const contentTwo = (
 );
 const contentThree = (
   <React.Fragment>
+    <Paragraph>
+      Our team is a diverse group of professionals, who are dedicated to
+      providing people with the best learning experience and fun along the way.
+      We encourage continuous learning and improvement, which is a great way to
+      learn new skills. Keeping up to date for the market trends will increase
+      the chance of opportunities and change our career graph accordingly. We
+      provide below services besides the career path courses.
+    </Paragraph>
     <ul>
       <li>Professional / Soft Skills Training.</li>
       <li>Career Counselling.</li>
@@ -64,7 +75,11 @@ const contentFour = (
       Save time and money - gain access to the top talent search programs
       partnering with the TrainingHub.io. We help you to simplify the interview
       fear by conducting Mock interviews and help you in gaining visibility to
-      the employers.
+      the employers. We have specific industry teams, who have deep
+      understandings of that specific sector and its roles. So, we are well
+      known to guide you towards your ideal job in your ideal - Fortune 500
+      companies. We are unique in the industry by teaching you the latest
+      cutting edge technologies used in the present market.
     </Paragraph>
   </React.Fragment>
 );
@@ -74,7 +89,12 @@ const contentFive = (
     <Paragraph>
       Explore the IT field statistics and career-driven courses at the job
       market and get updated to them by joining with TrainingHub.io, Learn about
-      various career paths.
+      various career paths. We will help you find your ideal job and steer your
+      career in the right way after the successful completion of the training
+      with our career path courses. So, why wait! get trained in one of our
+      career path courses and fulfill your dream job opportunity. We define
+      ourselves as pioneer in the market for career path courses. So, get in
+      touch and experience a more considerable approach.
     </Paragraph>
   </React.Fragment>
 );
@@ -82,7 +102,12 @@ const contentSix = (
   <Paragraph>
     Explore job opportunities to specific positions, and compare the wages
     between different locations with the same position to analyze the market
-    trends. Get the latest news and reports by browsing.
+    trends. Get the latest news and reports by browsing. Our biggest strength is
+    sourcing and identification of talent which helped us to establish
+    partnerships with leading companies. Along with this, we help our clients
+    update with current trends in the market to develop their HR strategy. Our
+    team works closely with the hiring managers to Get qualified candidates to
+    ensure the best fit in their teams.
   </Paragraph>
 );
 const contentSeven = (
@@ -110,7 +135,7 @@ export default function Recruitment() {
       <Layout>
         <TopBannerCourse
           courseTitle="Job seeker"
-          subtitle="The step from Learning to Earning"
+          subtitle="Take Step From Learning to Earning!"
           text="TrainingHub.io connects developers with fast-growing organizations and challenges - all by backing you with extensive benefits that protect your stability and security."
           background={Background}
         />
@@ -179,10 +204,10 @@ export default function Recruitment() {
         </Section>
         <Section marginTop="25px" marginBottom="25px">
           <ContentGenericAligned
-            title="Choose a Career"
+            title="What Makes Us Different"
             text={contentSeven}
             image="https://devashish-lms.s3.ca-central-1.amazonaws.com/CareerChoice_TrainingHub.png"
-            alt="Choose A Career"
+            alt="What Makes Us Different"
           />
         </Section>
       </Layout>

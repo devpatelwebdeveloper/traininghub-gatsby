@@ -15,6 +15,7 @@ import {
   BigDataHadoopSpark,
   Python,
   DWH,
+  CoreJava,
 } from "./Accordions/Accordions";
 const icons = {
   microsoft:
@@ -27,6 +28,7 @@ const icons = {
     "https://devashish-lms.s3.ca-central-1.amazonaws.com/svgIcons/server.svg",
   python:
     "https://devashish-lms.s3.ca-central-1.amazonaws.com/svgIcons/python-file.svg",
+  java: "https://devashish-lms.s3.ca-central-1.amazonaws.com/svgIcons/java.svg",
 };
 
 const courseImage = {
@@ -206,9 +208,9 @@ const Courses = [
   },
   //Python
   {
-    tag: "Python",
+    tag: "Programming",
     title: "Python",
-    href: "/courses/python",
+    href: "/courses/programming/python",
     image: icons.python,
     alt: "Python",
     description:
@@ -509,6 +511,38 @@ const Courses = [
         imageTwo:
           "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/sqlquery.jpg",
         imageTwoAlt: "SQL Query",
+      },
+    },
+  },
+  //Core Java
+  {
+    tag: "Programming",
+    title: "Core Java",
+    href: "/courses/programming/core-java",
+    image: icons.java,
+    alt: "Core Java",
+    description:
+      "Our Core Java Training lets you master the Java Programming Language. Core Java is the foundational course to the fundamental knowledge of developing code using Java Programming Language. This course will let you learn the concepts like, Classes and Objects, Data Types and variables, Java Operators, Methods, Packages, Modifiers, Blocks, Inner Classes, OOPS, Inheritance, etc. You can acquire knowledge of Method overloading & Overriding, Abstraction, Polymorphism, Exception Handling, Collections, etc..",
+    startDate: "",
+    courseImage: courseImage.python,
+    coursePage: {
+      courseImage:
+        "https://devashish-lms.s3.ca-central-1.amazonaws.com/python/python_TrainingHub_io_Intro.jpg",
+      courseIntroduction:
+        "During this course tenure, you will learn how to code Java Programming Language. You will learn how to utilise classes and objects, how to define data types and variables, how to include java operators, how to install packages, how to declare methods for call back and call by functions, how to use java constructor and constructor chaining, how to use access specifiers in modifiers, static keyword usage, different types of Inner classes, final keyword and final variable declaration, how to object-orient programme, what is Encapsulation, Inheritance, Method Overloading, etc. You will also learn about Method Overriding and types of method overriding in Java, What is abstraction, polymorphism & Exception handling in Java. You will be provided with access to Sample programs and Real-time applications with Java Interface.",
+      courseIntroductionImage:
+        "https://devashish-lms.s3.ca-central-1.amazonaws.com/python/pythonTrainingHub_io.jpg",
+      courseContent: CoreJava,
+      studentJourney: {
+        heading: "Student Journey",
+        paragraphContent: `Soon after enrolling in the course, you will be trained by professionals experienced with 15+ of experience. If you want to get into any career path course - we recommend to take core java which will give you an understanding about programming concepts and how to code . The training is designed for Developers, Java Developers, and individuals looking to upskill their knowledge in Core concepts of Java.
+          `,
+        imageOne:
+          "https://devashish-lms.s3.ca-central-1.amazonaws.com/python/DataScience_Training_Hub_io.jpeg",
+        imageOneAlt: "Data Science",
+        imageTwo:
+          "https://devashish-lms.s3.ca-central-1.amazonaws.com/python/python_TrainingHub_io.jpg",
+        imageTwoAlt: "Python Programming",
       },
     },
   },

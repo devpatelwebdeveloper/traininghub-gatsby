@@ -69,9 +69,9 @@ export default class NavigationDropdown extends React.Component {
               }
               return null;
             })}
-            <BaseTitle title="Python & DataScience" size="H6" />
+            <BaseTitle title="Programming" size="H6" />
             {Courses.map((course, key) => {
-              if (course.tag === "Python") {
+              if (course.tag === "Programming") {
                 return (
                   <Link to={course.href} key={key} className="dropdown-item">
                     {course.title}

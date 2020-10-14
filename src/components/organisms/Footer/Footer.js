@@ -126,10 +126,13 @@ export default function Footer() {
                     </Link>
                   </li>
                 </ul>
-                <BaseTitle title="Python" size="H6" />
+                <BaseTitle title="Programming" size="H6" />
                 <ul>
                   <li>
-                    <Link to="/courses/python">Python & Data Science</Link>
+                    <Link to="/courses/programming/python">Python</Link>
+                  </li>
+                  <li>
+                    <Link to="/courses/programming/core-java">Core Java</Link>
                   </li>
                 </ul>
               </Col>

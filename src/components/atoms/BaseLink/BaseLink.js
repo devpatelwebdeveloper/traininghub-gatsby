@@ -25,7 +25,11 @@ export default class BaseLink extends React.Component {
     const { children, external, href, composedClassName } = this.props;
     if (external) {
       return (
-        <a href={href} className={composedClassName}>
+        <a
+          href={href}
+          className={composedClassName}
+          target="_blank"
+          rel="noopener noreferrer">
           {children}
         </a>
       );

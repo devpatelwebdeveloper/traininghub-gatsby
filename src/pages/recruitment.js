@@ -75,22 +75,34 @@ const contentFive = (
   <React.Fragment>
     <Paragraph>
       Are you looking for placement in the USA ?
-      <a href="https://www.ctech.xyz/" target="_blank" rel="noopener">
+      <a
+        href="https://www.ctech.xyz/"
+        target="_blank"
+        rel="noopener noreferrer">
         Centurion Tech
       </a>{" "}
       is partnered with{" "}
-      <a href="http://mintextech.com/" target="_blank" rel="noopener">
+      <a
+        href="http://mintextech.com/"
+        target="_blank"
+        rel="noopener noreferrer">
         MintexTech
       </a>
       . With{" "}
-      <a href="http://mintextech.com/" target="_blank" rel="noopener">
+      <a
+        href="http://mintextech.com/"
+        target="_blank"
+        rel="noopener noreferrer">
         MintexTech
       </a>{" "}
       we will be able to help you out to get placement in united states of
       America provided you have valid visa status.
     </Paragraph>
     <Paragraph>
-      <a href="http://mintextech.com/" target="_blank" rel="noopener">
+      <a
+        href="http://mintextech.com/"
+        target="_blank"
+        rel="noopener noreferrer">
         MintexTech
       </a>{" "}
       is 12 years old company in USA and serving across the country and so far

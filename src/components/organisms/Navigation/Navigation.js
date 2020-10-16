@@ -72,6 +72,12 @@ export default function Navi() {
                 </BaseLink>
               );
             })}
+            <BaseLink
+              href="https://ielts.traininghub.io/"
+              external
+              composedClassName="nav-link">
+              IELTS
+            </BaseLink>
             <StyledNavDropdown title="Recruitment" id="nav-dropdown">
               <NavDropdown.Item>
                 <BaseLink href="/employers" composedClassName="nav-link">

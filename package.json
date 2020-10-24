@@ -16,7 +16,7 @@
     "@contentful/rich-text-react-renderer": "^14.1.1",
     "@contentful/rich-text-types": "^14.1.1",
     "@geedmo/yamm": "^4.0.0",
-    "apollo-server-express": "2.9.12",
+    "apollo-server-express": "2.14.2",
     "aws-sdk": "^2.577.0",
     "babel-plugin-styled-components": "^1.10.6",
     "body-parser": "^1.19.0",

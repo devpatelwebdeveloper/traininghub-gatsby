@@ -13,6 +13,8 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@contentful/rich-text-react-renderer": "^14.1.1",
+    "@contentful/rich-text-types": "^14.1.1",
     "@geedmo/yamm": "^4.0.0",
     "apollo-server-express": "2.9.12",
     "aws-sdk": "^2.577.0",

@@ -6,13 +6,12 @@
 
 const path = require("path");
 
-//Blogs from Contentful
 module.exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
   const quizTemplate = path.resolve("./src/templates/QuizMaker.js");
 
-  //Blogs from Contentful
+  //Quix from Contentful
   const quizSlugs = await graphql(`
     query {
       allContentfulQuiz {
@@ -34,26 +33,29 @@ module.exports.createPages = async ({ graphql, actions }) => {
     });
   });
 
-  //   //Resources
-  //   const resourceTemplate = path.resolve("./src/templates/resourcesTemplate.js");
-  //   const resourceSlugs = await graphql(`
-  //     query {
-  //       allContentfulResources {
-  //         edges {
-  //           node {
-  //             slug
-  //           }
-  //         }
-  //       }
-  //     }
-  //   `);
-  //   resourceSlugs.data.allContentfulResources.edges.forEach((edge) => {
-  //     createPage({
-  //       component: resourceTemplate,
-  //       path: `/resources/${edge.node.slug}`,
-  //       context: {
-  //         slug: edge.node.slug,
-  //       },
-  //     });
-  //   });
+  //Blogs
+  const BlogsTemplate = path.resolve("./src/templates/BlogTemplate.js");
+  const BlogSlugs = await graphql(`
+    query {
+      allContentfulBlogs {
+        edges {
+          node {
+            slug
+            category {
+              slug
+            }
+          }
+        }
+      }
+    }
+  `);
+  BlogSlugs.data.allContentfulBlogs.edges.forEach((edge) => {
+    createPage({
+      component: BlogsTemplate,
+      path: `/blog/${edge.node.category.slug}/${edge.node.slug}`,
+      context: {
+        slug: edge.node.slug,
+      },
+    });
+  });
 };

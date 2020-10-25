@@ -1,15 +1,60 @@
 import React, { useState, useEffect } from "react";
+import styled from "styled-components";
+import Styles from "../styles/Styles";
 import Head from "../components/organisms/Head/Head";
 import Layout from "../components/templates/Layout/Layout";
 import Section from "../components/organisms/Section/Section";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import TopBannerCourse from "../components/organisms/TopBannerCourse/TopBannerCourse";
-import BaseTitle from "../components/atoms/BaseTitle/BaseTitle";
 import Paragraph from "../components/atoms/Paragraph/Paragraph";
 import Background from "../contents/icons/recruitment.svg";
 import BlogItem from "../components/molecules/BlogItem/BlogItem";
 import { graphql, useStaticQuery } from "gatsby";
+
+const Sidebar = styled.div`
+${Styles.ScreenSizes.small`
+display:none;
+   `}
+  background: ${Styles.Colors.BaseLightBlue};
+  color: ${Styles.Colors.DefaultFont};
+  border-radius: 8px;
+  padding: 16px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
+  p {
+    span {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+`;
+
+const Subnav = styled.div`
+  font-family: ${Styles.FontFamily.Paragraph};
+  display: none;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  span {
+    margin-right: 8px;
+    margin-left: 8px;
+    white-space: nowrap;
+  }
+  ${Styles.ScreenSizes.small`
+display:flex;
+position:sticky;
+top:60px;
+overflow-x:scroll;
+background: ${Styles.Colors.BaseLightBlue};
+  color: ${Styles.Colors.DefaultFont};
+  border:1px solid ${Styles.Colors.BaseBorderGrey};
+  padding: 16px;
+  z-index: 1020;
+   `}
+`;
 
 export default function AboutPage() {
   const [filter, setFilter] = useState("all");
@@ -33,45 +78,36 @@ export default function AboutPage() {
           }
         }
       }
+      allContentfulBlogsCategory {
+        edges {
+          node {
+            blogCategoryName
+            slug
+          }
+        }
+      }
     }
   `);
 
-  //test
-  const portfolio = [
-    {
-      name: "My best client",
-      category: ["all", "frontend", "ux-ui"],
-    },
-    {
-      name: "My favorite case",
-      category: ["all", "mobile", "ux-ui"],
-    },
-    {
-      name: "A old job",
-      category: ["all", "frontend"],
-    },
-    {
-      name: "It is a really cool website",
-      category: ["all", "frontend", "ux-ui"],
-    },
-    {
-      name: "Something more",
-      category: ["all", "others"],
-    },
-  ];
+  let origBlog = [];
 
-  const port = blogs.allContentfulBlogs.edges;
-  //test
+  blogs.allContentfulBlogs.edges.map((blog) => {
+    origBlog.push({
+      ...blog,
+      filteringCategories: ["all", blog.node.category.slug],
+    });
+  });
+
   useEffect(() => {
-    setProjects(portfolio);
+    setProjects(origBlog);
   }, []);
 
   useEffect(() => {
     setProjects([]);
 
-    const filtered = portfolio.map((p) => ({
+    const filtered = origBlog.map((p) => ({
       ...p,
-      filtered: p.category.includes(filter),
+      filtered: p.filteringCategories.includes(filter),
     }));
     setProjects(filtered);
   }, [filter]);
@@ -85,69 +121,67 @@ export default function AboutPage() {
           text="Explore insights, tips, and articles written by experts in a range of professional domains."
           background={Background}
         />
-        <Section marginTop="50px" marginBottom="25px">
-          <div className="portfolio__labels">
-            <a
-              href="/#"
-              active={filter === "all"}
-              onClick={(e) => {
-                e.preventDefault();
-                setFilter("all");
-              }}>
-              All
-            </a>
-            <a
-              href="/#"
-              active={filter === "frontend"}
-              onClick={(e) => {
-                e.preventDefault();
-                setFilter("frontend");
-              }}>
-              Frontend
-            </a>
-            <a
-              href="/#"
-              active={filter === "mobile"}
-              onClick={(e) => {
-                e.preventDefault();
-                setFilter("mobile");
-              }}>
-              Mobile
-            </a>
-            <a
-              href="/#"
-              active={filter === "ux-ui"}
-              onClick={(e) => {
-                e.preventDefault();
-                setFilter("ux-ui");
-              }}>
-              UX/UI
-            </a>
-            <a
-              href="/#"
-              active={filter === "others"}
-              onClick={(e) => {
-                e.preventDefault();
-                setFilter("others");
-              }}>
-              Others
-            </a>
-          </div>
-          <div className="portfolio__container">
-            {projects.map((item) =>
-              item.filtered === true ? (
-                <span key={item.name}>{item.name}</span>
-              ) : (
-                ""
-              ),
-            )}
-          </div>
-        </Section>
+        <Subnav>
+          <span
+            onClick={(e) => {
+              e.preventDefault();
+              setFilter("all");
+            }}>
+            All
+          </span>
+          {blogs.allContentfulBlogsCategory.edges.map((category) => {
+            return (
+              <span
+                onClick={(e) => {
+                  e.preventDefault();
+                  setFilter(category.node.slug);
+                }}>
+                {category.node.blogCategoryName}
+              </span>
+            );
+          })}
+        </Subnav>
         <Section marginTop="50px" marginBottom="25px">
           <Row>
-            {blogs.allContentfulBlogs.edges.map((blog) => {
-              return <BlogItem blog={blog.node} />;
-            })}
+            <Col md={2}>
+              <Sidebar>
+                <Paragraph>
+                  <span
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setFilter("all");
+                    }}>
+                    All
+                  </span>
+                </Paragraph>
+                {blogs.allContentfulBlogsCategory.edges.map((category) => {
+                  return (
+                    <Paragraph>
+                      <span
+                        onClick={(e) => {
+                          e.preventDefault();
+                          setFilter(category.node.slug);
+                        }}>
+                        {category.node.blogCategoryName}
+                      </span>
+                    </Paragraph>
+                  );
+                })}
+              </Sidebar>
+            </Col>
+            <Col md={10}>
+              <Row>
+                {projects.map((item) =>
+                  item.filtered === true ? (
+                    <>
+                      <BlogItem key={item.node.title} blog={item.node} />
+                    </>
+                  ) : (
+                    ""
+                  ),
+                )}
+              </Row>
+            </Col>
           </Row>
         </Section>
       </Layout>

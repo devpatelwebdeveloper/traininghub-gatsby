@@ -10,6 +10,7 @@ import TopBannerCourse from "../components/organisms/TopBannerCourse/TopBannerCo
 import BaseTitle from "../components/atoms/BaseTitle/BaseTitle";
 import Paragraph from "../components/atoms/Paragraph/Paragraph";
 import SocialShare from "../components/molecules/SocialShare/SocialShare";
+import RelatedArticles from "../components/molecules/RelatedArticles/RelatedArticles";
 import Background from "../contents/icons/Blog.svg";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { graphql, useStaticQuery } from "gatsby";
@@ -41,12 +42,23 @@ export const query = graphql`
         json
       }
     }
+    allContentfulBlogs {
+      edges {
+        node {
+          title
+          slug
+          category {
+            blogCategoryName
+            slug
+          }
+        }
+      }
+    }
   }
 `;
 
 export default function BlogTemplate(props) {
   const BlogContent = props.data.contentfulBlogs;
-
   const BlogParagraph = ({ children }) => <Paragraph>{children}</Paragraph>;
   const BlogTitle = ({ children, size }) => (
     <BaseTitle title={children} size={size} />
@@ -89,7 +101,23 @@ export default function BlogTemplate(props) {
       },
     },
   };
-  console.log(BlogContent.category.slug, BlogContent.slug);
+
+  let CategoryBlogs = [];
+  let RelatedBlogs = [];
+
+  props.data.allContentfulBlogs.edges.map((blog) => {
+    if (
+      blog.node.category.slug === BlogContent.category.slug &&
+      blog.node.slug != BlogContent.slug
+    ) {
+      CategoryBlogs.push(blog);
+    }
+  });
+  // CategoryBlogs.map((blog) => {
+  //   if (blog.node.slug != BlogContent.slug) {
+  //     RelatedBlogs.push(blog);
+  //   }
+  // });
 
   return (
     <>
@@ -108,6 +136,10 @@ export default function BlogTemplate(props) {
             </Col>
             <Col md={3}>
               <Sidebar>
+                {CategoryBlogs.length > 0 ? (
+                  <RelatedArticles RelatedBlogs={CategoryBlogs} Parent="blog" />
+                ) : null}
+
                 <SocialShare
                   title={BlogContent.title}
                   url={`https://www.traininghub.io/blog/${BlogContent.category.slug}/${BlogContent.slug}`}

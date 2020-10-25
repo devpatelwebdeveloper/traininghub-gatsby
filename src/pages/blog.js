@@ -9,23 +9,44 @@ import BaseTitle from "../components/atoms/BaseTitle/BaseTitle";
 import Paragraph from "../components/atoms/Paragraph/Paragraph";
 import Background from "../contents/icons/recruitment.svg";
 import BlogItem from "../components/molecules/BlogItem/BlogItem";
+import { graphql, useStaticQuery } from "gatsby";
 
 export default function AboutPage() {
+  const blogs = useStaticQuery(graphql`
+    query {
+      allContentfulBlogs {
+        edges {
+          node {
+            title
+            slug
+            blogImage
+            shortDescription {
+              shortDescription
+            }
+            category {
+              blogCategoryName
+              slug
+            }
+          }
+        }
+      }
+    }
+  `);
+
   return (
     <>
-      <Head title="Privacy Policy" />
+      <Head title="Blogs" />
       <Layout>
         <TopBannerCourse
-          courseTitle="Privacy Policy"
-          text="Founded by Frustrated Trainer Who Believed"
-          text="A vision to upgrade your knowledge to serve better in Community"
+          courseTitle="Blogs"
+          text="Explore insights, tips, and articles written by experts in a range of professional domains."
           background={Background}
         />
         <Section marginTop="50px" marginBottom="25px">
           <Row>
-            <BlogItem />
-            <BlogItem />
-            <BlogItem />
+            {blogs.allContentfulBlogs.edges.map((blog) => {
+              return <BlogItem blog={blog.node} />;
+            })}
           </Row>
         </Section>
       </Layout>

@@ -16,6 +16,9 @@ export const query = graphql`
   query($slug: String!) {
     contentfulBlogs(slug: { eq: $slug }) {
       title
+      shortDescription {
+        shortDescription
+      }
       blogImage
       content {
         json
@@ -69,6 +72,7 @@ export default function BlogTemplate(props) {
       },
     },
   };
+  console.log(BlogContent.shortDescription.shortDescription);
 
   return (
     <>
@@ -76,7 +80,7 @@ export default function BlogTemplate(props) {
       <Layout>
         <TopBannerCourse
           courseTitle={BlogContent.title}
-          text=""
+          text={BlogContent.shortDescription.shortDescription}
           background={Background}
           courseImage={BlogContent.blogImage}
         />

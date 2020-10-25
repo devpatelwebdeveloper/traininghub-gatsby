@@ -99,11 +99,7 @@ export default class SingleCourseBlock extends React.Component {
           <Paragraph>{courseDescription}</Paragraph>
         </Col>
         <Col>
-          <Button
-            link={exploreCourseButtonLink}
-            text="Explore Course"
-            external
-          />
+          <Button link={exploreCourseButtonLink} text="Explore Course" />
           <Button link="/contact-us" text="Contact us" outline />
         </Col>
       </StyledRow>

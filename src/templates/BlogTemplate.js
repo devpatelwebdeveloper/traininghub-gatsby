@@ -1,4 +1,6 @@
 import React from "react";
+import styled from "styled-components";
+import Styles from "../styles/Styles";
 import Head from "../components/organisms/Head/Head";
 import Layout from "../components/templates/Layout/Layout";
 import Section from "../components/organisms/Section/Section";
@@ -7,15 +9,30 @@ import Col from "react-bootstrap/Col";
 import TopBannerCourse from "../components/organisms/TopBannerCourse/TopBannerCourse";
 import BaseTitle from "../components/atoms/BaseTitle/BaseTitle";
 import Paragraph from "../components/atoms/Paragraph/Paragraph";
+import SocialShare from "../components/molecules/SocialShare/SocialShare";
 import Background from "../contents/icons/Blog.svg";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { graphql, useStaticQuery } from "gatsby";
 import { BLOCKS, MARKS } from "@contentful/rich-text-types";
 
+const Sidebar = styled.div`
+  background: ${Styles.Colors.BaseLightBlue};
+  color: ${Styles.Colors.DefaultFont};
+  border-radius: 8px;
+  padding: 16px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
+`;
+
 export const query = graphql`
   query($slug: String!) {
     contentfulBlogs(slug: { eq: $slug }) {
       title
+      slug
+      category {
+        slug
+      }
       shortDescription {
         shortDescription
       }
@@ -72,7 +89,7 @@ export default function BlogTemplate(props) {
       },
     },
   };
-  console.log(BlogContent.shortDescription.shortDescription);
+  console.log(BlogContent.category.slug, BlogContent.slug);
 
   return (
     <>
@@ -86,8 +103,16 @@ export default function BlogTemplate(props) {
         />
         <Section marginTop="50px" marginBottom="25px">
           <Row>
-            <Col md={12}>
+            <Col md={9}>
               {documentToReactComponents(BlogContent.content.json, BlogOptions)}
+            </Col>
+            <Col md={3}>
+              <Sidebar>
+                <SocialShare
+                  title={BlogContent.title}
+                  url={`https://www.traininghub.io/blog/${BlogContent.category.slug}/${BlogContent.slug}`}
+                />
+              </Sidebar>
             </Col>
           </Row>
         </Section>

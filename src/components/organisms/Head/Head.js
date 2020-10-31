@@ -41,7 +41,47 @@ const Head = ({ title, metaDescription, metaTag, metaImage }) => {
       <meta property="og:url" content={url} />
       <meta property="og:site_name" content="TrainingHub.io" />
       <meta property="og:image" content={`${url}`} />
-      <meta name="image" property="og:image" content={metaImage} />
+      <meta
+        name="image"
+        property="og:image"
+        content={
+          metaImage
+            ? metaImage
+            : "https://devashish-lms.s3.ca-central-1.amazonaws.com/sqlDeveloper_TrainingHub.jpg"
+        }
+      />
+      <meta
+        itemprop="thumbnailUrl"
+        content={
+          metaImage
+            ? metaImage
+            : "https://devashish-lms.s3.ca-central-1.amazonaws.com/sqlDeveloper_TrainingHub.jpg"
+        }
+      />
+      <link
+        rel="image_src"
+        href={
+          metaImage
+            ? metaImage
+            : "https://devashish-lms.s3.ca-central-1.amazonaws.com/sqlDeveloper_TrainingHub.jpg"
+        }
+      />
+      <meta
+        itemprop="image"
+        content={
+          metaImage
+            ? metaImage
+            : "https://devashish-lms.s3.ca-central-1.amazonaws.com/sqlDeveloper_TrainingHub.jpg"
+        }
+      />
+      <meta
+        name="twitter:image"
+        content={
+          metaImage
+            ? metaImage
+            : "https://devashish-lms.s3.ca-central-1.amazonaws.com/sqlDeveloper_TrainingHub.jpg"
+        }
+      />
       <meta name="twitter:card" content="summary_large_image" />
       <meta
         name="twitter:description"

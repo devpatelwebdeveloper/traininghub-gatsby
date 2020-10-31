@@ -1,6 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
+import browser from "../../../utilities/window";
 
 const Head = ({ title, metaDescription, metaTag, metaImage }) => {
   const data = useStaticQuery(graphql`
@@ -12,7 +13,7 @@ const Head = ({ title, metaDescription, metaTag, metaImage }) => {
       }
     }
   `);
-  const url = "https://www.traininghub.io/";
+  const url = browser.window.location.href;
   return (
     <Helmet title={`${title} | ${data.site.siteMetadata.title}`}>
       <meta
@@ -91,8 +92,11 @@ const Head = ({ title, metaDescription, metaTag, metaImage }) => {
             : "TrainingHub.io helps talented professionals and developers find success in IT careers they love through community-oriented classroom training and personalized support."
         }
       />
-      <meta name="twitter:title" content="TrainingHub | Your gateway to IT" />
-      <meta name="twitter:image" content={`${url}`} />
+      <meta
+        name="twitter:title"
+        content={`${title} | TrainingHub | Your gateway to IT`}
+      />
+      <meta property="twitter:url" content={url} />
       <link
         href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i&display=swap"
         rel="stylesheet"

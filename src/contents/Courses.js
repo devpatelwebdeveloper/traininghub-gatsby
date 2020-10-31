@@ -47,6 +47,8 @@ const courseImage = {
 const Courses = [
   //Microsoft SQL Developer
   {
+    metaDescription:
+      "SQL Server Development Online Training → SQL Server Development Classroom Training With | Expert Trainers with Traininghub.IO | Get Hired By Top MNC’s",
     tag: "Microsoft",
     title: "Microsoft SQL Developer",
     image: icons.microsoft,
@@ -176,6 +178,8 @@ const Courses = [
   // },
   //Business Intelligence
   {
+    metaDescription:
+      "Microsoft BI Online Training → Business intelligence MSBI ClassroomTraining With | Expert Trainers | Live, Real-Time Projects | Get Hired By Top MNC’s",
     tag: "Microsoft",
     title: "Business Intelligence (MSBI)",
     image: icons.microsoft,
@@ -240,6 +244,8 @@ const Courses = [
   },
   //Big Data Hadoop & Spark
   {
+    metaDescription:
+      "Big Data Hadoop Spark Online Training → Big Data Hadoop Spark Classroom Training With | Expert Trainers | Live, Real-Time Projects | Get Hired By Top MNC’s",
     tag: "Data",
     title: "Big Data Hadoop & Spark",
     href: "/courses/data/big-data-hadoop-spark",
@@ -272,6 +278,8 @@ const Courses = [
   },
   //Quality Engineering
   {
+    metaDescription:
+      "Quality Assurance Online Training → Quality Assurance Classroom Training With | Expert Trainers | Real-Time Projects | Live Projects | Get Hired By Top MNC’s",
     tag: "QA",
     title: "Quality Engineering",
     image: icons.qe,
@@ -387,6 +395,8 @@ const Courses = [
 
   //React-Redux
   {
+    metaDescription:
+      "React Redux Classroom Training → React Redux Online Training With | Expert Trainers | Real-Time Projects | Live Projects | Get Hired By Top MNC’s",
     tag: "Web Development",
     title: "React Redux",
     href: "/courses/webdevelopment/react-redux",
@@ -419,6 +429,8 @@ const Courses = [
   },
   //Fullstack Developer
   {
+    metaDescription:
+      "Fullstack Developer Online Training → Fullstack Developer Classroom Training With | Expert Trainers | Live, Real-Time Projects | Get Hired By Top MNC’s",
     tag: "Web Development",
     title: "Fullstack Developer",
     href: "/courses/webdevelopment/fullstack-development",
@@ -451,6 +463,8 @@ const Courses = [
   },
   //MERN
   {
+    metaDescription:
+      "MERN Stack Training Online Training → MERN Stack ClassroomTraining With | Expert Trainers | Real-Time, Live Projects | Get Hired By Top MNC’s",
     tag: "Web Development",
     title: "MERN Stack",
     href: "/courses/webdevelopment/mern-stack",
@@ -484,6 +498,8 @@ const Courses = [
 
   //DWH
   {
+    metaDescription:
+      "Microsoft Data Warehousing Online Training → Microsoft DWH ClassroomTraining With | Expert Trainers | Live, Real-Time Projects | Get Hired By Top MNC’s",
     tag: "Data",
     title: "Microsoft DWH",
     image: icons.microsoft,
@@ -516,6 +532,8 @@ const Courses = [
   },
   //Core Java
   {
+    metaDescription:
+      "Core Java Online Training → Core Java ClassroomTraining With | Expert Trainers | Real-Time, Live Projects | Get Hired By Top MNC’s",
     tag: "Programming",
     title: "Core Java",
     href: "/courses/programming/core-java",

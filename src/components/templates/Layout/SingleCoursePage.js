@@ -25,7 +25,10 @@ export default class SingleCoursePage extends React.Component {
     });
     return (
       <>
-        <Head title={`${Course.title} - ${Course.tag}`} />
+        <Head
+          title={`${Course.title} - ${Course.tag}`}
+          metaDescription={Course.metaDescription}
+        />
         <Layout>
           <TopBannerCourse
             courseTitle={Course.title}

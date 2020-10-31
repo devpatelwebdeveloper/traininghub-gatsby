@@ -2,7 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
-const Head = ({ title }) => {
+const Head = ({ title, metaDescription, metaTag }) => {
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -17,7 +17,11 @@ const Head = ({ title }) => {
     <Helmet title={`${title} | ${data.site.siteMetadata.title}`}>
       <meta
         name="description"
-        content="TrainingHub | Lean your career in IT with TrainingHub.io"
+        content={
+          metaDescription
+            ? metaDescription
+            : "TrainingHub.io helps talented professionals and developers find success in IT careers they love through community-oriented classroom training and personalized support."
+        }
       />
 
       <meta property="og:locale" content="en_US" />
@@ -25,7 +29,11 @@ const Head = ({ title }) => {
       <meta property="og:title" content="TrainingHub | Your gateway to IT" />
       <meta
         property="og:description"
-        content="TrainingHub.io helps talented professionals and developers find success in IT careers they love through community-oriented classroom training and personalized support."
+        content={
+          metaDescription
+            ? metaDescription
+            : "TrainingHub.io helps talented professionals and developers find success in IT careers they love through community-oriented classroom training and personalized support."
+        }
       />
       <meta property="og:url" content={url} />
       <meta property="og:site_name" content="TrainingHub.io" />
@@ -33,7 +41,11 @@ const Head = ({ title }) => {
       <meta name="twitter:card" content="summary_large_image" />
       <meta
         name="twitter:description"
-        content="TrainingHub.io helps talented professionals and developers find success in IT careers they love through community-oriented classroom training and personalized support."
+        content={
+          metaDescription
+            ? metaDescription
+            : "TrainingHub.io helps talented professionals and developers find success in IT careers they love through community-oriented classroom training and personalized support."
+        }
       />
       <meta name="twitter:title" content="TrainingHub | Your gateway to IT" />
       <meta name="twitter:image" content={`${url}`} />

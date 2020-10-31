@@ -248,7 +248,10 @@ const Faq = [
 export default function AboutPage() {
   return (
     <>
-      <Head title="About us" />
+      <Head
+        title="About us"
+        metaDescription="Master New skills & Define Yourself with TrainingHub.io & Enroll in career path courses Online & Classroom Training with Cutting Edge Technologies,Trending tools"
+      />
       <Layout>
         <TopBannerCourse
           courseTitle="About us"

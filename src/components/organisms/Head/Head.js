@@ -40,7 +40,7 @@ const Head = ({ title, metaDescription, metaTag, metaImage }) => {
       />
       <meta property="og:url" content={url} />
       <meta property="og:site_name" content="TrainingHub.io" />
-      <meta property="og:image" content={`${url}`} />
+
       <meta
         name="image"
         property="og:image"

@@ -28,6 +28,7 @@ export default class SingleCoursePage extends React.Component {
         <Head
           title={`${Course.title} - ${Course.tag}`}
           metaDescription={Course.metaDescription}
+          metaImage={Course.coursePage.courseImage}
         />
         <Layout>
           <TopBannerCourse

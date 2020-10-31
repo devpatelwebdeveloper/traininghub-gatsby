@@ -15,7 +15,10 @@ import Testimonials from "../contents/Testimonials";
 export default function HomePage() {
   return (
     <>
-      <Head title="Home" />
+      <Head
+        title="Home"
+        metaImage="https://devashish-lms.s3.ca-central-1.amazonaws.com/sqlDeveloper_TrainingHub.jpg"
+      />
       <Layout>
         <Slider HomePageSlides={HomePageSliders} />
         <Tiles title="Redefining future in IT Learning" tiles={HomePageCards} />

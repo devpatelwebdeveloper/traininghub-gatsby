@@ -4,12 +4,12 @@ import Row from "react-bootstrap/Row";
 import IconBullet from "../../atoms/IconBullets/IconBullets";
 import { RecruitmentList } from "../../../contents/RecruitmentBullets";
 
-export default function IconList({ lists }) {
+export default function IconList({ lists, icon }) {
   return (
     <React.Fragment>
       <Row>
         {lists.map((list) => (
-          <IconBullet title={list.title} />
+          <IconBullet title={list.title} icon={icon} />
         ))}
       </Row>
     </React.Fragment>

@@ -12,7 +12,7 @@ import Paragraph from "../components/atoms/Paragraph/Paragraph";
 import Tiles from "../components/blocks/Tiles/Tiles";
 import IconList from "../components/blocks/IconList/IconList";
 import { corporateIcon } from "../contents/icons/icons";
-import Background from "../contents/icons/recruitment.svg";
+import Background from "../contents/icons/corporate.svg";
 
 //Corporate
 const corporateIntro = {
@@ -41,7 +41,7 @@ const corporateIntro = {
 const corporateCards = [
   {
     image:
-      "https://devashish-lms.s3.ca-central-1.amazonaws.com/ExpertTraininghub.jpg",
+      "https://devashish-lms.s3.ca-central-1.amazonaws.com/corporate/Effective_TrainingHub.jpeg",
     alt: "Effective and Easy Learning",
     title: "Effective and Easy Learning",
     text:
@@ -49,7 +49,7 @@ const corporateCards = [
   },
   {
     image:
-      "https://devashish-lms.s3.ca-central-1.amazonaws.com/ExpertTraininghub.jpg",
+      "https://devashish-lms.s3.ca-central-1.amazonaws.com/corporate/Customized_TrainingHub.jpeg",
     alt: "Customized Corporate Programs",
     title: "Customized Corporate Programs",
     text:
@@ -57,7 +57,7 @@ const corporateCards = [
   },
   {
     image:
-      "https://devashish-lms.s3.ca-central-1.amazonaws.com/ExpertTraininghub.jpg",
+      "https://devashish-lms.s3.ca-central-1.amazonaws.com/corporate/UpdatedCourse_TrainingHub.jpeg",
     alt: "Updated Course Content",
     title: "Updated Course Content",
     text:
@@ -83,7 +83,7 @@ const whenWhere = {
     </Paragraph>
   ),
   image:
-    "https://devashish-lms.s3.ca-central-1.amazonaws.com/CorporateTraining_TrainingHub.jpg",
+    "https://devashish-lms.s3.ca-central-1.amazonaws.com/corporate/WhenWhere_TrainingHub.jpeg",
 };
 const corporateOverview = [
   {
@@ -192,7 +192,8 @@ export default function AboutPage() {
         <TopBannerCourse
           courseTitle="Corporate Training"
           subtitle="Empower your team with hand-on skills to deliver amazing products"
-          text="TrainingHub is not only a e-learning platform but also provides classroom, online & corporate training services globally with certified & real-time experienced trainers in the industry. We provide tailored course content to your organizations, delivered with cutting edge technologies and support. We fulfill your career aspirations like job-assistance, job-support, and customizable courses. Get unlimited access to the community, tech talks, and events organized by TrainingHub. We make learning easy, value & affordable."
+          text="Empower your team into company's own digital transformation and skills gap. Tailored training program for your company based on industry cases."
+          courseImage="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80"
           background={Background}
         />
         <Section marginTop="50px" marginBottom="25px">
@@ -241,32 +242,6 @@ export default function AboutPage() {
             </Col>
           </Row>
         </Section>
-        {/* <Section marginTop="50px" marginBottom="25px">
-          <ContentGenericAligned
-            textJustified
-            imageLeft={Founder.imageLeft}
-            title={Founder.title}
-            text={Founder.cont}
-            image={Founder.image}
-            alt={Founder.title}
-          />
-        </Section> */}
-        {/* <Section
-          marginTop="25px"
-          marginBottom="25px"
-          padding="25px"
-          background={Styles.Colors.BaseLightBlue}>
-          <BaseTitle title="By the numbers" size="H3" center underline />
-          <StatisticsCounter stats={Statistics} />
-        </Section> */}
-        {/* <Section>
-          <Row>
-            <Col>
-              <BaseTitle title="Our Values" size="H2" center underline />
-              <NumberedTimeLine lists={Values} title="Our Values" />
-            </Col>
-          </Row>
-        </Section> */}
       </Layout>
     </>
   );

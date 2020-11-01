@@ -50,7 +50,7 @@ export default function Navi() {
           <img
             src="https://devashish-lms.s3.ca-central-1.amazonaws.com/logo_TrainingHub.png"
             className="logo"
-            alt="React Bootstrap logo"
+            alt="TrainingHub.io"
           />
         </BaseLink>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -90,6 +90,9 @@ export default function Navi() {
                 </BaseLink>
               </NavDropdown.Item>
             </StyledNavDropdown>
+            <BaseLink href="/corporate-training" composedClassName="nav-link">
+              Corporate Training
+            </BaseLink>
             <BaseLink href="/contact-us" composedClassName="nav-link">
               Contact us
             </BaseLink>

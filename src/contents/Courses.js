@@ -310,6 +310,39 @@ const Courses = [
       },
     },
   },
+  {
+    metaDescription:
+      "Quality Assurance Online Training → Quality Assurance Classroom Training With | Expert Trainers | Real-Time Projects | Live Projects | Get Hired By Top MNC’s",
+    tag: "QA",
+    title: "QA Automation",
+    image: icons.qe,
+    alt: "QA Automation",
+    href: "/courses/qualityengineering",
+    description:
+      "This Training will advance your career as an automation test engineer. You will learn the top-trending skills in the industry including, Junit, TestNG, Selenium, Docker, AWS CloudComputing, SQL, and Jenkins. Develop skills by practicing, latest techniques and tools to effectively test the software.",
+    startDate: "",
+    courseImage: courseImage.qe,
+    coursePage: {
+      courseImage:
+        "https://devashish-lms.s3.ca-central-1.amazonaws.com/QualityEngineering/QE.png",
+      courseIntroduction:
+        "This training introduces state-of-art techniques for automation analysis. You will learn about the object-oriented programming language Java and Different data types & Operators, Loops,Conditions, Method & types of methods, class, and object. You will be able to work on advancedJava concepts like OOPS, Error Handling, and Exceptions, Build Tool i.e Junit and TestNG.During this course, you will be allowed to work on Selenium Web Drivers, Web driver waits, webform, various locators, tables, frames, and browser POP’s, Data-Driven Frames works, PageObject Framework, multiple browsers executions, etc. You will learn how to test with API,Approach for API, web service, and SOAP UI. You will learn how to do Code Versioning and different techniques for code versioning. During this course tenure, you will also learn aboutSQL and Jenkins - CI/CD/CT and Introduction to Cloud Computing and AWS overview andDocker Introduction.",
+      courseIntroductionImage:
+        "https://devashish-lms.s3.ca-central-1.amazonaws.com/QualityEngineering/QualityEngineering.png",
+      courseContent: QualityEngineering,
+      studentJourney: {
+        heading: "Student Journey",
+        paragraphContent:
+          "Soon after enrolling in the course, you will be trained by professionals experienced with 12+years of experience. By the end of the course, you will be work on Automation Process. The QAAutomation Training is designed to give you complete knowledge of trending software testing technologies such as Junit, TestNG, Selenium, Docker, AWS Cloud Computing, SQL, andJenkins. This course is designed for Freshers, Software Developers, IT Professionals, TestEngineers, Technical Consultants, and Analysts, Aspirants who desire to learn Testing, andIndividuals looking for career growth in QA Automation. Anyone with basic programming knowledge is eligible to take QA Automation Training.",
+        imageOne:
+          "https://devashish-lms.s3.ca-central-1.amazonaws.com/QualityEngineering/QualityEngineering_StudentJourney1.jpeg",
+        imageOneAlt: "Quality Engineering Graph",
+        imageTwo:
+          "https://devashish-lms.s3.ca-central-1.amazonaws.com/QualityEngineering/QualityEngineering_StudentJourney2.jpg",
+        imageTwoAlt: "Responsive Website QA",
+      },
+    },
+  },
   //HTML5 CSS3
   // {
   //   tag: "Web Development",

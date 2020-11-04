@@ -318,7 +318,7 @@ const Courses = [
     title: "QA Automation",
     image: icons.qe,
     alt: "QA Automation",
-    href: "/courses/qualityengineering",
+    href: "/courses/qaautomation",
     description:
       "This Training will advance your career as an automation test engineer. You will learn the top-trending skills in the industry including, Junit, TestNG, Selenium, Docker, AWS CloudComputing, SQL, and Jenkins. Develop skills by practicing, latest techniques and tools to effectively test the software.",
     startDate: "",

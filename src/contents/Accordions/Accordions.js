@@ -1,4 +1,5 @@
 import React from "react";
+import Paragraph from "../../components/atoms/Paragraph/Paragraph";
 
 const SqlServerDeveloper = [
   {
@@ -2347,6 +2348,141 @@ const CoreJava = [
   },
 ];
 
+const QAAutomation = [
+  {
+    title: "Module 1 – Core Java",
+    paragraph: (
+      <>
+        <ul>
+          <li>Introduction to Programming</li>
+          <li>Data Types and Operators</li>
+          <li>Conditions (if, if else, switch)</li>
+          <li>Loops (For, while, do while, For Each)</li>
+          <li>Method and type of Methods</li>
+          <li>Class and Object</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    title: "Module 2 (Advanced Java)",
+    paragraph: (
+      <>
+        <ul>
+          <li>
+            OOPS
+            <ul>
+              <li>Object</li>
+              <li>Classes</li>
+              <li>Abstraction</li>
+              <li>Encapsulation</li>
+              <li>Polymorphism</li>
+              <li>Inheritance</li>
+            </ul>
+          </li>
+          <li>Error Handling and Exceptions</li>
+          <li>Understanding Collection (List, ARRAY)</li>
+          <li>Build Tool</li>
+          <li>Junit and TestNG</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    title: "Module 3",
+    paragraph: (
+      <>
+        <ul>
+          <li>Introduction to Selenium</li>
+          <li>Selenium Web Driver</li>
+          <li>Working with various locators </li>
+          <li>Web Driver Waits</li>
+          <li>Web Form</li>
+          <li>Tables, Frames and browser POPs</li>
+          <li>Page Object Framework</li>
+          <li>Test NG </li>
+          <li>multiple browser execution</li>
+          <li>Data Driven Framework</li>
+          <li>
+            BDD
+            <ul>
+              <li>Feature File</li>
+              <li>Data Table</li>
+            </ul>
+          </li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    title: "Module 4",
+    paragraph: (
+      <>
+        <ul>
+          <li>API</li>
+          <li>Web Service</li>
+          <li>Testing Approach for API</li>
+          <li>
+            SOAP UI
+            <ul>
+              <li>Data Driven</li>
+              <li>End to End API testing Flow</li>
+              <li>Assertions</li>
+              <li>Scripted Assertions</li>
+            </ul>
+          </li>
+        </ul>
+      </>
+    ),
+  },
+  ,
+  {
+    title: "Module 5",
+    paragraph: (
+      <>
+        <ul>
+          <li>Code versioning</li>
+          <li>Various technique for code versioning</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    title: "Module 6",
+    paragraph: (
+      <>
+        <ul>
+          <li>SQL</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    title: "Module 7",
+    paragraph: (
+      <>
+        <ul>
+          <li>Jenkins Intro</li>
+          <li>CI/CD/CT overview</li>
+          <li>Basic Jenkins Projec</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    title: "Module 8",
+    paragraph: (
+      <>
+        <ul>
+          <li>Introduction to Cloud Computing </li>
+          <li>Overview of AWS Cloud</li>
+          <li>Introduction to Docker</li>
+        </ul>
+      </>
+    ),
+  },
+];
+
 export {
   SqlServerDeveloper,
   SQLServerIntegrationServices,
@@ -2363,4 +2499,5 @@ export {
   Python,
   DWH,
   CoreJava,
+  QAAutomation,
 };

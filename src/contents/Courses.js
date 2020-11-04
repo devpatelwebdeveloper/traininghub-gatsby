@@ -16,6 +16,7 @@ import {
   Python,
   DWH,
   CoreJava,
+  QAAutomation,
 } from "./Accordions/Accordions";
 const icons = {
   microsoft:
@@ -329,7 +330,7 @@ const Courses = [
         "This training introduces state-of-art techniques for automation analysis. You will learn about the object-oriented programming language Java and Different data types & Operators, Loops,Conditions, Method & types of methods, class, and object. You will be able to work on advancedJava concepts like OOPS, Error Handling, and Exceptions, Build Tool i.e Junit and TestNG.During this course, you will be allowed to work on Selenium Web Drivers, Web driver waits, webform, various locators, tables, frames, and browser POP’s, Data-Driven Frames works, PageObject Framework, multiple browsers executions, etc. You will learn how to test with API,Approach for API, web service, and SOAP UI. You will learn how to do Code Versioning and different techniques for code versioning. During this course tenure, you will also learn aboutSQL and Jenkins - CI/CD/CT and Introduction to Cloud Computing and AWS overview andDocker Introduction.",
       courseIntroductionImage:
         "https://devashish-lms.s3.ca-central-1.amazonaws.com/QualityEngineering/QualityEngineering.png",
-      courseContent: QualityEngineering,
+      courseContent: QAAutomation,
       studentJourney: {
         heading: "Student Journey",
         paragraphContent:

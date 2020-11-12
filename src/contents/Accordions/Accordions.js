@@ -2077,6 +2077,69 @@ const CoreJava = [
     ),
   },
   {
+    title: "Identifiers, Keywords, and Types",
+    paragraph: (
+      <>
+        <ul>
+          <li>Use comments in a source program</li>
+          <li>Distinguish between valid and invalid identifiers</li>
+          <li>Variables in Java , Scope of Variables , Constant in Java</li>
+          <li>Use the eight primitive types</li>
+          <li>Non-primitive Data types </li>
+          <li>Memory allocation of Primitive and Non-Primitive datatypes</li>
+          <li>Type Conversion & Casting in Java with Example</li>
+          <li>Define literal values for numeric and textual types</li>
+          <li>Define the terms primitive variable and reference variable</li>
+          <li>Declare variables of class type</li>
+          <li>
+            Construct an object using new and describe default initialization
+          </li>
+          <li>Describe the significance of a reference variable</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    title: "Expressions and Flow Control",
+    paragraph: (
+      <ul>
+        <li>Distinguish between instance and local variables</li>
+        <li>Describe how to initialize instance variables</li>
+        <li>Recognize, describe, and use Java software operators</li>
+        <li>
+          Distinguish between legal and illegal assignments of primitive types
+        </li>
+        <li>
+          Identify boolean expressions and their requirements in control
+          constructs
+        </li>
+        <li>
+          Recognize assignment compatibility and required casts in fundamental
+          types
+        </li>
+        <li>
+          Use if, switch, for, while, and do constructions and the labeled forms
+          of break and continue as flow control structures in a program
+        </li>
+      </ul>
+    ),
+  },
+  {
+    title: "Arrays",
+    paragraph: (
+      <>
+        <ul>
+          <li>Declare and create arrays of primitive, class, or array types</li>
+          <li>Explain why elements of an array are initialized</li>
+          <li>Explain how to initialize the elements of an array</li>
+          <li>Determine the number of elements in an array</li>
+          <li>Create a multidimensional array</li>
+          <li>Write code to copy array values from one array to another</li>
+        </ul>
+      </>
+    ),
+  },
+  {
     title: "Object-Oriented Programming",
     paragraph: (
       <>
@@ -2102,6 +2165,7 @@ const CoreJava = [
             guidelines of encapsulation
           </li>
           <li>
+            {" "}
             Invoke a method on a particular object , Life Cycle of an object,
             Anonymous Object
           </li>
@@ -2110,71 +2174,6 @@ const CoreJava = [
             method with Parameter ,Return type
           </li>
           <li>Use the Java technology API online documentation</li>
-        </ul>
-      </>
-    ),
-  },
-  {
-    title: "Identifiers, Keywords, and Types",
-    paragraph: (
-      <>
-        <ul>
-          <li>Use comments in a source program</li>
-          <li>Distinguish between valid and invalid identifiers</li>
-          <li>Variables in Java , Scope of Variables , Constant in Java</li>
-          <li>Use the eight primitive types</li>
-          <li>Non-primitive Data types</li>
-          <li>Memory allocation of Primitive and Non-Primitive datatypes</li>
-          <li>Type Conversion & Casting in Java with Example</li>
-          <li>Define literal values for numeric and textual types</li>
-          <li>Define the terms primitive variable and reference variable</li>
-          <li>Declare variables of class type</li>
-          <li>
-            Construct an object using new and describe default initialization
-          </li>
-          <li>Describe the significance of a reference variable</li>
-        </ul>
-      </>
-    ),
-  },
-  {
-    title: "Expressions and Flow Control",
-    paragraph: (
-      <>
-        <ul>
-          <li>Distinguish between instance and local variables</li>
-          <li>Describe how to initialize instance variables</li>
-          <li>Recognize, describe, and use Java software operators</li>
-          <li>
-            Distinguish between legal and illegal assignments of primitive types
-          </li>
-          <li>
-            Identify boolean expressions and their requirements in control
-            constructs
-          </li>
-          <li>
-            Recognize assignment compatibility and required casts in fundamental
-            types
-          </li>
-          <li>
-            Use if, switch, for, while, and do constructions and the labeled
-            forms of break and continue as flow control structures in a program
-          </li>
-        </ul>
-      </>
-    ),
-  },
-  {
-    title: "Arrays",
-    paragraph: (
-      <>
-        <ul>
-          <li>Declare and create arrays of primitive, class, or array types</li>
-          <li>Explain why elements of an array are initialized</li>
-          <li>Explain how to initialize the elements of an array</li>
-          <li>Determine the number of elements in an array</li>
-          <li>Create a multidimensional array</li>
-          <li>Write code to copy array values from one array to another</li>
         </ul>
       </>
     ),
@@ -2232,10 +2231,24 @@ const CoreJava = [
   {
     title: "Super & This Keyword",
     paragraph: (
+      <ul>
+        <li>Super Keyword in Java | Use, Example Program</li>
+        <li>This Keyword in Java | Uses & Example Programs</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Strings",
+    paragraph: (
       <>
         <ul>
-          <li>Super Keyword in Java | Use, Example Program</li>
-          <li>This Keyword in Java | Uses & Example Programs</li>
+          <li>Introduction to Strings</li>
+          <li>Creating objects to String</li>
+          <li>String library functions</li>
+          <li>Mutable objects</li>
+          <li>Immutable objects</li>
+          <li>String/ StringBuffer/ StringReader</li>
+          <li>Creating Immutable class</li>
         </ul>
       </>
     ),
@@ -2243,106 +2256,108 @@ const CoreJava = [
   {
     title: "Exceptions and Assertions",
     paragraph: (
-      <>
-        <ul>
-          <li>Define exceptions</li>
-          <li>Use try, catch, and finally statements</li>
-          <li>Describe exception categories</li>
-          <li>Identify common exceptions</li>
-          <li>Exception Hierarchy in Java</li>
-          <li>Checked and Unchecked Exception in Java</li>
-          <li>Develop programs to handle your own exceptions</li>
-          <li>Use assertions</li>
-          <li>Distinguish appropriate and inappropriate uses of assertions</li>
-          <li>Enable assertions at runtime</li>
-        </ul>
-      </>
-    ),
-  },
-  {
-    title: "Collections and Generics Framework",
-    paragraph: (
-      <>
-        <ul>
-          <li>
-            Describe the general purpose implementations of the core interfaces
-            in the Collections framework
-          </li>
-          <li>Examine the Map interface</li>
-          <li>Examine the legacy collection classes</li>
-          <li>
-            Create natural and custom ordering by implementing the Comparable
-            and Comparator interfaces
-          </li>
-          <li>
-            Use generic collections and type parameters in generic classes
-          </li>
-          <li>Refactor existing non-generic code</li>
-          <li>Write a program to iterate over a collection</li>
-          <li>Examine the enhanced for loop</li>
-        </ul>
-      </>
-    ),
-  },
-  {
-    title: "I/O Fundamentals",
-    paragraph: (
-      <>
-        <ul>
-          <li>
-            Write a program that uses command-line arguments and system
-            properties
-          </li>
-          <li>Examine the Properties class</li>
-          <li>
-            Construct node and processing streams, and use them appropriately
-          </li>
-          <li>Serialize and deserialize objects</li>
-          <li>
-            Distinguish readers and writers from streams, and select
-            appropriately between them
-          </li>
-        </ul>
-      </>
-    ),
-  },
-  {
-    title: "Console I/ O and File I/O",
-    paragraph: (
-      <>
-        <ul>
-          <li>Read data from the console</li>
-          <li>Write data to the console</li>
-          <li>Describe files and file I/O</li>
-        </ul>
-      </>
+      <ul>
+        <li>Define exceptions</li>
+        <li>Use try, catch, and finally statements</li>
+        <li>Describe exception categories</li>
+        <li>Identify common exceptions</li>
+        <li>Exception Hierarchy in Java</li>
+        <li>Checked and Unchecked Exception in Java</li>
+        <li>Develop programs to handle your own exceptions</li>
+        <li>Use assertions</li>
+        <li>Distinguish appropriate and inappropriate uses of assertions</li>
+        <li>Enable assertions at runtime</li>
+      </ul>
     ),
   },
   {
     title: "Inner Classes",
     paragraph: (
-      <>
-        <ul>
-          <li>Inner Class in Java | Uses Types & Real-time Example</li>
-          <li>Member Inner Class in Java | Example Program</li>
-          <li>Method Local Inner Class in Java | Example Programs</li>
-          <li>Anonymous Inner Class in Java | Example Programs</li>
-          <li>Static Nested Class in Java | Use & Example Program</li>
-        </ul>
-      </>
+      <ul>
+        <li>Inner Class in Java | Uses Types & Real-time Example</li>
+        <li>Member Inner Class in Java | Example Program</li>
+        <li>Method Local Inner Class in Java | Example Programs</li>
+        <li>Anonymous Inner Class in Java | Example Programs</li>
+        <li>Static Nested Class in Java | Use & Example Program</li>
+      </ul>
     ),
   },
   {
-    title: "Strings",
+    title: "Collections and Generics Framework",
     paragraph: (
       <ul>
-        <li>Introduction to Strings</li>
-        <li>Creating objects to String</li>
-        <li>String library functions</li>
-        <li>Mutable objects</li>
-        <li>Immutable objects</li>
-        <li>String/ StringBuffer/ StringReader</li>
-        <li>Creating Immutable class</li>
+        <li>
+          Describe the general purpose implementations of the core interfaces in
+          the Collections framework
+        </li>
+        <li>Examine the Map interface</li>
+        <li>Examine the legacy collection classes</li>
+        <li>
+          Create natural and custom ordering by implementing the Comparable and
+          Comparator interfaces
+        </li>
+        <li>Use generic collections and type parameters in generic classes</li>
+        <li>Refactor existing non-generic code</li>
+        <li>Write a program to iterate over a collection</li>
+        <li>Examine the enhanced for loop</li>
+      </ul>
+    ),
+  },
+  {
+    title: "I/O Fundamentals",
+    paragraph: (
+      <ul>
+        <li>
+          Write a program that uses command-line arguments and system properties
+        </li>
+        <li>Examine the Properties class</li>
+        <li>
+          Construct node and processing streams, and use them appropriately
+        </li>
+        <li>Serialize and deserialize objects</li>
+        <li>
+          Distinguish readers and writers from streams, and select appropriately
+          between them
+        </li>
+      </ul>
+    ),
+  },
+  {
+    title: "Console I/ O and File I/O",
+    paragraph: (
+      <ul>
+        <li>Read data from the console</li>
+        <li>Write data to the console</li>
+        <li>Describe files and file I/O</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Multithreading",
+    paragraph: (
+      <ul>
+        <li>Multi-threading</li>
+        <li>Thread class and thread of execution</li>
+        <li>Creating a new Thread of execution </li>
+        <li>Thread states</li>
+        <li>Synchronization</li>
+      </ul>
+    ),
+  },
+  {
+    title: "JDBC",
+    paragraph: (
+      <ul>
+        <li>What is JDBC?</li>
+        <li>Connection interface</li>
+        <li>Result Set interface</li>
+        <li>Steps to connect to the oracle database</li>
+        <li>Driver Manager</li>
+        <li>Statement interface</li>
+        <li>Prepared Statement</li>
+        <li>
+          Insert, Update, Delete, Search, Sort & Display with Oracle Database
+        </li>
       </ul>
     ),
   },

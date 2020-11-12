@@ -9,12 +9,18 @@ import NavigationInternal from "./NavigationDropdown";
 import { TopNavigation } from "../../../contents/Navigation/Navigation";
 
 const StyledNav = styled(Navbar)`
+  font-family: ${Styles.FontFamily.Heading};
   background-color: ${Styles.Colors.BaseWhite};
   box-shadow: 0 1px 0 rgba(12, 13, 14, 0.1), 0 1px 6px rgba(59, 64, 69, 0.1);
   .logo {
     height: 40px;
   }
-
+  &.sticky-top {
+    top: 40px !important;
+    ${Styles.ScreenSizes.small`
+    top: 0px!important
+   `};
+  }
   ${Styles.ScreenSizes.small`
    
     .logo{
@@ -24,6 +30,34 @@ const StyledNav = styled(Navbar)`
   `}
 `;
 
+const StyledRibbon = styled.div`
+  ${Styles.ScreenSizes.small`
+  display:none;
+   `};
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  background: ${Styles.Colors.BaseLightBlue};
+  color: ${Styles.Colors.DefaultFont};
+  height: 40px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  align-items: flex-end;
+  text-align: right;
+  font-family: ${Styles.FontFamily.Heading};
+
+  a {
+    margin: 0px 4px;
+    color: ${Styles.Colors.DefaultFont};
+    font-size: ${Styles.FontSize.Small};
+    &:hover {
+      color: ${Styles.Colors.BrandOrange};
+    }
+  }
+`;
 const StyledNavDropdown = styled(NavDropdown)`
   .dropdown-menu {
     border-radius: 0px !important;
@@ -41,10 +75,29 @@ const StyledNavDropdown = styled(NavDropdown)`
     margin: 0px !important;
   }
 `;
-
+const RibbonMenu = styled.div`
+  display: none;
+  ${Styles.ScreenSizes.small`
+  display: block;
+   `};
+`;
 export default function Navi() {
+  const RibbonContent = (
+    <>
+      <BaseLink
+        href="https://ielts.traininghub.io/"
+        external
+        composedClassName="nav-link">
+        IELTS
+      </BaseLink>
+      <BaseLink href="/corporate-training" composedClassName="nav-link">
+        Corporate Training
+      </BaseLink>
+    </>
+  );
   return (
     <>
+      <StyledRibbon>{RibbonContent}</StyledRibbon>
       <StyledNav expand="lg" sticky="top">
         <BaseLink href="/" composedClassName="nav-link">
           <img
@@ -72,12 +125,6 @@ export default function Navi() {
                 </BaseLink>
               );
             })}
-            <BaseLink
-              href="https://ielts.traininghub.io/"
-              external
-              composedClassName="nav-link">
-              IELTS
-            </BaseLink>
             <StyledNavDropdown title="Recruitment" id="nav-dropdown">
               <NavDropdown.Item>
                 <BaseLink href="/employers" composedClassName="nav-link">
@@ -90,9 +137,7 @@ export default function Navi() {
                 </BaseLink>
               </NavDropdown.Item>
             </StyledNavDropdown>
-            <BaseLink href="/corporate-training" composedClassName="nav-link">
-              Corporate Training
-            </BaseLink>
+            <RibbonMenu>{RibbonContent}</RibbonMenu>
             <BaseLink href="/contact-us" composedClassName="nav-link">
               Contact us
             </BaseLink>

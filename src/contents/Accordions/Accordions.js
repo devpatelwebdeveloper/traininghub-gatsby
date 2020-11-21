@@ -3,265 +3,553 @@ import Paragraph from "../../components/atoms/Paragraph/Paragraph";
 
 const SqlServerDeveloper = [
   {
-    title: "Chapter 1 : Relational Database Fundamentals",
+    title: "Essential tools",
     paragraph: (
       <ul>
-        <li>Overview of Relational Database Concepts</li>
-        <li>Relational Databases and Relational Database Management Systems</li>
-        <li>SQL, DML and DDL Languages</li>
+        <li>SQL Server Management Studio</li>
+        <li>Transact-SQL</li>
+        <li>SQL Server Configuration Manager</li>
       </ul>
     ),
   },
   {
-    title: "Chapter 2 : Manipulating Query Results",
+    title: "RDBMS Concept",
     paragraph: (
       <ul>
-        <li>Displaying Table Structures</li>
-        <li>Retrieving Column Data From a Table or View</li>
-        <li>Selecting Unique Values</li>
-        <li>Obtaining a Row Count</li>
-        <li>Filtering Rows Using the WHERE Clause</li>
-        <li>Sorting Results Using ORDER BY</li>
-        <li>Joining Multiple Tables</li>
+        <li>DBMS ConceptoRDBMS Concepts</li>
+        <li>ER Diagram Concepts</li>
+        <li>Cardinality</li>
+        <li>Ordinality</li>
+        <li>SDLC for Database design and Development</li>
+        <li>Normalization and De-Normalization</li>
       </ul>
     ),
   },
   {
-    title: "Chapter 3 : Advanced Query Techniques",
+    title: "SQL Server Architecture",
     paragraph: (
       <ul>
-        <li>Outer Joins</li>
-        <li>Joining a Table to Itself</li>
-        <li>Subqueries</li>
-        <li>Grouping, Filtering and Sorting Query Results</li>
-        <li>Tips for Developing Complex SQL Queries</li>
+        <li>SQL Server edition overview</li>
+        <li>Introducing the tools</li>
+        <li>SQL Server Management Studio</li>
+        <li>Managing Tables with DDL</li>
       </ul>
     ),
   },
   {
-    title: "Chapter 4 : Creating a Database",
+    title: "Creating schemas",
     paragraph: (
       <ul>
-        <li>Database Development Methodology Overview</li>
-        <li>Building a Logical Data Model</li>
-        <li>Identifying Entities and Attributes</li>
-        <li>Isolating Keys</li>
-        <li>Relationships Between Entities</li>
-        <li>Creating Entity-Relationship Diagrams</li>
-        <li>Transforming to Physical Design</li>
-        <li>Migrating Entities to Tables</li>
-        <li>Selecting Primary Keys</li>
-        <li>Defining Columns</li>
-        <li>Enforcing Relationships with Foreign Keys</li>
-        <li>Constructing the Database using DDL</li>
-        <li>Creating Tables, Indexes, Constraints and Views</li>
+        <li>Managing schemas</li>
+        <li>Referencing schemas versus using the default schema</li>
+        <li>Hiding schemas with synonyms</li>
+        <li>Building tables</li>
       </ul>
     ),
   },
   {
-    title: "Chapter 5 : Stored Procedures",
+    title: "Selecting appropriate data types",
     paragraph: (
       <ul>
-        <li>Definition and Benefits of Use</li>
-        <li>CREATE PROCEDURE</li>
-        <li>Syntax</li>
-        <li>Variables and Parameters</li>
-        <li>Code Examples</li>
-        <li>Temporary Tables</li>
-        <li>Control of Program Flow</li>
-        <li>ALTER and DROP PROCEDURE</li>
-        <li>Implementation Differences</li>
+        <li>Constructing tables with CREATE TABLE</li>
+        <li>Different data types and what is the internal difference</li>
+        <li>Importance of selecting proper data types</li>
+        <li>Data types and performance</li>
       </ul>
     ),
   },
   {
-    title: "Chapter 6 : Triggers",
+    title: "Adding constraints",
     paragraph: (
       <ul>
-        <li>Definition and Benefits of Use</li>
-        <li>Alternatives (e.g., Constraints)</li>
-        <li>CREATE TRIGGER</li>
-        <li>Syntax</li>
-        <li>Trigger Types</li>
-        <li>“Inserted” (or “NEW”) and “Deleted” (or “OLD”) Tables</li>
-        <li>Event Handling and Trigger Execution</li>
-        <li>Modifying and Dropping Triggers</li>
+        <li>Not Null</li>
+        <li>Primary Key</li>
+        <li>Foreign key</li>
+        <li>Unique</li>
+        <li>Check</li>
+        <li>Default</li>
+        <li>Candidate Key</li>
+        <li>Alternate Key</li>
+        <li>Natural Key</li>
+        <li>Surrogate Key</li>
       </ul>
     ),
   },
   {
-    title: "Chapter 7 : T-SQL Code Constructs",
+    title: "Implementing various types of joins",
     paragraph: (
       <ul>
-        <li>Exploiting the Programming Features of T-SQL</li>
-        <li>Conditional Constructs</li>
-        <li>Looping Constructs</li>
-        <li>Building Multi-Batch Scripts</li>
-        <li>Invoking System Functions</li>
-        <li>Declaring Variables Inside Scripts</li>
-        <li>Using Variables in Scripts</li>
-        <li>Using Temporary Tables in Scripts</li>
-        <li>Correctly Handling Errors</li>
-        <li>Error Handling</li>
-        <li>Debugging</li>
-        <li>Code Blocks</li>
-        <li>Predefined System Variables</li>
+        <li>Inner joins</li>
+        <li>Cross joins</li>
+        <li>Left, right and full outer joins</li>
+        <li>Equijoins</li>
+        <li>The performance implications of joins</li>
+        <li>Adding filter conditions to outer joins</li>
+        <li>Writing self joins</li>
+        <li>Join algorithms(hash join, loop join and merge join)</li>
       </ul>
     ),
   },
   {
-    title: "Chapter 8 : Transactions and Locking",
+    title: "Joining a table to itself",
     paragraph: (
       <ul>
-        <li>Effective use of Transactions</li>
-        <li>Using Isolation Level</li>
-        <li>Maximizing Concurrency with Correct Use of Locking</li>
-        <li>Shared Locks</li>
-        <li>Exclusive Locks</li>
-        <li>Update Locks</li>
-        <li>Increasing Throughput by Choosing Appropriate Transaction</li>
-        <li>Isolation</li>
-        <li>Preventing Deadlocks</li>
+        <li>Chaining self joins</li>
+        <li>Solving time-interval problems</li>
       </ul>
     ),
   },
   {
-    title: "Chapter 9 : T-SQL Cursors",
+    title: "Combining queries with set operators",
     paragraph: (
       <ul>
-        <li>Overview of Cursors</li>
-        <li>Declaring a Cursor</li>
-        <li>Using OPEN CURSOR, CLOSE CURSOR, DEALLOCATE CURSOR Statements</li>
-        <li>FETCHing Results</li>
-        <li>Testing @@FETCH_STATUS and @ @CURSOR_ROWS</li>
-        <li>Updating Records with Cursors</li>
+        <li>UNION</li>
+        <li>UNION ALL</li>
+        <li>INTERSECT</li>
+        <li>EXCEPT</li>
       </ul>
     ),
   },
   {
-    title: "Chapter 10 : Working with XML",
+    title: "Scalar and Aggregate Functions",
     paragraph: (
       <ul>
-        <li>Benefits of XML</li>
-        <li>Working with XML Documents</li>
-        <li>Working with XML Schemas</li>
-        <li>Storing Data in XML Data Type</li>
-        <li>Working with XML Methods</li>
-        <li>Query</li>
-        <li>Exist</li>
-        <li>Value</li>
-        <li>Modify</li>
-        <li>Nodes</li>
-        <li>Producing XML from SELECT Statements Using the FOR XML Clause</li>
-        <li>Validating XML Using XML Schemas</li>
+        <li>Taking advantage of scalar functions</li>
+        <li>Converting data types</li>
+        <li>Handling dates</li>
+        <li>Manipulating strings</li>
+        <li>Choosing the right function for the job</li>
       </ul>
     ),
   },
   {
-    title: "Chapter 11 : Writing Basic SQL Queries",
+    title: "Sorting and Filtering Data",
     paragraph: (
       <ul>
-        <li>Displaying Table Structures</li>
-        <li>Retrieving Column Data From a Table or View</li>
-        <li>Selecting Unique Values</li>
-        <li>Obtaining a Row Count</li>
-        <li>Filtering Rows Using the WHERE Clause</li>
-        <li>Sorting Results Using ORDER BY</li>
-        <li>Joining Multiple Tables</li>
+        <li>Sorting Data</li>
+        <li>Filtering Data with Predicates</li>
+        <li>Filtering with the TOP and OFFSET-FETCH Options</li>
+        <li>Working with Unknown Values</li>
       </ul>
     ),
   },
   {
-    title:
-      "Chapter 12 : Manipulating Table Data Using SQL's Data Manipulation Language (DML)",
+    title: "Summarizing data with aggregate functions",
     paragraph: (
       <ul>
-        <li>Inserting Data into Tables</li>
-        <li>Updating Existing Data</li>
-        <li>Deleting Records</li>
-        <li>Truncating Tables</li>
-        <li>Implementing Data Integrity with Transactions</li>
-        <li>COMMIT</li>
-        <li>ROLLBACK</li>
-        <li>SAVEPOINT</li>
+        <li>COUNT</li>
+        <li>SUM</li>
+        <li>AVG</li>
+        <li>Equijoins</li>
+        <li>MIN</li>
+        <li>MAX</li>
+        <li>Managing NULLs</li>
+        <li>Suppressing duplicates</li>
       </ul>
     ),
   },
   {
-    title: "Chapter 13 : Managing Database Objects",
+    title: "Grouping data",
     paragraph: (
       <ul>
-        <li>Dropping Tables, Indexes and Views</li>
-        <li>Modifying Tables, Indexes and Views</li>
-        <li>Enabling and Disabling Constraints</li>
-        <li>Managing Security</li>
+        <li>GROUP BY and GROUPING SETS</li>
+        <li>Applying conditions with HAVING</li>
+        <li>Calculating moving averages</li>
       </ul>
     ),
   },
   {
-    title: "Chapter 14 : User-Defined Functions",
+    title: "Extending group queries",
     paragraph: (
       <ul>
-        <li>Definition and Benefits of Use</li>
-        <li>CREATE FUNCTION</li>
-        <li>Syntax</li>
-        <li>Scalar vs. Table Functions</li>
-        <li>Comparison with Stored Procedures</li>
-        <li>Returning Scalar Values and Tables</li>
-        <li>Modifying and Dropping Functions</li>
+        <li>Nesting grouped aggregates</li>
+        <li>Joins and grouping</li>
+        <li>Introducing subtotals with CUBE and ROLLUP</li>
       </ul>
     ),
   },
   {
-    title: "Chapter 15 : Complex Queries",
+    title: "Building crosstab reports",
     paragraph: (
       <ul>
-        <li>Using Wilcard Characters with Like</li>
-        <li>Improving SQL Queries with Common Table Expressions (CTE’s)</li>
-        <li>Using the OUTPUT clause</li>
-        <li>Allowing Users to Build SQL Queries Dynamically</li>
+        <li>Using CASE to turn rows into columns</li>
+        <li>Applying PIVOT and UNPIVOT</li>
       </ul>
     ),
   },
   {
-    title: "Chapter 16 : Working with Data Types and Functions",
+    title: "Declaring variables and parameters",
     paragraph: (
       <ul>
-        <li>Effective Use of Data Types in SQL</li>
-        <li>String</li>
-        <li>Numeric</li>
-        <li>Time/Date</li>
-        <li>Other</li>
-        <li>How to Convert Data Using CAST and CONVERT</li>
-        <li>Creating Conditional Tests with the CASE Function</li>
-        <li>Substitution of Non-null Values with the COALESCE and ISNULL</li>
-        <li>Functions</li>
-        <li>Analyzing Data Points Using Ranking Functions</li>
+        <li>Creating and utilizing local variables</li>
+        <li>Passing input and output parameters</li>
+        <li>Interrogating global variables</li>
       </ul>
     ),
   },
   {
-    title: "Chapter 17 : More Stored Procedures",
+    title: "Calling built-in scalar functions",
     paragraph: (
       <ul>
-        <li>Designing a Stored Procedure</li>
-        <li>Input Parameters</li>
-        <li>Output Parameters</li>
-        <li>Default Values</li>
-        <li>Implementing Exception Handling</li>
-        <li>Adding Fault Tolerant Transaction Logic</li>
+        <li>Converting data using CAST and CONVERT</li>
+        <li>Ordering data with ranking functions</li>
       </ul>
     ),
   },
   {
-    title: "Chapter 18 : Advanced Views",
+    title: "Performing Extensive Analysis with Analytic Functions",
     paragraph: (
       <ul>
-        <li>Designing Views</li>
-        <li>Updating through a View</li>
-        <li>Inserting Records through a View</li>
-        <li>Deleting through a View</li>
-        <li>Indexed Views and Performance Applications</li>
+        <li>The OVER clause</li>
+        <li>Specifying the ordering before applying the function</li>
+        <li>Splitting the result set into logical partitions</li>
+      </ul>
+    ),
+  },
+  {
+    title: "RANK Function",
+    paragraph: (
+      <ul>
+        <li>RANK and DENSE_RANK</li>
+        <li>ROW_NUMBER with ordered sets</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Extending the use of aggregates",
+    paragraph: (
+      <ul>
+        <li>Partitioning in multiple levels</li>
+        <li>Computing running totals</li>
+        <li>Comparing row and aggregate values</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Building Sub-queries",
+    paragraph: (
+      <ul>
+        <li>PSimple sub-queries</li>
+        <li>Sub-queries in conditions and column expressions</li>
+        <li>Creating multilevel sub-queries</li>
+        <li>Avoiding problems when sub-queries return NULLs</li>
+        <li>Handling multi row sub-query results</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Correlated sub-queries",
+    paragraph: (
+      <ul>
+        <li>Accessing values from the outer query</li>
+        <li>EXISTS vs. IN</li>
+        <li>Identifying duplicates</li>
+        <li>Avoiding accidental correlation</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Common table expressions (CTE)",
+    paragraph: (
+      <ul>
+        <li>Reusable sub-queries</li>
+        <li>Recursive sub-queries</li>
+        <li>Traversing hierarchies</li>
+      </ul>
+    ),
+  },
+  {
+    title: "PIVOT/UNPIVOT",
+    paragraph: (
+      <ul>
+        <li>Importance of pivoting</li>
+        <li>How to pivot data</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Derived Tables",
+    paragraph: (
+      <ul>
+        <li>Derived table in FROM clause</li>
+        <li>Derived table in JOIN clause</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Maintaining Data",
+    paragraph: (
+      <ul>
+        <li>Modifying data</li>
+        <li>Inserting, updating and deleting data</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Transaction",
+    paragraph: (
+      <ul>
+        <li>ACID properties</li>
+        <li>
+          Ensuring data consistency with transactions and distributed
+          transactions
+        </li>
+        <li>Isolation levels</li>
+        <li>Begin Transaction</li>
+        <li>Commit Transaction</li>
+        <li>Save pointoPhantom rows</li>
+        <li>Non repeatable reads</li>
+        <li>Dirty Reads</li>
+        <li>Dealing with open transactions when an exception occurs</li>
+      </ul>
+    ),
+  },
+  {
+    title: "SQL Server locking fundamentals",
+    paragraph: (
+      <ul>
+        <li>
+          Avoiding blocking problems with read-committed snapshot isolation
+        </li>
+        <li>Managing locks using hints</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Programming procedural statements",
+    paragraph: (
+      <ul>
+        <li>Implementing conditions with IF...ELSE</li>
+        <li>Looping with WHILE and GOTO</li>
+        <li>Creating code blocks with BEGIN...END</li>
+        <li>Debugging with PRINT</li>
+        <li>Returning data using RETURN</li>
+        <li>Debugging T-SQL in Management Studio</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Handling errors",
+    paragraph: (
+      <ul>
+        <li>Communicating problems to the client with RAISERROR</li>
+        <li>Intercepting errors with TRY...CATCH</li>
+        <li>Dealing with open transactions when an exception occurs</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Producing server-side result sets",
+    paragraph: (
+      <ul>
+        <li>Building and using temporary tables</li>
+        <li>Processing rows on the server with a cursor</li>
+        <li>Taking advantage of table variables</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Views",
+    paragraph: (
+      <ul>
+        <li>Storing queries on the server</li>
+        <li>Concealing complexity with views</li>
+        <li>Indexed views</li>
+        <li>Partitioned views</li>
+        <li>Taking advantage of schema binding</li>
+        <li>View encryption</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Creating and managing indexes",
+    paragraph: (
+      <ul>
+        <li>Clustered Index</li>
+        <li>Non Clustered Index</li>
+        <li>Unique Index</li>
+        <li>Filtered Index</li>
+        <li>Partitioned Index</li>
+        <li>Covered Index</li>
+        <li>Defining indexed views</li>
+        <li>Analyzing and repairing fragmentation</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Functions",
+    paragraph: (
+      <ul>
+        <li>Scalar Function</li>
+        <li>In-Line table value function</li>
+        <li>Multi-statement table-valued function</li>
+        <li>Creating user-defined functions</li>
+        <li>Calculating values with scalar functions</li>
+        <li>Processing multiple rows returned from a table-valued function</li>
+        <li>Taking advantage of schema binding</li>
+        <li>Function encryption</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Triggers",
+    paragraph: (
+      <ul>
+        <li>INSTEAD OF vs. AFTER triggers</li>
+        <li>Detecting row changes using the inserted and deleted tables</li>
+        <li>Tracking metadata changes with DDL triggers</li>
+        <li>Auditing user access using a LOGON trigger</li>
+        <li>Tracking data changes with the OUTPUT clause</li>
+        <li>Track column changes using UPDATE function</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Stored Procedures",
+    paragraph: (
+      <ul>
+        <li>Batch and stored procedure processing</li>
+        <li>Minimizing network traffic using batches and procedures</li>
+        <li>Stored procedure compilation and execution</li>
+        <li>Using scalar functions</li>
+        <li>Table value parameters</li>
+        <li>Querying Multiple Tables</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Temporary Tables",
+    paragraph: (
+      <ul>
+        <li>Create local temporary tables</li>
+        <li>Create global temporary tables</li>
+        <li>Table value parameter</li>
+        <li>Table variables</li>
+        <li>Common table expression (CTE)</li>
+        <li>Derived Tables</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Moving databases",
+    paragraph: (
+      <ul>
+        <li>Scripting objects and moving data with Transact-SQL</li>
+        <li>Detaching and attaching databases</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Implementing Server and Database Security",
+    paragraph: (
+      <ul>
+        <li>Creating logins</li>
+        <li>Contrasting Windows and SQL Server authentication</li>
+        <li>Authorizing logins</li>
+        <li>Making logins members of server roles</li>
+        <li>Enforcing password policy</li>
+      </ul>
+    ),
+  },
+  {
+    title: "System databases",
+    paragraph: (
+      <ul>
+        <li>Master</li>
+        <li>MSDB</li>
+        <li>Model</li>
+        <li>TempDB</li>
+        <li>Importance of TempDB with respect to performance</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Restoring databases",
+    paragraph: (
+      <ul>
+        <li>Restore a full backup</li>
+        <li>Restore a differential backup</li>
+        <li>Restore a log backup</li>
+        <li>Restore with NO RECOVERY</li>
+        <li>Restore with RECOVERY</li>
+        <li>Restore with RESTART</li>
+        <li>Point in time restore</li>
+        <li>MARK restore</li>
+        <li>Recovering user databases</li>
+        <li>Testing recovery scenarios</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Linked Server",
+    paragraph: (
+      <ul>
+        <li>What /why / how about linked server</li>
+        <li>To create a linked server to another instance of SQL Server</li>
+        <li>To create a linked server with Non-SQL Command Providers</li>
+        <li>Test the linked server</li>
+        <li>Writing a query that joins tables from a linked server</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Export/Import data/database",
+    paragraph: (
+      <ul>
+        <li>Import wizard</li>
+        <li>Export wizard</li>
+        <li>Copy database wizard</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Automating Tasks with Jobs and Alerts",
+    paragraph: (
+      <ul>
+        <li>The SQL Server Agent</li>
+        <li>Configuring the agent</li>
+        <li>Setting up Database Mail</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Multistep jobs",
+    paragraph: (
+      <ul>
+        <li>Defining jobs to handle routine tasks</li>
+        <li>Creating alerts and operators</li>
+        <li>Associating alerts with jobs</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Storing and Querying XML Data in SQL Server",
+    paragraph: (
+      <ul>
+        <li>XML and XML Schemas</li>
+        <li>Storing XML Data and Schemas in SQL Server</li>
+        <li>Implementing the XML Data Type</li>
+        <li>Using the T-SQL FOR XML Statement</li>
+        <li>Getting Started with xQuery</li>
+        <li>Shredding XML</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Extras",
+    paragraph: (
+      <ul>
+        <li>Introduction to Temporal Data</li>
+        <li>End to End Case study Including Build Database from Scratch</li>
+        <li>Total 6 Assignments</li>
+        <li>More than 10 quizzes</li>
+        <li>Debugging Techniques</li>
+        <li>Introduction to Profiler</li>
+        <li>Top 50 queries to be used in Industry</li>
+        <li>
+          Top 50 interview questions for preparation as Sql Server Developer
+        </li>
+        <li>Review and consolidate your SQL skills with tons of exercises!</li>
       </ul>
     ),
   },

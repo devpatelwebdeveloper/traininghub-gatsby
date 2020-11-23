@@ -3,36 +3,19 @@ import Paragraph from "../../components/atoms/Paragraph/Paragraph";
 
 const SqlServerDeveloper = [
   {
-    title: "Essential tools",
+    title: "RDBMS Concept & Essential Tools",
     paragraph: (
       <ul>
         <li>SQL Server Management Studio</li>
         <li>Transact-SQL</li>
         <li>SQL Server Configuration Manager</li>
-      </ul>
-    ),
-  },
-  {
-    title: "RDBMS Concept",
-    paragraph: (
-      <ul>
-        <li>DBMS ConceptoRDBMS Concepts</li>
+        <li>DBMS Concept</li>
+        <li>RDBMS Concepts</li>
         <li>ER Diagram Concepts</li>
         <li>Cardinality</li>
         <li>Ordinality</li>
         <li>SDLC for Database design and Development</li>
         <li>Normalization and De-Normalization</li>
-      </ul>
-    ),
-  },
-  {
-    title: "SQL Server Architecture",
-    paragraph: (
-      <ul>
-        <li>SQL Server edition overview</li>
-        <li>Introducing the tools</li>
-        <li>SQL Server Management Studio</li>
-        <li>Managing Tables with DDL</li>
       </ul>
     ),
   },
@@ -55,6 +38,8 @@ const SqlServerDeveloper = [
         <li>Different data types and what is the internal difference</li>
         <li>Importance of selecting proper data types</li>
         <li>Data types and performance</li>
+        <li>Converting data using CAST and CONVERT</li>
+        <li>User Defined DataTypes</li>
       </ul>
     ),
   },
@@ -65,8 +50,7 @@ const SqlServerDeveloper = [
         <li>Not Null</li>
         <li>Primary Key</li>
         <li>Foreign key</li>
-        <li>Unique</li>
-        <li>Check</li>
+        <li>UniqueoCheck</li>
         <li>Default</li>
         <li>Candidate Key</li>
         <li>Alternate Key</li>
@@ -86,32 +70,15 @@ const SqlServerDeveloper = [
         <li>The performance implications of joins</li>
         <li>Adding filter conditions to outer joins</li>
         <li>Writing self joins</li>
-        <li>Join algorithms(hash join, loop join and merge join)</li>
-      </ul>
-    ),
-  },
-  {
-    title: "Joining a table to itself",
-    paragraph: (
-      <ul>
+        <li>Join algorithms(hash join), loop join and merge join</li>
+        <li>Joining a table to itself</li>
         <li>Chaining self joins</li>
         <li>Solving time-interval problems</li>
       </ul>
     ),
   },
   {
-    title: "Combining queries with set operators",
-    paragraph: (
-      <ul>
-        <li>UNION</li>
-        <li>UNION ALL</li>
-        <li>INTERSECT</li>
-        <li>EXCEPT</li>
-      </ul>
-    ),
-  },
-  {
-    title: "Scalar and Aggregate Functions",
+    title: "Scalar and Aggregate Functions/Set Operators",
     paragraph: (
       <ul>
         <li>Taking advantage of scalar functions</li>
@@ -119,6 +86,7 @@ const SqlServerDeveloper = [
         <li>Handling dates</li>
         <li>Manipulating strings</li>
         <li>Choosing the right function for the job</li>
+        <li>Set operators – UNION , UNION ALL ,INTERSECT ,EXCEPT</li>
       </ul>
     ),
   },
@@ -145,35 +113,13 @@ const SqlServerDeveloper = [
         <li>MAX</li>
         <li>Managing NULLs</li>
         <li>Suppressing duplicates</li>
-      </ul>
-    ),
-  },
-  {
-    title: "Grouping data",
-    paragraph: (
-      <ul>
         <li>GROUP BY and GROUPING SETS</li>
         <li>Applying conditions with HAVING</li>
         <li>Calculating moving averages</li>
-      </ul>
-    ),
-  },
-  {
-    title: "Extending group queries",
-    paragraph: (
-      <ul>
+        <li>Computing running totals</li>
         <li>Nesting grouped aggregates</li>
         <li>Joins and grouping</li>
         <li>Introducing subtotals with CUBE and ROLLUP</li>
-      </ul>
-    ),
-  },
-  {
-    title: "Building crosstab reports",
-    paragraph: (
-      <ul>
-        <li>Using CASE to turn rows into columns</li>
-        <li>Applying PIVOT and UNPIVOT</li>
       </ul>
     ),
   },
@@ -188,40 +134,13 @@ const SqlServerDeveloper = [
     ),
   },
   {
-    title: "Calling built-in scalar functions",
-    paragraph: (
-      <ul>
-        <li>Converting data using CAST and CONVERT</li>
-        <li>Ordering data with ranking functions</li>
-      </ul>
-    ),
-  },
-  {
-    title: "Performing Extensive Analysis with Analytic Functions",
-    paragraph: (
-      <ul>
-        <li>The OVER clause</li>
-        <li>Specifying the ordering before applying the function</li>
-        <li>Splitting the result set into logical partitions</li>
-      </ul>
-    ),
-  },
-  {
-    title: "RANK Function",
+    title: "RANK Function -Row_Number",
     paragraph: (
       <ul>
         <li>RANK and DENSE_RANK</li>
+        <li>Ordering data with ranking functions</li>
         <li>ROW_NUMBER with ordered sets</li>
-      </ul>
-    ),
-  },
-  {
-    title: "Extending the use of aggregates",
-    paragraph: (
-      <ul>
-        <li>Partitioning in multiple levels</li>
-        <li>Computing running totals</li>
-        <li>Comparing row and aggregate values</li>
+        <li>The OVER clause</li>
       </ul>
     ),
   },
@@ -229,32 +148,27 @@ const SqlServerDeveloper = [
     title: "Building Sub-queries",
     paragraph: (
       <ul>
-        <li>PSimple sub-queries</li>
+        <li>Simple sub-queries</li>
         <li>Sub-queries in conditions and column expressions</li>
         <li>Creating multilevel sub-queries</li>
         <li>Avoiding problems when sub-queries return NULLs</li>
         <li>Handling multi row sub-query results</li>
-      </ul>
-    ),
-  },
-  {
-    title: "Correlated sub-queries",
-    paragraph: (
-      <ul>
+        <li>Correlated sub-queries</li>
         <li>Accessing values from the outer query</li>
-        <li>EXISTS vs. IN</li>
-        <li>Identifying duplicates</li>
+        <li>EXISTS vs. INoIdentifying duplicates</li>
         <li>Avoiding accidental correlation</li>
       </ul>
     ),
   },
   {
-    title: "Common table expressions (CTE)",
+    title: "Temporary Tables",
     paragraph: (
       <ul>
-        <li>Reusable sub-queries</li>
-        <li>Recursive sub-queries</li>
-        <li>Traversing hierarchies</li>
+        <li>Create local temporary tables</li>
+        <li>Create global temporary tables</li>
+        <li>Table value parameter</li>
+        <li>Table variablesoCommon table expression (CTE)</li>
+        <li>Derived Tables</li>
       </ul>
     ),
   },
@@ -268,20 +182,26 @@ const SqlServerDeveloper = [
     ),
   },
   {
-    title: "Derived Tables",
+    title: "Maintaining Data (DML)",
     paragraph: (
       <ul>
+        <li>Modifying data</li>
+        <li>Inserting, updating and deleting data</li>
         <li>Derived table in FROM clause</li>
         <li>Derived table in JOIN clause</li>
       </ul>
     ),
   },
   {
-    title: "Maintaining Data",
+    title: "Views",
     paragraph: (
       <ul>
-        <li>Modifying data</li>
-        <li>Inserting, updating and deleting data</li>
+        <li>Storing queries on the server</li>
+        <li>Concealing complexity with views</li>
+        <li>Indexed views</li>
+        <li>Partitioned views</li>
+        <li>Taking advantage of schema binding</li>
+        <li>View encryption</li>
       </ul>
     ),
   },
@@ -297,21 +217,11 @@ const SqlServerDeveloper = [
         <li>Isolation levels</li>
         <li>Begin Transaction</li>
         <li>Commit Transaction</li>
-        <li>Save pointoPhantom rows</li>
+        <li>Save point</li>
+        <li>Phantom rows</li>
         <li>Non repeatable reads</li>
         <li>Dirty Reads</li>
         <li>Dealing with open transactions when an exception occurs</li>
-      </ul>
-    ),
-  },
-  {
-    title: "SQL Server locking fundamentals",
-    paragraph: (
-      <ul>
-        <li>
-          Avoiding blocking problems with read-committed snapshot isolation
-        </li>
-        <li>Managing locks using hints</li>
       </ul>
     ),
   },
@@ -339,25 +249,15 @@ const SqlServerDeveloper = [
     ),
   },
   {
-    title: "Producing server-side result sets",
+    title: "Stored Procedures",
     paragraph: (
       <ul>
-        <li>Building and using temporary tables</li>
-        <li>Processing rows on the server with a cursor</li>
-        <li>Taking advantage of table variables</li>
-      </ul>
-    ),
-  },
-  {
-    title: "Views",
-    paragraph: (
-      <ul>
-        <li>Storing queries on the server</li>
-        <li>Concealing complexity with views</li>
-        <li>Indexed views</li>
-        <li>Partitioned views</li>
-        <li>Taking advantage of schema binding</li>
-        <li>View encryption</li>
+        <li>Batch and stored procedure processing</li>
+        <li>Minimizing network traffic using batches and procedures</li>
+        <li>Stored procedure compilation and execution</li>
+        <li>Using scalar functions</li>
+        <li>Table value parameters</li>
+        <li>Querying Multiple Tables</li>
       </ul>
     ),
   },
@@ -392,7 +292,7 @@ const SqlServerDeveloper = [
     ),
   },
   {
-    title: "Triggers",
+    title: "Triggers & Cursors",
     paragraph: (
       <ul>
         <li>INSTEAD OF vs. AFTER triggers</li>
@@ -401,41 +301,7 @@ const SqlServerDeveloper = [
         <li>Auditing user access using a LOGON trigger</li>
         <li>Tracking data changes with the OUTPUT clause</li>
         <li>Track column changes using UPDATE function</li>
-      </ul>
-    ),
-  },
-  {
-    title: "Stored Procedures",
-    paragraph: (
-      <ul>
-        <li>Batch and stored procedure processing</li>
-        <li>Minimizing network traffic using batches and procedures</li>
-        <li>Stored procedure compilation and execution</li>
-        <li>Using scalar functions</li>
-        <li>Table value parameters</li>
-        <li>Querying Multiple Tables</li>
-      </ul>
-    ),
-  },
-  {
-    title: "Temporary Tables",
-    paragraph: (
-      <ul>
-        <li>Create local temporary tables</li>
-        <li>Create global temporary tables</li>
-        <li>Table value parameter</li>
-        <li>Table variables</li>
-        <li>Common table expression (CTE)</li>
-        <li>Derived Tables</li>
-      </ul>
-    ),
-  },
-  {
-    title: "Moving databases",
-    paragraph: (
-      <ul>
-        <li>Scripting objects and moving data with Transact-SQL</li>
-        <li>Detaching and attaching databases</li>
+        <li>Processing rows on the server with a cursor</li>
       </ul>
     ),
   },
@@ -464,7 +330,7 @@ const SqlServerDeveloper = [
     ),
   },
   {
-    title: "Restoring databases",
+    title: "Backup - Restoring databases operation +  Scripting",
     paragraph: (
       <ul>
         <li>Restore a full backup</li>
@@ -477,6 +343,8 @@ const SqlServerDeveloper = [
         <li>MARK restore</li>
         <li>Recovering user databases</li>
         <li>Testing recovery scenarios</li>
+        <li>Scripting objects and moving data with Transact-SQL</li>
+        <li>Detaching and attaching databases</li>
       </ul>
     ),
   },
@@ -509,13 +377,7 @@ const SqlServerDeveloper = [
         <li>The SQL Server Agent</li>
         <li>Configuring the agent</li>
         <li>Setting up Database Mail</li>
-      </ul>
-    ),
-  },
-  {
-    title: "Multistep jobs",
-    paragraph: (
-      <ul>
+        <li>Multistep jobs</li>
         <li>Defining jobs to handle routine tasks</li>
         <li>Creating alerts and operators</li>
         <li>Associating alerts with jobs</li>

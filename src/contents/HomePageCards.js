@@ -5,7 +5,7 @@ const HomePageCards = [
     alt: "We are passionate of teaching",
     title: "We are passionate of teaching",
     text:
-      "We streamline simplify your IT Training needs. We train in-depth working knowledge of the technology. We offer structure-based programs and teach the best practices. Our innovative and flexible learning solutions gear you up for success and create high confidence levels in reaching higher positions.",
+      "We simplify your IT Training needs. We train in-depth working knowledge of the technology. We offer structure-based programs and teach the best practices. Our innovative and flexible learning solutions gear you up for success and create high confidence levels in reaching higher positions.",
   },
   {
     image:

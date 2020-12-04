@@ -15,7 +15,7 @@ export default function BlogItem({ blog }) {
         alt={blog.title}
         title={blog.title}
         text={blog.shortDescription.shortDescription}
-        btnlink={`/blog/${blog.category.slug}/${blog.slug}`}
+        btnlink={`/blogs/${blog.category.slug}/${blog.slug}`}
         btntext="Read more"
       />
     </>

@@ -52,6 +52,16 @@ export default function Contact() {
                 <Icon size={32} icon={envelope} />{" "}
                 <a href="mailto:info@traininghub.io">info@traininghub.io</a>
               </Paragraph>
+              <hr />
+              <BaseTitle title="US Location:" size="H5" />
+              <Paragraph>
+                <Icon size={32} icon={mapMarker} /> Unit 180, 2015 Lincoln Hwy,
+                Edison, NJ 08817
+              </Paragraph>
+              <Paragraph>
+                <Icon size={32} icon={envelope} />{" "}
+                <a href="mailto:info@traininghub.io">info@traininghub.io</a>
+              </Paragraph>
             </ContactCol>
             <Col md={6}>
               <BaseTitle title="Contact us" size="H3" center underline />
@@ -60,7 +70,14 @@ export default function Contact() {
           </Row>
         </Section>
         <Section fluid>
-          <Mapembed />
+          <Row>
+            <Col>
+              <Mapembed canada />
+            </Col>
+            <Col>
+              <Mapembed />
+            </Col>
+          </Row>
         </Section>
       </Layout>
     </>

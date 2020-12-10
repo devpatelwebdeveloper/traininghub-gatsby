@@ -46,14 +46,13 @@ const courseImage = {
 };
 
 const Courses = [
-  //Microsoft SQL Developer
   {
     metaDescription:
-      "SQL Server Development Online Training → SQL Server Development Classroom Training With | Expert Trainers with Traininghub.IO | Get Hired By Top MNC’s",
+      "SQL Server Development Online Training → SQL Server Development Classroom Training With | Expert Trainers with Traininghub.IO | Get Hired By Top MNC's",
     tag: "Microsoft",
-    title: "Microsoft SQL Developer",
+    title: "Microsoft SQL Developer Training",
     image: icons.microsoft,
-    alt: "SQL Server Development",
+    alt: "SQL Server Development Training",
     href: "/courses/microsofttechnologies/sqlserverdevelopment",
     description:
       "Learn how to build, develop, and maintain a SQL Server database by focusing on original features and tools of the SQL server. And how to alter tables using T-SQL, SELECT statements,indexes, queries, transaction types, and triggers. Database management skills like disaster recovery, data storage, replication, and data mirroring. Build and maintain SQL Server DB, and gain insights into enterprise data with real-world SQL Server Development Training.",
@@ -70,7 +69,7 @@ const Courses = [
       studentJourney: {
         heading: "Student Journey",
         paragraphContent:
-          "Soon after enrolling in the course, you will get trained by professionals experienced with 10+ of experience. (The course is designed for software developers, BI Professionals, SQL andDatabase administrators, Big data and Hadoop professionals, BA, and Managers, Individuals looking for a career in SQL development.) There are no pre-requisites to enroll for the course.Hence anyone can gain in-depth knowledge of the content. Instructors conduct assignments and doubt clarifications for better understandings. After successful completion of the course, the expert’s advice will be provided based on individuals performance.",
+          "Soon after enrolling in the course of Sql server Developer Training at TrainingHub.IO, you will get trained by professionals experienced with 10+ of experience. (The course is designed for software developers, BI Professionals, SQL andDatabase administrators, Big data and Hadoop professionals, BA, and Managers, Individuals looking for a career in SQL development.) There are no pre-requisites to enroll for the course.Hence anyone can gain in-depth knowledge of the content. Instructors conduct assignments and doubt clarifications for better understandings. After successful completion of the course, the expert's advice will be provided based on individuals performance.",
         imageOne:
           "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/database-management.png",
         imageOneAlt: "Database management system",
@@ -80,6 +79,40 @@ const Courses = [
       },
     },
   },
+  //Microsoft SQL Developer Devashish
+  // {
+  //   metaDescription:
+  //     "SQL Server Development Online Training → SQL Server Development Classroom Training With | Expert Trainers with Traininghub.IO | Get Hired By Top MNC’s",
+  //   tag: "Microsoft",
+  //   title: "Microsoft SQL Developer",
+  //   image: icons.microsoft,
+  //   alt: "SQL Server Development",
+  //   href: "/courses/microsofttechnologies/sqlserverdevelopment",
+  //   description:
+  //     "Learn how to build, develop, and maintain a SQL Server database by focusing on original features and tools of the SQL server. And how to alter tables using T-SQL, SELECT statements,indexes, queries, transaction types, and triggers. Database management skills like disaster recovery, data storage, replication, and data mirroring. Build and maintain SQL Server DB, and gain insights into enterprise data with real-world SQL Server Development Training.",
+  //   // startDate: "Nov 30 3019",
+  //   courseImage: courseImage.microsoft,
+  //   coursePage: {
+  //     courseImage:
+  //       "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/SQLServer.jpg",
+  //     courseIntroduction:
+  //       "During this course, you will be able to learn what is SQL architecture, server/client relation,stored procedures, functions, SELECT statement, data types, views. how to modify data by using T-SQL, How to develop different operators and functions to design RDBMS, How to create and manage triggers, How to search, index, sort, and group by using records. (How to transactions - using isolation level and locking - preventing deadlocks.) How to implement optimized/efficient, scalable database, scripts/programs/queries for executions. How to recover,replicate, mirror, and store the data in the database. How to implement actions like installation,configure, planning, designing database, troubleshooting, and security, data recovering techniques. How to use advanced query techniques, advanced views, complex queries, user-defined functions, work with XML. You will also be able to monitor and control user access in optimizing the performance of the database.How to insert, update, and delete data, How to work on joins and sub-queries",
+  //     courseIntroductionImage:
+  //       "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/SqlServerDevelopment.png",
+  //     courseContent: SqlServerDeveloper,
+  //     studentJourney: {
+  //       heading: "Student Journey",
+  //       paragraphContent:
+  //         "Soon after enrolling in the course, you will get trained by professionals experienced with 10+ of experience. (The course is designed for software developers, BI Professionals, SQL andDatabase administrators, Big data and Hadoop professionals, BA, and Managers, Individuals looking for a career in SQL development.) There are no pre-requisites to enroll for the course.Hence anyone can gain in-depth knowledge of the content. Instructors conduct assignments and doubt clarifications for better understandings. After successful completion of the course, the expert’s advice will be provided based on individuals performance.",
+  //       imageOne:
+  //         "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/database-management.png",
+  //       imageOneAlt: "Database management system",
+  //       imageTwo:
+  //         "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/sqlquery.jpg",
+  //       imageTwoAlt: "SQL Query",
+  //     },
+  //   },
+  // },
 
   //SQL Server Integration Services
   // {

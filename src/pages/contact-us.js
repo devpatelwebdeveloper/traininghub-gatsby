@@ -71,10 +71,10 @@ export default function Contact() {
         </Section>
         <Section fluid>
           <Row>
-            <Col>
+            <Col md={6}>
               <Mapembed canada />
             </Col>
-            <Col>
+            <Col md={6}>
               <Mapembed />
             </Col>
           </Row>

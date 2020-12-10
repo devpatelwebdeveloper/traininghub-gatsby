@@ -11,7 +11,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
 
   const quizTemplate = path.resolve("./src/templates/QuizMaker.js");
 
-  //Quix from Contentful
+  //Quiz from Contentful
   const quizSlugs = await graphql(`
     query {
       allContentfulQuiz {
@@ -53,6 +53,34 @@ module.exports.createPages = async ({ graphql, actions }) => {
     createPage({
       component: BlogsTemplate,
       path: `/blogs/${edge.node.category.slug}/${edge.node.slug}`,
+      context: {
+        slug: edge.node.slug,
+      },
+    });
+  });
+
+  //Course
+  const courseTemplate = path.resolve("./src/templates/CourseTemplate.js");
+  const CourseSlug = await graphql(`
+    query {
+      allContentfulCourseContent {
+        edges {
+          node {
+            title
+            slug
+            category {
+              slug
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  CourseSlug.data.allContentfulCourseContent.edges.forEach((edge) => {
+    createPage({
+      component: courseTemplate,
+      path: `/courses/${edge.node.category.slug}/${edge.node.slug}`,
       context: {
         slug: edge.node.slug,
       },

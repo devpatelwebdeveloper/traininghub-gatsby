@@ -70,6 +70,18 @@ const AccordionContent = styled.div`
   transition-property: opacity, transform;
   transition-delay: 0.5s;
   padding: 24px;
+  color: ${Styles.Colors.DefaultFont};
+  font-size: ${Styles.FontSize.Medium};
+  font-weight: ${Styles.FontWeight.Normal};
+  line-height: ${Styles.LineHeight.Medium};
+  font-family: ${Styles.FontFamily.Paragraph};
+
+  ${Styles.ScreenSizes.small`
+  font-size: ${Styles.FontSize.Small};
+  font-weight: ${Styles.FontWeight.Normal};
+  line-height: ${Styles.LineHeight.Small};
+  
+   `};
   ${(props) =>
     props.open
       ? `
@@ -111,9 +123,9 @@ class AccordionItem extends React.Component {
           />
         </AccordionItemTitle>
         <AccordionItemInner {...(opened ? { open: true } : { open: false })}>
-          <AccordionContent {...(opened ? { open: true } : { open: false })}>
-            <Paragraph>{paragraph}</Paragraph>
-          </AccordionContent>
+          <AccordionContent
+            {...(opened ? { open: true } : { open: false })}
+            dangerouslySetInnerHTML={{ __html: paragraph }}></AccordionContent>
         </AccordionItemInner>
       </AccordionSingle>
     );

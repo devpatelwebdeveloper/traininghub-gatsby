@@ -7,6 +7,9 @@ import Head from "../components/organisms/Head/Head";
 import Layout from "../components/templates/Layout/Layout";
 import Section from "../components/organisms/Section/Section";
 import TopBannerCourse from "../components/organisms/TopBannerCourse/TopBannerCourse";
+import Accordion from "../components/blocks/Accordion/Accordion";
+import ContentGenericAligned from "../components/blocks/ContentGenericAligned/ContentGenericAligned";
+import StudentJourney from "../components/blocks/StudentJourney/StudentJourney";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { RichTextOptions } from "../utilities/richtextFunction";
@@ -15,12 +18,41 @@ export const query = graphql`
   query($slug: String!) {
     contentfulCourseContent(slug: { eq: $slug }) {
       title
+      category {
+        courseName
+        icon
+      }
       courseIntroduction {
         json
       }
       topBannerImage {
         file {
           url
+        }
+      }
+      courseIntroduction {
+        json
+      }
+      description {
+        json
+      }
+      courseImage {
+        file {
+          url
+        }
+      }
+      studentJourneyDescription {
+        json
+      }
+      studentJourneyImages {
+        file {
+          url
+        }
+      }
+      courseContent {
+        SqlServerDeveloper {
+          title
+          paragraph
         }
       }
     }
@@ -41,16 +73,35 @@ const Course = (props) => {
           )}
           courseImage={Course.topBannerImage.file.url}
         />
-        <Section marginTop="50px" marginBottom="25px">
-          <Row>
-            <Col md={12}>
-              {documentToReactComponents(
-                Course.courseIntroduction.json,
-                RichTextOptions,
-              )}
-            </Col>
-          </Row>
+        <Section margin="24px" padding="24px">
+          <ContentGenericAligned
+            title={Course.title}
+            text={documentToReactComponents(
+              Course.description.json,
+              RichTextOptions,
+            )}
+            image={Course.courseImage.file.url}
+            alt={Course.title}
+            ImageLeft
+            buttonOneLink="/contact-us"
+            buttonOneText="Contact us"
+          />
         </Section>
+        <StudentJourney
+          heading="Student Journey"
+          paragraphContent={documentToReactComponents(
+            Course.studentJourneyDescription.json,
+            RichTextOptions,
+          )}
+          imageOne={Course.studentJourneyImages[0].file.url}
+          imageOneAlt={`${Course.title}- Student Journey`}
+          imageTwo={Course.studentJourneyImages[1].file.url}
+          imageTwoAlt={`${Course.title}- Student Journey`}
+        />
+        <Accordion
+          accordions={Course.courseContent.SqlServerDeveloper}
+          title="Course Content"
+        />
       </Layout>
     </>
   );

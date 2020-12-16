@@ -22,7 +22,7 @@ display:none;
   padding: 16px;
   position: -webkit-sticky;
   position: sticky;
-  top: 100px;
+  top: 150px;
   p {
     span {
       &:hover {

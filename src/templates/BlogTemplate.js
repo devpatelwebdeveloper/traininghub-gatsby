@@ -23,7 +23,7 @@ const Sidebar = styled.div`
   padding: 16px;
   position: -webkit-sticky;
   position: sticky;
-  top: 100px;
+  top: 150px;
 `;
 
 export const query = graphql`
@@ -137,12 +137,15 @@ export default function BlogTemplate(props) {
             <Col md={3}>
               <Sidebar>
                 {CategoryBlogs.length > 0 ? (
-                  <RelatedArticles RelatedBlogs={CategoryBlogs} Parent="blog" />
+                  <RelatedArticles
+                    RelatedBlogs={CategoryBlogs}
+                    Parent="blogs"
+                  />
                 ) : null}
 
                 <SocialShare
                   title={BlogContent.title}
-                  url={`https://www.traininghub.io/blog/${BlogContent.category.slug}/${BlogContent.slug}`}
+                  url={`https://www.traininghub.io/blogs/${BlogContent.category.slug}/${BlogContent.slug}`}
                 />
               </Sidebar>
             </Col>

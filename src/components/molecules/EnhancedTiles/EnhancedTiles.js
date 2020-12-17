@@ -9,6 +9,7 @@ import BaseLink from "../../atoms/BaseLink/BaseLink";
 import Button from "../Button/Button";
 import Paragraph from "../../atoms/Paragraph/Paragraph";
 
+
 const CardType = styled.div`
   border-radius: 8px;
   background-color: ${Styles.Colors.BaseLightBlue};

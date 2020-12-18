@@ -37,7 +37,11 @@ export const query = graphql`
       shortDescription {
         shortDescription
       }
-      blogImage
+      blogImages {
+        file {
+          url
+        }
+      }
       content {
         json
       }
@@ -127,7 +131,9 @@ export default function BlogTemplate(props) {
           courseTitle={BlogContent.title}
           text={BlogContent.shortDescription.shortDescription}
           background={Background}
-          courseImage={BlogContent.blogImage}
+          courseImage={
+            BlogContent.blogImages ? BlogContent.blogImages.file.url : null
+          }
         />
         <Section marginTop="50px" marginBottom="25px">
           <Row>

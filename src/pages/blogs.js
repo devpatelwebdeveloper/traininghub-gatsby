@@ -22,7 +22,7 @@ display:none;
   padding: 16px;
   position: -webkit-sticky;
   position: sticky;
-  top: 100px;
+  top: 150px;
   p {
     span {
       &:hover {
@@ -67,7 +67,11 @@ export default function AboutPage() {
           node {
             title
             slug
-            blogImage
+            blogImages {
+              file {
+                url
+              }
+            }
             shortDescription {
               shortDescription
             }

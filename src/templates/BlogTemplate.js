@@ -126,7 +126,12 @@ export default function BlogTemplate(props) {
   return (
     <>
       <Head title={BlogContent.title} />
-      <Layout>
+      <Layout
+        title={`${BlogContent.title} - ${BlogContent.category.slug}`}
+        metaDescription={BlogContent.shortDescription.shortDescription}
+        metaImage={
+          BlogContent.blogImages ? BlogContent.blogImages.file.url : null
+        }>
         <TopBannerCourse
           courseTitle={BlogContent.title}
           text={BlogContent.shortDescription.shortDescription}

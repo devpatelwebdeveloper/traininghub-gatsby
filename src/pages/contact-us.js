@@ -35,7 +35,7 @@ export default function Contact() {
             <ContactCol md={6}>
               <BaseTitle title="Get in touch" size="H3" center underline />
               <Paragraph>
-                We feel proud in answering what we are doin! Feel free to
+                We feel proud in answering what we are doing! Feel free to
                 contact us with any contact us with any question of concerns and
                 if you have any questions or concerns or even if you would like
                 you know more about our facility. We look forward to hearing

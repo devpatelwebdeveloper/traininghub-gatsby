@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styled, { css } from "styled-components";
 import { useStaticQuery, graphql } from "gatsby";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import Layout from "./Layout";
@@ -9,68 +8,23 @@ import Head from "../../organisms/Head/Head";
 import TopBannerCourse from "../../organisms/TopBannerCourse/TopBannerCourse";
 import ContentGenericAligned from "../../blocks/ContentGenericAligned/ContentGenericAligned";
 import StudentJourney from "../../blocks/StudentJourney/StudentJourney";
-import RelatedCourses from "../../blocks/RelatedCourses/RelatedCourses";
+import RelatedCourses from "../../blocks/RelatedCourses/RelatedContentful";
 import Accordion from "../../blocks/Accordion/Accordion";
-import { Courses } from "../../../contents/Courses";
 import { RichTextOptions } from "../../../utilities/richtextFunction";
+import { CourseQuery } from "../../../contents/ContentfulCourses";
 
-const GatsbyCourse = ({ courseName, currentHref }) => {
-  const data = useStaticQuery(graphql`
-    query {
-      allContentfulCourseContent {
-        edges {
-          node {
-            title
-            category {
-              courseName
-              icon
-            }
-            courseIntroduction {
-              json
-            }
-            topBannerImage {
-              file {
-                url
-              }
-            }
-            courseIntroduction {
-              json
-            }
-            description {
-              json
-            }
-            courseImage {
-              file {
-                url
-              }
-            }
-            studentJourneyDescription {
-              json
-            }
-            studentJourneyImages {
-              file {
-                url
-              }
-            }
-            courseContent {
-              courseContent {
-                title
-                paragraph
-              }
-            }
-          }
-        }
-      }
-    }
-  `);
-
-  console.log(`courseName....`, courseName);
+const GatsbyCourse = ({ courseName }) => {
+  const Courses = [];
+  const data = CourseQuery();
+  data.allContentfulCourseContent.edges.forEach((singleCourse) => {
+    Courses.push(singleCourse.node);
+  });
   const GatsbyCourses = data.allContentfulCourseContent.edges;
   const Course = GatsbyCourses.find((course) => {
     return course.node.title === courseName;
   }).node;
 
-  console.log(Course);
+  const currentHref = `/courses/${Course.category.slug}/${Course.slug}`;
 
   return (
     <>
@@ -78,7 +32,7 @@ const GatsbyCourse = ({ courseName, currentHref }) => {
       <Layout>
         <TopBannerCourse
           courseTitle={Course.title}
-          //   subtitle={Course.tag} This can be the subtitle
+          //   subtitle={Course.category.courseName} This can be the subtitle
           text={documentToReactComponents(
             Course.courseIntroduction.json,
             RichTextOptions,
@@ -114,7 +68,10 @@ const GatsbyCourse = ({ courseName, currentHref }) => {
           accordions={Course.courseContent.courseContent}
           title="Course Content"
         />
-        <RelatedCourses title={Course.tag} currentHref={Course.href} />
+        <RelatedCourses
+          title={Course.category.courseName}
+          currentHref={currentHref}
+        />
       </Layout>
     </>
   );

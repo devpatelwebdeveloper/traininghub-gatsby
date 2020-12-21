@@ -12,7 +12,6 @@ export const query = graphql`
 
 const Course = (props) => {
   const Course = props.data.contentfulCourseContent;
-  console.log(Course);
   return (
     <>
       <GatsbyCourse courseName={Course.title} />

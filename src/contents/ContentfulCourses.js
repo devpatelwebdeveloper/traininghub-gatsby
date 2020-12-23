@@ -16,6 +16,7 @@ export const CourseQuery = () => {
             courseIntroduction {
               json
             }
+            startDate(formatString: "MMM DD YYYY")
             topBannerImage {
               file {
                 url

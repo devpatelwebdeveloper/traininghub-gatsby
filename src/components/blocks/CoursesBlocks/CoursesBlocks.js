@@ -37,7 +37,9 @@ export default function TilesBlock() {
               RichTextOptions,
             )}
             courseTech={course.category.courseName}
-            courseStartDate={course.startDate}
+            courseStartDate={
+              course.startDate != null ? course.startDate : "Coming Soon"
+            }
             exploreCourseButtonLink={`/courses/${course.category.slug}/${course.slug}`}
             enrolNowButtonLink="/contact-us"
           />

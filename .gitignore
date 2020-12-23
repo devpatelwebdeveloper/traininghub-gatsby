@@ -16,7 +16,6 @@ lib-cov
 
 # Test Pages
 src/pages/testPage
-src/pages/courses
 
 # Coverage directory used by tools like istanbul
 coverage

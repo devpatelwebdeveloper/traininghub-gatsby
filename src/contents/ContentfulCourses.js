@@ -16,7 +16,6 @@ export const CourseQuery = () => {
             courseIntroduction {
               json
             }
-            startDate(formatString: "MMM DD YYYY")
             topBannerImage {
               file {
                 url
@@ -54,3 +53,6 @@ export const CourseQuery = () => {
   `);
   return courses;
 };
+
+// When we add date to one of the courses, add this back
+// startDate(formatString: "MMM DD YYYY")

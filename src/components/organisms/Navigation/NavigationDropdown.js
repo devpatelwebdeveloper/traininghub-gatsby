@@ -9,6 +9,7 @@ import Styles from "../../../styles/Styles";
 import Paragraph from "../../atoms/Paragraph/Paragraph";
 import BaseTitle from "../../atoms/BaseTitle/BaseTitle";
 import { Courses } from "../../../contents/Courses";
+import { CourseQuery } from "../../../contents/ContentfulCourses";
 
 const StyledDescription = styled(Col)`
   ${Styles.ScreenSizes.medium`
@@ -36,21 +37,14 @@ const StyledNavDropdown = styled(NavDropdown)`
   }
 `;
 
-export default class NavigationDropdown extends React.Component {
-  static propTypes = {
-    title: PropTypes.string.isRequired,
-    descTitle: PropTypes.string.isRequired,
-    description: PropTypes.any.isRequired,
-  };
-  static defaultProps = {
-    title: "",
-    descTitle: "Internal Title",
-    description: "",
-  };
-  render() {
-    const { title, descTitle, description } = this.props;
-
-    return (
+const NavigationDropDown = ({ title, descTitle, description }) => {
+  const ContentfulCourses = [];
+  const data = CourseQuery();
+  data.allContentfulCourseContent.edges.forEach((singleCourse) => {
+    ContentfulCourses.push(singleCourse.node);
+  });
+  return (
+    <>
       <StyledNavDropdown title={title} id="courses-dropdown">
         <Row>
           <StyledDescription>
@@ -59,10 +53,13 @@ export default class NavigationDropdown extends React.Component {
           </StyledDescription>
           <Col>
             <BaseTitle title="Microsoft Technologies" size="H6" />
-            {Courses.map((course, key) => {
-              if (course.tag === "Microsoft") {
+            {ContentfulCourses.map((course, key) => {
+              if (course.category.courseName === "Microsoft Technologies") {
                 return (
-                  <Link to={course.href} key={key} className="dropdown-item">
+                  <Link
+                    to={`/courses/${course.category.slug}/${course.slug}`}
+                    key={key}
+                    className="dropdown-item">
                     {course.title}
                   </Link>
                 );
@@ -70,10 +67,13 @@ export default class NavigationDropdown extends React.Component {
               return null;
             })}
             <BaseTitle title="Programming" size="H6" />
-            {Courses.map((course, key) => {
-              if (course.tag === "Programming") {
+            {ContentfulCourses.map((course, key) => {
+              if (course.category.courseName === "Programming") {
                 return (
-                  <Link to={course.href} key={key} className="dropdown-item">
+                  <Link
+                    to={`/courses/${course.category.slug}/${course.slug}`}
+                    key={key}
+                    className="dropdown-item">
                     {course.title}
                   </Link>
                 );
@@ -83,10 +83,13 @@ export default class NavigationDropdown extends React.Component {
           </Col>
           <Col>
             <BaseTitle title="Web Technologies" size="H6" />
-            {Courses.map((course, key) => {
-              if (course.tag === "Web Development") {
+            {ContentfulCourses.map((course, key) => {
+              if (course.category.courseName === "Web Technologies") {
                 return (
-                  <Link to={course.href} key={key} className="dropdown-item">
+                  <Link
+                    to={`/courses/${course.category.slug}/${course.slug}`}
+                    key={key}
+                    className="dropdown-item">
                     {course.title}
                   </Link>
                 );
@@ -96,10 +99,13 @@ export default class NavigationDropdown extends React.Component {
           </Col>
           <Col>
             <BaseTitle title="Quality Engineering" size="H6" />
-            {Courses.map((course, key) => {
-              if (course.tag === "QA") {
+            {ContentfulCourses.map((course, key) => {
+              if (course.category.courseName === "QA") {
                 return (
-                  <Link to={course.href} key={key} className="dropdown-item">
+                  <Link
+                    to={`/courses/${course.category.slug}/${course.slug}`}
+                    key={key}
+                    className="dropdown-item">
                     {course.title}
                   </Link>
                 );
@@ -107,10 +113,13 @@ export default class NavigationDropdown extends React.Component {
               return null;
             })}
             <BaseTitle title="Data" size="H6" />
-            {Courses.map((course, key) => {
-              if (course.tag === "Data") {
+            {ContentfulCourses.map((course, key) => {
+              if (course.category.courseName === "Data") {
                 return (
-                  <Link to={course.href} key={key} className="dropdown-item">
+                  <Link
+                    to={`/courses/${course.category.slug}/${course.slug}`}
+                    key={key}
+                    className="dropdown-item">
                     {course.title}
                   </Link>
                 );
@@ -120,6 +129,8 @@ export default class NavigationDropdown extends React.Component {
           </Col>
         </Row>
       </StyledNavDropdown>
-    );
-  }
-}
+    </>
+  );
+};
+
+export default NavigationDropDown;

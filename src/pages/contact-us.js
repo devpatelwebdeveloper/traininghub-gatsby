@@ -36,10 +36,9 @@ export default function Contact() {
               <BaseTitle title="Get in touch" size="H3" center underline />
               <Paragraph>
                 We feel proud in answering what we are doing! Feel free to
-                contact us with any contact us with any question of concerns and
-                if you have any questions or concerns or even if you would like
-                you know more about our facility. We look forward to hearing
-                from you!
+                contact us with any question of concerns or even if you would
+                like you know more about our facility. We look forward to
+                hearing from you!
               </Paragraph>
               <Paragraph>
                 <Icon size={32} icon={mapMarker} /> Unit-402, 989 Derry Road E,

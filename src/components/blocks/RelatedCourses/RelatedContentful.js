@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import Section from "../../organisms/Section/Section";
 import Row from "react-bootstrap/Row";
 import CourseCard from "../../molecules/CourseCard/CourseCard";
-import { CourseQuery } from "../../../contents/ContentfulCourses";
+import { CourseQuery } from "../../../contents/ContentfulContents/ContentfulCourses";
 import BaseTitle from "../../atoms/BaseTitle/BaseTitle";
 
 export default function Related({ title, topHeader, currentHref }) {

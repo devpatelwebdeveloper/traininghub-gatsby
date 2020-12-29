@@ -7,12 +7,27 @@ import Tiles from "../components/blocks/Tiles/Tiles";
 import Clients from "../components/blocks/Clients/Clients";
 import CourseCards from "../components/blocks/CourseCards/CourseCards";
 import Slider from "../components/organisms/Slider/Slider";
-import { HomePageCards } from "../contents/HomePageCards";
 import { HomePageSliders } from "../contents/HomePageSliders";
 import TestimonialSlider from "../components/organisms/TestimonialSlider/TestimonialSlider";
 import { Testimonials } from "../contents/ContentfulContents/Testimonials";
 import { HomePageTiles } from "../contents/ContentfulContents/HomePageCards";
 export default function HomePage() {
+  //Home Page Tiles
+  const HomePageCards = [];
+  const homepagecard = HomePageTiles();
+  homepagecard.allContentfulHomePageTiles.edges.forEach((singleCard) => {
+    HomePageCards.push({
+      image: singleCard.node.image.file.url,
+      alt: singleCard.node.title,
+      title: singleCard.node.title,
+      text: documentToReactComponents(
+        singleCard.node.text.json,
+        RichTextOptions,
+      ),
+    });
+  });
+
+  // Reviews
   const Reviews = [];
   const review = Testimonials();
   review.allContentfulTestimonials.edges.forEach((singleReview) => {
@@ -26,6 +41,7 @@ export default function HomePage() {
       course: singleReview.node.course ? singleReview.node.course : "",
     });
   });
+
   return (
     <>
       <Head

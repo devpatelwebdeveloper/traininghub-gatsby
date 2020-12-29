@@ -10,7 +10,7 @@ import StudentJourney from "../../blocks/StudentJourney/StudentJourney";
 import RelatedCourses from "../../blocks/RelatedCourses/RelatedContentful";
 import Accordion from "../../blocks/Accordion/Accordion";
 import { RichTextOptions } from "../../../utilities/richtextFunction";
-import { CourseQuery } from "../../../contents/ContentfulCourses";
+import { CourseQuery } from "../../../contents/ContentfulContents/ContentfulCourses";
 
 const GatsbyCourse = ({ courseName }) => {
   const Courses = [];

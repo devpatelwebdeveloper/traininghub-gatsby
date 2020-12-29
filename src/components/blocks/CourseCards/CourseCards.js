@@ -4,7 +4,7 @@ import Section from "../../organisms/Section/Section";
 import Row from "react-bootstrap/Row";
 import CourseCard from "../../molecules/CourseCard/CourseCard";
 // import { Courses } from "../../../contents/Courses"; // This is Internal Content
-import { CourseQuery } from "../../../contents/ContentfulCourses";
+import { CourseQuery } from "../../../contents/ContentfulContents/ContentfulCourses";
 import BaseTitle from "../../atoms/BaseTitle/BaseTitle";
 
 export default function CourseCards() {

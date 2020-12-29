@@ -9,7 +9,7 @@ import Styles from "../../../styles/Styles";
 import Paragraph from "../../atoms/Paragraph/Paragraph";
 import BaseTitle from "../../atoms/BaseTitle/BaseTitle";
 import { Courses } from "../../../contents/Courses";
-import { CourseQuery } from "../../../contents/ContentfulCourses";
+import { CourseQuery } from "../../../contents/ContentfulContents/ContentfulCourses";
 
 const StyledDescription = styled(Col)`
   ${Styles.ScreenSizes.medium`

@@ -1,17 +1,16 @@
 import { useStaticQuery, graphql } from "gatsby";
 
-export const HomePageCards = () => {
+export const HomePageTiles = () => {
   const homepagecards = useStaticQuery(graphql`
     query {
-      allContentfulTestimonials {
+      allContentfulHomePageTiles {
         edges {
           node {
-            name
-            course
-            quote {
+            title
+            text {
               json
             }
-            avatar {
+            image {
               file {
                 url
               }

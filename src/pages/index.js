@@ -1,18 +1,47 @@
 import React from "react";
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import { RichTextOptions } from "../utilities/richtextFunction";
 import Layout from "../components/templates/Layout/Layout";
 import Head from "../components/organisms/Head/Head";
-
 import Tiles from "../components/blocks/Tiles/Tiles";
 import Clients from "../components/blocks/Clients/Clients";
 import CourseCards from "../components/blocks/CourseCards/CourseCards";
 import Slider from "../components/organisms/Slider/Slider";
-import { HomePageCards } from "../contents/HomePageCards";
 import { HomePageSliders } from "../contents/HomePageSliders";
-import TestimonialCard from "../components/molecules/TestimonailCard/TestimonialCard";
 import TestimonialSlider from "../components/organisms/TestimonialSlider/TestimonialSlider";
-import Testimonials from "../contents/Testimonials";
-
+import { Testimonials } from "../contents/ContentfulContents/Testimonials";
+import { HomePageTiles } from "../contents/ContentfulContents/HomePageCards";
 export default function HomePage() {
+  //Home Page Tiles
+  const HomePageCards = [];
+  const homepagecard = HomePageTiles();
+  homepagecard.allContentfulHomePageTiles.edges.forEach((singleCard) => {
+    HomePageCards.push({
+      image: singleCard.node.image.file.url,
+      alt: singleCard.node.title,
+      title: singleCard.node.title,
+      text: documentToReactComponents(
+        singleCard.node.text.json,
+        RichTextOptions,
+      ),
+    });
+  });
+
+  // Reviews
+  const Reviews = [];
+  const review = Testimonials();
+  review.allContentfulTestimonials.edges.forEach((singleReview) => {
+    Reviews.push({
+      name: singleReview.node.name,
+      avatar: `${singleReview.node.avatar.file.url}?w=120&h=120`,
+      quote: documentToReactComponents(
+        singleReview.node.quote.json,
+        RichTextOptions,
+      ),
+      course: singleReview.node.course ? singleReview.node.course : "",
+    });
+  });
+
   return (
     <>
       <Head
@@ -24,7 +53,7 @@ export default function HomePage() {
         <Tiles title="Redefining future in IT Learning" tiles={HomePageCards} />
         <CourseCards />
         <TestimonialSlider
-          testimonials={Testimonials}
+          testimonials={Reviews}
           title="Don’t just take it from us."
         />
       </Layout>

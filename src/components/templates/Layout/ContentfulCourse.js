@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { useStaticQuery, graphql } from "gatsby";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import Layout from "./Layout";
 import Section from "../../organisms/Section/Section";
@@ -11,7 +10,7 @@ import StudentJourney from "../../blocks/StudentJourney/StudentJourney";
 import RelatedCourses from "../../blocks/RelatedCourses/RelatedContentful";
 import Accordion from "../../blocks/Accordion/Accordion";
 import { RichTextOptions } from "../../../utilities/richtextFunction";
-import { CourseQuery } from "../../../contents/ContentfulCourses";
+import { CourseQuery } from "../../../contents/ContentfulContents/ContentfulCourses";
 
 const GatsbyCourse = ({ courseName }) => {
   const Courses = [];

@@ -13,7 +13,7 @@ import SocialShare from "../components/molecules/SocialShare/SocialShare";
 import RelatedArticles from "../components/molecules/RelatedArticles/RelatedArticles";
 import Background from "../contents/icons/Blog.svg";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
-import { graphql, useStaticQuery } from "gatsby";
+import { graphql } from "gatsby";
 import { BLOCKS, MARKS } from "@contentful/rich-text-types";
 
 const Sidebar = styled.div`
@@ -107,21 +107,15 @@ export default function BlogTemplate(props) {
   };
 
   let CategoryBlogs = [];
-  let RelatedBlogs = [];
 
   props.data.allContentfulBlogs.edges.map((blog) => {
     if (
       blog.node.category.slug === BlogContent.category.slug &&
-      blog.node.slug != BlogContent.slug
+      blog.node.slug !== BlogContent.slug
     ) {
       CategoryBlogs.push(blog);
     }
   });
-  // CategoryBlogs.map((blog) => {
-  //   if (blog.node.slug != BlogContent.slug) {
-  //     RelatedBlogs.push(blog);
-  //   }
-  // });
 
   return (
     <>

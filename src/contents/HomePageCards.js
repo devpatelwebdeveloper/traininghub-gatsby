@@ -21,7 +21,7 @@ const HomePageCards = [
     alt: "Learn How — and When — You Want",
     title: "Learn How — and When — You Want",
     text:
-      "Learning new things is amazing, Is there a better way to learn?. Yes, we understand thec hallenges faced by you and we have come up with a 3-way solution - Classroom Training, Online Training & Corporate Training at your convenience.",
+      "Learning new things is amazing, Is there a better way to learn?. Yes, we understand the challenges faced by you and we have come up with a 3-way solution - Classroom Training, Online Training & Corporate Training at your convenience.",
   },
   {
     image:

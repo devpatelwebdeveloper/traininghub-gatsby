@@ -4,7 +4,7 @@ import { RichTextOptions } from "../../../utilities/richtextFunction";
 import Section from "../../organisms/Section/Section";
 import SingleCourseBlock from "../../molecules/SingleCourseBlock/SingleCourseBlock";
 // import { Courses } from "../../../contents/Courses";
-import { CourseQuery } from "../../../contents/ContentfulCourses";
+import { CourseQuery } from "../../../contents/ContentfulContents/ContentfulCourses";
 
 export default function TilesBlock() {
   const ContentfulCourses = [];

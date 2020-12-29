@@ -3,10 +3,17 @@ import Styles from "../../../styles/Styles";
 import Section from "../../organisms/Section/Section";
 import Row from "react-bootstrap/Row";
 import CourseCard from "../../molecules/CourseCard/CourseCard";
-import { Courses } from "../../../contents/Courses";
+// import { Courses } from "../../../contents/Courses"; // This is Internal Content
+import { CourseQuery } from "../../../contents/ContentfulCourses";
 import BaseTitle from "../../atoms/BaseTitle/BaseTitle";
 
 export default function CourseCards() {
+  const Courses = [];
+  const data = CourseQuery();
+  data.allContentfulCourseContent.edges.forEach((singleCourse) => {
+    Courses.push(singleCourse.node);
+  });
+
   //Random shuffle but not working need to think about this
   // function shuffle(array) {
   //   var currentIndex = array.length,
@@ -43,12 +50,12 @@ export default function CourseCards() {
       <Row>
         {Courses.map((course) => (
           <CourseCard
-            key={course.subtitle}
+            key={course.title}
+            tag={course.category.courseName}
             title={course.title}
-            tag={course.tag}
-            image={course.image}
+            image={course.category.icon}
             alt={course.alt}
-            href={course.href}
+            href={`/courses/${course.category.slug}/${course.slug}`}
           />
         ))}
       </Row>

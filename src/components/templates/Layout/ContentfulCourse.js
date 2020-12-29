@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { useStaticQuery, graphql } from "gatsby";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import Layout from "./Layout";
 import Section from "../../organisms/Section/Section";

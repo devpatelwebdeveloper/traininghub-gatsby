@@ -67,7 +67,11 @@ export default function AboutPage() {
           node {
             title
             slug
-            blogImage
+            blogImages {
+              file {
+                url
+              }
+            }
             shortDescription {
               shortDescription
             }

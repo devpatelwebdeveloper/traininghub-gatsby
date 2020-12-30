@@ -1,17 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link } from "gatsby";
-import styled from "styled-components";
-import Styles from "../../../styles/Styles";
-import Col from "react-bootstrap/Col";
-import BaseTitle from "../../atoms/BaseTitle/BaseTitle";
 import EnhancedTiles from "../EnhancedTiles/EnhancedTiles";
 
 export default function BlogItem({ blog }) {
   return (
     <>
       <EnhancedTiles
-        image={blog.blogImage}
+        image={
+          blog.blogImages
+            ? blog.blogImages.file.url
+            : "https://devashish-lms.s3.ca-central-1.amazonaws.com/sqlDeveloper_TrainingHub.jpg"
+        }
         alt={blog.title}
         title={blog.title}
         text={blog.shortDescription.shortDescription}

@@ -11,8 +11,8 @@ const ButtonPrimary = styled.button`
   font-weight: ${Styles.FontWeight.Normal};
   background-color: ${Styles.Colors.DefaultFont};
   border: 2px solid transparent;
-  margin: 10px 10px;
-  min-width: 200px;
+  margin: 10px 10px;    
+  min-width: 200px; 
   height: 48px;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -20,6 +20,8 @@ const ButtonPrimary = styled.button`
     color: ${Styles.Colors.DefaultFont};
     background-color: ${Styles.Colors.BaseWhite};
     border: 2px solid ${Styles.Colors.DefaultFont};
+  
+    
   }
   ${Styles.ScreenSizes.small`
   width:100%;

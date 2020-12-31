@@ -11,23 +11,34 @@ import Paragraph from "../../atoms/Paragraph/Paragraph";
 
 
 const CardType = styled.div`
-  border-radius: 8px;
+
+  border-radius: 8px; 
   background-color: ${Styles.Colors.BaseLightBlue};
   border: 1px solid ${Styles.Colors.BaseLightBlue};
-  border-bottom-width: 2px;
+  border-bottom-width: 7px;  
   width: 100%;
-  min-height: 550px;
-  margin-bottom: 3%;
+  height:95%; 
+  margin-bottom: 5%;  
   overflow: hidden;
   text-align: center;
   a:hover {
     color: #00aeef;
   }
-  h4,
-  p {
-    padding: 8px;
-    color: ;
+  h5{
+    font-size:15px;
   }
+ 
+  h4,p {
+    
+    padding: 8px;
+    
+    
+   
+    
+   
+  }
+ 
+  
 `;
 
 const ImgC = styled.div`
@@ -54,7 +65,10 @@ const ImgC = styled.div`
 const ClearLine = styled.div`
   width: 100%;
   height: 20px;
+   
 `;
+
+
 
 export default class EnhancedTiles extends React.PureComponent {
   static propTypes = {
@@ -71,9 +85,21 @@ export default class EnhancedTiles extends React.PureComponent {
     title: "tiles",
     text: "text",
   };
+
+
+ 
+   
+  
+
+  
   render() {
+
+    
     const { image, alt, title, text, btnlink, btntext } = this.props;
-    const btn = btnlink ? <Button link={btnlink} text={btntext} /> : null;
+    const enhancedText =(text, n) => {      
+      return(text.length > n)?text.substr(0,n-1)+'...':text;
+    };
+    const btn = btnlink ? <Button link={btnlink} text={btntext}  /> : null;
     const linkedImg = btnlink ? (
       <BaseLink href={btnlink}>
         <ImgC>
@@ -91,10 +117,13 @@ export default class EnhancedTiles extends React.PureComponent {
           {linkedImg}
           <ClearLine />
           <BaseTitle title={title} size="H5" />
-          <Paragraph>{text}</Paragraph>
-          {btn}
+          <Paragraph >{enhancedText(text,170)}</Paragraph>          
+         {btn }
         </CardType>
       </Col>
     );
   }
 }
+
+
+

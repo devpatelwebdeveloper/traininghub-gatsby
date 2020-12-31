@@ -27,18 +27,9 @@ const CardType = styled.div`
   h5{
     font-size:15px;
   }
- 
-  h4,p {
-    
-    padding: 8px;
-    
-    
-   
-    
-   
-  }
- 
-  
+  h4,p {    
+    padding: 8px;   
+  }  
 `;
 
 const ImgC = styled.div`
@@ -64,8 +55,7 @@ const ImgC = styled.div`
 `;
 const ClearLine = styled.div`
   width: 100%;
-  height: 20px;
-   
+  height: 20px;   
 `;
 
 
@@ -85,19 +75,11 @@ export default class EnhancedTiles extends React.PureComponent {
     title: "tiles",
     text: "text",
   };
-
-
- 
-   
   
-
-  
-  render() {
-
-    
+  render() {    
     const { image, alt, title, text, btnlink, btntext } = this.props;
     const enhancedText =(text, n) => {      
-      return(text.length > n)?text.substr(0,n-1)+'...':text;
+      return`${(text.length > n)}`?`${text.substr(0,n-1)+'...'}`:`${text}`;
     };
     const btn = btnlink ? <Button link={btnlink} text={btntext}  /> : null;
     const linkedImg = btnlink ? (
@@ -117,7 +99,7 @@ export default class EnhancedTiles extends React.PureComponent {
           {linkedImg}
           <ClearLine />
           <BaseTitle title={title} size="H5" />
-          <Paragraph >{enhancedText(text,170)}</Paragraph>          
+          <Paragraph >{enhancedText(`${text}`,200)}</Paragraph>          
          {btn }
         </CardType>
       </Col>

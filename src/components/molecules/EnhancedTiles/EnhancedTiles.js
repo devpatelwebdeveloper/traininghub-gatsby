@@ -17,7 +17,7 @@ const CardType = styled.div`
   border: 1px solid ${Styles.Colors.BaseLightBlue};
   border-bottom-width: 7px;  
   width: 100%;
-  height:95%; 
+  min-height:550px; 
   margin-bottom: 5%;  
   overflow: hidden;
   text-align: center;
@@ -30,6 +30,14 @@ const CardType = styled.div`
   h4,p {    
     padding: 8px;   
   }  
+
+  ${Styles.ScreenSizes.small`
+ min-height:450px;  
+   `};
+
+   ${Styles.ScreenSizes.medium`
+ min-height:auto;  
+   `};
 `;
 
 const ImgC = styled.div`

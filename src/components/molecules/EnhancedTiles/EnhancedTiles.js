@@ -79,7 +79,7 @@ export default class EnhancedTiles extends React.PureComponent {
   render() {    
     const { image, alt, title, text, btnlink, btntext } = this.props;
     const enhancedText =(text, n) => {      
-      return (text.length > n)?`${text.substr(0,n-1)+'...'}`:text;
+      return (text.length > n)?`${text.substr(0,n-1)}...`:text;
     };
     const btn = btnlink ? <Button link={btnlink} text={btntext}  /> : null;
     const linkedImg = btnlink ? (

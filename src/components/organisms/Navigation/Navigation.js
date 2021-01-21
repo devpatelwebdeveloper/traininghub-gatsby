@@ -84,12 +84,12 @@ const RibbonMenu = styled.div`
 export default function Navi() {
   const RibbonContent = (
     <>
-      <BaseLink
+      {/* <BaseLink
         href="https://ielts.traininghub.io/"
         external
         composedClassName="nav-link">
         IELTS
-      </BaseLink>
+      </BaseLink> */}
       <BaseLink href="/corporate-training" composedClassName="nav-link">
         Corporate Training
       </BaseLink>

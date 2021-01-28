@@ -11,7 +11,7 @@ import BaseTile from "../../atoms/BaseTile/BaseTile";
 import Button from "../../molecules/Button/Button";
 
 const StyledImg = styled.img`
-  height: 450px;
+  height: 680px;
 `;
 const SlideTitle = styled(BaseTitle)`
   color: ${Styles.Colors.BaseWhite};

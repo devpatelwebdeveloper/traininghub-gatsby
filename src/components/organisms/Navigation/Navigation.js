@@ -137,7 +137,9 @@ export default function Navi() {
                 </BaseLink>
               </NavDropdown.Item>
             </StyledNavDropdown>
-            <RibbonMenu>{RibbonContent}</RibbonMenu>
+            <BaseLink href="/blogs" composedClassName="nav-link">
+              Blogs
+            </BaseLink>
             <BaseLink href="/contact-us" composedClassName="nav-link">
               Contact us
             </BaseLink>

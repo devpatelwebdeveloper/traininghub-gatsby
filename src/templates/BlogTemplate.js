@@ -119,21 +119,21 @@ export default function BlogTemplate(props) {
 
   return (
     <>
-      <Head title={BlogContent.title} />
-      <Layout
-        title={`${BlogContent.title} - ${BlogContent.category.slug}`}
+      <Head
+        title={BlogContent.title}
+        metaImage={BlogContent.blogImages && BlogContent.blogImages.file.url}
         metaDescription={BlogContent.shortDescription.shortDescription}
-        metaImage={
-          BlogContent.blogImages ? BlogContent.blogImages.file.url : null
-        }>
+      />
+      <Layout title={`${BlogContent.title} - ${BlogContent.category.slug}`}>
         <TopBannerCourse
           courseTitle={BlogContent.title}
           text={BlogContent.shortDescription.shortDescription}
           background={Background}
           courseImage={
-            BlogContent.blogImages ? BlogContent.blogImages.file.url : null
+            BlogContent.blogImages && BlogContent.blogImages.file.url
           }
         />
+        {console.log(BlogContent.blogImages.file.url)}
         <Section marginTop="50px" marginBottom="25px">
           <Row>
             <Col md={9}>

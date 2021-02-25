@@ -13,6 +13,7 @@ import { facebookSquare } from "react-icons-kit/fa/facebookSquare";
 import { twitterSquare } from "react-icons-kit/fa/twitterSquare";
 import { linkedinSquare } from "react-icons-kit/fa/linkedinSquare";
 import { instagram } from "react-icons-kit/fa/instagram";
+import { telegram } from "react-icons-kit/fa/telegram";
 
 const FooterStyle = styled.footer`
   background: ${Styles.Colors.BaseLightBlue};
@@ -212,6 +213,12 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer">
               <Icon size={32} icon={linkedinSquare} />
+            </a>
+            <a
+              href="https://t.me/Traininghub"
+              target="_blank"
+              rel="noopener noreferrer">
+              <Icon size={32} icon={telegram} />
             </a>
           </Col>
         </Row>

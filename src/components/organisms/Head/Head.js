@@ -29,6 +29,12 @@ const Head = ({ title, metaDescription, metaTag, metaImage }) => {
   })();`}
       </script>
 
+      {/* Paypal */}
+      {/* <script src="https://www.paypal.com/sdk/js?client-id=?"></script> */}
+      <script
+        src={`https://www.paypal.com/sdk/js?client-id=${process.env.GATSBY_PAYPAL_CLIENT_PERSONAL_LIVEAPP_ID}&currency=CAD`}
+        data-sdk-integration-source="button-factory"></script>
+      {/* Paypal */}
       <meta
         name="description"
         content={

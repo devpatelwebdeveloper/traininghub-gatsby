@@ -6,7 +6,7 @@ export default function Paypal({ coursename, price }) {
   const [approved, setApproved] = useState(false);
   const paypal = useRef();
   const tax = 13;
-  const calculatedTax = price * (1 + tax / 100);
+  const calculatedTax = (price * (1 + tax / 100)).toFixed(2);
   useEffect(() => {
     browser.window.paypal
       .Buttons({

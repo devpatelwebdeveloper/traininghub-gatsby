@@ -10,6 +10,7 @@ import Slider from "../components/organisms/Slider/Slider";
 import { HomePageSliders } from "../contents/HomePageSliders";
 import TestimonialSlider from "../components/organisms/TestimonialSlider/TestimonialSlider";
 import { Testimonials } from "../contents/ContentfulContents/Testimonials";
+import { ClientList } from "../contents/ContentfulContents/Clients";
 import { HomePageTiles } from "../contents/ContentfulContents/HomePageCards";
 export default function HomePage() {
   //Home Page Tiles
@@ -42,6 +43,15 @@ export default function HomePage() {
     });
   });
 
+  const company = [];
+  const clients = ClientList();
+  clients.allContentfulCompanyClients.edges.forEach((singleCompany) => {
+    company.push({
+      alt: singleCompany.node.clientName,
+      image: `${singleCompany.node.clientLogo.file.url}?h=75`,
+    });
+  });
+
   return (
     <>
       <Head
@@ -55,6 +65,10 @@ export default function HomePage() {
         <TestimonialSlider
           testimonials={Reviews}
           title="Don’t just take it from us."
+        />
+        <Clients
+          title="Companies where our students work"
+          clientList={company}
         />
       </Layout>
     </>

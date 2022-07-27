@@ -20,12 +20,6 @@ const AccordionList = styled.ul`
   @media print {
     display: none;
   }
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 `;
 const AccordionSingleList = styled.li`
   border-top: 1px solid ${Styles.Colors.BaseBorderGrey};

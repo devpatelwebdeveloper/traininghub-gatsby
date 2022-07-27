@@ -46,6 +46,9 @@ export const CourseQuery = () => {
                 paragraph
               }
             }
+            courseDescriptionAndFaq {
+              json
+            }
           }
         }
       }

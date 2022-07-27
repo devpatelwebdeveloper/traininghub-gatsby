@@ -1,6 +1,6 @@
 import React from "react";
 
-import { BLOCKS, MARKS } from "@contentful/rich-text-types";
+import { BLOCKS } from "@contentful/rich-text-types";
 
 import Paragraph from "../components/atoms/Paragraph/Paragraph";
 import BaseTitle from "../components/atoms/BaseTitle/BaseTitle";

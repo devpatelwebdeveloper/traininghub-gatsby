@@ -5,8 +5,6 @@ import Section from "../components/organisms/Section/Section";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import TopBannerCourse from "../components/organisms/TopBannerCourse/TopBannerCourse";
-import BaseTitle from "../components/atoms/BaseTitle/BaseTitle";
-import Paragraph from "../components/atoms/Paragraph/Paragraph";
 import Background from "../contents/icons/quiz.svg";
 import { graphql } from "gatsby";
 

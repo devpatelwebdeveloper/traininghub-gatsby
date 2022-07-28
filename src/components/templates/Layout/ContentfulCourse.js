@@ -73,7 +73,7 @@ const GatsbyCourse = ({ courseName }) => {
           title={Course.category.courseName}
           currentHref={currentHref}
         />
-        {Course.courseDescriptionAndFaq.json && (
+        {Course.courseDescriptionAndFaq?.json && (
           <Section>
             <BaseTitle title={`More about ${Course.title}`} size="H3" />
 

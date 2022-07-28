@@ -9,6 +9,8 @@ import ContentGenericAligned from "../../blocks/ContentGenericAligned/ContentGen
 import StudentJourney from "../../blocks/StudentJourney/StudentJourney";
 import RelatedCourses from "../../blocks/RelatedCourses/RelatedContentful";
 import Accordion from "../../blocks/Accordion/Accordion";
+import Paragraph from "../../atoms/Paragraph/Paragraph";
+import BaseTitle from "../../atoms/BaseTitle/BaseTitle";
 import { RichTextOptions } from "../../../utilities/richtextFunction";
 import { CourseQuery } from "../../../contents/ContentfulContents/ContentfulCourses";
 
@@ -71,6 +73,16 @@ const GatsbyCourse = ({ courseName }) => {
           title={Course.category.courseName}
           currentHref={currentHref}
         />
+        {Course.courseDescriptionAndFaq.json && (
+          <Section>
+            <BaseTitle title={`More about ${Course.title}`} size="H3" />
+
+            {documentToReactComponents(
+              Course.courseDescriptionAndFaq.json,
+              RichTextOptions,
+            )}
+          </Section>
+        )}
       </Layout>
     </>
   );

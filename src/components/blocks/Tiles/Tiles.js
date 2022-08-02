@@ -16,7 +16,6 @@ export default function TilesBlock({ title, tiles }) {
             alt={tile.alt}
             title={tile.title}
             text={tile.text}
-            key={tile.title}
           />
         ))}
       </Row>

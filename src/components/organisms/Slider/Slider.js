@@ -21,9 +21,9 @@ export default function Slider({ HomePageSlides }) {
       activeIndex={index}
       direction={direction}
       onSelect={handleSelect}>
-      {HomePageSlides.map((HomePageSlider) => {
+      {HomePageSlides.map((HomePageSlider, key) => {
         return (
-          <Carousel.Item>
+          <Carousel.Item key={key}>
             <CarouselItem
               title={HomePageSlider.title}
               background={HomePageSlider.background}

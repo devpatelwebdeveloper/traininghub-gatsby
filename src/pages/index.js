@@ -4,14 +4,19 @@ import { RichTextOptions } from "../utilities/richtextFunction";
 import Layout from "../components/templates/Layout/Layout";
 import Head from "../components/organisms/Head/Head";
 import Tiles from "../components/blocks/Tiles/Tiles";
+import HomePageSeoContent from "../components/blocks/HomepageSeoContent/HomePageSeoContent";
 import Clients from "../components/blocks/Clients/Clients";
 import CourseCards from "../components/blocks/CourseCards/CourseCards";
 import Slider from "../components/organisms/Slider/Slider";
 import { HomePageSliders } from "../contents/HomePageSliders";
+
 import TestimonialSlider from "../components/organisms/TestimonialSlider/TestimonialSlider";
 import { Testimonials } from "../contents/ContentfulContents/Testimonials";
 import { ClientList } from "../contents/ContentfulContents/Clients";
 import { HomePageTiles } from "../contents/ContentfulContents/HomePageCards";
+import { HomePageContents } from "../contents/ContentfulContents/HomePageContents";
+
+
 export default function HomePage() {
   //Home Page Tiles
   const HomePageCards = [];
@@ -27,6 +32,23 @@ export default function HomePage() {
       ),
     });
   });
+
+  //Home Page SEO Content
+  const HomePageSeoContentData = [];
+  const homepageseocontentfn = HomePageContents();
+  homepageseocontentfn.allContentfulHomePageContent.edges.forEach(
+    (singleCard) => {
+      HomePageSeoContentData.push({
+        title: singleCard.node.title,
+        description: singleCard.node.description,
+        // description: documentToReactComponents(
+        //   singleCard.node.description.json,
+        //   RichTextOptions,
+        // ),
+        imageLink: singleCard.node.imageLink,
+      });
+    },
+  );
 
   // Reviews
   const Reviews = [];
@@ -70,6 +92,7 @@ export default function HomePage() {
           title="Companies where our students work"
           clientList={company}
         />
+        <HomePageSeoContent contents={HomePageSeoContentData} />
       </Layout>
     </>
   );

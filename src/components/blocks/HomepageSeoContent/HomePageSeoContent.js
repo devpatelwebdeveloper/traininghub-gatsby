@@ -15,14 +15,7 @@ export default function HomePageSeoContent({ contents }) {
             marginTop="50px"
             marginBottom="25px"
             padding="25px"
-            background={key % 2 == 0 && Styles.Colors.BaseLightBlue}>
-            {/* {console.log(
-              `Text`,
-              documentToReactComponents(
-                content.description.json,
-                RichTextOptions,
-              ),
-            )} */}
+            background={key % 2 != 0 && Styles.Colors.BaseLightBlue}>
             <ContentGenericAligned
               imageLeft={key % 2 == 0 ? true : false}
               title={content.title}

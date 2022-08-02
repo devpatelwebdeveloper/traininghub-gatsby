@@ -15,19 +15,7 @@ import { Testimonials } from "../contents/ContentfulContents/Testimonials";
 import { ClientList } from "../contents/ContentfulContents/Clients";
 import { HomePageTiles } from "../contents/ContentfulContents/HomePageCards";
 import { HomePageContents } from "../contents/ContentfulContents/HomePageContents";
-import Section from "../components/organisms/Section/Section";
 
-// const HomePageGenericContent = ({ genericContents }) => {
-
-//   console.log("genericContents", HomePageSeoContent);
-//   return (
-//     <>
-//       {HomePageSeoContent.map(({ content, key }) => {
-//         return <Section key={key}>{content.title}</Section>;
-//       })}
-//     </>
-//   );
-// };
 
 export default function HomePage() {
   //Home Page Tiles

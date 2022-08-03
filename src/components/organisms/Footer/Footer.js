@@ -118,12 +118,12 @@ export default function Footer() {
                 <BaseTitle title="Microsoft" size="H6" />
                 <ul>
                   <li>
-                    <Link to="/courses/microsofttechnologies/sqlserverdevelopment">
+                    <Link to="/courses/microsoft-technologies/sql-server-development">
                       Microsoft SQL Developer
                     </Link>
                   </li>
                   <li>
-                    <Link to="/courses/microsofttechnologies/businessintelligence">
+                    <Link to="/courses/microsoft-technologies/business-intelligence">
                       MSBI
                     </Link>
                   </li>
@@ -155,17 +155,17 @@ export default function Footer() {
                 <BaseTitle title="Web Development" size="H6" />
                 <ul>
                   <li>
-                    <Link to="/courses/webdevelopment/javascript">
+                    <Link to="/courses/web-development/javascript">
                       JavaScript
                     </Link>
                   </li>
                   <li>
-                    <Link to="/courses/webdevelopment/fullstack-development">
+                    <Link to="/courses/web-development/fullstack-development">
                       Fullstack Developer
                     </Link>
                   </li>
                   <li>
-                    <Link to="/courses/webdevelopment/react-redux">
+                    <Link to="/courses/web-development/react-redux">
                       React Redux
                     </Link>
                   </li>

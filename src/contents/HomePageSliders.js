@@ -19,7 +19,7 @@ const HomePageSliders = [
     description:
       "SQL Server Database Training will up-skill you in database development & Administration and concepts like query design, clustering, architecture, and performance tuning with real-time scenarios. (You will gain knowledge in Microsoft SQL Server Database.)",
     buttonText: "Learn more",
-    buttonLink: "/courses/microsofttechnologies/sqlserverdevelopment",
+    buttonLink: "/courses/microsoft-technologies/sql-server-development",
   },
   {
     title: "Quality Engineering",
@@ -41,7 +41,7 @@ const HomePageSliders = [
     description:
       "MERN (MongoDB, Express JS, React JS, and Node JS)stack is very popular. Learn how to use individual   building   blocks   to   combine   into   an   application   and   build   advanced   web-based applications. Learn how to file upload, authorization, authentication, and deploy the application into different hosting services.",
     buttonText: "Learn more",
-    buttonLink: "/courses",
+    buttonLink: "https://www.traininghub.io/courses/web-development/mern-stack",
   },
 ];
 

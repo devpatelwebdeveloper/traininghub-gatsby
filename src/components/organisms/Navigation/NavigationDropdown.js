@@ -96,6 +96,20 @@ const NavigationDropDown = ({ title, descTitle, description }) => {
               }
               return null;
             })}
+            <BaseTitle title="MASTERS PROGRAM" size="H6" />
+            {ContentfulCourses.map((course, key) => {
+              if (course.category.courseName === "MASTERS PROGRAM") {
+                return (
+                  <Link
+                    to={`/courses/${course.category.slug}/${course.slug}`}
+                    key={key}
+                    className="dropdown-item">
+                    {course.title}
+                  </Link>
+                );
+              }
+              return null;
+            })}
           </Col>
           <Col>
             <BaseTitle title="Quality Engineering" size="H6" />

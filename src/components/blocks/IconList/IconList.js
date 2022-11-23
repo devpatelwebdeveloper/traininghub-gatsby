@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import Row from "react-bootstrap/Row";
 import IconBullet from "../../atoms/IconBullets/IconBullets";
-import { RecruitmentList } from "../../../contents/RecruitmentBullets";
 
 export default function IconList({ lists, icon }) {
   return (

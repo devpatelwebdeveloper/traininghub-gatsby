@@ -17,8 +17,6 @@ const FourOFour = styled.img`
 `;
 
 export default function PageNotFound() {
-  const Toptitle = "Top Title Test";
-  const Subtitle = "Sub Title";
   return (
     <>
       <Head title="404 Page not Found" />
@@ -27,7 +25,6 @@ export default function PageNotFound() {
           <CenteredCol>
             <FourOFour
               src="https://devashish-lms.s3.ca-central-1.amazonaws.com/404_TrainingHub.gif"
-              alt="404 Page not found"
               alt="404 Page not found"
             />
             <Paragraph>The page you are looking is not available</Paragraph>

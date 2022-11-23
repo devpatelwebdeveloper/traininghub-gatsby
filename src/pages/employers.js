@@ -7,7 +7,6 @@ import Section from "../components/organisms/Section/Section";
 import Head from "../components/organisms/Head/Head";
 import ContentGenericAligned from "../components/blocks/ContentGenericAligned/ContentGenericAligned";
 import Paragraph from "../components/atoms/Paragraph/Paragraph";
-import IconList from "../components/blocks/IconList/IconList";
 
 const contentOne = (
   <>

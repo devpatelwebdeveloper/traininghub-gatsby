@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import Styles from "../../../styles/Styles";
 import BaseLink from "../../atoms/BaseLink/BaseLink";
@@ -75,21 +75,10 @@ const StyledNavDropdown = styled(NavDropdown)`
     margin: 0px !important;
   }
 `;
-const RibbonMenu = styled.div`
-  display: none;
-  ${Styles.ScreenSizes.small`
-  display: block;
-   `};
-`;
+
 export default function Navi() {
   const RibbonContent = (
     <>
-      {/* <BaseLink
-        href="https://ielts.traininghub.io/"
-        external
-        composedClassName="nav-link">
-        IELTS
-      </BaseLink> */}
       <BaseLink href="/corporate-training" composedClassName="nav-link">
         Corporate Training
       </BaseLink>

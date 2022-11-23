@@ -14,8 +14,6 @@ import { Icon } from "react-icons-kit";
 import { mapMarker } from "react-icons-kit/fa/mapMarker";
 import { phone } from "react-icons-kit/fa/phone";
 import { envelope } from "react-icons-kit/fa/envelope";
-import { facebookSquare } from "react-icons-kit/fa/facebookSquare";
-import { twitterSquare } from "react-icons-kit/fa/twitterSquare";
 
 const ContactCol = styled(Col)`
   a {
@@ -24,8 +22,6 @@ const ContactCol = styled(Col)`
 `;
 
 export default function Contact() {
-  const Toptitle = "Top Title Test";
-  const Subtitle = "Sub Title";
   return (
     <>
       <Head title="Contact us" />

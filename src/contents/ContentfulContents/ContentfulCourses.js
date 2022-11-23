@@ -40,6 +40,14 @@ export const CourseQuery = () => {
                 url
               }
             }
+            courseContentDetails {
+              courseTopic {
+                courseTopic
+              }
+              courseContentDetailDescription {
+                json
+              }
+            }
             courseContent {
               courseContent {
                 title

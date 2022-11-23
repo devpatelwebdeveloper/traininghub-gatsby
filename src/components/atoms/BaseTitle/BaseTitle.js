@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Styles from "../../../styles/Styles";
-import { Colors } from "../../../styles/Variables";
 
 const H1 = styled.h1`
   color: ${Styles.Colors.DefaultFont};

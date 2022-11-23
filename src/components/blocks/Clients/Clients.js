@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import styled from "styled-components";
-import Styles from "../../../styles/Styles";
 import Slider from "react-slick";
 import Section from "../../organisms/Section/Section";
 import BaseTitle from "../../atoms/BaseTitle/BaseTitle";

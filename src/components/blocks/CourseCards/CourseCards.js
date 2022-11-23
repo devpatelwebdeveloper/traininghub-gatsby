@@ -3,7 +3,6 @@ import Styles from "../../../styles/Styles";
 import Section from "../../organisms/Section/Section";
 import Row from "react-bootstrap/Row";
 import CourseCard from "../../molecules/CourseCard/CourseCard";
-// import { Courses } from "../../../contents/Courses"; // This is Internal Content
 import { CourseQuery } from "../../../contents/ContentfulContents/ContentfulCourses";
 import BaseTitle from "../../atoms/BaseTitle/BaseTitle";
 
@@ -37,7 +36,6 @@ export default function CourseCards() {
   // const randCourse = shuffle(Courses);
   return (
     <Section
-      padding="20px"
       margin="50px"
       padding="50px"
       background={Styles.Colors.BaseLightBlue}>

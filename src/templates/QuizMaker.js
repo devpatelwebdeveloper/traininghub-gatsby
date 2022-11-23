@@ -4,8 +4,6 @@ import Layout from "../components/templates/Layout/Layout";
 import Section from "../components/organisms/Section/Section";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import TopBannerCourse from "../components/organisms/TopBannerCourse/TopBannerCourse";
-import Background from "../contents/icons/quiz.svg";
 import { graphql } from "gatsby";
 
 export const query = graphql`
@@ -24,16 +22,11 @@ export default function QuizPage(props) {
     <>
       <Head title={props.data.contentfulQuiz.title} />
       <Layout>
-        <TopBannerCourse
-          courseTitle={props.data.contentfulQuiz.title}
-          text=""
-          text=""
-          background={Background}
-        />
         <Section marginTop="50px" marginBottom="25px">
           <Row>
             <Col md={12}>
               <iframe
+                title={props.data.contentfulQuiz.title}
                 src={`https://www.classmarker.com/online-test/start/?quiz=${props.data.contentfulQuiz.classmakerQuizId}`}
                 frameborder="0"
                 style={{ width: "100%", height: "800px" }}

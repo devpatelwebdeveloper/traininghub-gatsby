@@ -123,9 +123,17 @@ class AccordionItem extends React.Component {
           />
         </AccordionItemTitle>
         <AccordionItemInner {...(opened ? { open: true } : { open: false })}>
-          <AccordionContent
-            {...(opened ? { open: true } : { open: false })}
-            dangerouslySetInnerHTML={{ __html: paragraph }}></AccordionContent>
+          {typeof paragraph === "string" ? (
+            <AccordionContent
+              {...(opened ? { open: true } : { open: false })}
+              dangerouslySetInnerHTML={{
+                __html: paragraph,
+              }}></AccordionContent>
+          ) : (
+            <AccordionContent {...(opened ? { open: true } : { open: false })}>
+              {paragraph}
+            </AccordionContent>
+          )}
         </AccordionItemInner>
       </AccordionSingle>
     );

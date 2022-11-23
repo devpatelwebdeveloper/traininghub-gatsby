@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { UlIcon } from "../../../contents/icons/icons";
 import Paragraph from "../../atoms/Paragraph/Paragraph";

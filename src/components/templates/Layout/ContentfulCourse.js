@@ -83,10 +83,6 @@ const GatsbyCourse = ({ courseName }) => {
           imageTwo={Course.studentJourneyImages[1].file.url}
           imageTwoAlt={`${Course.title}- Student Journey`}
         />
-        {/* <Accordion
-          accordions={Course.courseContent.courseContent}
-          title="Course Content"
-        /> */}
         <Accordion accordions={courseDetails} title="Course Content" />
         <RelatedCourses
           title={Course.category.courseName}

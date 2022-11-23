@@ -2,11 +2,7 @@ import React from "react";
 import Paragraph from "../components/atoms/Paragraph/Paragraph";
 import {
   SqlServerDeveloper,
-  SQLServerIntegrationServices,
-  SQLServerReportingServices,
-  SQLServerAnalysisServices,
   MicrosoftBI,
-  Html_Css,
   Javascript,
   ReactRedux,
   FullstackDevelopment,
@@ -79,137 +75,7 @@ const Courses = [
       },
     },
   },
-  //Microsoft SQL Developer Devashish
-  // {
-  //   metaDescription:
-  //     "SQL Server Development Online Training → SQL Server Development Classroom Training With | Expert Trainers with Traininghub.IO | Get Hired By Top MNC’s",
-  //   tag: "Microsoft",
-  //   title: "Microsoft SQL Developer",
-  //   image: icons.microsoft,
-  //   alt: "SQL Server Development",
-  //   href: "/courses/microsofttechnologies/sqlserverdevelopment",
-  //   description:
-  //     "Learn how to build, develop, and maintain a SQL Server database by focusing on original features and tools of the SQL server. And how to alter tables using T-SQL, SELECT statements,indexes, queries, transaction types, and triggers. Database management skills like disaster recovery, data storage, replication, and data mirroring. Build and maintain SQL Server DB, and gain insights into enterprise data with real-world SQL Server Development Training.",
-  //   // startDate: "Nov 30 3019",
-  //   courseImage: courseImage.microsoft,
-  //   coursePage: {
-  //     courseImage:
-  //       "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/SQLServer.jpg",
-  //     courseIntroduction:
-  //       "During this course, you will be able to learn what is SQL architecture, server/client relation,stored procedures, functions, SELECT statement, data types, views. how to modify data by using T-SQL, How to develop different operators and functions to design RDBMS, How to create and manage triggers, How to search, index, sort, and group by using records. (How to transactions - using isolation level and locking - preventing deadlocks.) How to implement optimized/efficient, scalable database, scripts/programs/queries for executions. How to recover,replicate, mirror, and store the data in the database. How to implement actions like installation,configure, planning, designing database, troubleshooting, and security, data recovering techniques. How to use advanced query techniques, advanced views, complex queries, user-defined functions, work with XML. You will also be able to monitor and control user access in optimizing the performance of the database.How to insert, update, and delete data, How to work on joins and sub-queries",
-  //     courseIntroductionImage:
-  //       "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/SqlServerDevelopment.png",
-  //     courseContent: SqlServerDeveloper,
-  //     studentJourney: {
-  //       heading: "Student Journey",
-  //       paragraphContent:
-  //         "Soon after enrolling in the course, you will get trained by professionals experienced with 10+ of experience. (The course is designed for software developers, BI Professionals, SQL andDatabase administrators, Big data and Hadoop professionals, BA, and Managers, Individuals looking for a career in SQL development.) There are no pre-requisites to enroll for the course.Hence anyone can gain in-depth knowledge of the content. Instructors conduct assignments and doubt clarifications for better understandings. After successful completion of the course, the expert’s advice will be provided based on individuals performance.",
-  //       imageOne:
-  //         "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/database-management.png",
-  //       imageOneAlt: "Database management system",
-  //       imageTwo:
-  //         "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/sqlquery.jpg",
-  //       imageTwoAlt: "SQL Query",
-  //     },
-  //   },
-  // },
 
-  //SQL Server Integration Services
-  // {
-  //   tag: "Microsoft",
-  //   title: "SQL Server Integration Services",
-  //   image: icons.microsoft,
-  //   alt: "SQL Server Integration Services",
-  //   href: "/courses/microsofttechnologies/sqlserverintegrationservices",
-  //   description:
-  //     "This hands-on SSIS training course will help you learn to create dynamic packages for migrating, processing, and reporting on data.",
-  //   startDate: "",
-  //   courseImage: courseImage.microsoft,
-  //   coursePage: {
-  //     courseImage:
-  //       "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/SQLServer.jpg",
-  //     courseIntroduction:
-  //       "The introductory course curriculum helps you take your Microsoft SQL Server skills to the next level. Build robust databases, develop scalable Transact-SQL applications, learn data warehousing concepts and build custom Business Intelligence solutions for greater insight into data to make smarter business decisions.",
-  //     courseIntroductionImage:
-  //       "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/SqlServerDevelopment.png",
-  //     courseContent: SQLServerIntegrationServices,
-  //     studentJourney: {
-  //       heading: "Student Journey",
-  //       paragraphContent:
-  //         "Upon enrolling the course, you will get training by professional with over 20 years of experience. The course is designed in a way that no or minimum prior knowledge is required for enrolment. The topics are covered in a way that student can achieve in-depth knowledge of each context. You will also be the part of our wide network of Slack. Assignments will be marked by instructor with explanation for better understanding. Upon successfully completion of the course, pathway to next step will be discussed based on individual's knowledge gain.",
-  //       imageOne:
-  //         "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/database-management.png",
-  //       imageOneAlt: "Database management system",
-  //       imageTwo:
-  //         "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/sqlquery.jpg",
-  //       imageTwoAlt: "SQL Query",
-  //     },
-  //   },
-  // },
-  //SQL Server Reporting Services
-  // {
-  //   tag: "Microsoft",
-  //   title: "SQL Server Reporting Services",
-  //   image: icons.microsoft,
-  //   alt: "SQL Server Reporting Services",
-  //   href: "/courses/microsofttechnologies/sqlserverreportingservices",
-  //   description:
-  //     "This great SSRS course will provide you with the knowledge and skills to develop simple business reports and automate report delivery.",
-  //   startDate: "",
-  //   courseImage: courseImage.microsoft,
-  //   coursePage: {
-  //     courseImage:
-  //       "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/SQLServer.jpg",
-  //     courseIntroduction:
-  //       "The introductory course curriculum helps you take your Microsoft SQL Server skills to the next level. Build robust databases, develop scalable Transact-SQL applications, learn data warehousing concepts and build custom Business Intelligence solutions for greater insight into data to make smarter business decisions.",
-  //     courseIntroductionImage:
-  //       "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/SqlServerDevelopment.png",
-  //     courseContent: SQLServerReportingServices,
-  //     studentJourney: {
-  //       heading: "Student Journey",
-  //       paragraphContent:
-  //         "Upon enrolling the course, you will get training by professional with over 20 years of experience. The course is designed in a way that no or minimum prior knowledge is required for enrolment. The topics are covered in a way that student can achieve in-depth knowledge of each context. You will also be the part of our wide network of Slack. Assignments will be marked by instructor with explanation for better understanding. Upon successfully completion of the course, pathway to next step will be discussed based on individual's knowledge gain.",
-  //       imageOne:
-  //         "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/database-management.png",
-  //       imageOneAlt: "Database management system",
-  //       imageTwo:
-  //         "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/sqlquery.jpg",
-  //       imageTwoAlt: "SQL Query",
-  //     },
-  //   },
-  // },
-  // SQL Server Analysis Services
-  // {
-  //   tag: "Microsoft",
-  //   title: "SQL Server Analysis Services",
-  //   image: icons.microsoft,
-  //   alt: "SQL Server Analysis Services",
-  //   href: "/courses/microsofttechnologies/sqlserveranalysisservices",
-  //   description:
-  //     "Learn Microsoft’s online analytical processing and data mining tool. SSAS is used as a tool by organizations to analyze and make sense of information possibly spread out across multiple databases, or in disparate tables or files.",
-  //   startDate: "",
-  //   courseImage: courseImage.microsoft,
-  //   coursePage: {
-  //     courseImage:
-  //       "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/SQLServer.jpg",
-  //     courseIntroduction:
-  //       "The introductory course curriculum helps you take your Microsoft SQL Server skills to the next level. Build robust databases, develop scalable Transact-SQL applications, learn data warehousing concepts and build custom Business Intelligence solutions for greater insight into data to make smarter business decisions.",
-  //     courseIntroductionImage:
-  //       "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/SqlServerDevelopment.png",
-  //     courseContent: SQLServerAnalysisServices,
-  //     studentJourney: {
-  //       heading: "Student Journey",
-  //       paragraphContent:
-  //         "Upon enrolling the course, you will get training by professional with over 20 years of experience. The course is designed in a way that no or minimum prior knowledge is required for enrolment. The topics are covered in a way that student can achieve in-depth knowledge of eachcontext. You will also be the part of our wide network of Slack. Assignments will be marked by instructor with explanation for better understanding. Upon successfully completion of the course, pathway to next step will be discussed based on individual's knowledge gain.",
-  //       imageOne:
-  //         "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/database-management.png",
-  //       imageOneAlt: "Database management system",
-  //       imageTwo:
-  //         "https://devashish-lms.s3.ca-central-1.amazonaws.com/SQL+Server+Development/sqlquery.jpg",
-  //       imageTwoAlt: "SQL Query",
-  //     },
-  //   },
-  // },
   //Business Intelligence
   {
     metaDescription:
@@ -634,4 +500,4 @@ const Courses = [
   },
 ];
 
-export { Courses };
+// export { Courses };

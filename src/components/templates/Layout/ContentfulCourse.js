@@ -27,13 +27,31 @@ const GatsbyCourse = ({ courseName }) => {
 
   const currentHref = `/courses/${Course.category.slug}/${Course.slug}`;
 
+  const courseContentExtractor = (courseContentDetails) => {
+    let courseAccordion = [];
+    courseContentDetails.map((courseContent) => {
+      courseAccordion.push({
+        title: courseContent.courseTopic.courseTopic,
+        paragraph: documentToReactComponents(
+          courseContent.courseContentDetailDescription.json,
+          RichTextOptions,
+        ),
+      });
+    });
+    return courseAccordion;
+  };
+
+  const courseDetails = Course.courseContentDetails
+    ? courseContentExtractor(Course.courseContentDetails)
+    : Course.courseContent.courseContent;
+
   return (
     <>
       <Head title={`${Course.title}`} />
       <Layout>
         <TopBannerCourse
           courseTitle={Course.title}
-          //   subtitle={Course.category.courseName} This can be the subtitle
+          // subtitle={Course.category.courseName} //This can be the subtitle
           text={documentToReactComponents(
             Course.courseIntroduction.json,
             RichTextOptions,
@@ -65,10 +83,11 @@ const GatsbyCourse = ({ courseName }) => {
           imageTwo={Course.studentJourneyImages[1].file.url}
           imageTwoAlt={`${Course.title}- Student Journey`}
         />
-        <Accordion
+        {/* <Accordion
           accordions={Course.courseContent.courseContent}
           title="Course Content"
-        />
+        /> */}
+        <Accordion accordions={courseDetails} title="Course Content" />
         <RelatedCourses
           title={Course.category.courseName}
           currentHref={currentHref}

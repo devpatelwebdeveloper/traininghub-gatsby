@@ -139,7 +139,6 @@ export default function AboutPage() {
       <Layout>
         <TopBannerCourse
           courseTitle="Privacy Policy"
-          text="Founded by Frustrated Trainer Who Believed"
           text="A vision to upgrade your knowledge to serve better in Community"
           background={Background}
         />

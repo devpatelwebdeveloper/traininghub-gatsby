@@ -14,7 +14,7 @@ import RelatedArticles from "../components/molecules/RelatedArticles/RelatedArti
 import Background from "../contents/icons/Blog.svg";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { graphql } from "gatsby";
-import { BLOCKS, MARKS } from "@contentful/rich-text-types";
+import { BLOCKS } from "@contentful/rich-text-types";
 
 const Sidebar = styled.div`
   background: ${Styles.Colors.BaseLightBlue};
@@ -115,6 +115,7 @@ export default function BlogTemplate(props) {
     ) {
       CategoryBlogs.push(blog);
     }
+    return null;
   });
 
   return (

@@ -100,11 +100,12 @@ export default function AboutPage() {
       ...blog,
       filteringCategories: ["all", blog.node.category.slug],
     });
+    return null;
   });
 
   useEffect(() => {
     setProjects(origBlog);
-  }, []);
+  }, [origBlog]);
 
   useEffect(() => {
     setProjects([]);
@@ -114,7 +115,7 @@ export default function AboutPage() {
       filtered: p.filteringCategories.includes(filter),
     }));
     setProjects(filtered);
-  }, [filter]);
+  }, [origBlog, filter]);
 
   return (
     <>

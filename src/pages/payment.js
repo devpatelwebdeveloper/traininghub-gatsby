@@ -13,10 +13,6 @@ const CenteredCol = styled(Col)`
   text-align: center;
   align-item: center;
 `;
-const FourOFour = styled.img`
-  width: 50%;
-  height: 50%;
-`;
 const Btns = styled.button`
    {
     color: ${Styles.Colors.BaseWhite};

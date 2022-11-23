@@ -24,7 +24,7 @@ export default class NumberedTimeLine extends React.Component {
     title: "",
   };
   render() {
-    const { title, lists } = this.props;
+    const { lists } = this.props;
     return (
       <>
         <StyledOl>

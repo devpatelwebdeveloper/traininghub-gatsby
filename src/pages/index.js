@@ -1,5 +1,6 @@
 import React from "react";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import { renderRichText } from "gatsby-source-contentful/rich-text"
 import { RichTextOptions } from "../utilities/richtextFunction";
 import Layout from "../components/templates/Layout/Layout";
 import Head from "../components/organisms/Head/Head";
@@ -26,10 +27,7 @@ export default function HomePage() {
       image: singleCard.node.image.file.url,
       alt: singleCard.node.title,
       title: singleCard.node.title,
-      text: documentToReactComponents(
-        singleCard.node.text.json,
-        RichTextOptions,
-      ),
+      text:renderRichText(  singleCard.node.text, RichTextOptions),
     });
   });
 
@@ -41,10 +39,6 @@ export default function HomePage() {
       HomePageSeoContentData.push({
         title: singleCard.node.title,
         description: singleCard.node.description,
-        // description: documentToReactComponents(
-        //   singleCard.node.description.json,
-        //   RichTextOptions,
-        // ),
         imageLink: singleCard.node.imageLink,
       });
     },
@@ -57,10 +51,7 @@ export default function HomePage() {
     Reviews.push({
       name: singleReview.node.name,
       avatar: `${singleReview.node.avatar.file.url}?w=120&h=120`,
-      quote: documentToReactComponents(
-        singleReview.node.quote.json,
-        RichTextOptions,
-      ),
+      quote:renderRichText(singleReview.node.quote, RichTextOptions),
       course: singleReview.node.course ? singleReview.node.course : "",
     });
   });

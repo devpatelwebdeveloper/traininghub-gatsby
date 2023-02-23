@@ -8,7 +8,7 @@ export const HomePageContents = () => {
           node {
             title
             description {
-              json
+              raw
             }
             imageLink
           }

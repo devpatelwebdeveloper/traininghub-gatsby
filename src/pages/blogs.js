@@ -105,7 +105,7 @@ export default function AboutPage() {
 
   useEffect(() => {
     setProjects(origBlog);
-  }, [origBlog]);
+  }, []);
 
   useEffect(() => {
     setProjects([]);
@@ -115,7 +115,7 @@ export default function AboutPage() {
       filtered: p.filteringCategories.includes(filter),
     }));
     setProjects(filtered);
-  }, [origBlog, filter]);
+  }, [ filter]);
 
   return (
     <>

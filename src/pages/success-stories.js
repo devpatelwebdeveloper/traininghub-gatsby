@@ -21,7 +21,7 @@ export default function AboutPage() {
             companyName
             jobTitle
             message {
-              json
+              raw
             }
             image {
               file {

@@ -43,7 +43,7 @@ export const query = graphql`
         }
       }
       content {
-        json
+        raw
       }
     }
     allContentfulBlogs {

@@ -10,7 +10,7 @@ export default function RelatedArticles({ RelatedBlogs, Parent }) {
       {RelatedBlogs.map((related) => {
         return (
           <>
-            <BaseLink
+            <BaseLink key={related.node.slug}
               href={`/${Parent}/${related.node.category.slug}/${related.node.slug}`}>
               <Paragraph>{related.node.title}</Paragraph>
             </BaseLink>

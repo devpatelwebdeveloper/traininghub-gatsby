@@ -21,10 +21,6 @@ export default function HomePageSeoContent({ contents }) {
               imageLeft={key % 2 === 0 ? true : false}
               title={content.title}
               text={renderRichText(content.description, RichTextOptions)}
-              // text={documentToReactComponents(
-              //   content.description.json,
-              //   RichTextOptions,
-              // )}
               image={content.imageLink}
               alt={content.title}
             />

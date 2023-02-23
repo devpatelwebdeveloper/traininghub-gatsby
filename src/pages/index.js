@@ -1,5 +1,4 @@
 import React from "react";
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { renderRichText } from "gatsby-source-contentful/rich-text"
 import { RichTextOptions } from "../utilities/richtextFunction";
 import Layout from "../components/templates/Layout/Layout";
@@ -27,7 +26,7 @@ export default function HomePage() {
       image: singleCard.node.image.file.url,
       alt: singleCard.node.title,
       title: singleCard.node.title,
-      text:renderRichText(  singleCard.node.text, RichTextOptions),
+      text:renderRichText(singleCard.node.text, RichTextOptions),
     });
   });
 

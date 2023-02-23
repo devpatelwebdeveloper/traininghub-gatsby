@@ -1,5 +1,5 @@
 import React from "react";
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import { renderRichText } from "gatsby-source-contentful/rich-text"
 import { RichTextOptions } from "../utilities/richtextFunction";
 import Head from "../components/organisms/Head/Head";
 import Layout from "../components/templates/Layout/Layout";
@@ -54,10 +54,7 @@ export default function AboutPage() {
                   company={story.node.companyName}
                   title={story.node.jobTitle}
                   image={story.node.image.file.url}
-                  story={documentToReactComponents(
-                    story.node.message.json,
-                    RichTextOptions,
-                  )}
+                  story={renderRichText(story.node.message, RichTextOptions)}
                   key={index}
                 />
               );

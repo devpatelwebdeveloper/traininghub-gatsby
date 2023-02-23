@@ -1,5 +1,5 @@
 import React from "react";
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import { renderRichText } from "gatsby-source-contentful/rich-text"
 import { RichTextOptions } from "../../../utilities/richtextFunction";
 import Section from "../../organisms/Section/Section";
 import SingleCourseBlock from "../../molecules/SingleCourseBlock/SingleCourseBlock";
@@ -32,10 +32,8 @@ export default function TilesBlock() {
           <SingleCourseBlock
             courseImg={course.topBannerImage.file.url}
             courseTitle={course.title}
-            courseDescription={documentToReactComponents(
-              course.courseIntroduction.json,
-              RichTextOptions,
-            )}
+            courseDescription={renderRichText(course.courseIntroduction, RichTextOptions)}
+           
             courseTech={course.category.courseName}
             courseStartDate={
               course.startDate != null ? course.startDate : "Coming Soon"

@@ -12,7 +12,7 @@ import Paragraph from "../components/atoms/Paragraph/Paragraph";
 import SocialShare from "../components/molecules/SocialShare/SocialShare";
 import RelatedArticles from "../components/molecules/RelatedArticles/RelatedArticles";
 import Background from "../contents/icons/Blog.svg";
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import { renderRichText } from "gatsby-source-contentful/rich-text"
 import { graphql } from "gatsby";
 import { BLOCKS } from "@contentful/rich-text-types";
 
@@ -138,7 +138,7 @@ export default function BlogTemplate(props) {
         <Section marginTop="50px" marginBottom="25px">
           <Row>
             <Col md={9}>
-              {documentToReactComponents(BlogContent.content.json, BlogOptions)}
+              {renderRichText(BlogContent.content, BlogOptions)}
             </Col>
             <Col md={3}>
               <Sidebar>

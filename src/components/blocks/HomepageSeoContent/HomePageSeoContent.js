@@ -3,7 +3,6 @@ import Styles from "../../../styles/Styles";
 import Section from "../../organisms/Section/Section";
 import ContentGenericAligned from "../ContentGenericAligned/ContentGenericAligned";
 import { RichTextOptions } from "../../../utilities/richtextFunction";
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { renderRichText } from "gatsby-source-contentful/rich-text"
 
 export default function HomePageSeoContent({ contents }) {

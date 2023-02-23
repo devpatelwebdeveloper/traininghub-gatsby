@@ -115,7 +115,7 @@ export default function AboutPage() {
       filtered: p.filteringCategories.includes(filter),
     }));
     setProjects(filtered);
-  }, [ filter]);
+  }, [filter]);
 
   return (
     <>

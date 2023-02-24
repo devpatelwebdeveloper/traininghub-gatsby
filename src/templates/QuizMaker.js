@@ -16,8 +16,6 @@ export const query = graphql`
 `;
 
 export default function QuizPage(props) {
-  console.log(props);
-
   return (
     <>
       <Head title={props.data.contentfulQuiz.title} />

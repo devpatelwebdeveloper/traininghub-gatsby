@@ -91,6 +91,8 @@ export default function BlogTemplate(props) {
       "embedded-asset-block": (node) => {
         const alt = node.data.target.fields.title["en-US"];
         const url = node.data.target.fields.file["en-US"].url;
+        console.log(`here.........`)
+        // console.log(`image:`,node.data.target)
         return (
           <img
             alt={alt}
@@ -105,6 +107,7 @@ export default function BlogTemplate(props) {
       },
     },
   };
+
 
   let CategoryBlogs = [];
 
@@ -134,7 +137,6 @@ export default function BlogTemplate(props) {
             BlogContent.blogImages && BlogContent.blogImages.file.url
           }
         />
-        {console.log(BlogContent.blogImages.file.url)}
         <Section marginTop="50px" marginBottom="25px">
           <Row>
             <Col md={9}>

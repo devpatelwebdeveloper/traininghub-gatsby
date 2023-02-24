@@ -33,21 +33,21 @@ const RichTextOptions = {
     [BLOCKS.HEADING_6]: (node, children) => (
       <RichTextTitle size="H6">{children}</RichTextTitle>
     ),
-    "embedded-asset-block": (node) => {
-      const alt = node.data.target.fields.title["en-US"];
-      const url = node.data.target.fields.file["en-US"].url;
-      return (
-        <img
-          alt={alt}
-          src={url}
-          style={{
-            maxWidth: "100%",
-            marginLeft: "auto",
-            marginRight: "auto",
-          }}
-        />
-      );
-    },
+    // "embedded-asset-block": (node) => {
+    //   const alt = node.data.target.fields.title["en-US"];
+    //   const url = node.data.target.fields.file["en-US"].url;
+    //   return (
+    //     <img
+    //       alt={alt}
+    //       src={url}
+    //       style={{
+    //         maxWidth: "100%",
+    //         marginLeft: "auto",
+    //         marginRight: "auto",
+    //       }}
+    //     />
+    //   );
+    // },
   },
 };
 

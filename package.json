@@ -4,9 +4,10 @@
   "description": "Traininghub Website",
   "version": "0.1.0",
   "license": "MIT",
-  "engines":{
-    "node":">=18.0.0",
-    "npm":"please-use-yarn"
+  "engines": {
+    "node": ">=18.0.0",
+    "yarn":">=1.22.0",
+    "npm": "please-use-yarn"
   },
   "scripts": {
     "build": "gatsby build",

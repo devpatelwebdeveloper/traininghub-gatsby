@@ -96,7 +96,7 @@ export default function BlogTemplate(props) {
         return (
           <img
             alt={alt}
-            src={node.data.target}
+            src={url}
             style={{
               maxWidth: "100%",
               marginLeft: "auto",
@@ -108,7 +108,6 @@ export default function BlogTemplate(props) {
     },
   };
 
-  // console.log(`Test:`,renderRichText(BlogContent.content, BlogOptions))
 
   let CategoryBlogs = [];
 

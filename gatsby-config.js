@@ -8,6 +8,7 @@ const plugins = [
   "gatsby-plugin-styled-components",
   `gatsby-plugin-sass`,
   "gatsby-plugin-sitemap",
+  "gatsby-plugin-image"
 ];
 
 plugins.push(

@@ -9,7 +9,7 @@ export const Testimonials = () => {
             name
             course
             quote {
-              json
+              raw
             }
             avatar {
               file {

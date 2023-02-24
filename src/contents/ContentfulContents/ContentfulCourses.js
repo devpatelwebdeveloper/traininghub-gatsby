@@ -14,7 +14,7 @@ export const CourseQuery = () => {
               icon
             }
             courseIntroduction {
-              json
+              raw
             }
             topBannerImage {
               file {
@@ -22,10 +22,10 @@ export const CourseQuery = () => {
               }
             }
             courseIntroduction {
-              json
+              raw
             }
             description {
-              json
+              raw
             }
             courseImage {
               file {
@@ -33,7 +33,7 @@ export const CourseQuery = () => {
               }
             }
             studentJourneyDescription {
-              json
+              raw
             }
             studentJourneyImages {
               file {
@@ -45,7 +45,7 @@ export const CourseQuery = () => {
                 courseTopic
               }
               courseContentDetailDescription {
-                json
+                raw
               }
             }
             courseContent {
@@ -55,7 +55,7 @@ export const CourseQuery = () => {
               }
             }
             courseDescriptionAndFaq {
-              json
+              raw
             }
           }
         }

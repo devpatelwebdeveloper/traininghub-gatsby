@@ -3,7 +3,7 @@ import Styles from "../../../styles/Styles";
 import Section from "../../organisms/Section/Section";
 import ContentGenericAligned from "../ContentGenericAligned/ContentGenericAligned";
 import { RichTextOptions } from "../../../utilities/richtextFunction";
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import { renderRichText } from "gatsby-source-contentful/rich-text"
 
 export default function HomePageSeoContent({ contents }) {
   return (
@@ -19,10 +19,7 @@ export default function HomePageSeoContent({ contents }) {
             <ContentGenericAligned
               imageLeft={key % 2 === 0 ? true : false}
               title={content.title}
-              text={documentToReactComponents(
-                content.description.json,
-                RichTextOptions,
-              )}
+              text={renderRichText(content.description, RichTextOptions)}
               image={content.imageLink}
               alt={content.title}
             />

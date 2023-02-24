@@ -8,7 +8,7 @@ export const HomePageTiles = () => {
           node {
             title
             text {
-              json
+              raw
             }
             image {
               file {

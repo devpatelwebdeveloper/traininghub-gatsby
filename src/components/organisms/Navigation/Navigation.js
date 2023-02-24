@@ -101,7 +101,7 @@ export default function Navi() {
             {TopNavigation.map((navItem) => {
               if (navItem.Dropdown) {
                 return (
-                  <NavigationInternal
+                  <NavigationInternal key={navItem.DisplayText}
                     title={navItem.DisplayText}
                     descTitle={navItem.DescTitle}
                     description={navItem.Description}

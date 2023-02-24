@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import { renderRichText } from "gatsby-source-contentful/rich-text"
 import Layout from "./Layout";
 import Section from "../../organisms/Section/Section";
 import Head from "../../organisms/Head/Head";
@@ -32,10 +32,7 @@ const GatsbyCourse = ({ courseName }) => {
     courseContentDetails.map((courseContent) => {
       courseAccordion.push({
         title: courseContent.courseTopic.courseTopic,
-        paragraph: documentToReactComponents(
-          courseContent.courseContentDetailDescription.json,
-          RichTextOptions,
-        ),
+        paragraph:renderRichText(courseContent.courseContentDetailDescription, RichTextOptions),
       });
     });
     return courseAccordion;
@@ -52,19 +49,13 @@ const GatsbyCourse = ({ courseName }) => {
         <TopBannerCourse
           courseTitle={Course.title}
           // subtitle={Course.category.courseName} //This can be the subtitle
-          text={documentToReactComponents(
-            Course.courseIntroduction.json,
-            RichTextOptions,
-          )}
+          text={renderRichText(Course.courseIntroduction, RichTextOptions)}
           courseImage={Course.topBannerImage.file.url}
         />
         <Section margin="24px" padding="24px">
           <ContentGenericAligned
             title={Course.title}
-            text={documentToReactComponents(
-              Course.description.json,
-              RichTextOptions,
-            )}
+            text={renderRichText(Course.description, RichTextOptions)}
             image={Course.courseImage.file.url}
             alt={Course.title}
             ImageLeft
@@ -74,10 +65,7 @@ const GatsbyCourse = ({ courseName }) => {
         </Section>
         <StudentJourney
           heading="Student Journey"
-          paragraphContent={documentToReactComponents(
-            Course.studentJourneyDescription.json,
-            RichTextOptions,
-          )}
+          paragraphContent={renderRichText(Course.studentJourneyDescription, RichTextOptions)}
           imageOne={Course.studentJourneyImages[0].file.url}
           imageOneAlt={`${Course.title}- Student Journey`}
           imageTwo={Course.studentJourneyImages[1].file.url}
@@ -88,14 +76,12 @@ const GatsbyCourse = ({ courseName }) => {
           title={Course.category.courseName}
           currentHref={currentHref}
         />
-        {Course.courseDescriptionAndFaq?.json && (
+        {Course.courseDescriptionAndFaq?.raw && (
           <Section>
             <BaseTitle title={`More about ${Course.title}`} size="H3" />
-
-            {documentToReactComponents(
-              Course.courseDescriptionAndFaq.json,
-              RichTextOptions,
-            )}
+            {
+              renderRichText(Course.courseDescriptionAndFaq, RichTextOptions)
+            }
           </Section>
         )}
       </Layout>

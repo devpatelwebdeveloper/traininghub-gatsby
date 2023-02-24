@@ -88,23 +88,23 @@ export default function BlogTemplate(props) {
       [BLOCKS.HEADING_6]: (node, children) => (
         <BlogTitle size="H6">{children}</BlogTitle>
       ),
-      "embedded-asset-block": (node) => {
-        const alt = node.data.target.fields.title["en-US"];
-        const url = node.data.target.fields.file["en-US"].url;
-        console.log(`here.........`)
-        // console.log(`image:`,node.data.target)
-        return (
-          <img
-            alt={alt}
-            src={url}
-            style={{
-              maxWidth: "100%",
-              marginLeft: "auto",
-              marginRight: "auto",
-            }}
-          />
-        );
-      },
+      // "embedded-asset-block": (node) => {
+      //   const alt = node.data.target.fields.title["en-US"];
+      //   const url = node.data.target.fields.file["en-US"].url;
+      //   console.log(`here.........`)
+      //   // console.log(`image:`,node.data.target)
+      //   return (
+      //     <img
+      //       alt={alt}
+      //       src={url}
+      //       style={{
+      //         maxWidth: "100%",
+      //         marginLeft: "auto",
+      //         marginRight: "auto",
+      //       }}
+      //     />
+      //   );
+      // },
     },
   };
 

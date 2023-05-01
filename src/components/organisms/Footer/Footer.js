@@ -14,6 +14,7 @@ import { twitterSquare } from "react-icons-kit/fa/twitterSquare";
 import { linkedinSquare } from "react-icons-kit/fa/linkedinSquare";
 import { instagram } from "react-icons-kit/fa/instagram";
 import { telegram } from "react-icons-kit/fa/telegram";
+import { pinterest } from "react-icons-kit/fa/pinterest";
 
 const FooterStyle = styled.footer`
   background: ${Styles.Colors.BaseLightBlue};
@@ -184,14 +185,14 @@ export default function Footer() {
               trademarks of TrainingHub.io All Rights Reserved.`}
             </Paragraph>
           </Col>
-          <Col md={2}>
+          <Col md={1}>
             <Paragraph>
               <Link to="/privacy">Privacy</Link>
             </Paragraph>
           </Col>
-          <Col md={2}>
+          <Col md={3}>
             <a
-              href="https://www.facebook.com/TrainingHubCanada/"
+              href="https://www.facebook.com/TrainingHubCan/"
               target="_blank"
               rel="noopener noreferrer">
               <Icon size={32} icon={facebookSquare} />
@@ -203,7 +204,7 @@ export default function Footer() {
               <Icon size={32} icon={twitterSquare} />
             </a>
             <a
-              href="https://www.instagram.com/traininghubcan/"
+              href="https://www.instagram.com/traininghub.io/"
               target="_blank"
               rel="noopener noreferrer">
               <Icon size={32} icon={instagram} />
@@ -213,6 +214,12 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer">
               <Icon size={32} icon={linkedinSquare} />
+            </a>
+            <a
+              href="https://www.pinterest.ca/traininghubcan/"
+              target="_blank"
+              rel="noopener noreferrer">
+              <Icon size={32} icon={pinterest} />
             </a>
             <a
               href="https://t.me/Traininghub"

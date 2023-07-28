@@ -52,9 +52,9 @@ const NavigationDropDown = ({ title, descTitle, description }) => {
             <Paragraph>{description}</Paragraph>
           </StyledDescription>
           <Col>
-            <BaseTitle title="Microsoft Technologies" size="H6" />
+            <BaseTitle title="Web Technologies" size="H6" />
             {ContentfulCourses.map((course, key) => {
-              if (course.category.courseName === "Microsoft Technologies") {
+              if (course.category.courseName === "Web Technologies") {
                 return (
                   <Link
                     to={`/courses/${course.category.slug}/${course.slug}`}
@@ -66,6 +66,7 @@ const NavigationDropDown = ({ title, descTitle, description }) => {
               }
               return null;
             })}
+
             <BaseTitle title="Programming" size="H6" />
             {ContentfulCourses.map((course, key) => {
               if (course.category.courseName === "Programming") {
@@ -82,9 +83,54 @@ const NavigationDropDown = ({ title, descTitle, description }) => {
             })}
           </Col>
           <Col>
-            <BaseTitle title="Web Technologies" size="H6" />
+            <BaseTitle title="Microsoft Technologies" size="H6" />
             {ContentfulCourses.map((course, key) => {
-              if (course.category.courseName === "Web Technologies") {
+              if (course.category.courseName === "Microsoft Technologies") {
+                return (
+                  <Link
+                    to={`/courses/${course.category.slug}/${course.slug}`}
+                    key={key}
+                    className="dropdown-item">
+                    {course.title}
+                  </Link>
+                );
+              }
+              return null;
+            })}
+
+            <BaseTitle title="Cloud Computing" size="H6" />
+            {ContentfulCourses.map((course, key) => {
+              if (course.category.courseName === "Cloud Computing") {
+                return (
+                  <Link
+                    to={`/courses/${course.category.slug}/${course.slug}`}
+                    key={key}
+                    className="dropdown-item">
+                    {course.title}
+                  </Link>
+                );
+              }
+              return null;
+            })}
+            <BaseTitle title="Business Intelligence" size="H6" />
+            {ContentfulCourses.map((course, key) => {
+              if (course.category.courseName === "Business Intelligence") {
+                return (
+                  <Link
+                    to={`/courses/${course.category.slug}/${course.slug}`}
+                    key={key}
+                    className="dropdown-item">
+                    {course.title}
+                  </Link>
+                );
+              }
+              return null;
+            })}
+          </Col>
+          <Col>
+            <BaseTitle title="Data" size="H6" />
+            {ContentfulCourses.map((course, key) => {
+              if (course.category.courseName === "Data") {
                 return (
                   <Link
                     to={`/courses/${course.category.slug}/${course.slug}`}
@@ -126,9 +172,12 @@ const NavigationDropDown = ({ title, descTitle, description }) => {
               }
               return null;
             })}
-            <BaseTitle title="Data" size="H6" />
+            <BaseTitle
+              title="Customer Relationship Management (CRM)"
+              size="H6"
+            />
             {ContentfulCourses.map((course, key) => {
-              if (course.category.courseName === "Data") {
+              if (course.category.courseName === "CRM") {
                 return (
                   <Link
                     to={`/courses/${course.category.slug}/${course.slug}`}
